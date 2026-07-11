@@ -1,0 +1,21 @@
+---
+description: 每次改动后自动 commit 并 push 到 origin
+alwaysApply: true
+---
+
+# Git 提交与推送
+
+本仓库约定：完成一组改动后，**必须**创建 git commit，并 `git push` 到 `origin`。
+
+## 流程
+
+1. `git status` / `git diff` / `git log` 了解变更
+2. `git add` 相关文件（勿提交密钥、`.env`、`node_modules`）
+3. 写清晰的 commit message（说明为什么）
+4. `git push -u origin HEAD`（若已跟踪则 `git push`）
+
+## 注意
+
+- 不要改全局 git config；若本机缺少 user.name/email，用单次 `git -c user.name=... -c user.email=... commit`
+- 不要 force push 到 main，除非用户明确要求
+- 用户说「接下来每次都要提交和 push」——即使没有再次口头要求，也应默认执行
