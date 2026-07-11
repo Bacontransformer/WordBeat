@@ -1,4 +1,5 @@
 import type { LevelDef, Point, WordPair } from './types'
+import { neighborsOfPath } from './mapUtils'
 
 const daily: WordPair[] = [
   { id: 'd1', word: 'apple', meaning: '苹果' },
@@ -36,29 +37,6 @@ const travel: WordPair[] = [
   { id: 't9', word: 'delay', meaning: '延误' },
   { id: 't10', word: 'destination', meaning: '目的地' },
 ]
-
-function neighborsOfPath(path: Point[], cols: number, rows: number): Point[] {
-  const pathSet = new Set(path.map((p) => `${p.x},${p.y}`))
-  const build = new Map<string, Point>()
-  const dirs = [
-    [0, -1],
-    [0, 1],
-    [-1, 0],
-    [1, 0],
-  ]
-
-  for (const cell of path) {
-    for (const [dx, dy] of dirs) {
-      const x = cell.x + dx
-      const y = cell.y + dy
-      const key = `${x},${y}`
-      if (x < 0 || y < 0 || x >= cols || y >= rows) continue
-      if (pathSet.has(key)) continue
-      build.set(key, { x, y })
-    }
-  }
-  return [...build.values()]
-}
 
 function pathFromSteps(start: Point, steps: Array<'R' | 'L' | 'U' | 'D'>): Point[] {
   const path: Point[] = [{ ...start }]

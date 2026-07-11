@@ -1,0 +1,8823 @@
+{
+  "junior": {
+    "slug": "junior",
+    "name": "初中基础",
+    "source": "KyleBing/english-vocabulary · 1-初中",
+    "words": [
+      {
+        "word": "ability",
+        "meaning": "能力，能耐；才能"
+      },
+      {
+        "word": "able",
+        "meaning": "能；[经管] 有能力的；能干的"
+      },
+      {
+        "word": "about",
+        "meaning": "关于；大约"
+      },
+      {
+        "word": "above",
+        "meaning": "超过；在……上面；在……之上"
+      },
+      {
+        "word": "abroad",
+        "meaning": "在国外；到海外"
+      },
+      {
+        "word": "absent",
+        "meaning": "缺席的；缺少的；心不在焉的；茫然的"
+      },
+      {
+        "word": "accent",
+        "meaning": "口音；重音；强调；特点；重音符号"
+      },
+      {
+        "word": "accept",
+        "meaning": "接受；承认；承担；承兑；容纳"
+      },
+      {
+        "word": "accident",
+        "meaning": "事故；意外；[法] 意外事件；机遇"
+      },
+      {
+        "word": "ache",
+        "meaning": "疼痛；渴望"
+      },
+      {
+        "word": "achieve",
+        "meaning": "取得；获得；实现；成功"
+      },
+      {
+        "word": "across",
+        "meaning": "穿过；横穿"
+      },
+      {
+        "word": "act",
+        "meaning": "扮演；装作，举动像"
+      },
+      {
+        "word": "action",
+        "meaning": "行动；活动；功能；战斗；情节"
+      },
+      {
+        "word": "active",
+        "meaning": "积极的；活跃的；主动的；有效的；现役的"
+      },
+      {
+        "word": "activity",
+        "meaning": "活动；行动；活跃"
+      },
+      {
+        "word": "add",
+        "meaning": "加；增加；加起来；做加法"
+      },
+      {
+        "word": "address",
+        "meaning": "演说；从事；忙于；写姓名地址；向…致辞；与…说话；提出；处理"
+      },
+      {
+        "word": "advertisement",
+        "meaning": "广告，宣传"
+      },
+      {
+        "word": "advice",
+        "meaning": "建议；忠告；劝告；通知"
+      },
+      {
+        "word": "advise",
+        "meaning": "建议；劝告，忠告；通知；警告"
+      },
+      {
+        "word": "afford",
+        "meaning": "给予，提供；买得起"
+      },
+      {
+        "word": "afraid",
+        "meaning": "害怕的；恐怕；担心的"
+      },
+      {
+        "word": "after",
+        "meaning": "后来，以后"
+      },
+      {
+        "word": "afternoon",
+        "meaning": "午后，下午"
+      },
+      {
+        "word": "again",
+        "meaning": "又，此外；再一次；再说；增加"
+      },
+      {
+        "word": "against",
+        "meaning": "反对，违反；靠；倚；防备"
+      },
+      {
+        "word": "age",
+        "meaning": "年龄；时代；寿命，使用年限；阶段"
+      },
+      {
+        "word": "ago",
+        "meaning": "以前，以往"
+      },
+      {
+        "word": "agree",
+        "meaning": "同意，赞成；承认；约定，商定"
+      },
+      {
+        "word": "agreement",
+        "meaning": "协议；同意，一致"
+      },
+      {
+        "word": "air",
+        "meaning": "空气，大气；天空；样子；曲调"
+      },
+      {
+        "word": "airline",
+        "meaning": "航空公司；航线"
+      },
+      {
+        "word": "airplane",
+        "meaning": "飞机"
+      },
+      {
+        "word": "airport",
+        "meaning": "机场；航空站"
+      },
+      {
+        "word": "alive",
+        "meaning": "活着的；活泼的；有生气的"
+      },
+      {
+        "word": "all",
+        "meaning": "全部的"
+      },
+      {
+        "word": "allow",
+        "meaning": "允许；给予；认可"
+      },
+      {
+        "word": "almost",
+        "meaning": "差不多，几乎"
+      },
+      {
+        "word": "alone",
+        "meaning": "独自的；单独的；孤独的"
+      },
+      {
+        "word": "along",
+        "meaning": "一起；向前；来到"
+      },
+      {
+        "word": "aloud",
+        "meaning": "大声地；出声地"
+      },
+      {
+        "word": "already",
+        "meaning": "已经，早已；先前"
+      },
+      {
+        "word": "also",
+        "meaning": "也；而且；同样"
+      },
+      {
+        "word": "although",
+        "meaning": "尽管；虽然；但是；然而"
+      },
+      {
+        "word": "always",
+        "meaning": "永远，一直；总是；常常"
+      },
+      {
+        "word": "america",
+        "meaning": "美洲（包括北美和南美洲）；美国"
+      },
+      {
+        "word": "american",
+        "meaning": "美国人，美洲人；美国英语"
+      },
+      {
+        "word": "among",
+        "meaning": "在…中间；在…之中"
+      },
+      {
+        "word": "ancient",
+        "meaning": "古代的；古老的，过时的；年老的"
+      },
+      {
+        "word": "and",
+        "meaning": "和，与；就；而且；但是；然后"
+      },
+      {
+        "word": "angry",
+        "meaning": "生气的；愤怒的；狂暴的；（伤口等）发炎的"
+      },
+      {
+        "word": "animal",
+        "meaning": "动物"
+      },
+      {
+        "word": "another",
+        "meaning": "又一，另一；另外的；不同的"
+      },
+      {
+        "word": "answer",
+        "meaning": "回答；符合"
+      },
+      {
+        "word": "ant",
+        "meaning": "蚂蚁"
+      },
+      {
+        "word": "any",
+        "meaning": "任何的；所有的；丝毫"
+      },
+      {
+        "word": "anyone",
+        "meaning": "任何人；任何一个"
+      },
+      {
+        "word": "anything",
+        "meaning": "任何事"
+      },
+      {
+        "word": "anyway",
+        "meaning": "无论如何，不管怎样；总之"
+      },
+      {
+        "word": "anywhere",
+        "meaning": "在任何地方；无论何处"
+      },
+      {
+        "word": "appear",
+        "meaning": "出现；显得；似乎；出庭；登场"
+      },
+      {
+        "word": "apple",
+        "meaning": "苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。"
+      },
+      {
+        "word": "april",
+        "meaning": "四月"
+      },
+      {
+        "word": "area",
+        "meaning": "区域，地区；面积；范围"
+      },
+      {
+        "word": "arm",
+        "meaning": "手臂；武器；袖子；装备；部门"
+      },
+      {
+        "word": "army",
+        "meaning": "陆军，军队"
+      },
+      {
+        "word": "around",
+        "meaning": "大约；到处；在附近"
+      },
+      {
+        "word": "arrive",
+        "meaning": "到达；成功；达成；出生"
+      },
+      {
+        "word": "art",
+        "meaning": "艺术；美术；艺术品"
+      },
+      {
+        "word": "article",
+        "meaning": "文章；物品；条款；[语] 冠词"
+      },
+      {
+        "word": "as",
+        "meaning": "因为；随着；虽然；依照；当…时"
+      },
+      {
+        "word": "asia",
+        "meaning": "亚洲"
+      },
+      {
+        "word": "asian",
+        "meaning": "亚洲人"
+      },
+      {
+        "word": "ask",
+        "meaning": "问，询问；要求；需要；邀请；讨价"
+      },
+      {
+        "word": "asleep",
+        "meaning": "睡着的；麻木的；长眠的"
+      },
+      {
+        "word": "at",
+        "meaning": "在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达；因为；朝；忙于"
+      },
+      {
+        "word": "atlantic",
+        "meaning": "大西洋"
+      },
+      {
+        "word": "attention",
+        "meaning": "注意力；关心；立正！（口令）"
+      },
+      {
+        "word": "august",
+        "meaning": "威严的；令人敬畏的"
+      },
+      {
+        "word": "aunt",
+        "meaning": "阿姨；姑妈；伯母；舅妈"
+      },
+      {
+        "word": "australia",
+        "meaning": "澳大利亚，澳洲"
+      },
+      {
+        "word": "australian",
+        "meaning": "澳大利亚的，澳大利亚人的"
+      },
+      {
+        "word": "autumn",
+        "meaning": "秋天；成熟期；渐衰期，凋落期"
+      },
+      {
+        "word": "available",
+        "meaning": "可获得的；可购得的；可找到的；有空的"
+      },
+      {
+        "word": "avoid",
+        "meaning": "避免；避开，躲避；消除"
+      },
+      {
+        "word": "away",
+        "meaning": "离去，离开；在远处"
+      },
+      {
+        "word": "baby",
+        "meaning": "婴儿，婴孩；孩子气的人"
+      },
+      {
+        "word": "back",
+        "meaning": "后面；背部；靠背；足球等的后卫；书报等的末尾"
+      },
+      {
+        "word": "background",
+        "meaning": "背景；隐蔽的位置"
+      },
+      {
+        "word": "bag",
+        "meaning": "袋；猎获物；（俚）一瓶啤酒"
+      },
+      {
+        "word": "ball",
+        "meaning": "球；舞会"
+      },
+      {
+        "word": "balloon",
+        "meaning": "激增；膨胀如气球"
+      },
+      {
+        "word": "bamboo",
+        "meaning": "竹，竹子"
+      },
+      {
+        "word": "banana",
+        "meaning": "香蕉；喜剧演员；大鹰钩鼻"
+      },
+      {
+        "word": "bank",
+        "meaning": "银行；岸；浅滩；储库"
+      },
+      {
+        "word": "basic",
+        "meaning": "基本的；基础的"
+      },
+      {
+        "word": "basket",
+        "meaning": "篮子；（篮球比赛的）得分；一篮之量；篮筐"
+      },
+      {
+        "word": "basketball",
+        "meaning": "篮球；篮球运动"
+      },
+      {
+        "word": "bathroom",
+        "meaning": "浴室；厕所；盥洗室"
+      },
+      {
+        "word": "be",
+        "meaning": "是； 有，存在； 做，成为； 发生"
+      },
+      {
+        "word": "beach",
+        "meaning": "海滩；湖滨"
+      },
+      {
+        "word": "bear",
+        "meaning": "结果实，开花（正式）"
+      },
+      {
+        "word": "beautiful",
+        "meaning": "美丽的"
+      },
+      {
+        "word": "because",
+        "meaning": "因为"
+      },
+      {
+        "word": "bed",
+        "meaning": "床；基础；河底， 海底"
+      },
+      {
+        "word": "bedroom",
+        "meaning": "卧室"
+      },
+      {
+        "word": "bee",
+        "meaning": "蜜蜂，蜂；勤劳的人"
+      },
+      {
+        "word": "beef",
+        "meaning": "牛肉；肌肉；食用牛；牢骚"
+      },
+      {
+        "word": "before",
+        "meaning": "在…之前，先于"
+      },
+      {
+        "word": "behaviour",
+        "meaning": "行为；习性；运行状况（=behavior）"
+      },
+      {
+        "word": "behind",
+        "meaning": "落后于；支持；晚于"
+      },
+      {
+        "word": "believe",
+        "meaning": "信任；料想；笃信宗教"
+      },
+      {
+        "word": "bell",
+        "meaning": "铃，钟；钟声，铃声；钟状物"
+      },
+      {
+        "word": "below",
+        "meaning": "在下面，在较低处；在本页下面"
+      },
+      {
+        "word": "beside",
+        "meaning": "在旁边；与…相比；和…无关"
+      },
+      {
+        "word": "besides",
+        "meaning": "此外；而且"
+      },
+      {
+        "word": "between",
+        "meaning": "在…之间"
+      },
+      {
+        "word": "beyond",
+        "meaning": "超过；越过；那一边；在较远的一边"
+      },
+      {
+        "word": "big",
+        "meaning": "大的；重要的；量大的"
+      },
+      {
+        "word": "bike",
+        "meaning": "自行车；脚踏车"
+      },
+      {
+        "word": "bill",
+        "meaning": "[法] 法案；广告；账单；[金融] 票据；钞票；清单"
+      },
+      {
+        "word": "bird",
+        "meaning": "鸟；家伙；羽毛球"
+      },
+      {
+        "word": "birth",
+        "meaning": "出生；血统，出身；起源"
+      },
+      {
+        "word": "birthday",
+        "meaning": "生日，诞辰；诞生的日子"
+      },
+      {
+        "word": "biscuit",
+        "meaning": "小点心，饼干"
+      },
+      {
+        "word": "bit",
+        "meaning": "[计] 比特（二进位制信息单位）；少量；马嚼子；辅币；老一套；一点，一块"
+      },
+      {
+        "word": "bitter",
+        "meaning": "苦的；痛苦的；尖刻的；充满仇恨的"
+      },
+      {
+        "word": "black",
+        "meaning": "黑色的；黑人的；邪恶的"
+      },
+      {
+        "word": "blackboard",
+        "meaning": "黑板"
+      },
+      {
+        "word": "blind",
+        "meaning": "盲目的；瞎的"
+      },
+      {
+        "word": "blood",
+        "meaning": "血，血液；血统"
+      },
+      {
+        "word": "blue",
+        "meaning": "蓝色；[复数]（美国海、陆、空三军穿的）蓝色制服；蓝颜料；[the blue(s)][用作单数或复数]布鲁斯（歌曲）（一种伤感的美国黑人民歌）"
+      },
+      {
+        "word": "board",
+        "meaning": "董事会；木板；甲板；膳食"
+      },
+      {
+        "word": "boat",
+        "meaning": "小船；轮船"
+      },
+      {
+        "word": "body",
+        "meaning": "身体；主体；大量；团体；主要部分"
+      },
+      {
+        "word": "book",
+        "meaning": "书籍；卷；帐簿；名册；工作簿"
+      },
+      {
+        "word": "boring",
+        "meaning": "无聊的；令人厌烦的"
+      },
+      {
+        "word": "born",
+        "meaning": "出世（bear的过去分词）"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借；借用；从其他语言中引入"
+      },
+      {
+        "word": "boss",
+        "meaning": "老板；首领；工头"
+      },
+      {
+        "word": "both",
+        "meaning": "两个的；两者的"
+      },
+      {
+        "word": "bottle",
+        "meaning": "瓶子；一瓶的容量"
+      },
+      {
+        "word": "bottom",
+        "meaning": "底部；末端；臀部；尽头"
+      },
+      {
+        "word": "bowl",
+        "meaning": "碗；木球；大酒杯"
+      },
+      {
+        "word": "box",
+        "meaning": "箱，盒子；包厢；一拳"
+      },
+      {
+        "word": "boy",
+        "meaning": "男孩；男人"
+      },
+      {
+        "word": "brain",
+        "meaning": "头脑，智力；脑袋"
+      },
+      {
+        "word": "brave",
+        "meaning": "勇敢的；华丽的"
+      },
+      {
+        "word": "bread",
+        "meaning": "面包；生计"
+      },
+      {
+        "word": "breakfast",
+        "meaning": "早餐；早饭"
+      },
+      {
+        "word": "breath",
+        "meaning": "呼吸，气息；一口气，（呼吸的）一次；瞬间，瞬息；微风；迹象；无声音，气音"
+      },
+      {
+        "word": "breathe",
+        "meaning": "呼吸；低语；松口气；（风）轻拂"
+      },
+      {
+        "word": "bridge",
+        "meaning": "桥；桥牌；桥接器；船桥"
+      },
+      {
+        "word": "bright",
+        "meaning": "明亮的，鲜明的；聪明的；愉快的"
+      },
+      {
+        "word": "brother",
+        "meaning": "兄弟；同事；战友"
+      },
+      {
+        "word": "brown",
+        "meaning": "棕色的，褐色的；太阳晒黑的"
+      },
+      {
+        "word": "brush",
+        "meaning": "刷子；画笔；毛笔；争吵；与某人有效冲突；灌木丛地带；矮树丛；狐狸尾巴"
+      },
+      {
+        "word": "building",
+        "meaning": "建筑；建筑物"
+      },
+      {
+        "word": "bus",
+        "meaning": "公共汽车"
+      },
+      {
+        "word": "business",
+        "meaning": "商业；[贸易] 生意；[贸易] 交易；事情"
+      },
+      {
+        "word": "busy",
+        "meaning": "忙碌的；热闹的；正被占用的"
+      },
+      {
+        "word": "but",
+        "meaning": "但是；而是；然而"
+      },
+      {
+        "word": "butter",
+        "meaning": "涂黄油于；讨好"
+      },
+      {
+        "word": "butterfly",
+        "meaning": "蝴蝶；蝶泳；举止轻浮的人；追求享乐的人"
+      },
+      {
+        "word": "by",
+        "meaning": "通过；被；依据；经由；在附近；在……之前"
+      },
+      {
+        "word": "bye",
+        "meaning": "再见"
+      },
+      {
+        "word": "cabbage",
+        "meaning": "卷心菜，甘蓝菜，洋白菜；（俚)脑袋；（非正式、侮辱）植物人（常用于英式英语）；（俚）钱，尤指纸币（常用于美式俚语）"
+      },
+      {
+        "word": "cake",
+        "meaning": "蛋糕；块状物；利益总额"
+      },
+      {
+        "word": "call",
+        "meaning": "呼叫；拜访；叫牌"
+      },
+      {
+        "word": "camel",
+        "meaning": "[畜牧][脊椎] 骆驼；打捞浮筒；工作作风官僚"
+      },
+      {
+        "word": "camera",
+        "meaning": "照相机；摄影机"
+      },
+      {
+        "word": "camp",
+        "meaning": "露营；扎营"
+      },
+      {
+        "word": "can",
+        "meaning": "将…装入密封罐中保存"
+      },
+      {
+        "word": "canada",
+        "meaning": "加拿大（北美洲国家）"
+      },
+      {
+        "word": "cancel",
+        "meaning": "取消；删去"
+      },
+      {
+        "word": "candle",
+        "meaning": "蜡烛；烛光；烛形物"
+      },
+      {
+        "word": "cancer",
+        "meaning": "癌症；恶性肿瘤"
+      },
+      {
+        "word": "candy",
+        "meaning": "用糖煮；使结晶为砂糖；美化"
+      },
+      {
+        "word": "cap",
+        "meaning": "盖；帽子"
+      },
+      {
+        "word": "capital",
+        "meaning": "首都，省会；资金；大写字母；资本家"
+      },
+      {
+        "word": "captain",
+        "meaning": "队长，首领；船长；上尉；海军上校"
+      },
+      {
+        "word": "car",
+        "meaning": "汽车；车厢"
+      },
+      {
+        "word": "card",
+        "meaning": "卡片；纸牌；明信片"
+      },
+      {
+        "word": "care",
+        "meaning": "关怀；照料；谨慎；忧虑"
+      },
+      {
+        "word": "careful",
+        "meaning": "仔细的，小心的"
+      },
+      {
+        "word": "careless",
+        "meaning": "粗心的；无忧无虑的；淡漠的"
+      },
+      {
+        "word": "carry",
+        "meaning": "拿，扛；携带；支持；搬运"
+      },
+      {
+        "word": "cat",
+        "meaning": "猫，猫科动物"
+      },
+      {
+        "word": "cause",
+        "meaning": "原因；事业；目标"
+      },
+      {
+        "word": "cd",
+        "meaning": "光盘，激光唱片（Compact Disc）；呼叫设备（Calling Device）；中央地区（Central District）；商务部（Commerce Department）"
+      },
+      {
+        "word": "ceiling",
+        "meaning": "天花板；上限"
+      },
+      {
+        "word": "celebrate",
+        "meaning": "庆祝；举行；赞美；祝贺；宣告"
+      },
+      {
+        "word": "cent",
+        "meaning": "分；一分的硬币；森特（等于半音程的百分之一）"
+      },
+      {
+        "word": "centre",
+        "meaning": "以…为中心"
+      },
+      {
+        "word": "century",
+        "meaning": "世纪，百年；（板球）一百分"
+      },
+      {
+        "word": "certain",
+        "meaning": "某一；必然的；确信；无疑的；有把握的"
+      },
+      {
+        "word": "chair",
+        "meaning": "椅子；讲座；（会议的）主席位；大学教授的职位"
+      },
+      {
+        "word": "chairman",
+        "meaning": "主席，会长；董事长"
+      },
+      {
+        "word": "chalk",
+        "meaning": "用粉笔写；用白垩粉擦；记录；规划"
+      },
+      {
+        "word": "chance",
+        "meaning": "机会，际遇；运气，侥幸；可能性"
+      },
+      {
+        "word": "change",
+        "meaning": "改变；交换"
+      },
+      {
+        "word": "chant",
+        "meaning": "圣歌；赞美诗"
+      },
+      {
+        "word": "cheap",
+        "meaning": "便宜的；小气的；不值钱的"
+      },
+      {
+        "word": "cheat",
+        "meaning": "欺骗；骗取"
+      },
+      {
+        "word": "check",
+        "meaning": "检查，核对；制止，抑制；在…上打勾"
+      },
+      {
+        "word": "cheer",
+        "meaning": "欢呼；使高兴；为…加油"
+      },
+      {
+        "word": "cheese",
+        "meaning": "[食品] 奶酪；干酪；要人"
+      },
+      {
+        "word": "chemistry",
+        "meaning": "化学；化学过程"
+      },
+      {
+        "word": "chess",
+        "meaning": "国际象棋，西洋棋"
+      },
+      {
+        "word": "chest",
+        "meaning": "胸，胸部；衣柜；箱子；金库"
+      },
+      {
+        "word": "chicken",
+        "meaning": "鸡肉；小鸡；胆小鬼，懦夫"
+      },
+      {
+        "word": "china",
+        "meaning": "中国"
+      },
+      {
+        "word": "chinese",
+        "meaning": "中文，汉语；中国人"
+      },
+      {
+        "word": "chocolate",
+        "meaning": "巧克力，巧克力糖；巧克力色"
+      },
+      {
+        "word": "choice",
+        "meaning": "选择；选择权；精选品"
+      },
+      {
+        "word": "chopsticks",
+        "meaning": "筷子"
+      },
+      {
+        "word": "christmas",
+        "meaning": "圣诞节；圣诞节期间"
+      },
+      {
+        "word": "church",
+        "meaning": "教堂；礼拜；教派"
+      },
+      {
+        "word": "cinema",
+        "meaning": "电影；电影院；电影业，电影制作术"
+      },
+      {
+        "word": "circle",
+        "meaning": "循环，周期；圆；圈子；圆形物"
+      },
+      {
+        "word": "city",
+        "meaning": "城市，都市"
+      },
+      {
+        "word": "clap",
+        "meaning": "鼓掌，拍手；啪地关上"
+      },
+      {
+        "word": "class",
+        "meaning": "阶级；班级；种类；班；等级"
+      },
+      {
+        "word": "classmate",
+        "meaning": "同班同学"
+      },
+      {
+        "word": "classroom",
+        "meaning": "教室"
+      },
+      {
+        "word": "clean",
+        "meaning": "清洁的，干净的；清白的"
+      },
+      {
+        "word": "clear",
+        "meaning": "清楚的；清澈的；晴朗的；无罪的"
+      },
+      {
+        "word": "clever",
+        "meaning": "聪明的；机灵的；熟练的"
+      },
+      {
+        "word": "climb",
+        "meaning": "爬；攀登；上升"
+      },
+      {
+        "word": "clock",
+        "meaning": "时钟；计时器"
+      },
+      {
+        "word": "clone",
+        "meaning": "克隆；无性系；无性繁殖；靠营养生殖而由母体分离繁殖的植物"
+      },
+      {
+        "word": "close",
+        "meaning": "紧密的；亲密的；亲近的"
+      },
+      {
+        "word": "clothes",
+        "meaning": "衣服"
+      },
+      {
+        "word": "cloud",
+        "meaning": "云；阴云；云状物；一大群；黑斑"
+      },
+      {
+        "word": "cloudy",
+        "meaning": "多云的；阴天的；愁容满面的"
+      },
+      {
+        "word": "club",
+        "meaning": "俱乐部，社团；夜总会；棍棒；（扑克牌中的）梅花"
+      },
+      {
+        "word": "coach",
+        "meaning": "教练；旅客车厢；长途公车；四轮大马车"
+      },
+      {
+        "word": "coal",
+        "meaning": "上煤；加煤"
+      },
+      {
+        "word": "coast",
+        "meaning": "滑行；沿岸航行"
+      },
+      {
+        "word": "coat",
+        "meaning": "外套"
+      },
+      {
+        "word": "coffee",
+        "meaning": "咖啡；咖啡豆；咖啡色"
+      },
+      {
+        "word": "coin",
+        "meaning": "铸造（货币）；杜撰，创造"
+      },
+      {
+        "word": "coke",
+        "meaning": "焦炭；可卡因；可口可乐（Coca-Cola）"
+      },
+      {
+        "word": "cold",
+        "meaning": "寒冷的；冷淡的，不热情的；失去知觉的"
+      },
+      {
+        "word": "collect",
+        "meaning": "收集；募捐"
+      },
+      {
+        "word": "college",
+        "meaning": "大学；学院；学会"
+      },
+      {
+        "word": "comfortable",
+        "meaning": "舒适的，舒服的"
+      },
+      {
+        "word": "common",
+        "meaning": "共同的；普通的；一般的；通常的"
+      },
+      {
+        "word": "communicate",
+        "meaning": "通讯，传达；相通；交流；感染"
+      },
+      {
+        "word": "communication",
+        "meaning": "通讯，[通信] 通信；交流；信函"
+      },
+      {
+        "word": "company",
+        "meaning": "公司；陪伴，同伴；连队"
+      },
+      {
+        "word": "compare",
+        "meaning": "比较"
+      },
+      {
+        "word": "competition",
+        "meaning": "竞争；比赛，竞赛"
+      },
+      {
+        "word": "complete",
+        "meaning": "完整的；完全的；彻底的"
+      },
+      {
+        "word": "composition",
+        "meaning": "作文，作曲，作品；[材] 构成；合成物；成分"
+      },
+      {
+        "word": "computer",
+        "meaning": "计算机；电脑；电子计算机"
+      },
+      {
+        "word": "concert",
+        "meaning": "音乐会；一致；和谐"
+      },
+      {
+        "word": "condition",
+        "meaning": "条件；情况；环境；身份"
+      },
+      {
+        "word": "conference",
+        "meaning": "会议；讨论；协商；联盟；（正式）讨论会；[工会、工党用语]（每年的）大会"
+      },
+      {
+        "word": "connect",
+        "meaning": "连接；联合；关连"
+      },
+      {
+        "word": "continue",
+        "meaning": "继续，延续；仍旧，连续"
+      },
+      {
+        "word": "control",
+        "meaning": "控制；管理；抑制；操纵装置"
+      },
+      {
+        "word": "conversation",
+        "meaning": "交谈，会话；社交；交往，交际；会谈；（人与计算机的）人机对话"
+      },
+      {
+        "word": "cook",
+        "meaning": "烹调，煮"
+      },
+      {
+        "word": "cooker",
+        "meaning": "炊具；烹饪用水果；窜改者"
+      },
+      {
+        "word": "cool",
+        "meaning": "凉爽的；冷静的；出色的"
+      },
+      {
+        "word": "copy",
+        "meaning": "复制；复印；抄袭"
+      },
+      {
+        "word": "corner",
+        "meaning": "角落，拐角处；地区，偏僻处；困境，窘境"
+      },
+      {
+        "word": "correct",
+        "meaning": "改正；告诫"
+      },
+      {
+        "word": "cotton",
+        "meaning": "棉花；棉布；棉线"
+      },
+      {
+        "word": "cough",
+        "meaning": "咳嗽，咳嗽声；咳嗽病"
+      },
+      {
+        "word": "could",
+        "meaning": "能够"
+      },
+      {
+        "word": "count",
+        "meaning": "计算；认为"
+      },
+      {
+        "word": "country",
+        "meaning": "国家，国土；国民；乡下，农村；乡村；故乡"
+      },
+      {
+        "word": "countryside",
+        "meaning": "农村，乡下；乡下的全体居民"
+      },
+      {
+        "word": "couple",
+        "meaning": "对；夫妇；数个"
+      },
+      {
+        "word": "courage",
+        "meaning": "勇气；胆量"
+      },
+      {
+        "word": "course",
+        "meaning": "科目；课程；过程；进程；道路；路线，航向；一道菜"
+      },
+      {
+        "word": "cousin",
+        "meaning": "堂兄弟姊妹；表兄弟姊妹"
+      },
+      {
+        "word": "cover",
+        "meaning": "包括；采访，报导；涉及"
+      },
+      {
+        "word": "cow",
+        "meaning": "奶牛，母牛；母兽"
+      },
+      {
+        "word": "crayon",
+        "meaning": "蜡笔，有色粉笔"
+      },
+      {
+        "word": "crazy",
+        "meaning": "疯狂的；狂热的，着迷的"
+      },
+      {
+        "word": "create",
+        "meaning": "创造，创作；造成"
+      },
+      {
+        "word": "cross",
+        "meaning": "交叉，十字；十字架，十字形物"
+      },
+      {
+        "word": "cruel",
+        "meaning": "残酷的，残忍的；使人痛苦的，让人受难的；无情的，严酷的"
+      },
+      {
+        "word": "cry",
+        "meaning": "叫喊；哭出；大声说"
+      },
+      {
+        "word": "culture",
+        "meaning": "文化，文明；修养；栽培"
+      },
+      {
+        "word": "cup",
+        "meaning": "杯子；奖杯；酒杯"
+      },
+      {
+        "word": "daily",
+        "meaning": "日常的；每日的"
+      },
+      {
+        "word": "dance",
+        "meaning": "舞蹈；舞会；舞曲"
+      },
+      {
+        "word": "danger",
+        "meaning": "危险；危险物，威胁"
+      },
+      {
+        "word": "dangerous",
+        "meaning": "危险的"
+      },
+      {
+        "word": "dare",
+        "meaning": "挑战；挑动"
+      },
+      {
+        "word": "dark",
+        "meaning": "黑暗的，深色的；模糊的；无知的；忧郁的"
+      },
+      {
+        "word": "date",
+        "meaning": "日期；约会；年代；枣椰子"
+      },
+      {
+        "word": "daughter",
+        "meaning": "女儿；[遗][农学] 子代"
+      },
+      {
+        "word": "day",
+        "meaning": "一天；时期；白昼"
+      },
+      {
+        "word": "dead",
+        "meaning": "无生命的；呆板的；废弃了的"
+      },
+      {
+        "word": "deaf",
+        "meaning": "聋的"
+      },
+      {
+        "word": "deal",
+        "meaning": "处理；给予；分配；发牌"
+      },
+      {
+        "word": "dear",
+        "meaning": "亲爱的；尊敬的；昂贵的"
+      },
+      {
+        "word": "death",
+        "meaning": "死；死亡；死神；毁灭"
+      },
+      {
+        "word": "december",
+        "meaning": "十二月"
+      },
+      {
+        "word": "decide",
+        "meaning": "决定；解决；判决"
+      },
+      {
+        "word": "decision",
+        "meaning": "决定，决心；决议"
+      },
+      {
+        "word": "deep",
+        "meaning": "深处；深渊"
+      },
+      {
+        "word": "delicious",
+        "meaning": "美味的；可口的"
+      },
+      {
+        "word": "dentist",
+        "meaning": "牙科医生"
+      },
+      {
+        "word": "depend",
+        "meaning": "依赖，依靠；取决于；相信，信赖"
+      },
+      {
+        "word": "describe",
+        "meaning": "描述，形容；描绘"
+      },
+      {
+        "word": "develop",
+        "meaning": "开发；进步；使成长；使显影"
+      },
+      {
+        "word": "development",
+        "meaning": "发展；开发；发育；住宅小区（专指由同一开发商开发的）；[摄] 显影"
+      },
+      {
+        "word": "dialogue",
+        "meaning": "对话；意见交换"
+      },
+      {
+        "word": "diary",
+        "meaning": "日志，日记；日记簿"
+      },
+      {
+        "word": "dictionary",
+        "meaning": "字典；词典"
+      },
+      {
+        "word": "die",
+        "meaning": "死亡；凋零；熄灭"
+      },
+      {
+        "word": "difference",
+        "meaning": "差异；不同；争执"
+      },
+      {
+        "word": "different",
+        "meaning": "不同的；个别的，与众不同的"
+      },
+      {
+        "word": "difficult",
+        "meaning": "困难的；不随和的；执拗的"
+      },
+      {
+        "word": "difficulty",
+        "meaning": "困难，困境"
+      },
+      {
+        "word": "dinner",
+        "meaning": "晚餐，晚宴；宴会；正餐"
+      },
+      {
+        "word": "direct",
+        "meaning": "直接的；直系的；亲身的；恰好的"
+      },
+      {
+        "word": "dirty",
+        "meaning": "下流的，卑鄙的；肮脏的；恶劣的；暗淡的"
+      },
+      {
+        "word": "discover",
+        "meaning": "发现；发觉"
+      },
+      {
+        "word": "discovery",
+        "meaning": "发现，发觉；被发现的事物"
+      },
+      {
+        "word": "discuss",
+        "meaning": "讨论；论述，辩论"
+      },
+      {
+        "word": "discussion",
+        "meaning": "讨论，议论"
+      },
+      {
+        "word": "disease",
+        "meaning": "病，[医] 疾病；弊病"
+      },
+      {
+        "word": "dish",
+        "meaning": "盘；餐具；一盘食物；外貌有吸引力的人"
+      },
+      {
+        "word": "dismiss",
+        "meaning": "解散；解雇；开除；让离开；不予理会、不予考虑"
+      },
+      {
+        "word": "disturb",
+        "meaning": "打扰；妨碍；使不安；弄乱；使恼怒"
+      },
+      {
+        "word": "divide",
+        "meaning": "划分；除；分开；使产生分歧"
+      },
+      {
+        "word": "doctor",
+        "meaning": "修理；篡改，伪造；为…治病；授以博士学位"
+      },
+      {
+        "word": "dog",
+        "meaning": "狗；丑女人；卑鄙的人；(俚)朋友"
+      },
+      {
+        "word": "doll",
+        "meaning": "洋娃娃；玩偶；无头脑的美丽女人"
+      },
+      {
+        "word": "dollar",
+        "meaning": "美元"
+      },
+      {
+        "word": "door",
+        "meaning": "门；家，户；门口；通道"
+      },
+      {
+        "word": "double",
+        "meaning": "两倍；双精度型"
+      },
+      {
+        "word": "doubt",
+        "meaning": "怀疑；疑问；疑惑"
+      },
+      {
+        "word": "down",
+        "meaning": "向下，下去；在下面"
+      },
+      {
+        "word": "downstairs",
+        "meaning": "在楼下"
+      },
+      {
+        "word": "dozen",
+        "meaning": "十二个，一打"
+      },
+      {
+        "word": "drawer",
+        "meaning": "抽屉；开票人；出票人；起草者；酒馆侍"
+      },
+      {
+        "word": "dress",
+        "meaning": "给…穿衣"
+      },
+      {
+        "word": "driver",
+        "meaning": "驾驶员；驱动程序；起子；传动器"
+      },
+      {
+        "word": "drop",
+        "meaning": "滴；使降低；使终止；随口漏出"
+      },
+      {
+        "word": "drug",
+        "meaning": "药；毒品；麻醉药；滞销货"
+      },
+      {
+        "word": "drum",
+        "meaning": "击鼓；大力争取"
+      },
+      {
+        "word": "dry",
+        "meaning": "干的；口渴的；枯燥无味的；禁酒的"
+      },
+      {
+        "word": "duck",
+        "meaning": "鸭子；鸭肉；（英）宝贝儿；零分"
+      },
+      {
+        "word": "dumpling",
+        "meaning": "饺子，汤团；面团布丁"
+      },
+      {
+        "word": "during",
+        "meaning": "在…的时候，在…的期间"
+      },
+      {
+        "word": "duty",
+        "meaning": "责任；[税收] 关税；职务"
+      },
+      {
+        "word": "each",
+        "meaning": "每；各自的"
+      },
+      {
+        "word": "ear",
+        "meaning": "耳朵；穗；听觉；倾听"
+      },
+      {
+        "word": "early",
+        "meaning": "早期的；早熟的"
+      },
+      {
+        "word": "earth",
+        "meaning": "地球；地表，陆地；土地，土壤；尘事，俗事；兽穴"
+      },
+      {
+        "word": "east",
+        "meaning": "东方；东风；东方国家"
+      },
+      {
+        "word": "easy",
+        "meaning": "容易的；舒适的"
+      },
+      {
+        "word": "edge",
+        "meaning": "边缘；优势；刀刃；锋利"
+      },
+      {
+        "word": "education",
+        "meaning": "教育；培养；教育学"
+      },
+      {
+        "word": "effort",
+        "meaning": "努力；成就"
+      },
+      {
+        "word": "egg",
+        "meaning": "蛋；卵子；家伙；鸡蛋"
+      },
+      {
+        "word": "eight",
+        "meaning": "八；八个；第八"
+      },
+      {
+        "word": "eighteen",
+        "meaning": "十八，十八个"
+      },
+      {
+        "word": "eighth",
+        "meaning": "第八的；八分之一的"
+      },
+      {
+        "word": "eighty",
+        "meaning": "八十；八十岁；八十年代"
+      },
+      {
+        "word": "either",
+        "meaning": "两者之中任一的；两者之中每一的"
+      },
+      {
+        "word": "elder",
+        "meaning": "老人；长辈；年长者；父辈"
+      },
+      {
+        "word": "electric",
+        "meaning": "电的；电动的；发电的；导电的；令人震惊的"
+      },
+      {
+        "word": "elephant",
+        "meaning": "象；大号图画纸"
+      },
+      {
+        "word": "eleven",
+        "meaning": "十一；十一个"
+      },
+      {
+        "word": "else",
+        "meaning": "其他；否则；另外"
+      },
+      {
+        "word": "empty",
+        "meaning": "空的；无意义的；无知的；徒劳的"
+      },
+      {
+        "word": "encourage",
+        "meaning": "鼓励，怂恿；激励；支持"
+      },
+      {
+        "word": "end",
+        "meaning": "结束；目标；尽头；末端；死亡"
+      },
+      {
+        "word": "enemy",
+        "meaning": "敌人，仇敌；敌军"
+      },
+      {
+        "word": "energy",
+        "meaning": "[物] 能量；精力；活力；精神"
+      },
+      {
+        "word": "engineer",
+        "meaning": "工程师；工兵；火车司机"
+      },
+      {
+        "word": "england",
+        "meaning": "英格兰"
+      },
+      {
+        "word": "english",
+        "meaning": "英国人的；英国的；英文的"
+      },
+      {
+        "word": "enjoy",
+        "meaning": "欣赏，享受；喜爱；使过得快活"
+      },
+      {
+        "word": "enough",
+        "meaning": "足够地，充足地"
+      },
+      {
+        "word": "enter",
+        "meaning": "进入；开始；参加"
+      },
+      {
+        "word": "environment",
+        "meaning": "环境，外界"
+      },
+      {
+        "word": "eraser",
+        "meaning": "橡皮；擦除器；[计] 清除器"
+      },
+      {
+        "word": "especially",
+        "meaning": "特别；尤其；格外"
+      },
+      {
+        "word": "europe",
+        "meaning": "欧洲"
+      },
+      {
+        "word": "european",
+        "meaning": "欧洲的；欧洲人的"
+      },
+      {
+        "word": "even",
+        "meaning": "[数] 偶数的；平坦的；相等的"
+      },
+      {
+        "word": "evening",
+        "meaning": "晚上；傍晚；（联欢性的）晚会；后期"
+      },
+      {
+        "word": "ever",
+        "meaning": "永远；曾经；究竟"
+      },
+      {
+        "word": "every",
+        "meaning": "每一的，每个的；每隔…的"
+      },
+      {
+        "word": "everybody",
+        "meaning": "每个人；人人"
+      },
+      {
+        "word": "everyday",
+        "meaning": "每天的，日常的"
+      },
+      {
+        "word": "everyone",
+        "meaning": "每个人；人人"
+      },
+      {
+        "word": "everything",
+        "meaning": "每件事物；最重要的东西；（有关的）一切；万事"
+      },
+      {
+        "word": "everywhere",
+        "meaning": "到处"
+      },
+      {
+        "word": "examine",
+        "meaning": "检查；调查； 检测；考试"
+      },
+      {
+        "word": "example",
+        "meaning": "例子；榜样"
+      },
+      {
+        "word": "excellent",
+        "meaning": "卓越的；极好的；杰出的"
+      },
+      {
+        "word": "except",
+        "meaning": "不计；把…除外"
+      },
+      {
+        "word": "excite",
+        "meaning": "激起；刺激…，使…兴奋"
+      },
+      {
+        "word": "excuse",
+        "meaning": "借口；理由"
+      },
+      {
+        "word": "exercise",
+        "meaning": "运动；练习；运用；操练；礼拜；典礼"
+      },
+      {
+        "word": "expect",
+        "meaning": "期望；指望；认为；预料"
+      },
+      {
+        "word": "expensive",
+        "meaning": "昂贵的；花钱的"
+      },
+      {
+        "word": "experience",
+        "meaning": "经验；经历；体验"
+      },
+      {
+        "word": "experiment",
+        "meaning": "尝试；进行实验"
+      },
+      {
+        "word": "explain",
+        "meaning": "说明；解释"
+      },
+      {
+        "word": "express",
+        "meaning": "表达；快递"
+      },
+      {
+        "word": "eye",
+        "meaning": "眼睛；视力；眼光；见解，观点"
+      },
+      {
+        "word": "face",
+        "meaning": "脸；表面；面子；面容；外观；威信"
+      },
+      {
+        "word": "fact",
+        "meaning": "事实；实际；真相"
+      },
+      {
+        "word": "factory",
+        "meaning": "工厂；制造厂；代理店"
+      },
+      {
+        "word": "fail",
+        "meaning": "失败，不及格；破产；缺乏；衰退"
+      },
+      {
+        "word": "fair",
+        "meaning": "公平的；美丽的，白皙的；[气象] 晴朗的"
+      },
+      {
+        "word": "family",
+        "meaning": "家庭；亲属；家族；子女；[生]科；语族；[化]族"
+      },
+      {
+        "word": "famous",
+        "meaning": "著名的；极好的，非常令人满意的"
+      },
+      {
+        "word": "fan",
+        "meaning": "煽动；刺激；吹拂"
+      },
+      {
+        "word": "fantastic",
+        "meaning": "奇异的；空想的；异想天开的；古怪的；极好的，极出色的；不可思议的；不切实际的"
+      },
+      {
+        "word": "farm",
+        "meaning": "种田，务农；经营农场"
+      },
+      {
+        "word": "farmer",
+        "meaning": "农夫，农民"
+      },
+      {
+        "word": "fast",
+        "meaning": "快速的，迅速的；紧的，稳固的"
+      },
+      {
+        "word": "fat",
+        "meaning": "肥的，胖的；油腻的；丰满的"
+      },
+      {
+        "word": "father",
+        "meaning": "父亲，爸爸；神父；祖先；前辈"
+      },
+      {
+        "word": "fear",
+        "meaning": "害怕；恐惧；敬畏；担心"
+      },
+      {
+        "word": "february",
+        "meaning": "二月"
+      },
+      {
+        "word": "feeling",
+        "meaning": "感觉，触觉；感情，情绪；同情"
+      },
+      {
+        "word": "festival",
+        "meaning": "节日；庆祝，纪念活动；欢乐"
+      },
+      {
+        "word": "fetch",
+        "meaning": "取来；接来；到达；吸引"
+      },
+      {
+        "word": "fever",
+        "meaning": "发烧，发热；狂热"
+      },
+      {
+        "word": "few",
+        "meaning": "很少的；几乎没有的"
+      },
+      {
+        "word": "field",
+        "meaning": "领域；牧场；旷野；战场；运动场"
+      },
+      {
+        "word": "fifteen",
+        "meaning": "十五；十五个；十五人组成的橄榄球队"
+      },
+      {
+        "word": "fifth",
+        "meaning": "第五的；五分之一的"
+      },
+      {
+        "word": "fifty",
+        "meaning": "五十；五十个；编号为50的东西"
+      },
+      {
+        "word": "fill",
+        "meaning": "装满，使充满；满足；堵塞；任职"
+      },
+      {
+        "word": "film",
+        "meaning": "电影；薄膜；胶卷；轻烟"
+      },
+      {
+        "word": "final",
+        "meaning": "最终的；决定性的；不可更改的"
+      },
+      {
+        "word": "fine",
+        "meaning": "好的；优良的；细小的，精美的；健康的；晴朗的"
+      },
+      {
+        "word": "finger",
+        "meaning": "手指；指针，指状物"
+      },
+      {
+        "word": "finish",
+        "meaning": "完成；结束；用完"
+      },
+      {
+        "word": "fire",
+        "meaning": "火；火灾；炮火；炉火；热情；激情；磨难"
+      },
+      {
+        "word": "first",
+        "meaning": "第一；首先；优先；宁愿"
+      },
+      {
+        "word": "fish",
+        "meaning": "捕鱼，钓鱼；用钩捞取"
+      },
+      {
+        "word": "fisherman",
+        "meaning": "渔夫；渔人"
+      },
+      {
+        "word": "fit",
+        "meaning": "安装；使……适应；使……合身；与……相符"
+      },
+      {
+        "word": "five",
+        "meaning": "五，五个；五美元钞票"
+      },
+      {
+        "word": "fix",
+        "meaning": "使固定；修理；安装；准备"
+      },
+      {
+        "word": "flag",
+        "meaning": "标记；衰退；枯萎"
+      },
+      {
+        "word": "flat",
+        "meaning": "平的；单调的；不景气的；干脆的；平坦的；扁平的；浅的"
+      },
+      {
+        "word": "floor",
+        "meaning": "地板，地面；楼层；基底；议员席"
+      },
+      {
+        "word": "flower",
+        "meaning": "花；精华；开花植物"
+      },
+      {
+        "word": "flu",
+        "meaning": "流感"
+      },
+      {
+        "word": "fly",
+        "meaning": "飞；驾驶飞机；飘扬"
+      },
+      {
+        "word": "follow",
+        "meaning": "跟随；遵循；追求；密切注意，注视；注意；倾听"
+      },
+      {
+        "word": "food",
+        "meaning": "食物；养料"
+      },
+      {
+        "word": "football",
+        "meaning": "足球，橄榄球"
+      },
+      {
+        "word": "for",
+        "meaning": "为，为了；因为；给；对于；至于；适合于"
+      },
+      {
+        "word": "force",
+        "meaning": "力量；武力；军队；魄力"
+      },
+      {
+        "word": "foreign",
+        "meaning": "外国的；外交的；异质的；不相关的"
+      },
+      {
+        "word": "foreigner",
+        "meaning": "外地人，外国人"
+      },
+      {
+        "word": "forest",
+        "meaning": "植树于，使成为森林"
+      },
+      {
+        "word": "fork",
+        "meaning": "叉；餐叉；耙"
+      },
+      {
+        "word": "form",
+        "meaning": "形式，形状；形态，外形；方式；表格"
+      },
+      {
+        "word": "forty",
+        "meaning": "四十"
+      },
+      {
+        "word": "forward",
+        "meaning": "向前的；早的；迅速的"
+      },
+      {
+        "word": "four",
+        "meaning": "四；四个"
+      },
+      {
+        "word": "fourteen",
+        "meaning": "十四；十四个；第十四"
+      },
+      {
+        "word": "fourth",
+        "meaning": "第四的，第四个的；四分之一的"
+      },
+      {
+        "word": "fox",
+        "meaning": "欺骗；使变酸"
+      },
+      {
+        "word": "free",
+        "meaning": "免费的；自由的，不受约束的；[化学] 游离的"
+      },
+      {
+        "word": "fresh",
+        "meaning": "新鲜的；清新的；淡水的；无经验的"
+      },
+      {
+        "word": "friday",
+        "meaning": "星期五"
+      },
+      {
+        "word": "fridge",
+        "meaning": "电冰箱"
+      },
+      {
+        "word": "friend",
+        "meaning": "朋友；助手；赞助者"
+      },
+      {
+        "word": "friendly",
+        "meaning": "友好的；亲切的；支持的；融洽的，和睦的"
+      },
+      {
+        "word": "friendship",
+        "meaning": "友谊；友爱；友善"
+      },
+      {
+        "word": "frog",
+        "meaning": "青蛙；[铁路] 辙叉；饰扣"
+      },
+      {
+        "word": "front",
+        "meaning": "前面；正面；前线"
+      },
+      {
+        "word": "fruit",
+        "meaning": "水果；产物"
+      },
+      {
+        "word": "full",
+        "meaning": "完全的，完整的；满的，充满的；丰富的；完美的；丰满的；详尽的"
+      },
+      {
+        "word": "fun",
+        "meaning": "乐趣；玩笑；有趣的人或事"
+      },
+      {
+        "word": "funny",
+        "meaning": "有趣的，好笑的，滑稽的；（口）稀奇的，古怪的，奇异的；有病的，不舒服的；狡猾的，欺骗（性）的，可疑的，不光明"
+      },
+      {
+        "word": "future",
+        "meaning": "未来；前途；期货；将来时"
+      },
+      {
+        "word": "game",
+        "meaning": "游戏；比赛"
+      },
+      {
+        "word": "garden",
+        "meaning": "花园；菜园"
+      },
+      {
+        "word": "gate",
+        "meaning": "大门；出入口；门道"
+      },
+      {
+        "word": "general",
+        "meaning": "一般的，普通的；综合的；大体的"
+      },
+      {
+        "word": "gentleman",
+        "meaning": "先生；绅士；有身份的人"
+      },
+      {
+        "word": "geography",
+        "meaning": "地理；地形"
+      },
+      {
+        "word": "gift",
+        "meaning": "礼物；天赋；赠品"
+      },
+      {
+        "word": "giraffe",
+        "meaning": "长颈鹿"
+      },
+      {
+        "word": "girl",
+        "meaning": "女孩；姑娘，未婚女子；女职员，女演员；（男人的）女朋友"
+      },
+      {
+        "word": "glad",
+        "meaning": "高兴的；乐意的；令人高兴的；灿烂美丽的"
+      },
+      {
+        "word": "glass",
+        "meaning": "玻璃；玻璃制品；镜子"
+      },
+      {
+        "word": "glove",
+        "meaning": "手套"
+      },
+      {
+        "word": "goat",
+        "meaning": "山羊；替罪羊（美俚）；色鬼（美俚）"
+      },
+      {
+        "word": "god",
+        "meaning": "神；（大写首字母时）上帝"
+      },
+      {
+        "word": "goal",
+        "meaning": "目标；球门，得分数；终点"
+      },
+      {
+        "word": "gold",
+        "meaning": "金，黄金；金色；金币"
+      },
+      {
+        "word": "golden",
+        "meaning": "金色的，黄金般的；珍贵的；金制的"
+      },
+      {
+        "word": "government",
+        "meaning": "政府；政体；管辖"
+      },
+      {
+        "word": "grade",
+        "meaning": "年级；等级；成绩；级别；阶段"
+      },
+      {
+        "word": "grammar",
+        "meaning": "语法；语法书"
+      },
+      {
+        "word": "grandchild",
+        "meaning": "孙子；孙女；外孙；外孙女"
+      },
+      {
+        "word": "granddaughter",
+        "meaning": "孙女；外孙女"
+      },
+      {
+        "word": "grandparent",
+        "meaning": "祖父母；祖父或祖母；外祖父母；外祖父或外祖母"
+      },
+      {
+        "word": "grandson",
+        "meaning": "孙子；外孙"
+      },
+      {
+        "word": "granny",
+        "meaning": "奶奶；外婆；婆婆妈妈的人"
+      },
+      {
+        "word": "grape",
+        "meaning": "葡萄；葡萄酒；葡萄树；葡萄色"
+      },
+      {
+        "word": "grass",
+        "meaning": "草；草地，草坪"
+      },
+      {
+        "word": "great",
+        "meaning": "伟大的，重大的；极好的，好的；主要的"
+      },
+      {
+        "word": "green",
+        "meaning": "绿色的；青春的"
+      },
+      {
+        "word": "greeting",
+        "meaning": "问候，招呼；祝贺"
+      },
+      {
+        "word": "ground",
+        "meaning": "地面；土地；范围；战场;根据"
+      },
+      {
+        "word": "group",
+        "meaning": "组；团体"
+      },
+      {
+        "word": "guard",
+        "meaning": "守卫；警戒；护卫队；防护装置"
+      },
+      {
+        "word": "guess",
+        "meaning": "猜测；认为；推测；猜中"
+      },
+      {
+        "word": "guest",
+        "meaning": "客人，宾客；顾客"
+      },
+      {
+        "word": "gun",
+        "meaning": "枪支；枪状物；持枪歹徒"
+      },
+      {
+        "word": "gym",
+        "meaning": "健身房；体育；体育馆"
+      },
+      {
+        "word": "hair",
+        "meaning": "头发；毛发；些微"
+      },
+      {
+        "word": "half",
+        "meaning": "一半；半场；半学年"
+      },
+      {
+        "word": "hall",
+        "meaning": "过道，门厅，走廊；会堂；食堂；学生宿舍；大厅，前厅；娱乐中心，会所"
+      },
+      {
+        "word": "ham",
+        "meaning": "火腿；业余无线电爱好者；蹩脚演员"
+      },
+      {
+        "word": "hamburger",
+        "meaning": "汉堡包，火腿汉堡；牛肉饼，肉饼；碎牛肉"
+      },
+      {
+        "word": "hand",
+        "meaning": "手，手艺；帮助；指针；插手"
+      },
+      {
+        "word": "handbag",
+        "meaning": "手提包"
+      },
+      {
+        "word": "handsome",
+        "meaning": "（男子）英俊的；可观的；大方的，慷慨的；健美而端庄的"
+      },
+      {
+        "word": "happen",
+        "meaning": "发生；碰巧；偶然遇到"
+      },
+      {
+        "word": "happy",
+        "meaning": "幸福的；高兴的；巧妙的"
+      },
+      {
+        "word": "hard",
+        "meaning": "努力的；硬的；困难的；辛苦的；确实的；严厉的；猛烈的；冷酷无情的"
+      },
+      {
+        "word": "hardly",
+        "meaning": "几乎不，简直不；刚刚"
+      },
+      {
+        "word": "hat",
+        "meaning": "帽子"
+      },
+      {
+        "word": "hate",
+        "meaning": "憎恨；厌恶；遗憾"
+      },
+      {
+        "word": "he",
+        "meaning": "男孩，男人；它（雄性动物）"
+      },
+      {
+        "word": "head",
+        "meaning": "头；头痛；上端；最前的部分；理解力"
+      },
+      {
+        "word": "health",
+        "meaning": "健康；卫生；保健；兴旺"
+      },
+      {
+        "word": "healthy",
+        "meaning": "健康的，健全的；有益于健康的"
+      },
+      {
+        "word": "heart",
+        "meaning": "心脏；感情；勇气；心形；要点"
+      },
+      {
+        "word": "heat",
+        "meaning": "高温；压力；热度；热烈"
+      },
+      {
+        "word": "heaven",
+        "meaning": "天堂；天空；极乐"
+      },
+      {
+        "word": "heavy",
+        "meaning": "沉重的；繁重的，巨大的；拥挤的；阴沉的"
+      },
+      {
+        "word": "height",
+        "meaning": "高地；高度；身高；顶点"
+      },
+      {
+        "word": "help",
+        "meaning": "帮助；促进；治疗；补救"
+      },
+      {
+        "word": "helpful",
+        "meaning": "有帮助的；有益的"
+      },
+      {
+        "word": "hen",
+        "meaning": "母鸡；女人；雌禽"
+      },
+      {
+        "word": "her",
+        "meaning": "她（she的宾格）；她的（she的所有格）；她（指某个国家；一艘船）"
+      },
+      {
+        "word": "hers",
+        "meaning": "她的（所有格）"
+      },
+      {
+        "word": "here",
+        "meaning": "在这里；此时"
+      },
+      {
+        "word": "herself",
+        "meaning": "她自己（she的反身代词）；她亲自"
+      },
+      {
+        "word": "high",
+        "meaning": "高的；高级的；崇高的；高音调的"
+      },
+      {
+        "word": "hill",
+        "meaning": "小山；丘陵；斜坡；山冈"
+      },
+      {
+        "word": "him",
+        "meaning": "他（宾格）"
+      },
+      {
+        "word": "himself",
+        "meaning": "他自己；他亲自，他本人"
+      },
+      {
+        "word": "his",
+        "meaning": "他的"
+      },
+      {
+        "word": "history",
+        "meaning": "历史，历史学；历史记录；来历"
+      },
+      {
+        "word": "hobby",
+        "meaning": "嗜好；业余爱好"
+      },
+      {
+        "word": "holiday",
+        "meaning": "假日；节日；休息日"
+      },
+      {
+        "word": "home",
+        "meaning": "家，住宅；产地；家乡；避难所"
+      },
+      {
+        "word": "hometown",
+        "meaning": "家乡；故乡"
+      },
+      {
+        "word": "homework",
+        "meaning": "家庭作业，课外作业"
+      },
+      {
+        "word": "honest",
+        "meaning": "诚实的，实在的；可靠的；坦率的"
+      },
+      {
+        "word": "hope",
+        "meaning": "希望；期望；信心"
+      },
+      {
+        "word": "horse",
+        "meaning": "马；骑兵；脚架；海洛因"
+      },
+      {
+        "word": "hospital",
+        "meaning": "医院"
+      },
+      {
+        "word": "hot",
+        "meaning": "热的；辣的；热情的；激动的；紧迫的"
+      },
+      {
+        "word": "hotel",
+        "meaning": "旅馆，饭店；客栈"
+      },
+      {
+        "word": "hour",
+        "meaning": "小时；钟头；课时；…点钟"
+      },
+      {
+        "word": "house",
+        "meaning": "住宅；家庭；机构；议会；某种用途的建筑物"
+      },
+      {
+        "word": "housework",
+        "meaning": "家务事"
+      },
+      {
+        "word": "how",
+        "meaning": "如何；多少；多么"
+      },
+      {
+        "word": "however",
+        "meaning": "无论如何；不管怎样（接副词或形容词）；然而；可是"
+      },
+      {
+        "word": "huge",
+        "meaning": "巨大的；庞大的；无限的"
+      },
+      {
+        "word": "human",
+        "meaning": "人的；人类的"
+      },
+      {
+        "word": "hundred",
+        "meaning": "一百；许多"
+      },
+      {
+        "word": "hungry",
+        "meaning": "饥饿的；渴望的；荒年的；不毛的"
+      },
+      {
+        "word": "hurry",
+        "meaning": "匆忙，急忙"
+      },
+      {
+        "word": "husband",
+        "meaning": "节约地使用（或管理）"
+      },
+      {
+        "word": "i",
+        "meaning": "我"
+      },
+      {
+        "word": "ice",
+        "meaning": "冰；冰淇淋；矜持；（俚）钻石"
+      },
+      {
+        "word": "idea",
+        "meaning": "想法；主意；概念"
+      },
+      {
+        "word": "if",
+        "meaning": "（表条件）如果；即使；是否；（表假设）假如"
+      },
+      {
+        "word": "ill",
+        "meaning": "生病的；坏的；邪恶的；不吉利的"
+      },
+      {
+        "word": "illness",
+        "meaning": "病；疾病"
+      },
+      {
+        "word": "imagine",
+        "meaning": "想像；猜想；臆断"
+      },
+      {
+        "word": "immediately",
+        "meaning": "立即，立刻；直接地"
+      },
+      {
+        "word": "important",
+        "meaning": "重要的，重大的；有地位的；有权力的"
+      },
+      {
+        "word": "improve",
+        "meaning": "改善，增进；提高…的价值"
+      },
+      {
+        "word": "in",
+        "meaning": "按照（表示方式）；从事于；在…之内"
+      },
+      {
+        "word": "inch",
+        "meaning": "英寸；身高；少许"
+      },
+      {
+        "word": "include",
+        "meaning": "包含，包括"
+      },
+      {
+        "word": "increase",
+        "meaning": "增加，增长；提高"
+      },
+      {
+        "word": "india",
+        "meaning": "印度（南亚国家）"
+      },
+      {
+        "word": "indian",
+        "meaning": "印度的；印第安人的；印第安语的"
+      },
+      {
+        "word": "industry",
+        "meaning": "产业；工业；勤勉"
+      }
+    ]
+  },
+  "cet4": {
+    "slug": "cet4",
+    "name": "大学四级",
+    "source": "KyleBing/english-vocabulary · 3-CET4",
+    "words": [
+      {
+        "word": "abruptly",
+        "meaning": "突然地"
+      },
+      {
+        "word": "absorb",
+        "meaning": "吸收（液体、气体等）"
+      },
+      {
+        "word": "abuse",
+        "meaning": "滥用，虐待"
+      },
+      {
+        "word": "academic",
+        "meaning": "学校(院)的，学术的"
+      },
+      {
+        "word": "access",
+        "meaning": "获取"
+      },
+      {
+        "word": "accessible",
+        "meaning": "易接近的"
+      },
+      {
+        "word": "accommodate",
+        "meaning": "适合， 提供住宿"
+      },
+      {
+        "word": "accomplish",
+        "meaning": "完成"
+      },
+      {
+        "word": "accumulate",
+        "meaning": "积累，增加"
+      },
+      {
+        "word": "accurate",
+        "meaning": "精确的，准确的"
+      },
+      {
+        "word": "achieve",
+        "meaning": "完成，实现"
+      },
+      {
+        "word": "acknowledge",
+        "meaning": "承认(…的权威)"
+      },
+      {
+        "word": "acquire",
+        "meaning": "获得"
+      },
+      {
+        "word": "acute",
+        "meaning": "敏锐的"
+      },
+      {
+        "word": "adapt",
+        "meaning": "适应于"
+      },
+      {
+        "word": "addiction",
+        "meaning": "上瘾"
+      },
+      {
+        "word": "additional",
+        "meaning": "额外的"
+      },
+      {
+        "word": "address",
+        "meaning": "解决"
+      },
+      {
+        "word": "adequate",
+        "meaning": "足够的"
+      },
+      {
+        "word": "administration",
+        "meaning": "管理，政府"
+      },
+      {
+        "word": "administrative",
+        "meaning": "管理的"
+      },
+      {
+        "word": "admire",
+        "meaning": "钦佩，称赞"
+      },
+      {
+        "word": "admiration",
+        "meaning": "钦佩，称赞"
+      },
+      {
+        "word": "admission",
+        "meaning": "准许进(加)入；入场费；承认"
+      },
+      {
+        "word": "admit",
+        "meaning": "承认，容许"
+      },
+      {
+        "word": "advance",
+        "meaning": "前进，提前"
+      },
+      {
+        "word": "advanced",
+        "meaning": "高级的"
+      },
+      {
+        "word": "advancement",
+        "meaning": "进步，提升"
+      },
+      {
+        "word": "advice",
+        "meaning": "建议"
+      },
+      {
+        "word": "advisory",
+        "meaning": "报告"
+      },
+      {
+        "word": "advocate",
+        "meaning": "倡导"
+      },
+      {
+        "word": "advocator",
+        "meaning": "主张者，倡导者"
+      },
+      {
+        "word": "affectionate",
+        "meaning": "深情的，柔情的"
+      },
+      {
+        "word": "affirmation",
+        "meaning": "断言，肯定"
+      },
+      {
+        "word": "affirm",
+        "meaning": "断言，声明"
+      },
+      {
+        "word": "afford",
+        "meaning": "负担得起"
+      },
+      {
+        "word": "agency",
+        "meaning": "机构"
+      },
+      {
+        "word": "aggressive",
+        "meaning": "挑衅的，好斗的；有上进心的"
+      },
+      {
+        "word": "album",
+        "meaning": "粘贴簿，集邮簿，像册"
+      },
+      {
+        "word": "alcohol",
+        "meaning": "酒精"
+      },
+      {
+        "word": "alert",
+        "meaning": "提醒；"
+      },
+      {
+        "word": "alter",
+        "meaning": "改变"
+      },
+      {
+        "word": "altitude",
+        "meaning": "海拔, 高度"
+      },
+      {
+        "word": "ambitious",
+        "meaning": "有雄心的，野心勃勃的"
+      },
+      {
+        "word": "analyze",
+        "meaning": "分析"
+      },
+      {
+        "word": "ancient",
+        "meaning": "古代的"
+      },
+      {
+        "word": "announce",
+        "meaning": "宣布，声称"
+      },
+      {
+        "word": "annual",
+        "meaning": "每年的"
+      },
+      {
+        "word": "annually",
+        "meaning": "每年，一年一次"
+      },
+      {
+        "word": "anticipate",
+        "meaning": "预感"
+      },
+      {
+        "word": "antique",
+        "meaning": "古玩，古董"
+      },
+      {
+        "word": "apartment",
+        "meaning": "公寓"
+      },
+      {
+        "word": "appeal",
+        "meaning": "吸引，呼吁"
+      },
+      {
+        "word": "appearance",
+        "meaning": "外表, 出现"
+      },
+      {
+        "word": "appetite",
+        "meaning": "欲望, 胃口"
+      },
+      {
+        "word": "applicant",
+        "meaning": "申请人"
+      },
+      {
+        "word": "application",
+        "meaning": "申请，应用"
+      },
+      {
+        "word": "apply",
+        "meaning": "应用, 申请"
+      },
+      {
+        "word": "appoint",
+        "meaning": "任命，委派；约定，确定，指定"
+      },
+      {
+        "word": "appointment",
+        "meaning": "约会"
+      },
+      {
+        "word": "appreciate",
+        "meaning": "感激，欣赏"
+      },
+      {
+        "word": "appreciation",
+        "meaning": "评价，感激"
+      },
+      {
+        "word": "approach",
+        "meaning": "靠近"
+      },
+      {
+        "word": "approve",
+        "meaning": "赞成，同意"
+      },
+      {
+        "word": "approval",
+        "meaning": "批准，认可，赞成"
+      },
+      {
+        "word": "approximately",
+        "meaning": "大约"
+      },
+      {
+        "word": "architect",
+        "meaning": "建筑师"
+      },
+      {
+        "word": "archive",
+        "meaning": "档案文件"
+      },
+      {
+        "word": "arrange",
+        "meaning": "把…（系统地）分类"
+      },
+      {
+        "word": "arrest",
+        "meaning": "逮捕"
+      },
+      {
+        "word": "ashamed",
+        "meaning": "害羞的"
+      },
+      {
+        "word": "assemble",
+        "meaning": "组装；集合"
+      },
+      {
+        "word": "assembly",
+        "meaning": "装配"
+      },
+      {
+        "word": "asset",
+        "meaning": "有价值的人(或物)资产"
+      },
+      {
+        "word": "assign",
+        "meaning": "分配，布置"
+      },
+      {
+        "word": "assignment",
+        "meaning": "作业"
+      },
+      {
+        "word": "associate",
+        "meaning": "交往；把……联系起来"
+      },
+      {
+        "word": "assume",
+        "meaning": "假定，认为"
+      },
+      {
+        "word": "assumption",
+        "meaning": "假定，假设"
+      },
+      {
+        "word": "astonish",
+        "meaning": "使惊讶，使大为吃惊"
+      },
+      {
+        "word": "atmosphere",
+        "meaning": "气氛；大气；空气"
+      },
+      {
+        "word": "attempt",
+        "meaning": "尝试，试图"
+      },
+      {
+        "word": "automatic",
+        "meaning": "自动的"
+      },
+      {
+        "word": "available",
+        "meaning": "可利用的，现有的；可获得的"
+      },
+      {
+        "word": "avail",
+        "meaning": "有益, 有帮助"
+      },
+      {
+        "word": "average",
+        "meaning": "平常的"
+      },
+      {
+        "word": "aviation",
+        "meaning": "航空"
+      },
+      {
+        "word": "aviate",
+        "meaning": "驾驶飞机"
+      },
+      {
+        "word": "avoid",
+        "meaning": "避免"
+      },
+      {
+        "word": "award",
+        "meaning": "授予；判给"
+      },
+      {
+        "word": "awareness",
+        "meaning": "意识"
+      },
+      {
+        "word": "background",
+        "meaning": "背景"
+      },
+      {
+        "word": "backward",
+        "meaning": "向后的"
+      },
+      {
+        "word": "ban",
+        "meaning": "禁止"
+      },
+      {
+        "word": "bankrupt",
+        "meaning": "破产的，倒闭的"
+      },
+      {
+        "word": "bargain",
+        "meaning": "讨价还价"
+      },
+      {
+        "word": "battle",
+        "meaning": "战争，战役"
+      },
+      {
+        "word": "behave",
+        "meaning": "表现"
+      },
+      {
+        "word": "beneficial",
+        "meaning": "有利的，有益的"
+      },
+      {
+        "word": "benefit",
+        "meaning": "有益于，有助于"
+      },
+      {
+        "word": "bid",
+        "meaning": "出价，投标"
+      },
+      {
+        "word": "blame",
+        "meaning": "指责，责怪"
+      },
+      {
+        "word": "bless",
+        "meaning": "祝福"
+      },
+      {
+        "word": "block",
+        "meaning": "阻碍；街区"
+      },
+      {
+        "word": "bogus",
+        "meaning": "假冒的"
+      },
+      {
+        "word": "boost",
+        "meaning": "推动,宣扬"
+      },
+      {
+        "word": "bother",
+        "meaning": "打扰；麻烦"
+      },
+      {
+        "word": "broad",
+        "meaning": "宽的"
+      },
+      {
+        "word": "budget",
+        "meaning": "预算"
+      },
+      {
+        "word": "burden",
+        "meaning": "负担，包袱"
+      },
+      {
+        "word": "bureau",
+        "meaning": "局"
+      },
+      {
+        "word": "calculate",
+        "meaning": "计算"
+      },
+      {
+        "word": "campaign",
+        "meaning": "活动"
+      },
+      {
+        "word": "cancel",
+        "meaning": "取消"
+      },
+      {
+        "word": "candidate",
+        "meaning": "申请求职者；投考者；候选人"
+      },
+      {
+        "word": "canteen",
+        "meaning": "食堂"
+      },
+      {
+        "word": "capable",
+        "meaning": "能干的，有能力的"
+      },
+      {
+        "word": "caregiver",
+        "meaning": "照料者"
+      },
+      {
+        "word": "careless",
+        "meaning": "粗心的"
+      },
+      {
+        "word": "casual",
+        "meaning": "偶然的，随便的"
+      },
+      {
+        "word": "catalogue",
+        "meaning": "把……编入目录"
+      },
+      {
+        "word": "caution",
+        "meaning": "小心，谨慎"
+      },
+      {
+        "word": "cautious",
+        "meaning": "谨慎的"
+      },
+      {
+        "word": "ceremony",
+        "meaning": "典礼，仪式"
+      },
+      {
+        "word": "challenge",
+        "meaning": "挑战；质疑"
+      },
+      {
+        "word": "chap",
+        "meaning": "小伙子，小家伙，家伙"
+      },
+      {
+        "word": "character",
+        "meaning": "角色"
+      },
+      {
+        "word": "characterize",
+        "meaning": "以……特点"
+      },
+      {
+        "word": "charity",
+        "meaning": "慈善（行为）"
+      },
+      {
+        "word": "cheek",
+        "meaning": "脸颊"
+      },
+      {
+        "word": "chef",
+        "meaning": "厨师"
+      },
+      {
+        "word": "chemical",
+        "meaning": "化学的 n. 化学制品"
+      },
+      {
+        "word": "choke",
+        "meaning": "使窒息"
+      },
+      {
+        "word": "circumstance",
+        "meaning": "环境，境遇"
+      },
+      {
+        "word": "cite",
+        "meaning": "引用"
+      },
+      {
+        "word": "citizen",
+        "meaning": "公民"
+      },
+      {
+        "word": "civilian",
+        "meaning": "平民，百姓"
+      },
+      {
+        "word": "civilized",
+        "meaning": "文明的"
+      },
+      {
+        "word": "classify",
+        "meaning": "把…分类，把…分级"
+      },
+      {
+        "word": "classification",
+        "meaning": "分类，级别"
+      },
+      {
+        "word": "client",
+        "meaning": "客户"
+      },
+      {
+        "word": "clinic",
+        "meaning": "诊所"
+      },
+      {
+        "word": "clumsy",
+        "meaning": "笨拙的，不圆滑的"
+      },
+      {
+        "word": "coach",
+        "meaning": "教练"
+      },
+      {
+        "word": "colleague",
+        "meaning": "同事"
+      },
+      {
+        "word": "collision",
+        "meaning": "撞击；冲突"
+      },
+      {
+        "word": "combine",
+        "meaning": "联合，结合"
+      },
+      {
+        "word": "comment",
+        "meaning": "评论"
+      },
+      {
+        "word": "commit",
+        "meaning": "犯罪，承担义务"
+      },
+      {
+        "word": "commitment",
+        "meaning": "承诺，保证"
+      },
+      {
+        "word": "committee",
+        "meaning": "委员会"
+      },
+      {
+        "word": "compare",
+        "meaning": "比较，对照"
+      },
+      {
+        "word": "compel",
+        "meaning": "强迫"
+      },
+      {
+        "word": "compensate",
+        "meaning": "弥补，补偿"
+      },
+      {
+        "word": "compensation",
+        "meaning": "弥补，补偿"
+      },
+      {
+        "word": "compete",
+        "meaning": "竞争"
+      },
+      {
+        "word": "competitiveness",
+        "meaning": "竞争力"
+      },
+      {
+        "word": "competitor",
+        "meaning": "竞争者，对手"
+      },
+      {
+        "word": "complacency",
+        "meaning": "自满，满足"
+      },
+      {
+        "word": "complain",
+        "meaning": "抱怨"
+      },
+      {
+        "word": "complaint",
+        "meaning": "抱怨; 投诉"
+      },
+      {
+        "word": "complete",
+        "meaning": "完成"
+      },
+      {
+        "word": "complicated",
+        "meaning": "复杂的，难懂的"
+      },
+      {
+        "word": "comply",
+        "meaning": "遵从"
+      },
+      {
+        "word": "component",
+        "meaning": "成分"
+      },
+      {
+        "word": "concentration",
+        "meaning": "集中"
+      },
+      {
+        "word": "concept",
+        "meaning": "观点，观念"
+      },
+      {
+        "word": "concern",
+        "meaning": "涉及，关系到"
+      },
+      {
+        "word": "conclusion",
+        "meaning": "结论"
+      },
+      {
+        "word": "confidence",
+        "meaning": "信心"
+      },
+      {
+        "word": "confirm",
+        "meaning": "确认；证实；批准"
+      },
+      {
+        "word": "conflict",
+        "meaning": "冲突"
+      },
+      {
+        "word": "conform",
+        "meaning": "相一致，遵守"
+      },
+      {
+        "word": "confront",
+        "meaning": "面对"
+      },
+      {
+        "word": "connectivity",
+        "meaning": "连接，联系"
+      },
+      {
+        "word": "conscience",
+        "meaning": "良心"
+      },
+      {
+        "word": "consensus",
+        "meaning": "一致意见"
+      },
+      {
+        "word": "consent",
+        "meaning": "允许，同意"
+      },
+      {
+        "word": "consequence",
+        "meaning": "结果，成果"
+      },
+      {
+        "word": "conservative",
+        "meaning": "保守的，传统的"
+      },
+      {
+        "word": "considerable",
+        "meaning": "相当大(或多)的"
+      },
+      {
+        "word": "considerably",
+        "meaning": "相当地，非常地"
+      },
+      {
+        "word": "considerate",
+        "meaning": "体贴的；考虑周到的"
+      },
+      {
+        "word": "consist",
+        "meaning": "由……组成"
+      },
+      {
+        "word": "consistent",
+        "meaning": "一致的"
+      },
+      {
+        "word": "conspicuous",
+        "meaning": "显著地"
+      },
+      {
+        "word": "constant",
+        "meaning": "不断的，持续的"
+      },
+      {
+        "word": "constantly",
+        "meaning": "不断地，时常地"
+      },
+      {
+        "word": "construction",
+        "meaning": "建筑"
+      },
+      {
+        "word": "constructive",
+        "meaning": "建设的，建设性的"
+      },
+      {
+        "word": "consult",
+        "meaning": "咨询"
+      },
+      {
+        "word": "consultant",
+        "meaning": "顾问"
+      },
+      {
+        "word": "consumption",
+        "meaning": "消费，消耗"
+      },
+      {
+        "word": "contact",
+        "meaning": "联系，接触"
+      },
+      {
+        "word": "contemporary",
+        "meaning": "当代的，现代的"
+      },
+      {
+        "word": "content",
+        "meaning": "内容"
+      },
+      {
+        "word": "context",
+        "meaning": "背景，环境"
+      },
+      {
+        "word": "contract",
+        "meaning": "合同"
+      },
+      {
+        "word": "contrast",
+        "meaning": "对比，反差"
+      },
+      {
+        "word": "contribute",
+        "meaning": "捐款，贡献"
+      },
+      {
+        "word": "contribution",
+        "meaning": "贡献；捐献"
+      },
+      {
+        "word": "convenient",
+        "meaning": "方便的"
+      },
+      {
+        "word": "conventional",
+        "meaning": "传统的"
+      },
+      {
+        "word": "convey",
+        "meaning": "传达，传递"
+      },
+      {
+        "word": "cooperative",
+        "meaning": "合作的"
+      },
+      {
+        "word": "corporate",
+        "meaning": "法人的；团体的；社团的"
+      },
+      {
+        "word": "counsel",
+        "meaning": "忠告，建议"
+      },
+      {
+        "word": "couple",
+        "meaning": "夫妻，情侣"
+      },
+      {
+        "word": "courageous",
+        "meaning": "有勇气的"
+      },
+      {
+        "word": "crash",
+        "meaning": "坠落;坠毁;撞击"
+      },
+      {
+        "word": "creativity",
+        "meaning": "创造力"
+      },
+      {
+        "word": "crisis",
+        "meaning": "危机"
+      },
+      {
+        "word": "critic",
+        "meaning": "批评家，评论家"
+      },
+      {
+        "word": "critical",
+        "meaning": "批评的，爱挑剔的"
+      },
+      {
+        "word": "criticize",
+        "meaning": "批评；评论"
+      },
+      {
+        "word": "criticism",
+        "meaning": "批评"
+      },
+      {
+        "word": "cultivate",
+        "meaning": "培养"
+      },
+      {
+        "word": "curb",
+        "meaning": "控制"
+      },
+      {
+        "word": "curiosity",
+        "meaning": "好奇心"
+      },
+      {
+        "word": "curious",
+        "meaning": "好奇的"
+      },
+      {
+        "word": "current",
+        "meaning": "当前的"
+      },
+      {
+        "word": "currently",
+        "meaning": "当前；一般地"
+      },
+      {
+        "word": "debt",
+        "meaning": "债务"
+      },
+      {
+        "word": "decent",
+        "meaning": "正派的，体面的"
+      },
+      {
+        "word": "decline",
+        "meaning": "下降，减少；拒绝"
+      },
+      {
+        "word": "decorate",
+        "meaning": "装饰"
+      },
+      {
+        "word": "definition",
+        "meaning": "定义"
+      },
+      {
+        "word": "degree",
+        "meaning": "程度"
+      },
+      {
+        "word": "delay",
+        "meaning": "推迟，延期"
+      },
+      {
+        "word": "deliberate",
+        "meaning": "故意的"
+      },
+      {
+        "word": "delightful",
+        "meaning": "高兴的"
+      },
+      {
+        "word": "deliver",
+        "meaning": "发表"
+      },
+      {
+        "word": "demand",
+        "meaning": "需求，要求"
+      },
+      {
+        "word": "democratic",
+        "meaning": "民主的"
+      },
+      {
+        "word": "demonstrate",
+        "meaning": "证明；展示"
+      },
+      {
+        "word": "density",
+        "meaning": "密度"
+      },
+      {
+        "word": "department",
+        "meaning": "部门"
+      },
+      {
+        "word": "depressed",
+        "meaning": "沮丧的；萧条的"
+      },
+      {
+        "word": "depressing",
+        "meaning": "令人沮丧的"
+      },
+      {
+        "word": "deprive",
+        "meaning": "剥夺，夺去，使丧失"
+      },
+      {
+        "word": "derive",
+        "meaning": "得到，导出"
+      },
+      {
+        "word": "deserve",
+        "meaning": "值得"
+      },
+      {
+        "word": "desire",
+        "meaning": "渴望，欲望"
+      },
+      {
+        "word": "despite",
+        "meaning": "不管"
+      },
+      {
+        "word": "dessert",
+        "meaning": "甜点"
+      },
+      {
+        "word": "detail",
+        "meaning": "细节"
+      },
+      {
+        "word": "detailed",
+        "meaning": "细节的，详细的"
+      },
+      {
+        "word": "detect",
+        "meaning": "觉察;检测"
+      },
+      {
+        "word": "detection",
+        "meaning": "侦查；察觉"
+      },
+      {
+        "word": "detective",
+        "meaning": "侦探"
+      },
+      {
+        "word": "determine",
+        "meaning": "决定；下决心"
+      },
+      {
+        "word": "determination",
+        "meaning": "意志"
+      },
+      {
+        "word": "device",
+        "meaning": "装置，设备"
+      },
+      {
+        "word": "devote",
+        "meaning": "奉献，致力于"
+      },
+      {
+        "word": "dictator",
+        "meaning": "独裁者；专制者"
+      },
+      {
+        "word": "diligent",
+        "meaning": "勤奋的"
+      },
+      {
+        "word": "diploma",
+        "meaning": "文凭"
+      },
+      {
+        "word": "disadvantage",
+        "meaning": "不利情况，缺点"
+      },
+      {
+        "word": "disappear",
+        "meaning": "不见，消失"
+      },
+      {
+        "word": "discharge",
+        "meaning": "释放；排出 解雇"
+      },
+      {
+        "word": "discount",
+        "meaning": "折扣"
+      },
+      {
+        "word": "discover",
+        "meaning": "发现"
+      },
+      {
+        "word": "disorderly",
+        "meaning": "杂乱的"
+      },
+      {
+        "word": "display",
+        "meaning": "展览"
+      },
+      {
+        "word": "dispute",
+        "meaning": "辩论，争论"
+      },
+      {
+        "word": "dissatisfy",
+        "meaning": "不满意"
+      },
+      {
+        "word": "distance",
+        "meaning": "距离"
+      },
+      {
+        "word": "distant",
+        "meaning": "遥远的"
+      },
+      {
+        "word": "distinguish",
+        "meaning": "区别，区分"
+      },
+      {
+        "word": "distinguished",
+        "meaning": "显著的，杰出的"
+      },
+      {
+        "word": "distract",
+        "meaning": "分心"
+      },
+      {
+        "word": "distracted",
+        "meaning": "分心的"
+      },
+      {
+        "word": "distraction",
+        "meaning": "消遣；分心"
+      },
+      {
+        "word": "distribute",
+        "meaning": "分发"
+      },
+      {
+        "word": "district",
+        "meaning": "区"
+      },
+      {
+        "word": "diverse",
+        "meaning": "各种各样的"
+      },
+      {
+        "word": "diversity",
+        "meaning": "多样性；差异"
+      },
+      {
+        "word": "divide",
+        "meaning": "分开"
+      },
+      {
+        "word": "division",
+        "meaning": "除法；部门"
+      },
+      {
+        "word": "document",
+        "meaning": "文件"
+      },
+      {
+        "word": "dominant",
+        "meaning": "占优势的"
+      },
+      {
+        "word": "domination",
+        "meaning": "主导"
+      },
+      {
+        "word": "donation",
+        "meaning": "捐赠"
+      },
+      {
+        "word": "donate",
+        "meaning": "捐赠"
+      },
+      {
+        "word": "dormitory",
+        "meaning": "宿舍"
+      },
+      {
+        "word": "downfall",
+        "meaning": "（雨等的）大下特下"
+      },
+      {
+        "word": "download",
+        "meaning": "下载"
+      },
+      {
+        "word": "dramatically",
+        "meaning": "戏剧性地，引人注目地"
+      },
+      {
+        "word": "dropout",
+        "meaning": "辍学"
+      },
+      {
+        "word": "due",
+        "meaning": "到期的"
+      },
+      {
+        "word": "dump",
+        "meaning": "倾倒；倾销"
+      },
+      {
+        "word": "durable",
+        "meaning": "持久的，耐用的"
+      },
+      {
+        "word": "ease",
+        "meaning": "轻松，舒适"
+      },
+      {
+        "word": "easygoing",
+        "meaning": "脾气随和的，温和的"
+      },
+      {
+        "word": "effect",
+        "meaning": "影响"
+      },
+      {
+        "word": "efficiently",
+        "meaning": "有效地"
+      },
+      {
+        "word": "eliminate",
+        "meaning": "消除"
+      },
+      {
+        "word": "embarrass",
+        "meaning": "尴尬"
+      },
+      {
+        "word": "embarrassed",
+        "meaning": "尴尬的；窘迫的"
+      },
+      {
+        "word": "embrace",
+        "meaning": "拥抱；接受；采纳"
+      },
+      {
+        "word": "emergence",
+        "meaning": "出现，发生"
+      },
+      {
+        "word": "emergency",
+        "meaning": "紧急情况"
+      },
+      {
+        "word": "emission",
+        "meaning": "排放，辐射"
+      },
+      {
+        "word": "emit",
+        "meaning": "发出，排出"
+      },
+      {
+        "word": "emotional",
+        "meaning": "情绪的；容易激动的；感动人的"
+      },
+      {
+        "word": "emphasize",
+        "meaning": "强调"
+      },
+      {
+        "word": "encourage",
+        "meaning": "鼓励"
+      },
+      {
+        "word": "endurance",
+        "meaning": "耐力"
+      },
+      {
+        "word": "endure",
+        "meaning": "忍耐；容忍"
+      },
+      {
+        "word": "engage",
+        "meaning": "忙于，从事；吸引"
+      },
+      {
+        "word": "engagement",
+        "meaning": "约会"
+      },
+      {
+        "word": "enhance",
+        "meaning": "提高；加强；增加"
+      },
+      {
+        "word": "enormous",
+        "meaning": "巨大的"
+      },
+      {
+        "word": "enrich",
+        "meaning": "丰富；使富有"
+      },
+      {
+        "word": "enroll",
+        "meaning": "注册"
+      },
+      {
+        "word": "enrollment",
+        "meaning": "入学人数"
+      },
+      {
+        "word": "ensure",
+        "meaning": "确保"
+      },
+      {
+        "word": "entertaining",
+        "meaning": "有趣的，使人愉快的"
+      },
+      {
+        "word": "equal",
+        "meaning": "相等的，平等的"
+      },
+      {
+        "word": "equality",
+        "meaning": "平等"
+      },
+      {
+        "word": "equivalent",
+        "meaning": "相等的，相当的"
+      },
+      {
+        "word": "equivalence",
+        "meaning": "等值，相等"
+      },
+      {
+        "word": "era",
+        "meaning": "纪元，年代"
+      },
+      {
+        "word": "essay",
+        "meaning": "散文，文章"
+      },
+      {
+        "word": "essentially",
+        "meaning": "本质上地；必须的"
+      },
+      {
+        "word": "establish",
+        "meaning": "建立，创办，设立"
+      },
+      {
+        "word": "establishment",
+        "meaning": "确立，制定；公司；设施"
+      },
+      {
+        "word": "esteem",
+        "meaning": "自尊"
+      },
+      {
+        "word": "estimate",
+        "meaning": "估计"
+      },
+      {
+        "word": "evidence",
+        "meaning": "根据，证据，迹象"
+      },
+      {
+        "word": "evident",
+        "meaning": "明显的"
+      },
+      {
+        "word": "evil",
+        "meaning": "邪恶，罪恶"
+      },
+      {
+        "word": "evolve",
+        "meaning": "使发展"
+      },
+      {
+        "word": "exaggerate",
+        "meaning": "夸张"
+      },
+      {
+        "word": "excellent",
+        "meaning": "卓越的，杰出的，极好的"
+      },
+      {
+        "word": "exception",
+        "meaning": "例外"
+      },
+      {
+        "word": "excessive",
+        "meaning": "过度的"
+      },
+      {
+        "word": "exchange",
+        "meaning": "交换，交流"
+      },
+      {
+        "word": "exclude",
+        "meaning": "排除，不包括"
+      },
+      {
+        "word": "expand",
+        "meaning": "扩大"
+      },
+      {
+        "word": "exploit",
+        "meaning": "开采"
+      },
+      {
+        "word": "explore",
+        "meaning": "探索"
+      },
+      {
+        "word": "explosion",
+        "meaning": "爆炸"
+      },
+      {
+        "word": "expose",
+        "meaning": "暴露"
+      },
+      {
+        "word": "exposure",
+        "meaning": "暴露；揭露"
+      },
+      {
+        "word": "expressiveness",
+        "meaning": "表达"
+      },
+      {
+        "word": "extension",
+        "meaning": "分机"
+      },
+      {
+        "word": "extracurricular",
+        "meaning": "课外的"
+      },
+      {
+        "word": "facility",
+        "meaning": "设施"
+      },
+      {
+        "word": "faith",
+        "meaning": "信任"
+      },
+      {
+        "word": "familiar",
+        "meaning": "熟悉的"
+      },
+      {
+        "word": "fantasize",
+        "meaning": "想象，幻想"
+      },
+      {
+        "word": "fascinate",
+        "meaning": "强烈地吸引，迷住"
+      },
+      {
+        "word": "fascination",
+        "meaning": "魅力；入迷"
+      },
+      {
+        "word": "fatal",
+        "meaning": "致命的，攸关的"
+      },
+      {
+        "word": "fate",
+        "meaning": "命运"
+      },
+      {
+        "word": "fatigue",
+        "meaning": "疲劳，疲乏"
+      },
+      {
+        "word": "favorable",
+        "meaning": "赞同的"
+      },
+      {
+        "word": "feasible",
+        "meaning": "可行的；可能的；可用的"
+      },
+      {
+        "word": "feature",
+        "meaning": "特点"
+      },
+      {
+        "word": "feedback",
+        "meaning": "反馈"
+      },
+      {
+        "word": "fiction",
+        "meaning": "小说，虚构的文学作品"
+      },
+      {
+        "word": "figure",
+        "meaning": "人物；数字"
+      },
+      {
+        "word": "financial",
+        "meaning": "财政的，经济的"
+      },
+      {
+        "word": "finance",
+        "meaning": "财政"
+      },
+      {
+        "word": "fine",
+        "meaning": "罚款"
+      },
+      {
+        "word": "fitness",
+        "meaning": "健康"
+      },
+      {
+        "word": "flexible",
+        "meaning": "灵活的"
+      },
+      {
+        "word": "foothold",
+        "meaning": "立足处（攀登时脚踩的地方）"
+      },
+      {
+        "word": "formulate",
+        "meaning": "规定，制定"
+      },
+      {
+        "word": "fortunately",
+        "meaning": "幸运地"
+      },
+      {
+        "word": "foundation",
+        "meaning": "地基；基础；基金会"
+      },
+      {
+        "word": "frighten",
+        "meaning": "使惊恐，使恐慌"
+      },
+      {
+        "word": "frontier",
+        "meaning": "边境"
+      },
+      {
+        "word": "function",
+        "meaning": "功能，运行"
+      },
+      {
+        "word": "fund",
+        "meaning": "基金，储备；"
+      },
+      {
+        "word": "fuss",
+        "meaning": "大惊小怪"
+      },
+      {
+        "word": "gambling",
+        "meaning": "赌博"
+      },
+      {
+        "word": "gap",
+        "meaning": "差距;缝隙缺口"
+      },
+      {
+        "word": "garage",
+        "meaning": "车库"
+      },
+      {
+        "word": "gear",
+        "meaning": "齿轮"
+      },
+      {
+        "word": "gender",
+        "meaning": "性别"
+      },
+      {
+        "word": "generalization",
+        "meaning": "一般化"
+      },
+      {
+        "word": "generation",
+        "meaning": "一代人，产生"
+      },
+      {
+        "word": "generosity",
+        "meaning": "慷慨，大方"
+      },
+      {
+        "word": "generous",
+        "meaning": "慷慨的"
+      },
+      {
+        "word": "genuine",
+        "meaning": "真正的"
+      },
+      {
+        "word": "gift",
+        "meaning": "礼物；天赋"
+      },
+      {
+        "word": "gloomy",
+        "meaning": "阴沉的，沮丧的"
+      },
+      {
+        "word": "glorious",
+        "meaning": "辉煌的"
+      },
+      {
+        "word": "grab",
+        "meaning": "抢先，抢占，抢夺"
+      },
+      {
+        "word": "grocery",
+        "meaning": "杂货店"
+      },
+      {
+        "word": "groundlessly",
+        "meaning": "无缘无故地，无根据地"
+      },
+      {
+        "word": "guarantee",
+        "meaning": "保证，担保"
+      },
+      {
+        "word": "guideline",
+        "meaning": "指导原则"
+      },
+      {
+        "word": "guilt",
+        "meaning": "有罪，犯罪行为"
+      },
+      {
+        "word": "gym",
+        "meaning": "体育馆，健身房"
+      },
+      {
+        "word": "handle",
+        "meaning": "控制，处理"
+      },
+      {
+        "word": "hardworking",
+        "meaning": "苦干的，不辞辛劳的"
+      },
+      {
+        "word": "harm",
+        "meaning": "有害"
+      },
+      {
+        "word": "harmful",
+        "meaning": "有害的"
+      },
+      {
+        "word": "harmony",
+        "meaning": "和谐"
+      },
+      {
+        "word": "harsh",
+        "meaning": "严酷的"
+      },
+      {
+        "word": "hazard",
+        "meaning": "危险"
+      },
+      {
+        "word": "highlight",
+        "meaning": "照亮；突出；强调"
+      },
+      {
+        "word": "hire",
+        "meaning": "雇佣"
+      },
+      {
+        "word": "homemaker",
+        "meaning": "主妇"
+      },
+      {
+        "word": "honesty",
+        "meaning": "诚实"
+      },
+      {
+        "word": "honor",
+        "meaning": "纪念"
+      },
+      {
+        "word": "hospitalize",
+        "meaning": "就医"
+      },
+      {
+        "word": "household",
+        "meaning": "家庭，一家人"
+      },
+      {
+        "word": "humanity",
+        "meaning": "人类，总称人(性)"
+      },
+      {
+        "word": "identical",
+        "meaning": "相同的"
+      },
+      {
+        "word": "identify",
+        "meaning": "认出，识别；视为"
+      },
+      {
+        "word": "identification",
+        "meaning": "鉴定，识别；认同；身份证明"
+      },
+      {
+        "word": "identity",
+        "meaning": "身份"
+      },
+      {
+        "word": "ignorance",
+        "meaning": "无知，愚昧"
+      },
+      {
+        "word": "ignore",
+        "meaning": "忽视，不顾"
+      },
+      {
+        "word": "illegal",
+        "meaning": "非法的"
+      },
+      {
+        "word": "illustrate",
+        "meaning": "说明,阐明"
+      },
+      {
+        "word": "image",
+        "meaning": "形象，声誉，印象"
+      },
+      {
+        "word": "imaginary",
+        "meaning": "虚构的，想象的"
+      },
+      {
+        "word": "immobile",
+        "meaning": "稳定的，不变的"
+      },
+      {
+        "word": "impact",
+        "meaning": "影响"
+      },
+      {
+        "word": "impermanent",
+        "meaning": "非永久（性）的；不持久的，暂时的"
+      },
+      {
+        "word": "impermanency",
+        "meaning": "非永久性"
+      },
+      {
+        "word": "implement",
+        "meaning": "实施，执行"
+      },
+      {
+        "word": "imply",
+        "meaning": "意味；暗示"
+      },
+      {
+        "word": "import",
+        "meaning": "进口"
+      },
+      {
+        "word": "impose",
+        "meaning": "强加"
+      },
+      {
+        "word": "improper",
+        "meaning": "不合适的，不适当的"
+      },
+      {
+        "word": "inadequate",
+        "meaning": "不足的，不够的"
+      },
+      {
+        "word": "inappropriate",
+        "meaning": "不合适的"
+      },
+      {
+        "word": "include",
+        "meaning": "包含"
+      },
+      {
+        "word": "incredible",
+        "meaning": "不可思议的"
+      },
+      {
+        "word": "indicate",
+        "meaning": "表明"
+      },
+      {
+        "word": "indispensable",
+        "meaning": "必不可少的"
+      },
+      {
+        "word": "individual",
+        "meaning": "个人"
+      },
+      {
+        "word": "induce",
+        "meaning": "引诱"
+      },
+      {
+        "word": "inevitable",
+        "meaning": "不可避免的"
+      },
+      {
+        "word": "infinite",
+        "meaning": "无限的"
+      },
+      {
+        "word": "inflation",
+        "meaning": "通货膨胀"
+      },
+      {
+        "word": "inflate",
+        "meaning": "膨胀"
+      },
+      {
+        "word": "influence",
+        "meaning": "影响"
+      },
+      {
+        "word": "influential",
+        "meaning": "有影响力的"
+      },
+      {
+        "word": "ingredient",
+        "meaning": "成分，原料"
+      },
+      {
+        "word": "inherit",
+        "meaning": "继承"
+      },
+      {
+        "word": "initiate",
+        "meaning": "开始，发起"
+      },
+      {
+        "word": "initiative",
+        "meaning": "主动权，自主权"
+      },
+      {
+        "word": "injure",
+        "meaning": "使受伤"
+      },
+      {
+        "word": "innocent",
+        "meaning": "无辜的，天真的；"
+      },
+      {
+        "word": "innovation",
+        "meaning": "改革，创新"
+      },
+      {
+        "word": "insecure",
+        "meaning": "不安全的"
+      },
+      {
+        "word": "insight",
+        "meaning": "洞察力，洞悉"
+      },
+      {
+        "word": "inspiration",
+        "meaning": "灵感"
+      },
+      {
+        "word": "inspire",
+        "meaning": "激发；鼓舞；使产生灵感"
+      },
+      {
+        "word": "install",
+        "meaning": "安装"
+      },
+      {
+        "word": "installation",
+        "meaning": "安装，就任"
+      },
+      {
+        "word": "installment",
+        "meaning": "安装，分期付款"
+      },
+      {
+        "word": "instant",
+        "meaning": "立即的；紧急的；速溶的，方便的"
+      },
+      {
+        "word": "institute",
+        "meaning": "建立"
+      },
+      {
+        "word": "institution",
+        "meaning": "社会公共机构；制度，习俗；设立，制定"
+      },
+      {
+        "word": "instruction",
+        "meaning": "命令，指示，用法说明"
+      },
+      {
+        "word": "instruct",
+        "meaning": "指导；通知；命令；教授"
+      },
+      {
+        "word": "instrument",
+        "meaning": "仪器，器械，工具"
+      },
+      {
+        "word": "intake",
+        "meaning": "摄入"
+      },
+      {
+        "word": "integrity",
+        "meaning": "完整，综合"
+      },
+      {
+        "word": "intelligence",
+        "meaning": "智力，智慧，理解力"
+      },
+      {
+        "word": "intelligent",
+        "meaning": "智能的"
+      },
+      {
+        "word": "intend",
+        "meaning": "打算"
+      },
+      {
+        "word": "interconnect",
+        "meaning": "相互联系"
+      },
+      {
+        "word": "interdependence",
+        "meaning": "相互依靠"
+      },
+      {
+        "word": "interpret",
+        "meaning": "解释"
+      },
+      {
+        "word": "interracial",
+        "meaning": "种族间的"
+      },
+      {
+        "word": "intervention",
+        "meaning": "干涉"
+      },
+      {
+        "word": "interview",
+        "meaning": "会见；面谈（试）"
+      },
+      {
+        "word": "invade",
+        "meaning": "侵入，侵略"
+      },
+      {
+        "word": "invalid",
+        "meaning": "无效的"
+      },
+      {
+        "word": "invest",
+        "meaning": "投资"
+      },
+      {
+        "word": "involve",
+        "meaning": "卷入，包含"
+      },
+      {
+        "word": "irrationally",
+        "meaning": "不合理地，无理性地"
+      },
+      {
+        "word": "irritate",
+        "meaning": "激怒"
+      },
+      {
+        "word": "issue",
+        "meaning": "发行"
+      },
+      {
+        "word": "item",
+        "meaning": "条，条款"
+      },
+      {
+        "word": "joint",
+        "meaning": "联合的"
+      },
+      {
+        "word": "keenly",
+        "meaning": "敏锐地"
+      },
+      {
+        "word": "launch",
+        "meaning": "发射"
+      },
+      {
+        "word": "laundry",
+        "meaning": "洗衣房；要洗的衣服"
+      },
+      {
+        "word": "legal",
+        "meaning": "法律的"
+      },
+      {
+        "word": "leisure",
+        "meaning": "悠闲，空闲"
+      },
+      {
+        "word": "lengthy",
+        "meaning": "长的，漫长的"
+      },
+      {
+        "word": "liability",
+        "meaning": "责任"
+      },
+      {
+        "word": "literature",
+        "meaning": "文学，文学作品；文献"
+      },
+      {
+        "word": "loan",
+        "meaning": "贷款"
+      },
+      {
+        "word": "locate",
+        "meaning": "位于，定位"
+      },
+      {
+        "word": "lodge",
+        "meaning": "住宿，暂住"
+      },
+      {
+        "word": "logic",
+        "meaning": "逻辑"
+      },
+      {
+        "word": "loyalty",
+        "meaning": "忠诚，忠实"
+      },
+      {
+        "word": "mainstream",
+        "meaning": "主流"
+      },
+      {
+        "word": "maintain",
+        "meaning": "维持，主张"
+      },
+      {
+        "word": "major",
+        "meaning": "主要的"
+      },
+      {
+        "word": "majority",
+        "meaning": "多数"
+      },
+      {
+        "word": "makeup",
+        "meaning": "化装"
+      },
+      {
+        "word": "malfunction",
+        "meaning": "失灵，故障"
+      },
+      {
+        "word": "manufacture",
+        "meaning": "制造，生产"
+      },
+      {
+        "word": "margin",
+        "meaning": "边缘，范围"
+      },
+      {
+        "word": "marvelous",
+        "meaning": "引起惊异的"
+      },
+      {
+        "word": "masculine",
+        "meaning": "男性的"
+      },
+      {
+        "word": "massive",
+        "meaning": "巨大的 大量的"
+      },
+      {
+        "word": "matter",
+        "meaning": "要紧，重要"
+      },
+      {
+        "word": "maximum",
+        "meaning": "最大值的，最大量的"
+      },
+      {
+        "word": "means",
+        "meaning": "方法"
+      },
+      {
+        "word": "measure",
+        "meaning": "分量，尺寸，量具，测量；"
+      },
+      {
+        "word": "mechanic",
+        "meaning": "机械师"
+      },
+      {
+        "word": "mechanism",
+        "meaning": "机制，机能"
+      },
+      {
+        "word": "merit",
+        "meaning": "优点，成绩"
+      },
+      {
+        "word": "migration",
+        "meaning": "迁移，移民"
+      },
+      {
+        "word": "military",
+        "meaning": "军队的，军事的"
+      },
+      {
+        "word": "mineral",
+        "meaning": "矿物的，似矿物的"
+      },
+      {
+        "word": "miscalculation",
+        "meaning": "算错，误算"
+      },
+      {
+        "word": "miserable",
+        "meaning": "痛苦的"
+      },
+      {
+        "word": "misguided",
+        "meaning": "被误导的"
+      },
+      {
+        "word": "mislead",
+        "meaning": "误导"
+      },
+      {
+        "word": "mission",
+        "meaning": "使命，任务；代表团"
+      },
+      {
+        "word": "misunderstand",
+        "meaning": "误解"
+      },
+      {
+        "word": "monitor",
+        "meaning": "监控，监听"
+      },
+      {
+        "word": "motivate",
+        "meaning": "促动，激发，诱导"
+      },
+      {
+        "word": "motivation",
+        "meaning": "激励，刺激"
+      },
+      {
+        "word": "mutual",
+        "meaning": "相互的"
+      },
+      {
+        "word": "narrow",
+        "meaning": "限制"
+      },
+      {
+        "word": "needy",
+        "meaning": "贫穷的"
+      },
+      {
+        "word": "negative",
+        "meaning": "否定的；消积的"
+      },
+      {
+        "word": "negotiate",
+        "meaning": "谈判，协商，交涉"
+      },
+      {
+        "word": "neighborhood",
+        "meaning": "地区"
+      },
+      {
+        "word": "obstacle",
+        "meaning": "阻碍"
+      },
+      {
+        "word": "obtain",
+        "meaning": "获得"
+      },
+      {
+        "word": "occupation",
+        "meaning": "职业，工作"
+      },
+      {
+        "word": "operation",
+        "meaning": "手术；行动"
+      },
+      {
+        "word": "opposite",
+        "meaning": "相反的"
+      },
+      {
+        "word": "organ",
+        "meaning": "器官"
+      },
+      {
+        "word": "original",
+        "meaning": "原始的，最初的"
+      },
+      {
+        "word": "originate",
+        "meaning": "开始"
+      },
+      {
+        "word": "outline",
+        "meaning": "梗概，提纲，草稿，要点"
+      },
+      {
+        "word": "overcome",
+        "meaning": "战胜，克服"
+      },
+      {
+        "word": "overestimate",
+        "meaning": "对（数量）估计过高"
+      },
+      {
+        "word": "overflow",
+        "meaning": "溢出，淹没"
+      },
+      {
+        "word": "overload",
+        "meaning": "使负担太重"
+      },
+      {
+        "word": "overtake",
+        "meaning": "超车"
+      },
+      {
+        "word": "overweight",
+        "meaning": "超重的"
+      },
+      {
+        "word": "overwhelm",
+        "meaning": "压倒，战胜"
+      },
+      {
+        "word": "painful",
+        "meaning": "痛苦的，疼痛的，令人不快的"
+      },
+      {
+        "word": "participate",
+        "meaning": "参与，参加"
+      },
+      {
+        "word": "particular",
+        "meaning": "特别的，挑剔的"
+      },
+      {
+        "word": "passionate",
+        "meaning": "热情的"
+      },
+      {
+        "word": "passion",
+        "meaning": "热情，激情"
+      },
+      {
+        "word": "passive",
+        "meaning": "被动的"
+      },
+      {
+        "word": "patiently",
+        "meaning": "耐心地"
+      },
+      {
+        "word": "pattern",
+        "meaning": "模式"
+      },
+      {
+        "word": "peaceful",
+        "meaning": "平静的，和平的"
+      },
+      {
+        "word": "peer",
+        "meaning": "同龄人"
+      },
+      {
+        "word": "perceive",
+        "meaning": "察觉"
+      },
+      {
+        "word": "performance",
+        "meaning": "演出，履行，表现"
+      },
+      {
+        "word": "permanent",
+        "meaning": "永久的"
+      },
+      {
+        "word": "persistence",
+        "meaning": "坚持不懈"
+      },
+      {
+        "word": "personality",
+        "meaning": "个性，性格"
+      },
+      {
+        "word": "perspective",
+        "meaning": "视角，观点；远景"
+      },
+      {
+        "word": "persuade",
+        "meaning": "说服"
+      },
+      {
+        "word": "persuasion",
+        "meaning": "劝说"
+      },
+      {
+        "word": "physical",
+        "meaning": "身体上的"
+      },
+      {
+        "word": "physics",
+        "meaning": "物理，物理学"
+      },
+      {
+        "word": "picky",
+        "meaning": "挑剔的"
+      },
+      {
+        "word": "pioneer",
+        "meaning": "开拓，开发"
+      },
+      {
+        "word": "planet",
+        "meaning": "行星"
+      },
+      {
+        "word": "pledge",
+        "meaning": "保证，誓言"
+      },
+      {
+        "word": "poison",
+        "meaning": "使中毒"
+      },
+      {
+        "word": "poll",
+        "meaning": "民意调查"
+      },
+      {
+        "word": "pop",
+        "meaning": "突然出现，跳出"
+      },
+      {
+        "word": "porter",
+        "meaning": "搬运工"
+      },
+      {
+        "word": "pose",
+        "meaning": "摆姿势，装腔作势"
+      },
+      {
+        "word": "position",
+        "meaning": "职位"
+      },
+      {
+        "word": "postgraduate",
+        "meaning": "研究生"
+      },
+      {
+        "word": "potential",
+        "meaning": "潜力"
+      },
+      {
+        "word": "praise",
+        "meaning": "赞扬，赞美"
+      },
+      {
+        "word": "predict",
+        "meaning": "预言，预测，预告"
+      },
+      {
+        "word": "preference",
+        "meaning": "偏爱"
+      },
+      {
+        "word": "pregnant",
+        "meaning": "怀孕的"
+      },
+      {
+        "word": "prejudice",
+        "meaning": "偏见"
+      },
+      {
+        "word": "preservation",
+        "meaning": "保存，保留"
+      },
+      {
+        "word": "prevail",
+        "meaning": "流行，盛行"
+      },
+      {
+        "word": "prevent",
+        "meaning": "预防"
+      },
+      {
+        "word": "preventable",
+        "meaning": "可预防的"
+      },
+      {
+        "word": "previous",
+        "meaning": "之前的"
+      },
+      {
+        "word": "previously",
+        "meaning": "事先"
+      },
+      {
+        "word": "primarily",
+        "meaning": "主要地，首先"
+      },
+      {
+        "word": "primitive",
+        "meaning": "原始的；简单的"
+      },
+      {
+        "word": "principle",
+        "meaning": "原则，原理"
+      },
+      {
+        "word": "priority",
+        "meaning": "优先，优先权"
+      },
+      {
+        "word": "privacy",
+        "meaning": "隐私"
+      },
+      {
+        "word": "process",
+        "meaning": "过程，进程；工序；(法律)程序"
+      },
+      {
+        "word": "productive",
+        "meaning": "富有成效的"
+      },
+      {
+        "word": "profitable",
+        "meaning": "有利可图的，有益的"
+      },
+      {
+        "word": "profound",
+        "meaning": "深厚的"
+      },
+      {
+        "word": "programming",
+        "meaning": "计划，节目(单)，程序；"
+      },
+      {
+        "word": "prohibit",
+        "meaning": "禁止，阻止，防止"
+      },
+      {
+        "word": "project",
+        "meaning": "工程，作业"
+      },
+      {
+        "word": "prominent",
+        "meaning": "杰出的，突起的，凸出的"
+      },
+      {
+        "word": "promising",
+        "meaning": "有希望的，有前途的"
+      },
+      {
+        "word": "promote",
+        "meaning": "促进，提升，推销"
+      },
+      {
+        "word": "prompt",
+        "meaning": "敏捷的；v. 敦促"
+      },
+      {
+        "word": "proportion",
+        "meaning": "比例，部分"
+      },
+      {
+        "word": "prospect",
+        "meaning": "前景"
+      },
+      {
+        "word": "provoke",
+        "meaning": "激起，挑起"
+      },
+      {
+        "word": "psychological",
+        "meaning": "心理上的"
+      },
+      {
+        "word": "publicize",
+        "meaning": "宣布"
+      },
+      {
+        "word": "punctual",
+        "meaning": "准时的"
+      },
+      {
+        "word": "pursue",
+        "meaning": "追求"
+      },
+      {
+        "word": "qualification",
+        "meaning": "资格(证明)，合格证书"
+      },
+      {
+        "word": "qualify",
+        "meaning": "使……有资格"
+      },
+      {
+        "word": "quality",
+        "meaning": "品质"
+      },
+      {
+        "word": "quantity",
+        "meaning": "量，数量"
+      },
+      {
+        "word": "quit",
+        "meaning": "放弃"
+      },
+      {
+        "word": "raise",
+        "meaning": "提高，筹款，抚养"
+      },
+      {
+        "word": "range",
+        "meaning": "范围"
+      },
+      {
+        "word": "rank",
+        "meaning": "分等级"
+      },
+      {
+        "word": "rare",
+        "meaning": "罕有的，少见的"
+      },
+      {
+        "word": "rational",
+        "meaning": "神智清楚的"
+      },
+      {
+        "word": "realistic",
+        "meaning": "现实的，实际的"
+      },
+      {
+        "word": "rearrange",
+        "meaning": "重新安排"
+      },
+      {
+        "word": "reception",
+        "meaning": "接待"
+      },
+      {
+        "word": "recession",
+        "meaning": "衰退"
+      },
+      {
+        "word": "recharge",
+        "meaning": "再充电"
+      },
+      {
+        "word": "recommend",
+        "meaning": "推荐，劝告，使受欢迎"
+      },
+      {
+        "word": "recover",
+        "meaning": "恢复，重新获得"
+      },
+      {
+        "word": "recruit",
+        "meaning": "招募，吸收"
+      },
+      {
+        "word": "reduce",
+        "meaning": "减少"
+      },
+      {
+        "word": "refreshing",
+        "meaning": "恢复活力的"
+      },
+      {
+        "word": "refuel",
+        "meaning": "（给）加油，加燃料"
+      },
+      {
+        "word": "refusal",
+        "meaning": "拒绝"
+      },
+      {
+        "word": "regular",
+        "meaning": "有规律的，经常的"
+      },
+      {
+        "word": "regularly",
+        "meaning": "定期地，有规律地"
+      },
+      {
+        "word": "regulate",
+        "meaning": "管理"
+      },
+      {
+        "word": "regulation",
+        "meaning": "管理；规则"
+      },
+      {
+        "word": "relative",
+        "meaning": "相对的"
+      },
+      {
+        "word": "release",
+        "meaning": "发布，释放"
+      },
+      {
+        "word": "relevant",
+        "meaning": "有关的，中肯的"
+      },
+      {
+        "word": "reliable",
+        "meaning": "可靠的，可信赖的"
+      },
+      {
+        "word": "relieve",
+        "meaning": "解除，减轻，缓解"
+      },
+      {
+        "word": "reluctant",
+        "meaning": "不愿意的，勉强的"
+      },
+      {
+        "word": "remedy",
+        "meaning": "药物"
+      },
+      {
+        "word": "remove",
+        "meaning": "消除，移除"
+      },
+      {
+        "word": "render",
+        "meaning": "给予"
+      },
+      {
+        "word": "renew",
+        "meaning": "更新"
+      },
+      {
+        "word": "repave",
+        "meaning": "再铺，重新铺砌"
+      },
+      {
+        "word": "replace",
+        "meaning": "代替"
+      },
+      {
+        "word": "represent",
+        "meaning": "代表"
+      },
+      {
+        "word": "representative",
+        "meaning": "代表"
+      },
+      {
+        "word": "reputation",
+        "meaning": "名气，名声，名誉"
+      },
+      {
+        "word": "request",
+        "meaning": "要求"
+      },
+      {
+        "word": "require",
+        "meaning": "要求，命令"
+      },
+      {
+        "word": "rescue",
+        "meaning": "营救，援救"
+      },
+      {
+        "word": "reservation",
+        "meaning": "预定"
+      },
+      {
+        "word": "resident",
+        "meaning": "居民"
+      },
+      {
+        "word": "resign",
+        "meaning": "辞职"
+      },
+      {
+        "word": "resist",
+        "meaning": "抵抗，抗拒"
+      },
+      {
+        "word": "resolve",
+        "meaning": "解决，下决心"
+      },
+      {
+        "word": "respectful",
+        "meaning": "有礼貌的，尊重的"
+      },
+      {
+        "word": "responsibility",
+        "meaning": "责任"
+      },
+      {
+        "word": "responsible",
+        "meaning": "负责的，有责任的"
+      },
+      {
+        "word": "restock",
+        "meaning": "重新进货，再储存"
+      },
+      {
+        "word": "restore",
+        "meaning": "修复"
+      },
+      {
+        "word": "restrict",
+        "meaning": "限制，限定"
+      },
+      {
+        "word": "restriction",
+        "meaning": "限制，限定"
+      },
+      {
+        "word": "retail",
+        "meaning": "零售"
+      },
+      {
+        "word": "reveal",
+        "meaning": "揭露，揭示"
+      },
+      {
+        "word": "revenge",
+        "meaning": "报仇"
+      },
+      {
+        "word": "revenue",
+        "meaning": "收入"
+      },
+      {
+        "word": "reverse",
+        "meaning": "（使）反转"
+      },
+      {
+        "word": "revise",
+        "meaning": "修订"
+      },
+      {
+        "word": "revolution",
+        "meaning": "革命"
+      },
+      {
+        "word": "reward",
+        "meaning": "报答，奖赏"
+      },
+      {
+        "word": "riotous",
+        "meaning": "狂暴的"
+      },
+      {
+        "word": "rocket",
+        "meaning": "火箭"
+      },
+      {
+        "word": "routinely",
+        "meaning": "例行公事地"
+      },
+      {
+        "word": "saint",
+        "meaning": "圣人"
+      },
+      {
+        "word": "save",
+        "meaning": "节省"
+      },
+      {
+        "word": "schedule",
+        "meaning": "日程表"
+      },
+      {
+        "word": "scholarship",
+        "meaning": "奖学金"
+      },
+      {
+        "word": "scope",
+        "meaning": "范围"
+      },
+      {
+        "word": "scratch",
+        "meaning": "抓，划痕"
+      },
+      {
+        "word": "screen",
+        "meaning": "筛查"
+      },
+      {
+        "word": "secure",
+        "meaning": "确保……安全"
+      },
+      {
+        "word": "seldom",
+        "meaning": "很少，罕见"
+      },
+      {
+        "word": "selection",
+        "meaning": "选择，挑选"
+      },
+      {
+        "word": "selective",
+        "meaning": "选择的,精选的"
+      },
+      {
+        "word": "selfish",
+        "meaning": "自私的"
+      },
+      {
+        "word": "sensitive",
+        "meaning": "敏感的"
+      },
+      {
+        "word": "separately",
+        "meaning": "分别地，另行"
+      },
+      {
+        "word": "session",
+        "meaning": "开会，会议"
+      },
+      {
+        "word": "severe",
+        "meaning": "严重的"
+      },
+      {
+        "word": "shock",
+        "meaning": "感到震惊"
+      },
+      {
+        "word": "shortcut",
+        "meaning": "捷径，近路"
+      },
+      {
+        "word": "showmanship",
+        "meaning": "主技演出的技巧"
+      },
+      {
+        "word": "sightseeing",
+        "meaning": "观光"
+      },
+      {
+        "word": "signal",
+        "meaning": "信号，发信号"
+      },
+      {
+        "word": "significant",
+        "meaning": "重要的"
+      },
+      {
+        "word": "similar",
+        "meaning": "相似的"
+      },
+      {
+        "word": "simplicity",
+        "meaning": "简单"
+      },
+      {
+        "word": "site",
+        "meaning": "场所，地址"
+      },
+      {
+        "word": "situation",
+        "meaning": "情况"
+      },
+      {
+        "word": "skyrocket",
+        "meaning": "突升，猛涨"
+      },
+      {
+        "word": "slave",
+        "meaning": "奴隶"
+      },
+      {
+        "word": "socialize",
+        "meaning": "交往，联谊"
+      },
+      {
+        "word": "solution",
+        "meaning": "解决，解答，解决办法"
+      },
+      {
+        "word": "spare",
+        "meaning": "空闲的"
+      },
+      {
+        "word": "specialize",
+        "meaning": "专业从事"
+      },
+      {
+        "word": "specific",
+        "meaning": "特定的，具体的"
+      },
+      {
+        "word": "specify",
+        "meaning": "指定，具体说明"
+      },
+      {
+        "word": "sponsor",
+        "meaning": "赞助"
+      },
+      {
+        "word": "spontaneous",
+        "meaning": "自发的"
+      },
+      {
+        "word": "spread",
+        "meaning": "传播，扩撒"
+      },
+      {
+        "word": "standardize",
+        "meaning": "使标准化"
+      },
+      {
+        "word": "startle",
+        "meaning": "吃惊"
+      },
+      {
+        "word": "steady",
+        "meaning": "稳定的，逐步的"
+      },
+      {
+        "word": "steal",
+        "meaning": "偷窃"
+      },
+      {
+        "word": "steer",
+        "meaning": "驾驶"
+      },
+      {
+        "word": "stereotype",
+        "meaning": "老套，固定模式"
+      },
+      {
+        "word": "stimulate",
+        "meaning": "刺激"
+      },
+      {
+        "word": "stock",
+        "meaning": "库存，股票"
+      },
+      {
+        "word": "strategy",
+        "meaning": "策略，战略"
+      },
+      {
+        "word": "stressful",
+        "meaning": "充满著压力的，充满著紧张的"
+      },
+      {
+        "word": "stress",
+        "meaning": "压力,重音"
+      },
+      {
+        "word": "strict",
+        "meaning": "严格的"
+      },
+      {
+        "word": "structure",
+        "meaning": "结构"
+      },
+      {
+        "word": "struggle",
+        "meaning": "搏斗"
+      },
+      {
+        "word": "subsidize",
+        "meaning": "提供补贴"
+      },
+      {
+        "word": "substantial",
+        "meaning": "大量的"
+      },
+      {
+        "word": "suffer",
+        "meaning": "受痛苦"
+      },
+      {
+        "word": "sufficient",
+        "meaning": "足够的"
+      },
+      {
+        "word": "superior",
+        "meaning": "上级的，较高的"
+      },
+      {
+        "word": "supervision",
+        "meaning": "监督"
+      },
+      {
+        "word": "suppose",
+        "meaning": "料想，以为；假定；期望"
+      },
+      {
+        "word": "surf",
+        "meaning": "冲浪"
+      },
+      {
+        "word": "survey",
+        "meaning": "调查，审视，仔细考虑"
+      },
+      {
+        "word": "suspect",
+        "meaning": "怀疑，猜想"
+      },
+      {
+        "word": "sustain",
+        "meaning": "维持"
+      },
+      {
+        "word": "sustainable",
+        "meaning": "可持续的"
+      },
+      {
+        "word": "swift",
+        "meaning": "迅速的"
+      },
+      {
+        "word": "switch",
+        "meaning": "转变，改变"
+      },
+      {
+        "word": "symbol",
+        "meaning": "象征，标志"
+      },
+      {
+        "word": "sympathy",
+        "meaning": "同情心"
+      },
+      {
+        "word": "tackle",
+        "meaning": "处理"
+      },
+      {
+        "word": "tailor",
+        "meaning": "调整使适应"
+      },
+      {
+        "word": "takeoff",
+        "meaning": "起飞"
+      },
+      {
+        "word": "tank",
+        "meaning": "油箱，水箱"
+      },
+      {
+        "word": "tasteless",
+        "meaning": "无味的"
+      },
+      {
+        "word": "technical",
+        "meaning": "技术的"
+      },
+      {
+        "word": "technique",
+        "meaning": "技术，技能；技巧，手艺"
+      },
+      {
+        "word": "technician",
+        "meaning": "技术员，技师"
+      },
+      {
+        "word": "tedious",
+        "meaning": "单调沉闷的"
+      },
+      {
+        "word": "temptation",
+        "meaning": "诱惑，引诱"
+      },
+      {
+        "word": "tension",
+        "meaning": "紧张"
+      },
+      {
+        "word": "tent",
+        "meaning": "帐篷"
+      },
+      {
+        "word": "terribly",
+        "meaning": "可怕地，非常"
+      },
+      {
+        "word": "therapy",
+        "meaning": "疗法 治疗"
+      },
+      {
+        "word": "threaten",
+        "meaning": "威胁"
+      },
+      {
+        "word": "tide",
+        "meaning": "顺应潮水航行"
+      },
+      {
+        "word": "tighten",
+        "meaning": "紧的，紧缩的"
+      },
+      {
+        "word": "tiny",
+        "meaning": "微小的"
+      },
+      {
+        "word": "tolerance",
+        "meaning": "宽容，容忍"
+      },
+      {
+        "word": "toothache",
+        "meaning": "牙痛，牙疼"
+      },
+      {
+        "word": "track",
+        "meaning": "跟踪,足迹"
+      },
+      {
+        "word": "trait",
+        "meaning": "性格"
+      },
+      {
+        "word": "transaction",
+        "meaning": "交易，业务，事务"
+      },
+      {
+        "word": "transfer",
+        "meaning": "转换，调换"
+      },
+      {
+        "word": "transportation",
+        "meaning": "运输"
+      },
+      {
+        "word": "treatment",
+        "meaning": "治疗，对待"
+      },
+      {
+        "word": "tremble",
+        "meaning": "颤抖"
+      },
+      {
+        "word": "triumph",
+        "meaning": "胜利"
+      },
+      {
+        "word": "tuition",
+        "meaning": "学费"
+      },
+      {
+        "word": "tumor",
+        "meaning": "瘤"
+      },
+      {
+        "word": "ultimately",
+        "meaning": "最后，最终"
+      },
+      {
+        "word": "unaffordable",
+        "meaning": "买不起的，负担不起的"
+      },
+      {
+        "word": "uncertain",
+        "meaning": "不确定的"
+      },
+      {
+        "word": "undermine",
+        "meaning": "暗中破坏"
+      },
+      {
+        "word": "unique",
+        "meaning": "独特的，唯一的"
+      },
+      {
+        "word": "universal",
+        "meaning": "普遍的，宇宙的，全世界的"
+      },
+      {
+        "word": "upbringing",
+        "meaning": "养育，培养，教养"
+      },
+      {
+        "word": "update",
+        "meaning": "更新，使现代化"
+      },
+      {
+        "word": "valid",
+        "meaning": "有效的"
+      },
+      {
+        "word": "value",
+        "meaning": "重视"
+      },
+      {
+        "word": "vanish",
+        "meaning": "消失"
+      },
+      {
+        "word": "variety",
+        "meaning": "多样"
+      },
+      {
+        "word": "vehicle",
+        "meaning": "车辆"
+      },
+      {
+        "word": "version",
+        "meaning": "版本"
+      },
+      {
+        "word": "view",
+        "meaning": "看待"
+      },
+      {
+        "word": "violate",
+        "meaning": "违反"
+      },
+      {
+        "word": "virtually",
+        "meaning": "几乎，差不多"
+      },
+      {
+        "word": "virus",
+        "meaning": "病毒"
+      },
+      {
+        "word": "visibility",
+        "meaning": "能见度"
+      },
+      {
+        "word": "visible",
+        "meaning": "看得见的"
+      }
+    ]
+  },
+  "senior": {
+    "slug": "senior",
+    "name": "高中进阶",
+    "source": "KyleBing/english-vocabulary · 2-高中",
+    "words": [
+      {
+        "word": "a",
+        "meaning": "字母A；第一流的；学业成绩达最高标准的评价符号"
+      },
+      {
+        "word": "abandon",
+        "meaning": "放任；狂热"
+      },
+      {
+        "word": "ability",
+        "meaning": "能力，能耐；才能"
+      },
+      {
+        "word": "able",
+        "meaning": "能；[经管] 有能力的；能干的"
+      },
+      {
+        "word": "abnormal",
+        "meaning": "反常的，不规则的；变态的"
+      },
+      {
+        "word": "aboard",
+        "meaning": "在飞机上；[船] 在船上；在火车上"
+      },
+      {
+        "word": "abolish",
+        "meaning": "废除，废止；取消，革除"
+      },
+      {
+        "word": "abortion",
+        "meaning": "流产，堕胎，小产；流产的胎儿；（计划等）失败，夭折"
+      },
+      {
+        "word": "about",
+        "meaning": "关于；大约"
+      },
+      {
+        "word": "above",
+        "meaning": "超过；在……上面；在……之上"
+      },
+      {
+        "word": "abroad",
+        "meaning": "在国外；到海外"
+      },
+      {
+        "word": "abrupt",
+        "meaning": "生硬的；突然的；唐突的；陡峭的"
+      },
+      {
+        "word": "absence",
+        "meaning": "没有；缺乏；缺席；不注意"
+      },
+      {
+        "word": "absent",
+        "meaning": "缺席的；缺少的；心不在焉的；茫然的"
+      },
+      {
+        "word": "absolute",
+        "meaning": "绝对的；完全的；专制的"
+      },
+      {
+        "word": "absorb",
+        "meaning": "吸收；吸引；承受；理解；使…全神贯注"
+      },
+      {
+        "word": "abstract",
+        "meaning": "摘要；抽象；抽象的概念"
+      },
+      {
+        "word": "absurd",
+        "meaning": "荒谬的；可笑的"
+      },
+      {
+        "word": "abundant",
+        "meaning": "丰富的；充裕的；盛产"
+      },
+      {
+        "word": "abuse",
+        "meaning": "滥用；虐待；辱骂；弊端；恶习，陋习"
+      },
+      {
+        "word": "academic",
+        "meaning": "学术的；理论的；学院的"
+      },
+      {
+        "word": "academy",
+        "meaning": "学院；研究院；学会；专科院校"
+      },
+      {
+        "word": "accelerate",
+        "meaning": "使……加快；使……增速"
+      },
+      {
+        "word": "accent",
+        "meaning": "口音；重音；强调；特点；重音符号"
+      },
+      {
+        "word": "accept",
+        "meaning": "接受；承认；承担；承兑；容纳"
+      },
+      {
+        "word": "access",
+        "meaning": "使用；存取；接近"
+      },
+      {
+        "word": "accessible",
+        "meaning": "易接近的；可进入的；可理解的"
+      },
+      {
+        "word": "anchor",
+        "meaning": "锚；抛锚停泊；靠山；新闻节目主播"
+      },
+      {
+        "word": "accident",
+        "meaning": "事故；意外；[法] 意外事件；机遇"
+      },
+      {
+        "word": "accommodation",
+        "meaning": "住处，膳宿；调节；和解；预订铺位"
+      },
+      {
+        "word": "accompany",
+        "meaning": "陪伴，伴随；伴奏"
+      },
+      {
+        "word": "accomplish",
+        "meaning": "完成；实现；达到"
+      },
+      {
+        "word": "account",
+        "meaning": "账户；解释；账目，账单；理由；描述"
+      },
+      {
+        "word": "accountant",
+        "meaning": "会计师；会计人员"
+      },
+      {
+        "word": "accumulate",
+        "meaning": "累积；积聚"
+      },
+      {
+        "word": "accuracy",
+        "meaning": "[数] 精确度，准确性"
+      },
+      {
+        "word": "accuse",
+        "meaning": "控告，指控；谴责；归咎于"
+      },
+      {
+        "word": "accustomed",
+        "meaning": "习惯的；通常的；独有的"
+      },
+      {
+        "word": "ache",
+        "meaning": "疼痛；渴望"
+      },
+      {
+        "word": "achieve",
+        "meaning": "取得；获得；实现；成功"
+      },
+      {
+        "word": "achievement",
+        "meaning": "成就；完成；达到；成绩"
+      },
+      {
+        "word": "acid",
+        "meaning": "酸；<俚>迷幻药"
+      },
+      {
+        "word": "acknowledge",
+        "meaning": "承认；答谢；报偿；告知已收到"
+      },
+      {
+        "word": "acquaintance",
+        "meaning": "熟人；相识；了解；知道"
+      },
+      {
+        "word": "acquire",
+        "meaning": "获得；取得；学到；捕获"
+      },
+      {
+        "word": "acquisition",
+        "meaning": "获得物，获得；收购"
+      },
+      {
+        "word": "acre",
+        "meaning": "土地，地产；英亩"
+      },
+      {
+        "word": "across",
+        "meaning": "穿过；横穿"
+      },
+      {
+        "word": "act",
+        "meaning": "扮演；装作，举动像"
+      },
+      {
+        "word": "action",
+        "meaning": "行动；活动；功能；战斗；情节"
+      },
+      {
+        "word": "active",
+        "meaning": "积极的；活跃的；主动的；有效的；现役的"
+      },
+      {
+        "word": "activity",
+        "meaning": "活动；行动；活跃"
+      },
+      {
+        "word": "actor",
+        "meaning": "男演员；行动者；作用物"
+      },
+      {
+        "word": "actress",
+        "meaning": "女演员"
+      },
+      {
+        "word": "actual",
+        "meaning": "真实的，实际的；现行的，目前的"
+      },
+      {
+        "word": "acute",
+        "meaning": "严重的，[医] 急性的；敏锐的；激烈的；尖声的"
+      },
+      {
+        "word": "ad",
+        "meaning": "公元；广告（ad）"
+      },
+      {
+        "word": "adapt",
+        "meaning": "使适应；改编"
+      },
+      {
+        "word": "adaptation",
+        "meaning": "适应；改编；改编本，改写本"
+      },
+      {
+        "word": "add",
+        "meaning": "加；增加；加起来；做加法"
+      },
+      {
+        "word": "addicted",
+        "meaning": "沉溺于某种（尤其是不良的）嗜好的；入了迷的，上了瘾的"
+      },
+      {
+        "word": "addition",
+        "meaning": "添加；[数] 加法；增加物"
+      },
+      {
+        "word": "address",
+        "meaning": "演说；从事；忙于；写姓名地址；向…致辞；与…说话；提出；处理"
+      },
+      {
+        "word": "adequate",
+        "meaning": "充足的；适当的；胜任的"
+      },
+      {
+        "word": "adjust",
+        "meaning": "调整，使…适合；校准"
+      },
+      {
+        "word": "adjustment",
+        "meaning": "调整，调节；调节器"
+      },
+      {
+        "word": "administration",
+        "meaning": "管理；行政；实施；行政机构"
+      },
+      {
+        "word": "admirable",
+        "meaning": "令人钦佩的；极好的；值得赞扬的"
+      },
+      {
+        "word": "admire",
+        "meaning": "钦佩；赞美"
+      },
+      {
+        "word": "admission",
+        "meaning": "承认；入场费；进入许可；坦白；录用"
+      },
+      {
+        "word": "admit",
+        "meaning": "承认；准许进入；可容纳"
+      },
+      {
+        "word": "adolescence",
+        "meaning": "青春期"
+      },
+      {
+        "word": "adolescent",
+        "meaning": "青春期的；未成熟的"
+      },
+      {
+        "word": "adopt",
+        "meaning": "采取；接受；收养；正式通过"
+      },
+      {
+        "word": "adore",
+        "meaning": "崇拜；爱慕；喜爱；极喜欢"
+      },
+      {
+        "word": "adult",
+        "meaning": "成年的；成熟的"
+      },
+      {
+        "word": "advance",
+        "meaning": "发展；前进；增长；预付款"
+      },
+      {
+        "word": "advantage",
+        "meaning": "优势；利益；有利条件"
+      },
+      {
+        "word": "adventure",
+        "meaning": "冒险；冒险精神；投机活动"
+      },
+      {
+        "word": "advertise",
+        "meaning": "通知；为…做广告；使突出"
+      },
+      {
+        "word": "advertisement",
+        "meaning": "广告，宣传"
+      },
+      {
+        "word": "advice",
+        "meaning": "建议；忠告；劝告；通知"
+      },
+      {
+        "word": "advise",
+        "meaning": "建议；劝告，忠告；通知；警告"
+      },
+      {
+        "word": "advocate",
+        "meaning": "提倡，主张，拥护"
+      },
+      {
+        "word": "aeroplane",
+        "meaning": "飞机（等于airplane）"
+      },
+      {
+        "word": "affair",
+        "meaning": "事情；事务；私事；（尤指关系不长久的）风流韵事"
+      },
+      {
+        "word": "affect",
+        "meaning": "影响；感染；感动；假装"
+      },
+      {
+        "word": "affection",
+        "meaning": "喜爱，感情；影响；感染"
+      },
+      {
+        "word": "afford",
+        "meaning": "给予，提供；买得起"
+      },
+      {
+        "word": "afraid",
+        "meaning": "害怕的；恐怕；担心的"
+      },
+      {
+        "word": "africa",
+        "meaning": "非洲"
+      },
+      {
+        "word": "african",
+        "meaning": "非洲的，非洲人的"
+      },
+      {
+        "word": "after",
+        "meaning": "后来，以后"
+      },
+      {
+        "word": "afternoon",
+        "meaning": "午后，下午"
+      },
+      {
+        "word": "afterward",
+        "meaning": "以后，后来"
+      },
+      {
+        "word": "again",
+        "meaning": "又，此外；再一次；再说；增加"
+      },
+      {
+        "word": "against",
+        "meaning": "反对，违反；靠；倚；防备"
+      },
+      {
+        "word": "age",
+        "meaning": "年龄；时代；寿命，使用年限；阶段"
+      },
+      {
+        "word": "agency",
+        "meaning": "代理，中介；代理处，经销处"
+      },
+      {
+        "word": "agenda",
+        "meaning": "议程；日常工作事项；日程表"
+      },
+      {
+        "word": "agent",
+        "meaning": "代理人，代理商；药剂；特工"
+      },
+      {
+        "word": "aggression",
+        "meaning": "侵略；进攻；侵犯；侵害"
+      },
+      {
+        "word": "aggressive",
+        "meaning": "侵略性的；好斗的；有进取心的；有闯劲的"
+      },
+      {
+        "word": "ago",
+        "meaning": "以前，以往"
+      },
+      {
+        "word": "agree",
+        "meaning": "同意，赞成；承认；约定，商定"
+      },
+      {
+        "word": "agreement",
+        "meaning": "协议；同意，一致"
+      },
+      {
+        "word": "agricultural",
+        "meaning": "农业的；农艺的"
+      },
+      {
+        "word": "agriculture",
+        "meaning": "农业；农耕；农业生产；农艺，农学"
+      },
+      {
+        "word": "ahead",
+        "meaning": "向前；在前的；领先"
+      },
+      {
+        "word": "aid",
+        "meaning": "援助；帮助；助手；帮助者"
+      },
+      {
+        "word": "aids",
+        "meaning": "获得性免疫缺乏综合征；爱滋病（Acquired Immune Deficiency Syndrome）"
+      },
+      {
+        "word": "aim",
+        "meaning": "目的在于；引导；把…对准"
+      },
+      {
+        "word": "air",
+        "meaning": "空气，大气；天空；样子；曲调"
+      },
+      {
+        "word": "aircraft",
+        "meaning": "飞机，航空器"
+      },
+      {
+        "word": "airline",
+        "meaning": "航空公司；航线"
+      },
+      {
+        "word": "airmail",
+        "meaning": "航空邮件"
+      },
+      {
+        "word": "airplane",
+        "meaning": "飞机"
+      },
+      {
+        "word": "airport",
+        "meaning": "机场；航空站"
+      },
+      {
+        "word": "airspace",
+        "meaning": "空域；领空；空间"
+      },
+      {
+        "word": "alarm",
+        "meaning": "闹钟；警报，警告器；惊慌"
+      },
+      {
+        "word": "album",
+        "meaning": "相簿；唱片集；集邮簿；签名纪念册"
+      },
+      {
+        "word": "alcohol",
+        "meaning": "酒精，乙醇"
+      },
+      {
+        "word": "alcoholic",
+        "meaning": "酒精的，含酒精的"
+      },
+      {
+        "word": "algebra",
+        "meaning": "代数学"
+      },
+      {
+        "word": "alike",
+        "meaning": "相似的；相同的"
+      },
+      {
+        "word": "alive",
+        "meaning": "活着的；活泼的；有生气的"
+      },
+      {
+        "word": "all",
+        "meaning": "全部的"
+      },
+      {
+        "word": "allergic",
+        "meaning": "对…过敏的；对…极讨厌的"
+      },
+      {
+        "word": "alley",
+        "meaning": "小巷；小路；小径"
+      },
+      {
+        "word": "allocate",
+        "meaning": "分配；拨出；使坐落于"
+      },
+      {
+        "word": "allow",
+        "meaning": "允许；给予；认可"
+      },
+      {
+        "word": "allowance",
+        "meaning": "津贴，零用钱；允许；限额"
+      },
+      {
+        "word": "almost",
+        "meaning": "差不多，几乎"
+      },
+      {
+        "word": "alone",
+        "meaning": "独自的；单独的；孤独的"
+      },
+      {
+        "word": "along",
+        "meaning": "一起；向前；来到"
+      },
+      {
+        "word": "alongside",
+        "meaning": "在旁边"
+      },
+      {
+        "word": "aloud",
+        "meaning": "大声地；出声地"
+      },
+      {
+        "word": "alphabet",
+        "meaning": "字母表，字母系统；入门，初步"
+      },
+      {
+        "word": "already",
+        "meaning": "已经，早已；先前"
+      },
+      {
+        "word": "also",
+        "meaning": "也；而且；同样"
+      },
+      {
+        "word": "alternative",
+        "meaning": "供选择的；选择性的；交替的"
+      },
+      {
+        "word": "although",
+        "meaning": "尽管；虽然；但是；然而"
+      },
+      {
+        "word": "altitude",
+        "meaning": "高地；高度；[数] 顶垂线；（等级和地位等的）高级；海拔"
+      },
+      {
+        "word": "altogether",
+        "meaning": "完全地；总共；总而言之"
+      },
+      {
+        "word": "aluminium",
+        "meaning": "铝的"
+      },
+      {
+        "word": "always",
+        "meaning": "永远，一直；总是；常常"
+      },
+      {
+        "word": "am",
+        "meaning": "调频，调谐，调幅（ amplitude modulation）"
+      },
+      {
+        "word": "amateur",
+        "meaning": "爱好者；业余爱好者；外行"
+      },
+      {
+        "word": "amaze",
+        "meaning": "使吃惊"
+      },
+      {
+        "word": "amazing",
+        "meaning": "令人惊异的"
+      },
+      {
+        "word": "ambassador",
+        "meaning": "大使；代表；使节"
+      },
+      {
+        "word": "ambiguous",
+        "meaning": "模糊不清的；引起歧义的"
+      },
+      {
+        "word": "ambition",
+        "meaning": "野心，雄心；抱负，志向"
+      },
+      {
+        "word": "ambulance",
+        "meaning": "[车辆][医] 救护车；战时流动医院"
+      },
+      {
+        "word": "america",
+        "meaning": "美洲（包括北美和南美洲）；美国"
+      },
+      {
+        "word": "american",
+        "meaning": "美国人，美洲人；美国英语"
+      },
+      {
+        "word": "among",
+        "meaning": "在…中间；在…之中"
+      },
+      {
+        "word": "amount",
+        "meaning": "总计，合计；相当于；共计；产生…结果"
+      },
+      {
+        "word": "ample",
+        "meaning": "丰富的；足够的；宽敞的"
+      },
+      {
+        "word": "amuse",
+        "meaning": "娱乐；消遣；使发笑；使愉快"
+      },
+      {
+        "word": "amusement",
+        "meaning": "消遣，娱乐；乐趣"
+      },
+      {
+        "word": "analysis",
+        "meaning": "分析；分解；验定"
+      },
+      {
+        "word": "analyze",
+        "meaning": "对…进行分析，分解（等于analyse）"
+      },
+      {
+        "word": "ancestor",
+        "meaning": "始祖，祖先；被继承人"
+      },
+      {
+        "word": "ancient",
+        "meaning": "古代的；古老的，过时的；年老的"
+      },
+      {
+        "word": "and",
+        "meaning": "和，与；就；而且；但是；然后"
+      },
+      {
+        "word": "anecdote",
+        "meaning": "轶事；奇闻；秘史"
+      },
+      {
+        "word": "anger",
+        "meaning": "怒，愤怒；忿怒"
+      },
+      {
+        "word": "angle",
+        "meaning": "钓鱼；谋取"
+      },
+      {
+        "word": "angry",
+        "meaning": "生气的；愤怒的；狂暴的；（伤口等）发炎的"
+      },
+      {
+        "word": "animal",
+        "meaning": "动物"
+      },
+      {
+        "word": "ankle",
+        "meaning": "踝关节，踝"
+      },
+      {
+        "word": "anniversary",
+        "meaning": "周年纪念日"
+      },
+      {
+        "word": "announce",
+        "meaning": "宣布；述说；预示；播报"
+      },
+      {
+        "word": "announcement",
+        "meaning": "公告；宣告；发表；通告"
+      },
+      {
+        "word": "annoy",
+        "meaning": "骚扰；惹恼；打搅"
+      },
+      {
+        "word": "annual",
+        "meaning": "年度的；每年的"
+      },
+      {
+        "word": "another",
+        "meaning": "又一，另一；另外的；不同的"
+      },
+      {
+        "word": "answer",
+        "meaning": "回答；符合"
+      },
+      {
+        "word": "ant",
+        "meaning": "蚂蚁"
+      },
+      {
+        "word": "antique",
+        "meaning": "古老的，年代久远的；过时的，古董的；古风的，古式的"
+      },
+      {
+        "word": "anxiety",
+        "meaning": "焦虑；渴望；挂念；令人焦虑的事"
+      },
+      {
+        "word": "anxious",
+        "meaning": "焦虑的；担忧的；渴望的；急切的"
+      },
+      {
+        "word": "any",
+        "meaning": "任何的；所有的；丝毫"
+      },
+      {
+        "word": "anyhow",
+        "meaning": "总之；无论如何；不管怎样"
+      },
+      {
+        "word": "anyone",
+        "meaning": "任何人；任何一个"
+      },
+      {
+        "word": "anything",
+        "meaning": "任何事"
+      },
+      {
+        "word": "anyway",
+        "meaning": "无论如何，不管怎样；总之"
+      },
+      {
+        "word": "anywhere",
+        "meaning": "在任何地方；无论何处"
+      },
+      {
+        "word": "apart",
+        "meaning": "相距；与众不同地；分离着"
+      },
+      {
+        "word": "apartment",
+        "meaning": "公寓；房间"
+      },
+      {
+        "word": "apologize",
+        "meaning": "道歉；辩解；赔不是"
+      },
+      {
+        "word": "apology",
+        "meaning": "道歉；谢罪；辩护；勉强的替代物"
+      },
+      {
+        "word": "apparent",
+        "meaning": "显然的；表面上的"
+      },
+      {
+        "word": "appeal",
+        "meaning": "呼吁，恳求；上诉；诉诸，求助；有吸引力，迎合爱好；（体育比赛中）诉诸裁判"
+      },
+      {
+        "word": "appear",
+        "meaning": "出现；显得；似乎；出庭；登场"
+      },
+      {
+        "word": "appearance",
+        "meaning": "外貌，外观；出现，露面"
+      },
+      {
+        "word": "appendix",
+        "meaning": "附录；阑尾；附加物"
+      },
+      {
+        "word": "appetite",
+        "meaning": "食欲；嗜好"
+      },
+      {
+        "word": "applaud",
+        "meaning": "赞同；称赞；向…喝彩"
+      },
+      {
+        "word": "apple",
+        "meaning": "苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。"
+      },
+      {
+        "word": "applicant",
+        "meaning": "申请人，申请者；请求者"
+      },
+      {
+        "word": "application",
+        "meaning": "应用；申请；应用程序；敷用"
+      },
+      {
+        "word": "apply",
+        "meaning": "申请；涂，敷；应用"
+      },
+      {
+        "word": "appoint",
+        "meaning": "任命；指定；约定"
+      },
+      {
+        "word": "appointment",
+        "meaning": "任命；约定；任命的职位"
+      },
+      {
+        "word": "appreciate",
+        "meaning": "欣赏；感激；领会；鉴别"
+      },
+      {
+        "word": "appreciation",
+        "meaning": "欣赏，鉴别；增值；感谢"
+      },
+      {
+        "word": "approach",
+        "meaning": "方法；途径；接近"
+      },
+      {
+        "word": "appropriate",
+        "meaning": "适当的；恰当的；合适的"
+      },
+      {
+        "word": "approve",
+        "meaning": "批准；赞成；为…提供证据"
+      },
+      {
+        "word": "approximately",
+        "meaning": "大约，近似地；近于"
+      },
+      {
+        "word": "april",
+        "meaning": "四月"
+      },
+      {
+        "word": "apron",
+        "meaning": "围裙；[航] 停机坪；舞台口"
+      },
+      {
+        "word": "arabic",
+        "meaning": "阿拉伯的；阿拉伯人的"
+      },
+      {
+        "word": "arbitrary",
+        "meaning": "[数] 任意的；武断的；专制的"
+      },
+      {
+        "word": "arch",
+        "meaning": "弓形，拱形；拱门"
+      },
+      {
+        "word": "architect",
+        "meaning": "建筑师"
+      },
+      {
+        "word": "architecture",
+        "meaning": "建筑学；建筑风格；建筑式样；架构"
+      },
+      {
+        "word": "arctic",
+        "meaning": "北极的；极寒的"
+      },
+      {
+        "word": "are",
+        "meaning": "是（be的第二人称单复数现在式）"
+      },
+      {
+        "word": "area",
+        "meaning": "区域，地区；面积；范围"
+      },
+      {
+        "word": "argue",
+        "meaning": "争论，辩论；提出理由"
+      },
+      {
+        "word": "argument",
+        "meaning": "论证；论据；争吵；内容提要"
+      },
+      {
+        "word": "arise",
+        "meaning": "出现；上升；起立"
+      },
+      {
+        "word": "arithmetic",
+        "meaning": "算术，算法"
+      },
+      {
+        "word": "arm",
+        "meaning": "手臂；武器；袖子；装备；部门"
+      },
+      {
+        "word": "armchair",
+        "meaning": "扶手椅，单人沙发"
+      },
+      {
+        "word": "army",
+        "meaning": "陆军，军队"
+      },
+      {
+        "word": "around",
+        "meaning": "大约；到处；在附近"
+      },
+      {
+        "word": "arrange",
+        "meaning": "安排；排列；整理"
+      },
+      {
+        "word": "arrangement",
+        "meaning": "布置；整理；准备"
+      },
+      {
+        "word": "arrest",
+        "meaning": "逮捕；阻止；吸引"
+      },
+      {
+        "word": "arrival",
+        "meaning": "到来；到达；到达者"
+      },
+      {
+        "word": "arrive",
+        "meaning": "到达；成功；达成；出生"
+      },
+      {
+        "word": "arrow",
+        "meaning": "箭，箭头；箭状物；箭头记号"
+      },
+      {
+        "word": "art",
+        "meaning": "艺术；美术；艺术品"
+      },
+      {
+        "word": "article",
+        "meaning": "文章；物品；条款；[语] 冠词"
+      },
+      {
+        "word": "artificial",
+        "meaning": "人造的；仿造的；虚伪的；非原产地的；武断的"
+      },
+      {
+        "word": "artist",
+        "meaning": "艺术家；美术家（尤指画家）；大师"
+      },
+      {
+        "word": "as",
+        "meaning": "因为；随着；虽然；依照；当…时"
+      },
+      {
+        "word": "ash",
+        "meaning": "灰；灰烬"
+      },
+      {
+        "word": "ashamed",
+        "meaning": "惭愧的，感到难为情的；耻于……的"
+      },
+      {
+        "word": "asia",
+        "meaning": "亚洲"
+      },
+      {
+        "word": "asian",
+        "meaning": "亚洲人"
+      },
+      {
+        "word": "aside",
+        "meaning": "离开，撇开；在旁边"
+      },
+      {
+        "word": "ask",
+        "meaning": "问，询问；要求；需要；邀请；讨价"
+      },
+      {
+        "word": "asleep",
+        "meaning": "睡着的；麻木的；长眠的"
+      },
+      {
+        "word": "aspect",
+        "meaning": "方面；方向；形势；外貌"
+      },
+      {
+        "word": "assess",
+        "meaning": "评定；估价；对…征税"
+      },
+      {
+        "word": "assessment",
+        "meaning": "评定；估价"
+      },
+      {
+        "word": "assist",
+        "meaning": "帮助；助攻"
+      },
+      {
+        "word": "assistance",
+        "meaning": "援助，帮助；辅助设备"
+      },
+      {
+        "word": "assistant",
+        "meaning": "助手，助理，助教"
+      },
+      {
+        "word": "associate",
+        "meaning": "交往；结交"
+      },
+      {
+        "word": "association",
+        "meaning": "协会，联盟，社团；联合；联想"
+      },
+      {
+        "word": "assume",
+        "meaning": "假定；设想；承担；采取"
+      },
+      {
+        "word": "assumption",
+        "meaning": "假定；设想；担任；采取"
+      },
+      {
+        "word": "astonish",
+        "meaning": "使惊讶"
+      },
+      {
+        "word": "astronaut",
+        "meaning": "宇航员，航天员；太空旅行者"
+      },
+      {
+        "word": "astronomer",
+        "meaning": "天文学家"
+      },
+      {
+        "word": "astronomy",
+        "meaning": "天文学"
+      },
+      {
+        "word": "at",
+        "meaning": "在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达；因为；朝；忙于"
+      },
+      {
+        "word": "athlete",
+        "meaning": "运动员，体育家；身强力壮的人"
+      },
+      {
+        "word": "athletic",
+        "meaning": "运动的，运动员的；体格健壮的"
+      },
+      {
+        "word": "athletics",
+        "meaning": "竞技；体育运动；田径运动"
+      },
+      {
+        "word": "atlantic",
+        "meaning": "大西洋"
+      },
+      {
+        "word": "atmosphere",
+        "meaning": "气氛；大气；空气"
+      },
+      {
+        "word": "atom",
+        "meaning": "原子"
+      },
+      {
+        "word": "attach",
+        "meaning": "使依附；贴上；系上；使依恋"
+      },
+      {
+        "word": "attain",
+        "meaning": "达到，实现；获得；到达"
+      },
+      {
+        "word": "attempt",
+        "meaning": "企图，试图；攻击"
+      },
+      {
+        "word": "attend",
+        "meaning": "出席；上（大学等）；照料；招待；陪伴"
+      },
+      {
+        "word": "attention",
+        "meaning": "注意力；关心；立正！（口令）"
+      },
+      {
+        "word": "attentively",
+        "meaning": "注意地；聚精会神地；周到地"
+      },
+      {
+        "word": "attitude",
+        "meaning": "态度；看法；意见；姿势"
+      },
+      {
+        "word": "attract",
+        "meaning": "吸引；引起"
+      },
+      {
+        "word": "attraction",
+        "meaning": "吸引，吸引力；引力；吸引人的事物"
+      },
+      {
+        "word": "attractive",
+        "meaning": "吸引人的；有魅力的；引人注目的"
+      },
+      {
+        "word": "audience",
+        "meaning": "观众；听众；读者；接见；正式会见；拜会"
+      },
+      {
+        "word": "august",
+        "meaning": "威严的；令人敬畏的"
+      },
+      {
+        "word": "aunt",
+        "meaning": "阿姨；姑妈；伯母；舅妈"
+      },
+      {
+        "word": "australia",
+        "meaning": "澳大利亚，澳洲"
+      },
+      {
+        "word": "australian",
+        "meaning": "澳大利亚的，澳大利亚人的"
+      },
+      {
+        "word": "authentic",
+        "meaning": "真正的，真实的；可信的"
+      },
+      {
+        "word": "author",
+        "meaning": "作者；作家；创始人"
+      },
+      {
+        "word": "authority",
+        "meaning": "权威；权力；当局"
+      },
+      {
+        "word": "automatic",
+        "meaning": "自动的；无意识的；必然的"
+      },
+      {
+        "word": "autonomous",
+        "meaning": "自治的；自主的；自发的"
+      },
+      {
+        "word": "autumn",
+        "meaning": "秋天；成熟期；渐衰期，凋落期"
+      },
+      {
+        "word": "available",
+        "meaning": "可获得的；可购得的；可找到的；有空的"
+      },
+      {
+        "word": "avenue",
+        "meaning": "大街；林荫大道；[比喻](达到某物的)途径，手段，方法，渠道"
+      },
+      {
+        "word": "average",
+        "meaning": "平均；平均数；海损"
+      },
+      {
+        "word": "avoid",
+        "meaning": "避免；避开，躲避；消除"
+      },
+      {
+        "word": "awake",
+        "meaning": "觉醒，意识到；醒来；被唤起"
+      },
+      {
+        "word": "award",
+        "meaning": "授予；判定"
+      },
+      {
+        "word": "aware",
+        "meaning": "意识到的；知道的；有…方面知识的；懂世故的"
+      },
+      {
+        "word": "away",
+        "meaning": "离去，离开；在远处"
+      },
+      {
+        "word": "awesome",
+        "meaning": "令人敬畏的；使人畏惧的；可怕的；极好的"
+      },
+      {
+        "word": "awful",
+        "meaning": "可怕的；极坏的；使人敬畏的"
+      },
+      {
+        "word": "awkward",
+        "meaning": "尴尬的；笨拙的；棘手的；不合适的"
+      },
+      {
+        "word": "baby",
+        "meaning": "婴儿，婴孩；孩子气的人"
+      },
+      {
+        "word": "bachelor",
+        "meaning": "学士；单身汉；（尚未交配的）小雄兽"
+      },
+      {
+        "word": "back",
+        "meaning": "后面；背部；靠背；足球等的后卫；书报等的末尾"
+      },
+      {
+        "word": "backache",
+        "meaning": "背痛；腰痛"
+      },
+      {
+        "word": "background",
+        "meaning": "背景；隐蔽的位置"
+      },
+      {
+        "word": "backward",
+        "meaning": "向后的；反向的；发展迟缓的"
+      },
+      {
+        "word": "bacon",
+        "meaning": "咸肉；腌肉；熏猪肉"
+      },
+      {
+        "word": "bacterium",
+        "meaning": "[微] 细菌；杆菌属"
+      },
+      {
+        "word": "bad",
+        "meaning": "坏的；严重的；劣质的"
+      },
+      {
+        "word": "badly",
+        "meaning": "非常，很；严重地，厉害地；恶劣地"
+      },
+      {
+        "word": "badminton",
+        "meaning": "羽毛球"
+      },
+      {
+        "word": "bag",
+        "meaning": "袋；猎获物；（俚）一瓶啤酒"
+      },
+      {
+        "word": "baggage",
+        "meaning": "行李；[交] 辎重（军队的）"
+      },
+      {
+        "word": "bake",
+        "meaning": "烤，烘焙"
+      },
+      {
+        "word": "bakery",
+        "meaning": "面包店"
+      },
+      {
+        "word": "balance",
+        "meaning": "平衡；余额；匀称"
+      },
+      {
+        "word": "balcony",
+        "meaning": "阳台；包厢；戏院楼厅"
+      },
+      {
+        "word": "ball",
+        "meaning": "球；舞会"
+      },
+      {
+        "word": "ballet",
+        "meaning": "芭蕾舞剧；芭蕾舞乐曲"
+      },
+      {
+        "word": "balloon",
+        "meaning": "激增；膨胀如气球"
+      },
+      {
+        "word": "ballpoint",
+        "meaning": "圆珠笔"
+      },
+      {
+        "word": "bamboo",
+        "meaning": "竹，竹子"
+      },
+      {
+        "word": "ban",
+        "meaning": "禁止，取缔"
+      },
+      {
+        "word": "banana",
+        "meaning": "香蕉；喜剧演员；大鹰钩鼻"
+      },
+      {
+        "word": "band",
+        "meaning": "带，环；[物] 波段；(演奏流行音乐的) 乐队"
+      },
+      {
+        "word": "bandage",
+        "meaning": "绷带"
+      },
+      {
+        "word": "bang",
+        "meaning": "刘海；重击；突然巨响"
+      },
+      {
+        "word": "bank",
+        "meaning": "银行；岸；浅滩；储库"
+      },
+      {
+        "word": "bar",
+        "meaning": "条，棒；酒吧；障碍；法庭"
+      },
+      {
+        "word": "barbecue",
+        "meaning": "烤肉；吃烤肉的野宴"
+      },
+      {
+        "word": "barber",
+        "meaning": "为…理发；修整"
+      },
+      {
+        "word": "barbershop",
+        "meaning": "理发店"
+      },
+      {
+        "word": "bare",
+        "meaning": "空的；赤裸的，无遮蔽的"
+      },
+      {
+        "word": "bargain",
+        "meaning": "交易；便宜货；契约"
+      },
+      {
+        "word": "barrier",
+        "meaning": "障碍物，屏障；界线"
+      },
+      {
+        "word": "base",
+        "meaning": "基础；底部；垒"
+      },
+      {
+        "word": "basement",
+        "meaning": "地下室；地窖"
+      },
+      {
+        "word": "basic",
+        "meaning": "基本的；基础的"
+      },
+      {
+        "word": "basin",
+        "meaning": "水池；流域；盆地；盆"
+      },
+      {
+        "word": "basis",
+        "meaning": "基础；底部；主要成分；基本原则或原理"
+      },
+      {
+        "word": "basket",
+        "meaning": "篮子；（篮球比赛的）得分；一篮之量；篮筐"
+      },
+      {
+        "word": "basketball",
+        "meaning": "篮球；篮球运动"
+      },
+      {
+        "word": "bat",
+        "meaning": "蝙蝠；球棒；球拍；批处理文件的扩展名"
+      },
+      {
+        "word": "bath",
+        "meaning": "沐浴；浴室；浴盆"
+      },
+      {
+        "word": "bathe",
+        "meaning": "沐浴；用水洗"
+      },
+      {
+        "word": "bathrobe",
+        "meaning": "浴衣；睡衣"
+      },
+      {
+        "word": "bathroom",
+        "meaning": "浴室；厕所；盥洗室"
+      },
+      {
+        "word": "bathtub",
+        "meaning": "浴缸"
+      },
+      {
+        "word": "battery",
+        "meaning": "[电] 电池，蓄电池"
+      },
+      {
+        "word": "battle",
+        "meaning": "战役；斗争"
+      },
+      {
+        "word": "battleground",
+        "meaning": "战场"
+      },
+      {
+        "word": "bay",
+        "meaning": "海湾；狗吠声"
+      },
+      {
+        "word": "be",
+        "meaning": "是； 有，存在； 做，成为； 发生"
+      },
+      {
+        "word": "beach",
+        "meaning": "海滩；湖滨"
+      },
+      {
+        "word": "beam",
+        "meaning": "横梁；光线；电波；船宽；[计量] 秤杆"
+      },
+      {
+        "word": "bean",
+        "meaning": "豆；嘴峰；毫无价值的东西"
+      },
+      {
+        "word": "beancurd",
+        "meaning": "豆腐"
+      },
+      {
+        "word": "bear",
+        "meaning": "结果实，开花（正式）"
+      },
+      {
+        "word": "beard",
+        "meaning": "公然反对；抓…的胡须"
+      },
+      {
+        "word": "beast",
+        "meaning": "野兽；畜生，人面兽心的人"
+      },
+      {
+        "word": "beat",
+        "meaning": "打；打败"
+      },
+      {
+        "word": "beautiful",
+        "meaning": "美丽的"
+      },
+      {
+        "word": "beauty",
+        "meaning": "美；美丽；美人；美好的东西"
+      },
+      {
+        "word": "because",
+        "meaning": "因为"
+      },
+      {
+        "word": "become",
+        "meaning": "成为；变得；变成"
+      },
+      {
+        "word": "bed",
+        "meaning": "床；基础；河底， 海底"
+      },
+      {
+        "word": "bedclothes",
+        "meaning": "床上用品；铺盖"
+      },
+      {
+        "word": "beddings",
+        "meaning": "寝具；（建筑）[建] 基床；（家畜）草垫"
+      },
+      {
+        "word": "bedroom",
+        "meaning": "卧室"
+      },
+      {
+        "word": "bee",
+        "meaning": "蜜蜂，蜂；勤劳的人"
+      },
+      {
+        "word": "beef",
+        "meaning": "牛肉；肌肉；食用牛；牢骚"
+      },
+      {
+        "word": "beehive",
+        "meaning": "蜂窝；蜂箱"
+      },
+      {
+        "word": "beer",
+        "meaning": "啤酒"
+      },
+      {
+        "word": "before",
+        "meaning": "在…之前，先于"
+      },
+      {
+        "word": "beg",
+        "meaning": "乞讨；恳求；回避正题"
+      },
+      {
+        "word": "begin",
+        "meaning": "开始"
+      },
+      {
+        "word": "beginning",
+        "meaning": "开始；起点"
+      },
+      {
+        "word": "behalf",
+        "meaning": "代表；利益"
+      },
+      {
+        "word": "behave",
+        "meaning": "表现；（机器等）运转；举止端正；（事物）起某种作用"
+      },
+      {
+        "word": "behavious",
+        "meaning": "行为"
+      },
+      {
+        "word": "behind",
+        "meaning": "落后于；支持；晚于"
+      },
+      {
+        "word": "being",
+        "meaning": "存在；生命；本质；品格"
+      },
+      {
+        "word": "belgium",
+        "meaning": "比利时（西欧国家，首都布鲁塞尔Brussels）"
+      },
+      {
+        "word": "belief",
+        "meaning": "相信，信赖；信仰；教义"
+      },
+      {
+        "word": "believe",
+        "meaning": "信任；料想；笃信宗教"
+      },
+      {
+        "word": "bell",
+        "meaning": "铃，钟；钟声，铃声；钟状物"
+      },
+      {
+        "word": "belly",
+        "meaning": "腹部；胃；食欲"
+      },
+      {
+        "word": "belong",
+        "meaning": "属于，应归入；居住；适宜；应被放置"
+      },
+      {
+        "word": "below",
+        "meaning": "在下面，在较低处；在本页下面"
+      },
+      {
+        "word": "belt",
+        "meaning": "带；腰带；地带"
+      },
+      {
+        "word": "bench",
+        "meaning": "长凳；工作台；替补队员"
+      },
+      {
+        "word": "bend",
+        "meaning": "使弯曲；使屈服；使致力；使朝向"
+      },
+      {
+        "word": "beneath",
+        "meaning": "在…之下"
+      },
+      {
+        "word": "beneficial",
+        "meaning": "有益的，有利的；可享利益的"
+      },
+      {
+        "word": "benefit",
+        "meaning": "利益，好处；救济金"
+      },
+      {
+        "word": "bent",
+        "meaning": "爱好，嗜好"
+      },
+      {
+        "word": "beside",
+        "meaning": "在旁边；与…相比；和…无关"
+      },
+      {
+        "word": "besides",
+        "meaning": "此外；而且"
+      },
+      {
+        "word": "best",
+        "meaning": "最好的人，最好的事物；最佳状态"
+      },
+      {
+        "word": "betray",
+        "meaning": "背叛；出卖；泄露（秘密）；露出…迹象"
+      },
+      {
+        "word": "better",
+        "meaning": "长辈；较好者；打赌的人（等于bettor）"
+      },
+      {
+        "word": "between",
+        "meaning": "在…之间"
+      },
+      {
+        "word": "beyond",
+        "meaning": "超过；越过；那一边；在较远的一边"
+      },
+      {
+        "word": "bicycle",
+        "meaning": "自行车"
+      },
+      {
+        "word": "bid",
+        "meaning": "投标；出价；表示；吩咐"
+      },
+      {
+        "word": "big",
+        "meaning": "大的；重要的；量大的"
+      },
+      {
+        "word": "bike",
+        "meaning": "自行车；脚踏车"
+      },
+      {
+        "word": "bill",
+        "meaning": "[法] 法案；广告；账单；[金融] 票据；钞票；清单"
+      },
+      {
+        "word": "billion",
+        "meaning": "十亿；大量"
+      },
+      {
+        "word": "bingo",
+        "meaning": "宾戈游戏"
+      },
+      {
+        "word": "biochemistry",
+        "meaning": "生物化学"
+      },
+      {
+        "word": "biography",
+        "meaning": "传记；档案；个人简介"
+      },
+      {
+        "word": "biology",
+        "meaning": "（一个地区全部的）生物；生物学"
+      },
+      {
+        "word": "bird",
+        "meaning": "鸟；家伙；羽毛球"
+      },
+      {
+        "word": "birdcage",
+        "meaning": "鸟笼；鸟笼状物；信号灯；宿舍"
+      },
+      {
+        "word": "birth",
+        "meaning": "出生；血统，出身；起源"
+      },
+      {
+        "word": "birthday",
+        "meaning": "生日，诞辰；诞生的日子"
+      },
+      {
+        "word": "birthplace",
+        "meaning": "出生地"
+      },
+      {
+        "word": "biscuit",
+        "meaning": "小点心，饼干"
+      },
+      {
+        "word": "bishop",
+        "meaning": "（基督教的）主教；（国际象棋的）象"
+      },
+      {
+        "word": "bit",
+        "meaning": "[计] 比特（二进位制信息单位）；少量；马嚼子；辅币；老一套；一点，一块"
+      },
+      {
+        "word": "bite",
+        "meaning": "咬；刺痛"
+      },
+      {
+        "word": "bitter",
+        "meaning": "苦的；痛苦的；尖刻的；充满仇恨的"
+      },
+      {
+        "word": "black",
+        "meaning": "黑色的；黑人的；邪恶的"
+      },
+      {
+        "word": "blackboard",
+        "meaning": "黑板"
+      },
+      {
+        "word": "blame",
+        "meaning": "责备；归咎于"
+      },
+      {
+        "word": "blank",
+        "meaning": "空白的；空虚的；单调的"
+      },
+      {
+        "word": "blanket",
+        "meaning": "毛毯，毯子；毯状物，覆盖层"
+      },
+      {
+        "word": "bleed",
+        "meaning": "使出血；榨取"
+      },
+      {
+        "word": "bless",
+        "meaning": "祝福；保佑；赞美"
+      },
+      {
+        "word": "blind",
+        "meaning": "盲目的；瞎的"
+      },
+      {
+        "word": "block",
+        "meaning": "块；街区；大厦；障碍物"
+      },
+      {
+        "word": "blood",
+        "meaning": "血，血液；血统"
+      },
+      {
+        "word": "blouse",
+        "meaning": "宽松的上衣；女装衬衫"
+      },
+      {
+        "word": "blow",
+        "meaning": "吹；打击；殴打"
+      },
+      {
+        "word": "blue",
+        "meaning": "蓝色；[复数]（美国海、陆、空三军穿的）蓝色制服；蓝颜料；[the blue(s)][用作单数或复数]布鲁斯（歌曲）（一种伤感的美国黑人民歌"
+      },
+      {
+        "word": "board",
+        "meaning": "董事会；木板；甲板；膳食"
+      },
+      {
+        "word": "boat",
+        "meaning": "小船；轮船"
+      },
+      {
+        "word": "boating",
+        "meaning": "划船"
+      },
+      {
+        "word": "boil",
+        "meaning": "煮沸，沸腾；激动，激昂"
+      },
+      {
+        "word": "bomb",
+        "meaning": "轰炸，投弹于"
+      },
+      {
+        "word": "bond",
+        "meaning": "债券；结合；约定；粘合剂；纽带"
+      },
+      {
+        "word": "bone",
+        "meaning": "骨；骨骼"
+      },
+      {
+        "word": "bonus",
+        "meaning": "奖金；红利；额外津贴"
+      },
+      {
+        "word": "book",
+        "meaning": "书籍；卷；帐簿；名册；工作簿"
+      },
+      {
+        "word": "bookcase",
+        "meaning": "[家具] 书柜，书架"
+      },
+      {
+        "word": "bookmark",
+        "meaning": "书签（等于bookmarker）；标记"
+      },
+      {
+        "word": "bookshelf",
+        "meaning": "书架"
+      },
+      {
+        "word": "bookshop",
+        "meaning": "书店"
+      },
+      {
+        "word": "bookstore",
+        "meaning": "书店（等于bookshop）"
+      },
+      {
+        "word": "boom",
+        "meaning": "使兴旺；发隆隆声"
+      },
+      {
+        "word": "boot",
+        "meaning": "引导；踢；解雇；使穿靴"
+      },
+      {
+        "word": "booth",
+        "meaning": "货摊；公用电话亭"
+      },
+      {
+        "word": "bored",
+        "meaning": "无聊的；无趣的；烦人的"
+      },
+      {
+        "word": "boring",
+        "meaning": "无聊的；令人厌烦的"
+      },
+      {
+        "word": "born",
+        "meaning": "出世（bear的过去分词）"
+      },
+      {
+        "word": "borrow",
+        "meaning": "借；借用；从其他语言中引入"
+      },
+      {
+        "word": "boss",
+        "meaning": "老板；首领；工头"
+      },
+      {
+        "word": "botanical",
+        "meaning": "植物学的"
+      },
+      {
+        "word": "botany",
+        "meaning": "植物学；地区植物总称"
+      },
+      {
+        "word": "both",
+        "meaning": "两个的；两者的"
+      },
+      {
+        "word": "bottle",
+        "meaning": "瓶子；一瓶的容量"
+      },
+      {
+        "word": "bottom",
+        "meaning": "底部；末端；臀部；尽头"
+      },
+      {
+        "word": "bounce",
+        "meaning": "跳；弹力；活力"
+      },
+      {
+        "word": "bound",
+        "meaning": "有义务的；必定的；受约束的；装有封面的"
+      },
+      {
+        "word": "boundary",
+        "meaning": "边界；范围；分界线"
+      },
+      {
+        "word": "bow",
+        "meaning": "弓；鞠躬；船首"
+      },
+      {
+        "word": "bowl",
+        "meaning": "碗；木球；大酒杯"
+      },
+      {
+        "word": "bowling",
+        "meaning": "滚木球戏；保龄球戏"
+      },
+      {
+        "word": "box",
+        "meaning": "箱，盒子；包厢；一拳"
+      },
+      {
+        "word": "boxing",
+        "meaning": "拳击；装箱；围模；做箱的材料"
+      },
+      {
+        "word": "boy",
+        "meaning": "男孩；男人"
+      },
+      {
+        "word": "boycott",
+        "meaning": "联合抵制；拒绝参加"
+      },
+      {
+        "word": "brain",
+        "meaning": "头脑，智力；脑袋"
+      },
+      {
+        "word": "brake",
+        "meaning": "刹车"
+      },
+      {
+        "word": "branch",
+        "meaning": "分支；出现分歧"
+      },
+      {
+        "word": "brand",
+        "meaning": "铭刻于，铭记；打烙印于；印…商标于"
+      },
+      {
+        "word": "brave",
+        "meaning": "勇敢的；华丽的"
+      },
+      {
+        "word": "bravery",
+        "meaning": "勇敢；勇气"
+      },
+      {
+        "word": "bread",
+        "meaning": "面包；生计"
+      },
+      {
+        "word": "break",
+        "meaning": "打破；折断；弄坏；削弱"
+      },
+      {
+        "word": "breakfast",
+        "meaning": "早餐；早饭"
+      },
+      {
+        "word": "breakthrough",
+        "meaning": "突破；突破性进展"
+      },
+      {
+        "word": "breast",
+        "meaning": "乳房，胸部；胸怀；心情"
+      },
+      {
+        "word": "breath",
+        "meaning": "呼吸，气息；一口气，（呼吸的）一次；瞬间，瞬息；微风；迹象；无声音，气音"
+      },
+      {
+        "word": "breathe",
+        "meaning": "呼吸；低语；松口气；（风）轻拂"
+      },
+      {
+        "word": "breathless",
+        "meaning": "喘不过气来的；停止呼吸的"
+      },
+      {
+        "word": "brewery",
+        "meaning": "啤酒厂"
+      },
+      {
+        "word": "brick",
+        "meaning": "砖，砖块；砖形物；心肠好的人"
+      },
+      {
+        "word": "bride",
+        "meaning": "新娘；姑娘，女朋友"
+      },
+      {
+        "word": "bridegroom",
+        "meaning": "新郎"
+      },
+      {
+        "word": "bridge",
+        "meaning": "桥；桥牌；桥接器；船桥"
+      },
+      {
+        "word": "brief",
+        "meaning": "简短的，简洁的；短暂的，草率的"
+      },
+      {
+        "word": "bright",
+        "meaning": "明亮的，鲜明的；聪明的；愉快的"
+      },
+      {
+        "word": "brilliant",
+        "meaning": "灿烂的，闪耀的；杰出的；有才气的；精彩的，绝妙的"
+      },
+      {
+        "word": "bring",
+        "meaning": "带来；促使；引起；使某人处于某种情况或境地"
+      },
+      {
+        "word": "britain",
+        "meaning": "英国；不列颠"
+      },
+      {
+        "word": "british",
+        "meaning": "英国的；英国人的；大不列颠的"
+      },
+      {
+        "word": "broad",
+        "meaning": "宽的，辽阔的；显著的；大概的"
+      },
+      {
+        "word": "broadcast",
+        "meaning": "播送，播放；（无线电或电视）广播；播撒（种子）"
+      },
+      {
+        "word": "brochure",
+        "meaning": "手册，小册子"
+      },
+      {
+        "word": "broken",
+        "meaning": "破碎的；坏掉的"
+      },
+      {
+        "word": "broom",
+        "meaning": "扫帚；金雀花"
+      },
+      {
+        "word": "brother",
+        "meaning": "兄弟；同事；战友"
+      },
+      {
+        "word": "brotherhood",
+        "meaning": "兄弟关系；手足情谊；四海之内皆兄弟的信念"
+      },
+      {
+        "word": "brown",
+        "meaning": "棕色的，褐色的；太阳晒黑的"
+      },
+      {
+        "word": "brunch",
+        "meaning": "早午餐"
+      },
+      {
+        "word": "brush",
+        "meaning": "刷子；画笔；毛笔；争吵；与某人有效冲突；灌木丛地带；矮树丛；狐狸尾巴"
+      },
+      {
+        "word": "bucket",
+        "meaning": "桶，水桶；铲斗；一桶的量"
+      },
+      {
+        "word": "buddhism",
+        "meaning": "佛教"
+      },
+      {
+        "word": "buddhist",
+        "meaning": "佛教徒"
+      },
+      {
+        "word": "budget",
+        "meaning": "预算，预算费"
+      },
+      {
+        "word": "buffet",
+        "meaning": "自助餐；小卖部；打击；猛烈冲击"
+      },
+      {
+        "word": "build",
+        "meaning": "建立；建筑"
+      },
+      {
+        "word": "building",
+        "meaning": "建筑；建筑物"
+      },
+      {
+        "word": "bun",
+        "meaning": "小圆面包"
+      },
+      {
+        "word": "bunch",
+        "meaning": "群；串；突出物"
+      },
+      {
+        "word": "bungalow",
+        "meaning": "平房；小屋"
+      },
+      {
+        "word": "burden",
+        "meaning": "负担；责任；船的载货量"
+      },
+      {
+        "word": "bureaucratic",
+        "meaning": "官僚的；官僚政治的"
+      },
+      {
+        "word": "burglar",
+        "meaning": "夜贼，窃贼"
+      },
+      {
+        "word": "burial",
+        "meaning": "埋葬；葬礼；弃绝"
+      },
+      {
+        "word": "burn",
+        "meaning": "燃烧；烧毁，灼伤；激起…的愤怒"
+      },
+      {
+        "word": "burst",
+        "meaning": "爆发，突发；爆炸"
+      },
+      {
+        "word": "bury",
+        "meaning": "埋葬；隐藏"
+      },
+      {
+        "word": "bus",
+        "meaning": "公共汽车"
+      },
+      {
+        "word": "bush",
+        "meaning": "灌木；矮树丛"
+      },
+      {
+        "word": "business",
+        "meaning": "商业；[贸易] 生意；[贸易] 交易；事情"
+      },
+      {
+        "word": "businessman",
+        "meaning": "商人"
+      },
+      {
+        "word": "businesswoman",
+        "meaning": "女商人"
+      },
+      {
+        "word": "busy",
+        "meaning": "忙碌的；热闹的；正被占用的"
+      },
+      {
+        "word": "but",
+        "meaning": "但是；而是；然而"
+      },
+      {
+        "word": "butcher",
+        "meaning": "屠杀"
+      },
+      {
+        "word": "butter",
+        "meaning": "涂黄油于；讨好"
+      },
+      {
+        "word": "butterfly",
+        "meaning": "蝴蝶；蝶泳；举止轻浮的人；追求享乐的人"
+      },
+      {
+        "word": "button",
+        "meaning": "按钮；纽扣"
+      },
+      {
+        "word": "buy",
+        "meaning": "购买；获得；贿赂"
+      },
+      {
+        "word": "by",
+        "meaning": "通过；被；依据；经由；在附近；在……之前"
+      },
+      {
+        "word": "bye",
+        "meaning": "再见"
+      },
+      {
+        "word": "cab",
+        "meaning": "驾驶室；出租汽车；出租马车"
+      },
+      {
+        "word": "cabbage",
+        "meaning": "卷心菜，甘蓝菜，洋白菜；（俚)脑袋；（非正式、侮辱）植物人（常用于英式英语）；（俚）钱，尤指纸币（常用于美式俚语）"
+      },
+      {
+        "word": "cafeteria",
+        "meaning": "自助餐厅"
+      },
+      {
+        "word": "cage",
+        "meaning": "笼，兽笼；牢房，监狱"
+      },
+      {
+        "word": "cake",
+        "meaning": "蛋糕；块状物；利益总额"
+      },
+      {
+        "word": "calculate",
+        "meaning": "计算；以为；作打算"
+      },
+      {
+        "word": "call",
+        "meaning": "呼叫；拜访；叫牌"
+      },
+      {
+        "word": "calm",
+        "meaning": "静的，平静的；沉着的"
+      },
+      {
+        "word": "camel",
+        "meaning": "[畜牧][脊椎] 骆驼；打捞浮筒；工作作风官僚"
+      },
+      {
+        "word": "camera",
+        "meaning": "照相机；摄影机"
+      },
+      {
+        "word": "camp",
+        "meaning": "露营；扎营"
+      },
+      {
+        "word": "campaign",
+        "meaning": "作战；参加竞选；参加活动"
+      },
+      {
+        "word": "canada",
+        "meaning": "加拿大（北美洲国家）"
+      },
+      {
+        "word": "canadian",
+        "meaning": "加拿大（人）的"
+      },
+      {
+        "word": "canal",
+        "meaning": "运河；[地理] 水道；[建] 管道；灌溉水渠"
+      },
+      {
+        "word": "cancel",
+        "meaning": "取消；删去"
+      },
+      {
+        "word": "cancer",
+        "meaning": "癌症；恶性肿瘤"
+      },
+      {
+        "word": "candidate",
+        "meaning": "候选人，候补者；应试者"
+      },
+      {
+        "word": "candle",
+        "meaning": "蜡烛；烛光；烛形物"
+      },
+      {
+        "word": "candy",
+        "meaning": "用糖煮；使结晶为砂糖；美化"
+      },
+      {
+        "word": "canteen",
+        "meaning": "食堂，小卖部；水壶"
+      },
+      {
+        "word": "cap",
+        "meaning": "盖；帽子"
+      },
+      {
+        "word": "capital",
+        "meaning": "首都，省会；资金；大写字母；资本家"
+      },
+      {
+        "word": "capsule",
+        "meaning": "胶囊；[植] 蒴果；太空舱；小容器"
+      },
+      {
+        "word": "captain",
+        "meaning": "队长，首领；船长；上尉；海军上校"
+      },
+      {
+        "word": "caption",
+        "meaning": "标题；字幕；说明；逮捕"
+      },
+      {
+        "word": "car",
+        "meaning": "汽车；车厢"
+      },
+      {
+        "word": "carbon",
+        "meaning": "[化学] 碳；碳棒；复写纸"
+      },
+      {
+        "word": "card",
+        "meaning": "卡片；纸牌；明信片"
+      },
+      {
+        "word": "care",
+        "meaning": "关怀；照料；谨慎；忧虑"
+      },
+      {
+        "word": "careful",
+        "meaning": "仔细的，小心的"
+      },
+      {
+        "word": "careless",
+        "meaning": "粗心的；无忧无虑的；淡漠的"
+      },
+      {
+        "word": "carpenter",
+        "meaning": "木匠，木工"
+      },
+      {
+        "word": "carpet",
+        "meaning": "在…上铺地毯，把地毯铺在…上；斥责"
+      },
+      {
+        "word": "carriage",
+        "meaning": "运输；运费；四轮马车；举止；客车厢"
+      },
+      {
+        "word": "carrier",
+        "meaning": "[化学] 载体；运送者；带菌者；货架"
+      },
+      {
+        "word": "carrot",
+        "meaning": "胡萝卜"
+      },
+      {
+        "word": "carry",
+        "meaning": "拿，扛；携带；支持；搬运"
+      },
+      {
+        "word": "cartoon",
+        "meaning": "卡通片，[电影] 动画片；连环漫画"
+      },
+      {
+        "word": "carve",
+        "meaning": "雕刻；切开；开创"
+      },
+      {
+        "word": "case",
+        "meaning": "情况；实例；箱"
+      },
+      {
+        "word": "cash",
+        "meaning": "现款，现金"
+      },
+      {
+        "word": "cassette",
+        "meaning": "盒式磁带；暗盒；珠宝箱；片匣"
+      },
+      {
+        "word": "cast",
+        "meaning": "投，抛；计算；浇铸；投射（光、影、视线等）"
+      },
+      {
+        "word": "castle",
+        "meaning": "城堡；象棋中的车"
+      },
+      {
+        "word": "casual",
+        "meaning": "随便的；非正式的；临时的；偶然的"
+      },
+      {
+        "word": "cat",
+        "meaning": "猫，猫科动物"
+      },
+      {
+        "word": "catalogue",
+        "meaning": "目录；（美）大学情况一览"
+      },
+      {
+        "word": "catastrophe",
+        "meaning": "大灾难；大祸；惨败"
+      },
+      {
+        "word": "catch",
+        "meaning": "赶上；抓住；感染；了解"
+      },
+      {
+        "word": "category",
+        "meaning": "种类，分类；[数] 范畴"
+      },
+      {
+        "word": "cater",
+        "meaning": "投合，迎合；满足需要；提供饮食及服务"
+      },
+      {
+        "word": "cathedral",
+        "meaning": "大教堂"
+      },
+      {
+        "word": "catholic",
+        "meaning": "天主教的；宽宏大量的"
+      },
+      {
+        "word": "cattle",
+        "meaning": "牛；牲畜（骂人的话）；家畜；无价值的人"
+      },
+      {
+        "word": "cause",
+        "meaning": "原因；事业；目标"
+      },
+      {
+        "word": "caution",
+        "meaning": "小心，谨慎；警告，警示"
+      },
+      {
+        "word": "cautious",
+        "meaning": "谨慎的；十分小心的"
+      },
+      {
+        "word": "cave",
+        "meaning": "使凹陷，使塌落；在…挖洞穴"
+      },
+      {
+        "word": "cd",
+        "meaning": "光盘，激光唱片（Compact Disc）；呼叫设备（Calling Device）；中央地区（Central District）；商务部（Commerce Department）"
+      },
+      {
+        "word": "ceiling",
+        "meaning": "天花板；上限"
+      },
+      {
+        "word": "celebrate",
+        "meaning": "庆祝；举行；赞美；祝贺；宣告"
+      },
+      {
+        "word": "celebration",
+        "meaning": "庆典，庆祝会；庆祝；颂扬"
+      },
+      {
+        "word": "cell",
+        "meaning": "细胞；电池；蜂房的巢室；单人小室"
+      },
+      {
+        "word": "cellar",
+        "meaning": "地窖；酒窖；地下室"
+      },
+      {
+        "word": "cent",
+        "meaning": "分；一分的硬币；森特（等于半音程的百分之一）"
+      },
+      {
+        "word": "centigrade",
+        "meaning": "摄氏的；[仪] 摄氏温度的；百分度的"
+      },
+      {
+        "word": "centimetre",
+        "meaning": "厘米；公分"
+      },
+      {
+        "word": "central",
+        "meaning": "中心的；主要的；中枢的"
+      },
+      {
+        "word": "centre",
+        "meaning": "以…为中心"
+      },
+      {
+        "word": "century",
+        "meaning": "世纪，百年；（板球）一百分"
+      },
+      {
+        "word": "ceremony",
+        "meaning": "典礼，仪式；礼节，礼仪；客套，虚礼"
+      },
+      {
+        "word": "certain",
+        "meaning": "某一；必然的；确信；无疑的；有把握的"
+      },
+      {
+        "word": "certainly",
+        "meaning": "当然；行（用于回答）；必定"
+      },
+      {
+        "word": "certificate",
+        "meaning": "发给证明书；以证书形式授权给…；用证书批准"
+      },
+      {
+        "word": "chain",
+        "meaning": "链；束缚；枷锁"
+      },
+      {
+        "word": "chair",
+        "meaning": "椅子；讲座；（会议的）主席位；大学教授的职位"
+      },
+      {
+        "word": "chairman",
+        "meaning": "主席，会长；董事长"
+      },
+      {
+        "word": "chairwoman",
+        "meaning": "女主席；女议长"
+      },
+      {
+        "word": "chalk",
+        "meaning": "用粉笔写；用白垩粉擦；记录；规划"
+      },
+      {
+        "word": "challenge",
+        "meaning": "挑战；怀疑"
+      },
+      {
+        "word": "challenging",
+        "meaning": "挑战的；引起挑战性兴趣的"
+      },
+      {
+        "word": "champion",
+        "meaning": "冠军；拥护者；战士"
+      },
+      {
+        "word": "chance",
+        "meaning": "机会，际遇；运气，侥幸；可能性"
+      },
+      {
+        "word": "change",
+        "meaning": "改变；交换"
+      },
+      {
+        "word": "changeable",
+        "meaning": "无常的；可改变的；易变的；不定的"
+      },
+      {
+        "word": "channel",
+        "meaning": "引导，开导；形成河道"
+      },
+      {
+        "word": "chant",
+        "meaning": "圣歌；赞美诗"
+      },
+      {
+        "word": "chaos",
+        "meaning": "混沌，混乱"
+      },
+      {
+        "word": "chapter",
+        "meaning": "章，回；（俱乐部、协会等的）分会；人生或历史上的重要时期"
+      },
+      {
+        "word": "character",
+        "meaning": "性格，品质；特性；角色；[计] 字符"
+      },
+      {
+        "word": "characteristic",
+        "meaning": "典型的；特有的；表示特性的"
+      },
+      {
+        "word": "charge",
+        "meaning": "费用；电荷；掌管；控告；命令；负载"
+      },
+      {
+        "word": "chart",
+        "meaning": "图表；海图；图纸；排行榜"
+      },
+      {
+        "word": "chat",
+        "meaning": "聊天；闲谈"
+      },
+      {
+        "word": "cheap",
+        "meaning": "便宜的；小气的；不值钱的"
+      },
+      {
+        "word": "cheat",
+        "meaning": "欺骗；骗取"
+      },
+      {
+        "word": "check",
+        "meaning": "检查，核对；制止，抑制；在…上打勾"
+      },
+      {
+        "word": "cheek",
+        "meaning": "面颊，脸颊；臀部"
+      },
+      {
+        "word": "cheer",
+        "meaning": "欢呼；使高兴；为…加油"
+      },
+      {
+        "word": "cheerful",
+        "meaning": "快乐的；愉快的；高兴的"
+      },
+      {
+        "word": "cheers",
+        "meaning": "感谢；谢谢；再见"
+      },
+      {
+        "word": "cheese",
+        "meaning": "[食品] 奶酪；干酪；要人"
+      },
+      {
+        "word": "chef",
+        "meaning": "厨师，大师傅"
+      },
+      {
+        "word": "chemical",
+        "meaning": "化学制品，化学药品"
+      },
+      {
+        "word": "chemist",
+        "meaning": "化学家；化学工作者；药剂师；炼金术士"
+      },
+      {
+        "word": "chemistry",
+        "meaning": "化学；化学过程"
+      },
+      {
+        "word": "cheque",
+        "meaning": "支票"
+      },
+      {
+        "word": "chess",
+        "meaning": "国际象棋，西洋棋"
+      },
+      {
+        "word": "chest",
+        "meaning": "胸，胸部；衣柜；箱子；金库"
+      },
+      {
+        "word": "chew",
+        "meaning": "咀嚼；咀嚼物"
+      },
+      {
+        "word": "chick",
+        "meaning": "小鸡；小鸟；少妇"
+      },
+      {
+        "word": "chicken",
+        "meaning": "鸡肉；小鸡；胆小鬼，懦夫"
+      },
+      {
+        "word": "chief",
+        "meaning": "首领；酋长；主要部分"
+      },
+      {
+        "word": "child",
+        "meaning": "儿童，小孩，孩子；产物；子孙；幼稚的人；弟子"
+      },
+      {
+        "word": "childhood",
+        "meaning": "童年时期；幼年时代"
+      },
+      {
+        "word": "chimney",
+        "meaning": "烟囱"
+      },
+      {
+        "word": "china",
+        "meaning": "中国"
+      },
+      {
+        "word": "chinese",
+        "meaning": "中文，汉语；中国人"
+      },
+      {
+        "word": "chips",
+        "meaning": "[食品] 炸土豆条；小木片；（作赌注用的）圆形筹码；缺口（chip的复数形式）"
+      },
+      {
+        "word": "chocolate",
+        "meaning": "巧克力，巧克力糖；巧克力色"
+      },
+      {
+        "word": "choice",
+        "meaning": "选择；选择权；精选品"
+      },
+      {
+        "word": "choir",
+        "meaning": "唱诗班；合唱队；舞蹈队"
+      },
+      {
+        "word": "choke",
+        "meaning": "呛；使窒息；阻塞；抑制；扑灭"
+      },
+      {
+        "word": "choose",
+        "meaning": "选择，决定"
+      },
+      {
+        "word": "chopsticks",
+        "meaning": "筷子"
+      },
+      {
+        "word": "chorus",
+        "meaning": "合唱队；齐声；歌舞队"
+      },
+      {
+        "word": "christian",
+        "meaning": "基督徒，信徒"
+      },
+      {
+        "word": "christmas",
+        "meaning": "圣诞节；圣诞节期间"
+      },
+      {
+        "word": "church",
+        "meaning": "教堂；礼拜；教派"
+      },
+      {
+        "word": "cigar",
+        "meaning": "雪茄"
+      },
+      {
+        "word": "cigarette",
+        "meaning": "香烟；纸烟"
+      },
+      {
+        "word": "cinema",
+        "meaning": "电影；电影院；电影业，电影制作术"
+      },
+      {
+        "word": "circle",
+        "meaning": "循环，周期；圆；圈子；圆形物"
+      },
+      {
+        "word": "circuit",
+        "meaning": "[电子] 电路，回路；巡回；一圈；环道"
+      },
+      {
+        "word": "circulate",
+        "meaning": "传播，流传；循环；流通"
+      },
+      {
+        "word": "circumstance",
+        "meaning": "环境，情况；事件；境遇"
+      },
+      {
+        "word": "circus",
+        "meaning": "马戏；马戏团"
+      },
+      {
+        "word": "citizen",
+        "meaning": "公民；市民；老百姓"
+      },
+      {
+        "word": "city",
+        "meaning": "城市，都市"
+      },
+      {
+        "word": "civil",
+        "meaning": "公民的；民间的；文职的；有礼貌的；根据民法的"
+      },
+      {
+        "word": "civilian",
+        "meaning": "民用的；百姓的，平民的"
+      },
+      {
+        "word": "civilization",
+        "meaning": "文明；文化"
+      },
+      {
+        "word": "clap",
+        "meaning": "鼓掌，拍手；啪地关上"
+      },
+      {
+        "word": "clarify",
+        "meaning": "澄清；阐明"
+      },
+      {
+        "word": "class",
+        "meaning": "阶级；班级；种类；班；等级"
+      },
+      {
+        "word": "classic",
+        "meaning": "经典的；古典的，传统的；最优秀的"
+      },
+      {
+        "word": "classical",
+        "meaning": "古典的；经典的；传统的；第一流的"
+      },
+      {
+        "word": "classify",
+        "meaning": "分类；分等"
+      },
+      {
+        "word": "classmate",
+        "meaning": "同班同学"
+      },
+      {
+        "word": "classroom",
+        "meaning": "教室"
+      },
+      {
+        "word": "claw",
+        "meaning": "爪；螯，钳；爪形器具"
+      },
+      {
+        "word": "clay",
+        "meaning": "[土壤] 粘土；泥土；肉体；似黏土的东西"
+      },
+      {
+        "word": "clean",
+        "meaning": "清洁的，干净的；清白的"
+      },
+      {
+        "word": "cleaner",
+        "meaning": "[化工] 清洁剂；清洁工；干洗店；干洗商；洗洁器"
+      },
+      {
+        "word": "clear",
+        "meaning": "清楚的；清澈的；晴朗的；无罪的"
+      },
+      {
+        "word": "clearly",
+        "meaning": "清晰地；明显地；无疑地；明净地"
+      },
+      {
+        "word": "clerk",
+        "meaning": "职员，办事员；店员；书记；记账员；<古>牧师，教士"
+      },
+      {
+        "word": "clever",
+        "meaning": "聪明的；机灵的；熟练的"
+      },
+      {
+        "word": "click",
+        "meaning": "点击；使发咔哒声"
+      },
+      {
+        "word": "climate",
+        "meaning": "气候；风气；思潮；风土"
+      },
+      {
+        "word": "climb",
+        "meaning": "爬；攀登；上升"
+      },
+      {
+        "word": "clinic",
+        "meaning": "临床；诊所"
+      },
+      {
+        "word": "clock",
+        "meaning": "时钟；计时器"
+      },
+      {
+        "word": "clone",
+        "meaning": "克隆；无性系；无性繁殖；靠营养生殖而由母体分离繁殖的植物"
+      },
+      {
+        "word": "close",
+        "meaning": "紧密的；亲密的；亲近的"
+      },
+      {
+        "word": "cloth",
+        "meaning": "布；织物；桌布"
+      },
+      {
+        "word": "clothes",
+        "meaning": "衣服"
+      },
+      {
+        "word": "clothing",
+        "meaning": "（总称）[服装] 服装；帆装"
+      },
+      {
+        "word": "cloud",
+        "meaning": "云；阴云；云状物；一大群；黑斑"
+      },
+      {
+        "word": "cloudy",
+        "meaning": "多云的；阴天的；愁容满面的"
+      },
+      {
+        "word": "club",
+        "meaning": "俱乐部，社团；夜总会；棍棒；（扑克牌中的）梅花"
+      },
+      {
+        "word": "clumsy",
+        "meaning": "笨拙的"
+      },
+      {
+        "word": "coach",
+        "meaning": "教练；旅客车厢；长途公车；四轮大马车"
+      },
+      {
+        "word": "coal",
+        "meaning": "上煤；加煤"
+      },
+      {
+        "word": "coast",
+        "meaning": "滑行；沿岸航行"
+      },
+      {
+        "word": "coat",
+        "meaning": "外套"
+      },
+      {
+        "word": "cock",
+        "meaning": "公鸡；龙头；雄鸟；头目"
+      },
+      {
+        "word": "cocoa",
+        "meaning": "可可粉；可可豆；可可饮料；深褐色"
+      },
+      {
+        "word": "coffee",
+        "meaning": "咖啡；咖啡豆；咖啡色"
+      },
+      {
+        "word": "coin",
+        "meaning": "铸造（货币）；杜撰，创造"
+      },
+      {
+        "word": "coincidence",
+        "meaning": "巧合；一致；同时发生"
+      },
+      {
+        "word": "coke",
+        "meaning": "焦炭；可卡因；可口可乐（Coca-Cola）"
+      },
+      {
+        "word": "cold",
+        "meaning": "寒冷的；冷淡的，不热情的；失去知觉的"
+      },
+      {
+        "word": "collar",
+        "meaning": "衣领；颈圈"
+      },
+      {
+        "word": "colleague",
+        "meaning": "同事，同僚"
+      },
+      {
+        "word": "collect",
+        "meaning": "收集；募捐"
+      },
+      {
+        "word": "collection",
+        "meaning": "采集，聚集；[税收] 征收；收藏品；募捐"
+      },
+      {
+        "word": "college",
+        "meaning": "大学；学院；学会"
+      },
+      {
+        "word": "collision",
+        "meaning": "碰撞；冲突；（意见，看法）的抵触；（政党等的）倾轧"
+      },
+      {
+        "word": "colour",
+        "meaning": "把…涂颜色，粉饰；歪曲；使脸红"
+      },
+      {
+        "word": "comb",
+        "meaning": "梳子；蜂巢；鸡冠"
+      },
+      {
+        "word": "combine",
+        "meaning": "使化合；使联合，使结合"
+      },
+      {
+        "word": "come",
+        "meaning": "来；开始；出现；发生；变成；到达"
+      },
+      {
+        "word": "comedy",
+        "meaning": "喜剧；喜剧性；有趣的事情"
+      },
+      {
+        "word": "comfort",
+        "meaning": "安慰；舒适；安慰者"
+      },
+      {
+        "word": "comfortable",
+        "meaning": "舒适的，舒服的"
+      },
+      {
+        "word": "comma",
+        "meaning": "逗号；停顿"
+      },
+      {
+        "word": "command",
+        "meaning": "命令，指挥；控制"
+      },
+      {
+        "word": "comment",
+        "meaning": "评论；意见；批评"
+      },
+      {
+        "word": "commercial",
+        "meaning": "商业的；营利的；靠广告收入的"
+      },
+      {
+        "word": "commit",
+        "meaning": "犯罪，做错事；把交托给；指派…作战；使…承担义务"
+      },
+      {
+        "word": "commitment",
+        "meaning": "承诺，保证；委托；承担义务；献身"
+      },
+      {
+        "word": "committee",
+        "meaning": "委员会"
+      },
+      {
+        "word": "common",
+        "meaning": "共同的；普通的；一般的；通常的"
+      },
+      {
+        "word": "communicate",
+        "meaning": "通讯，传达；相通；交流；感染"
+      },
+      {
+        "word": "communication",
+        "meaning": "通讯，[通信] 通信；交流；信函"
+      },
+      {
+        "word": "communism",
+        "meaning": "共产主义"
+      },
+      {
+        "word": "communist",
+        "meaning": "共产党员；共产主义者"
+      },
+      {
+        "word": "companion",
+        "meaning": "同伴；朋友；指南；手册"
+      },
+      {
+        "word": "company",
+        "meaning": "公司；陪伴，同伴；连队"
+      },
+      {
+        "word": "compare",
+        "meaning": "比较"
+      },
+      {
+        "word": "compass",
+        "meaning": "指南针，罗盘；圆规"
+      },
+      {
+        "word": "compensate",
+        "meaning": "补偿，赔偿；抵消"
+      },
+      {
+        "word": "compete",
+        "meaning": "竞争；比赛；对抗"
+      },
+      {
+        "word": "competence",
+        "meaning": "能力，胜任；权限；作证能力；足以过舒适生活的收入"
+      },
+      {
+        "word": "competition",
+        "meaning": "竞争；比赛，竞赛"
+      },
+      {
+        "word": "competitor",
+        "meaning": "竞争者，对手"
+      },
+      {
+        "word": "complete",
+        "meaning": "完整的；完全的；彻底的"
+      },
+      {
+        "word": "complex",
+        "meaning": "复杂的；合成的"
+      },
+      {
+        "word": "component",
+        "meaning": "组成的，构成的"
+      },
+      {
+        "word": "composition",
+        "meaning": "作文，作曲，作品；[材] 构成；合成物；成分"
+      },
+      {
+        "word": "comprehension",
+        "meaning": "理解；包含"
+      },
+      {
+        "word": "compromise",
+        "meaning": "妥协；危害"
+      },
+      {
+        "word": "compulsory",
+        "meaning": "义务的；必修的；被强制的"
+      },
+      {
+        "word": "computer",
+        "meaning": "计算机；电脑；电子计算机"
+      },
+      {
+        "word": "comrade",
+        "meaning": "同志；伙伴"
+      },
+      {
+        "word": "concentrate",
+        "meaning": "集中；浓缩；全神贯注；聚集"
+      },
+      {
+        "word": "concept",
+        "meaning": "观念，概念"
+      },
+      {
+        "word": "concern",
+        "meaning": "涉及，关系到；使担心"
+      },
+      {
+        "word": "concert",
+        "meaning": "音乐会；一致；和谐"
+      },
+      {
+        "word": "conclude",
+        "meaning": "推断；决定，作结论；结束"
+      },
+      {
+        "word": "conclusion",
+        "meaning": "结论；结局；推论"
+      },
+      {
+        "word": "concrete",
+        "meaning": "混凝土的；实在的，具体的；有形的"
+      },
+      {
+        "word": "condemn",
+        "meaning": "谴责；判刑，定罪；声讨"
+      },
+      {
+        "word": "condition",
+        "meaning": "条件；情况；环境；身份"
+      },
+      {
+        "word": "conduct",
+        "meaning": "导电；带领"
+      },
+      {
+        "word": "conductor",
+        "meaning": "导体；售票员；领导者；管理人"
+      },
+      {
+        "word": "conference",
+        "meaning": "会议；讨论；协商；联盟；（正式）讨论会；[工会、工党用语]（每年的）大会"
+      },
+      {
+        "word": "confident",
+        "meaning": "自信的；确信的"
+      },
+      {
+        "word": "confidential",
+        "meaning": "机密的；表示信任的；获信任的"
+      },
+      {
+        "word": "confirm",
+        "meaning": "确认；确定；证实；批准；使巩固"
+      },
+      {
+        "word": "conflict",
+        "meaning": "冲突，矛盾；斗争；争执"
+      },
+      {
+        "word": "confuse",
+        "meaning": "使混乱；使困惑"
+      },
+      {
+        "word": "congratulate",
+        "meaning": "祝贺；恭喜；庆贺"
+      },
+      {
+        "word": "congratulation",
+        "meaning": "祝贺；贺辞"
+      },
+      {
+        "word": "connect",
+        "meaning": "连接；联合；关连"
+      },
+      {
+        "word": "connection",
+        "meaning": "连接；关系；人脉；连接件"
+      },
+      {
+        "word": "conscience",
+        "meaning": "道德心，良心"
+      },
+      {
+        "word": "consensus",
+        "meaning": "一致；舆论；合意"
+      },
+      {
+        "word": "consequence",
+        "meaning": "结果；重要性；推论"
+      },
+      {
+        "word": "conservation",
+        "meaning": "保存，保持；保护"
+      },
+      {
+        "word": "conservative",
+        "meaning": "保守的"
+      },
+      {
+        "word": "consider",
+        "meaning": "考虑；认为；考虑到；细想"
+      },
+      {
+        "word": "considerate",
+        "meaning": "体贴的；体谅的；考虑周到的"
+      },
+      {
+        "word": "consideration",
+        "meaning": "考虑；原因；关心；报酬"
+      },
+      {
+        "word": "consist",
+        "meaning": "由…组成；在于；符合"
+      },
+      {
+        "word": "consistent",
+        "meaning": "始终如一的，一致的；坚持的"
+      },
+      {
+        "word": "constant",
+        "meaning": "不变的；恒定的；经常的"
+      },
+      {
+        "word": "constitution",
+        "meaning": "宪法；体制；章程；构造；建立，组成；体格"
+      }
+    ]
+  }
+}

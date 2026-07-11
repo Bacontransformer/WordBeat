@@ -23,13 +23,23 @@ type ApiLevelDetail = {
   words: WordPair[]
 }
 
+const isOffline = import.meta.env.VITE_DATA_MODE === 'offline'
+
 export async function fetchLevelSummaries(): Promise<LevelSummary[]> {
+  if (isOffline) {
+    const { fetchOfflineLevelSummaries } = await import('./offlineLevels')
+    return fetchOfflineLevelSummaries()
+  }
   const res = await fetch('/api/levels')
   if (!res.ok) throw new Error(`加载关卡列表失败 (${res.status})`)
   return res.json()
 }
 
 export async function fetchLevelDetail(id: string): Promise<LevelDef> {
+  if (isOffline) {
+    const { fetchOfflineLevelDetail } = await import('./offlineLevels')
+    return fetchOfflineLevelDetail(id, 80)
+  }
   const res = await fetch(`/api/levels/${id}?words=80`)
   if (!res.ok) throw new Error(`加载关卡失败 (${res.status})`)
   const data = (await res.json()) as ApiLevelDetail

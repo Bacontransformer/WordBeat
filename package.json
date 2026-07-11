@@ -8,16 +8,22 @@
     "server": "npm --prefix server run dev",
     "db:init": "npm --prefix server run db:init",
     "db:fetch": "npm --prefix server run db:fetch",
+    "data:offline": "npm --prefix server run data:offline",
     "dev:all": "concurrently -k -n api,web -c magenta,cyan \"npm run server\" \"npm run dev\"",
     "build": "tsc -b && vite build",
+    "build:android": "npm run data:offline && tsc -b && vite build --mode offline && npx cap sync android",
+    "open:android": "npx cap open android",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",

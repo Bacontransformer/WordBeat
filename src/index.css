@@ -10,7 +10,7 @@
   --panel: rgba(255, 250, 240, 0.72);
   --shadow-ink: rgba(28, 43, 36, 0.12);
 
-  font-family: 'Source Sans 3', 'Noto Sans SC', sans-serif;
+  font-family: 'Source Sans 3', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
   line-height: 1.4;
   font-weight: 450;
   color: var(--ink);

@@ -24,7 +24,7 @@
 
 .float-chip {
   position: absolute;
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-size: clamp(0.85rem, 1.8vw, 1.15rem);
   color: rgba(28, 43, 36, 0.28);
   animation: float-drift 9s ease-in-out infinite;
@@ -83,7 +83,7 @@
 
 .hero-line {
   margin: 1.1rem 0 0.7rem;
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-size: clamp(1.25rem, 3.2vw, 1.85rem);
   font-weight: 600;
   color: var(--ink);
@@ -101,7 +101,7 @@
   margin-top: 1.6rem;
   color: var(--cinnabar);
   text-decoration: none;
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-weight: 650;
   animation: cue-bob 1.8s ease-in-out infinite;
 }
@@ -168,7 +168,7 @@
 }
 
 .chapter-num {
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 700;
   line-height: 1;
@@ -222,7 +222,7 @@
 }
 
 .chapter-go {
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-weight: 650;
   color: var(--ink);
   border-bottom: 1.5px solid var(--cinnabar);
@@ -500,7 +500,7 @@
 
 .end-label {
   color: var(--cinnabar);
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-weight: 650;
   white-space: nowrap;
   font-size: 0.72rem;
@@ -721,7 +721,7 @@
 }
 
 .module-card-name {
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-weight: 650;
   color: var(--mod);
 }
@@ -787,14 +787,17 @@
 .match-chip {
   border: 1.5px solid rgba(28, 43, 36, 0.2);
   background: #fffaf0;
-  padding: 0.7rem 0.75rem;
+  padding: 0.85rem 0.85rem;
+  min-height: 3rem;
   text-align: left;
   border-radius: 2px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
 
 .match-chip.word {
-  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
