@@ -1,33 +1,232 @@
-.level-select,
-.game-screen {
-  width: min(920px, 100%);
-  margin: 0 auto;
-  padding: 1.25rem 1rem 2rem;
+.home {
+  width: 100%;
+  min-height: 100%;
 }
 
-.level-hero {
-  padding: 2.5rem 0 1.75rem;
-  animation: rise-in 0.7s ease both;
+.home-hero {
+  position: relative;
+  min-height: min(92vh, 820px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.1rem, 4vw, 3.5rem) 2.4rem;
+  background:
+    radial-gradient(ellipse at 78% 18%, rgba(196, 92, 62, 0.14), transparent 42%),
+    radial-gradient(ellipse at 12% 70%, rgba(47, 107, 79, 0.12), transparent 45%),
+    linear-gradient(165deg, #efe8d8 0%, #e4dcc8 48%, #d9d0bb 100%);
 }
 
-.brand {
+.hero-float {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.float-chip {
+  position: absolute;
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-size: clamp(0.85rem, 1.8vw, 1.15rem);
+  color: rgba(28, 43, 36, 0.28);
+  animation: float-drift 9s ease-in-out infinite;
+  animation-delay: calc(var(--i) * -0.7s);
+}
+
+.chip-0 { left: 8%; top: 18%; }
+.chip-1 { left: 22%; top: 58%; }
+.chip-2 { left: 38%; top: 12%; }
+.chip-3 { right: 18%; top: 22%; }
+.chip-4 { right: 8%; top: 52%; }
+.chip-5 { left: 48%; top: 68%; }
+.chip-6 { left: 70%; top: 70%; }
+.chip-7 { left: 15%; top: 38%; }
+.chip-8 { right: 28%; top: 42%; }
+.chip-9 { left: 58%; top: 28%; }
+
+.hero-path {
+  position: absolute;
+  inset: 8% 0 18%;
+  width: 100%;
+  height: 74%;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.hero-path-glow {
+  stroke: rgba(196, 92, 62, 0.18);
+  stroke-width: 28;
+  stroke-linecap: round;
+  filter: blur(2px);
+}
+
+.hero-path-stroke {
+  stroke: #c45c3e;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  animation: ink-draw 2.4s ease forwards 0.2s;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 40rem;
+  animation: rise-in 0.8s ease both;
+}
+
+.home .brand {
   margin: 0;
-  font-size: clamp(2.6rem, 8vw, 4.2rem);
-  line-height: 0.95;
+  font-size: clamp(3.4rem, 12vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+}
+
+.hero-line {
+  margin: 1.1rem 0 0.7rem;
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-size: clamp(1.25rem, 3.2vw, 1.85rem);
+  font-weight: 600;
   color: var(--ink);
 }
 
-.level-hero h1 {
-  margin: 0.85rem 0 0.55rem;
-  font-size: clamp(1.15rem, 3vw, 1.45rem);
-  font-weight: 550;
+.home .lede {
+  max-width: 32rem;
+  font-size: 1.02rem;
+}
+
+.hero-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.6rem;
+  color: var(--cinnabar);
+  text-decoration: none;
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-weight: 650;
+  animation: cue-bob 1.8s ease-in-out infinite;
+}
+
+.home-chapters {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 2.5rem 1.1rem 4rem;
+}
+
+.chapters-head {
+  margin-bottom: 1.4rem;
+  animation: rise-in 0.55s ease both;
+}
+
+.chapters-head h2 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.chapters-head p {
+  margin: 0;
   color: var(--ink-soft);
 }
 
-.lede {
+.chapter-list {
+  list-style: none;
   margin: 0;
-  max-width: 34rem;
+  padding: 0;
+}
+
+.chapter-row {
+  border-top: 1px solid rgba(28, 43, 36, 0.14);
+  animation: rise-in 0.5s ease both;
+}
+
+.chapter-row:nth-child(1) { animation-delay: 0.05s; }
+.chapter-row:nth-child(2) { animation-delay: 0.1s; }
+.chapter-row:nth-child(3) { animation-delay: 0.15s; }
+.chapter-row:nth-child(4) { animation-delay: 0.2s; }
+.chapter-row:nth-child(5) { animation-delay: 0.25s; }
+.chapter-row:nth-child(6) { animation-delay: 0.3s; }
+
+.chapter-row:last-child {
+  border-bottom: 1px solid rgba(28, 43, 36, 0.14);
+}
+
+.chapter-hit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr minmax(90px, 18%) auto;
+  gap: 0.85rem 1rem;
+  align-items: center;
+  text-align: left;
+  padding: 1.15rem 0.2rem;
+  border: none;
+  background: transparent;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.chapter-hit:hover {
+  background: linear-gradient(90deg, rgba(196, 92, 62, 0.08), transparent 70%);
+  padding-left: 0.45rem;
+}
+
+.chapter-num {
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--cinnabar);
+  min-width: 2.4rem;
+}
+
+.chapter-main {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.chapter-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+.tone-junior .chapter-meta { color: #2f6b4f; }
+.tone-cet4 .chapter-meta { color: #8a5a2b; }
+.tone-senior .chapter-meta { color: var(--cinnabar); }
+
+.chapter-main strong {
+  font-size: clamp(1.2rem, 2.8vw, 1.55rem);
+}
+
+.chapter-sub {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.chapter-path {
+  display: block;
+  height: 36px;
+  opacity: 0.75;
+}
+
+.chapter-path svg {
+  width: 100%;
+  height: 100%;
+}
+
+.chapter-path path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  color: #c45c3e;
+}
+
+.chapter-go {
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-weight: 650;
+  color: var(--ink);
+  border-bottom: 1.5px solid var(--cinnabar);
+  padding-bottom: 0.05rem;
 }
 
 .level-status {
@@ -44,54 +243,10 @@
   font-size: 0.9em;
 }
 
-.level-list {
-  display: grid;
-  gap: 0.85rem;
-  margin-top: 1.5rem;
-}
-
-.level-card {
-  display: grid;
-  gap: 0.25rem;
-  text-align: left;
-  padding: 1.1rem 1.2rem;
-  border: 1.5px solid rgba(28, 43, 36, 0.18);
-  background: var(--panel);
-  border-radius: 2px;
-  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-  animation: rise-in 0.55s ease both;
-}
-
-.level-card:nth-child(1) {
-  animation-delay: 0.08s;
-}
-.level-card:nth-child(2) {
-  animation-delay: 0.16s;
-}
-.level-card:nth-child(3) {
-  animation-delay: 0.24s;
-}
-
-.level-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--cinnabar);
-  background: rgba(255, 250, 240, 0.92);
-}
-
-.level-index {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--cinnabar);
-}
-
-.level-card strong {
-  font-size: 1.35rem;
-}
-
-.level-card span:last-child {
-  color: var(--ink-soft);
-  font-size: 0.95rem;
+.game-screen {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
 }
 
 .hud {

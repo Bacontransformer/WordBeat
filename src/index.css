@@ -44,12 +44,66 @@ button {
   cursor: pointer;
 }
 
-h1,
-h2,
 .brand,
 .hud-title strong,
-.level-card strong {
+.chapter-main strong,
+.chapters-head h2,
+.hero-line {
   font-family: 'Fraunces', 'Noto Serif SC', serif;
   font-weight: 650;
   letter-spacing: -0.02em;
+}
+
+body.home-mode {
+  background:
+    radial-gradient(ellipse at 80% 0%, rgba(196, 92, 62, 0.08), transparent 40%),
+    linear-gradient(180deg, #efe8d8, #e7e1d2 40%, #ddd4c0);
+}
+
+.lede {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+@keyframes ink-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes float-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.28;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes cue-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+@media (max-width: 720px) {
+  .chapter-hit {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      'num main'
+      'path path'
+      'go go';
+  }
+
+  .chapter-num { grid-area: num; }
+  .chapter-main { grid-area: main; }
+  .chapter-path { grid-area: path; }
+  .chapter-go { grid-area: go; justify-self: start; margin-top: 0.2rem; }
 }
