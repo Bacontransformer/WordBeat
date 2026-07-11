@@ -106,7 +106,7 @@ export function useGame(level: LevelDef) {
     matchedIds: new Set(),
     matchFeedback: null,
     feedbackUntil: 0,
-    preparingLeft: 5,
+    preparingLeft: 3,
     elapsed: 0,
     waveTimer: 0,
     spawnJobs: [],
@@ -140,7 +140,7 @@ export function useGame(level: LevelDef) {
       matchedIds: new Set(),
       matchFeedback: null,
       feedbackUntil: 0,
-      preparingLeft: 5,
+      preparingLeft: 3,
       elapsed: 0,
       waveTimer: 0,
       spawnJobs: [],
@@ -227,7 +227,7 @@ export function useGame(level: LevelDef) {
         const survivors: Monster[] = []
         for (const m of s.monsters) {
           const slowed = now < m.slowUntil
-          m.speed = slowed ? m.baseSpeed * 0.45 : m.baseSpeed
+          m.speed = slowed ? m.baseSpeed * (MODULES.slow.slowFactor ?? 0.55) : m.baseSpeed
           m.progress += m.speed * dt
 
           const pos = positionOnPath(lvl.path, m.progress)
@@ -237,7 +237,7 @@ export function useGame(level: LevelDef) {
               id: uid('f'),
               x: pos.x,
               y: pos.y,
-              text: '漏怪!',
+              text: '??!',
               color: '#c45c3e',
               bornAt: now,
             })
@@ -326,7 +326,7 @@ export function useGame(level: LevelDef) {
         }
         s.projectiles = nextProjectiles
 
-        // Module attacks �?spawn projectiles
+        // Module attacks ??spawn projectiles
         for (const mod of s.modules) {
           mod.cooldownLeft = Math.max(0, mod.cooldownLeft - dt)
           if (mod.cooldownLeft > 0) continue
@@ -459,7 +459,7 @@ export function useGame(level: LevelDef) {
         s.matchedIds.add(meaningId)
         s.combo += 1
         const mult = Math.min(2, 1 + (s.combo - 1) * 0.2)
-        const gain = Math.round(12 * mult)
+        const gain = Math.round(8 * mult)
         s.gold += gain
         s.matchFeedback = 'ok'
         s.feedbackUntil = now + 350
@@ -468,7 +468,7 @@ export function useGame(level: LevelDef) {
           id: uid('f'),
           x: lvl.cols / 2,
           y: 0.3,
-          text: `+${gain} 金`,
+          text: `+${gain} ?`,
           color: '#b8860b',
           bornAt: now,
         })
