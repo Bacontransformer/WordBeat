@@ -1,0 +1,170 @@
+name: iOS Cloud Build
+
+# 在 GitHub → Actions → “iOS Cloud Build” → Run workflow
+# 真机可安装 IPA 需要仓库 Secrets（见 README「iOS 云构建」）
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: Signing mode
+        type: choice
+        options:
+          - ad-hoc
+          - app-store
+          - development
+        default: ad-hoc
+
+permissions:
+  contents: read
+
+jobs:
+  ios:
+    runs-on: macos-14
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install JS dependencies
+        run: |
+          npm ci
+          npm --prefix server ci --ignore-scripts
+
+      - name: Build offline web + Capacitor sync
+        run: npm run build:ios
+
+      - name: Install CocoaPods
+        working-directory: ios/App
+        run: pod install
+
+      - name: Check signing secrets
+        id: secrets
+        run: |
+          if [ -n "${{ secrets.IOS_CERTIFICATE_BASE64 }}" ] && [ -n "${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}" ] && [ -n "${{ secrets.IOS_TEAM_ID }}" ]; then
+            echo "signed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "signed=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::缺少签名 Secrets，将只做模拟器编译校验（不能装到真机）。请配置 IOS_CERTIFICATE_BASE64 / IOS_CERTIFICATE_PASSWORD / IOS_PROVISION_PROFILE_BASE64 / IOS_TEAM_ID"
+          fi
+
+      - name: Build iOS Simulator (compile check)
+        if: steps.secrets.outputs.signed != 'true'
+        working-directory: ios/App
+        run: |
+          xcodebuild \
+            -workspace App.xcworkspace \
+            -scheme App \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+          APP_PATH=$(find "$RUNNER_TEMP/DerivedData" -name 'App.app' -type d | head -n 1)
+          mkdir -p "$RUNNER_TEMP/artifacts"
+          ditto -c -k --sequesterRsrc --keepParent "$APP_PATH" "$RUNNER_TEMP/artifacts/WordBeat-simulator.app.zip"
+
+      - name: Upload simulator artifact
+        if: steps.secrets.outputs.signed != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: wordbeat-ios-simulator
+          path: ${{ runner.temp }}/artifacts/WordBeat-simulator.app.zip
+          if-no-files-found: error
+
+      - name: Import Apple signing identity
+        if: steps.secrets.outputs.signed == 'true'
+        env:
+          IOS_CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64 }}
+          IOS_CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+          IOS_PROVISION_PROFILE_BASE64: ${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.IOS_KEYCHAIN_PASSWORD || 'wordbeat-ci-temp' }}
+        run: |
+          set -euo pipefail
+          CERTIFICATE_PATH="$RUNNER_TEMP/build_certificate.p12"
+          PP_PATH="$RUNNER_TEMP/build_pp.mobileprovision"
+          KEYCHAIN_PATH="$RUNNER_TEMP/app-signing.keychain-db"
+
+          echo "$IOS_CERTIFICATE_BASE64" | base64 --decode > "$CERTIFICATE_PATH"
+          echo "$IOS_PROVISION_PROFILE_BASE64" | base64 --decode > "$PP_PATH"
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security import "$CERTIFICATE_PATH" -P "$IOS_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH"
+
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          PP_UUID=$(security cms -D -i "$PP_PATH" | plutil -extract UUID raw -)
+          cp "$PP_PATH" "$HOME/Library/MobileDevice/Provisioning Profiles/$PP_UUID.mobileprovision"
+          echo "PROVISION_UUID=$PP_UUID" >> "$GITHUB_ENV"
+
+      - name: Archive and export signed IPA
+        if: steps.secrets.outputs.signed == 'true'
+        env:
+          IOS_TEAM_ID: ${{ secrets.IOS_TEAM_ID }}
+          EXPORT_METHOD: ${{ github.event.inputs.profile }}
+        working-directory: ios/App
+        run: |
+          set -euo pipefail
+          ARCHIVE_PATH="$RUNNER_TEMP/WordBeat.xcarchive"
+          EXPORT_PATH="$RUNNER_TEMP/ipa"
+          mkdir -p "$EXPORT_PATH"
+
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>${EXPORT_METHOD}</string>
+            <key>teamID</key>
+            <string>${IOS_TEAM_ID}</string>
+            <key>compileBitcode</key>
+            <false/>
+            <key>signingStyle</key>
+            <string>manual</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>com.wordbeat.app</key>
+              <string>${PROVISION_UUID}</string>
+            </dict>
+          </dict>
+          </plist>
+          EOF
+
+          xcodebuild \
+            -workspace App.xcworkspace \
+            -scheme App \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$ARCHIVE_PATH" \
+            DEVELOPMENT_TEAM="$IOS_TEAM_ID" \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE="$PROVISION_UUID" \
+            archive
+
+          xcodebuild -exportArchive \
+            -archivePath "$ARCHIVE_PATH" \
+            -exportPath "$EXPORT_PATH" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist"
+
+          ls -la "$EXPORT_PATH"
+          cp "$EXPORT_PATH"/*.ipa "$RUNNER_TEMP/WordBeat.ipa"
+
+      - name: Upload IPA
+        if: steps.secrets.outputs.signed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: wordbeat-ios-ipa
+          path: ${{ runner.temp }}/WordBeat.ipa
+          if-no-files-found: error
