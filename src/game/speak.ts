@@ -1,6 +1,8 @@
+import { Capacitor } from '@capacitor/core'
+
 let voicesReady = false
 
-function ensureVoices() {
+function ensureWebVoices() {
   if (typeof window === 'undefined' || !window.speechSynthesis) return
   const load = () => {
     voicesReady = window.speechSynthesis.getVoices().length > 0
@@ -11,16 +13,12 @@ function ensureVoices() {
   }
 }
 
-ensureVoices()
+ensureWebVoices()
 
-/** Speak an English word via the browser Speech Synthesis API. */
-export function speakWord(word: string) {
+function speakWithWeb(text: string) {
   if (typeof window === 'undefined' || !window.speechSynthesis) return
 
-  const text = word.trim()
-  if (!text) return
-
-  ensureVoices()
+  ensureWebVoices()
   window.speechSynthesis.cancel()
 
   const utter = new SpeechSynthesisUtterance(text)
@@ -35,4 +33,30 @@ export function speakWord(word: string) {
   if (en) utter.voice = en
 
   window.speechSynthesis.speak(utter)
+}
+
+/** Speak an English word: native TTS on Capacitor, Web Speech elsewhere. */
+export async function speakWord(word: string) {
+  const text = word.trim()
+  if (!text) return
+
+  if (Capacitor.isNativePlatform()) {
+    try {
+      const { TextToSpeech } = await import('@capacitor-community/text-to-speech')
+      await TextToSpeech.stop()
+      await TextToSpeech.speak({
+        text,
+        lang: 'en-US',
+        rate: 0.95,
+        pitch: 1.0,
+        volume: 1.0,
+        category: 'playback',
+      })
+      return
+    } catch (err) {
+      console.warn('Native TTS failed, falling back to Web Speech', err)
+    }
+  }
+
+  speakWithWeb(text)
 }

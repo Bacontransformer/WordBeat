@@ -116,7 +116,10 @@ export function useGame(level: LevelDef) {
   })
 
   const refreshMatch = useCallback((lvl: LevelDef) => {
-    const round = pickMatchRound(lvl.words, 4)
+    const compact =
+      typeof window !== 'undefined' &&
+      (window.matchMedia('(max-width: 900px)').matches || window.innerHeight < 780)
+    const round = pickMatchRound(lvl.words, compact ? 3 : 4)
     stateRef.current.matchRound = round
     stateRef.current.selectedWordId = null
     stateRef.current.matchedIds = new Set()
@@ -446,12 +449,9 @@ export function useGame(level: LevelDef) {
       if (s.matchedIds.has(wordId)) return
       if (s.matchFeedback === 'bad') return
 
-      const next = s.selectedWordId === wordId ? null : wordId
-      s.selectedWordId = next
-      if (next) {
-        const pair = s.matchRound.words.find((w) => w.id === next)
-        if (pair) speakWord(pair.word)
-      }
+      s.selectedWordId = wordId
+      const pair = s.matchRound.words.find((w) => w.id === wordId)
+      if (pair) void speakWord(pair.word)
       setTick((n) => n + 1)
     },
     [],

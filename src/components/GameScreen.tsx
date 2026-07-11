@@ -58,18 +58,22 @@ function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) 
   const { snapshot, selectModule, placeModule, selectWord, selectMeaning, reset } = useGame(level)
 
   return (
-    <div className="game-screen">
+    <div className="game-screen game-screen--play">
       <HUD level={level} snapshot={snapshot} onBack={onBack} onReset={reset} />
 
-      <BattleMap level={level} snapshot={snapshot} onPlace={placeModule} />
+      <div className="game-play-body">
+        <BattleMap level={level} snapshot={snapshot} onPlace={placeModule} />
 
-      <ModuleBar level={level} snapshot={snapshot} onSelect={selectModule} />
+        <div className="game-play-controls">
+          <ModuleBar level={level} snapshot={snapshot} onSelect={selectModule} />
 
-      <MatchPanel
-        snapshot={snapshot}
-        onSelectWord={selectWord}
-        onSelectMeaning={selectMeaning}
-      />
+          <MatchPanel
+            snapshot={snapshot}
+            onSelectWord={selectWord}
+            onSelectMeaning={selectMeaning}
+          />
+        </div>
+      </div>
 
       {(snapshot.phase === 'won' || snapshot.phase === 'lost') && (
         <div className="overlay">
