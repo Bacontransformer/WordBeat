@@ -286,7 +286,7 @@ async function main() {
   for (const [index, level] of levels.entries()) {
     const [levelResult] = await conn.query<mysql.ResultSetHeader>(
       `INSERT INTO levels
-        (slug, name, subtitle, cols, rows, start_gold, lives, pack_id, path_json, unlocked_modules_json, sort_order)
+        (slug, name, subtitle, map_cols, map_rows, start_gold, lives, pack_id, path_json, unlocked_modules_json, sort_order)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?, CAST(? AS JSON), CAST(? AS JSON), ?)`,
       [
         level.slug,
