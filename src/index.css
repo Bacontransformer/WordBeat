@@ -1,0 +1,55 @@
+:root {
+  --paper: #e7e1d2;
+  --paper-deep: #d9d1bd;
+  --ink: #1c2b24;
+  --ink-soft: #3d4f45;
+  --line: #7a9a86;
+  --cinnabar: #c45c3e;
+  --gold: #9a7410;
+  --ok: #2f6b4f;
+  --panel: rgba(255, 250, 240, 0.72);
+  --shadow-ink: rgba(28, 43, 36, 0.12);
+
+  font-family: 'Source Sans 3', 'Noto Sans SC', sans-serif;
+  line-height: 1.4;
+  font-weight: 450;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background:
+    linear-gradient(180deg, transparent 31px, rgba(122, 154, 134, 0.28) 32px) 0 0 / 100% 32px,
+    radial-gradient(ellipse at 20% 0%, #efe9db, var(--paper) 55%);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+.brand,
+.hud-title strong,
+.level-card strong {
+  font-family: 'Fraunces', 'Noto Serif SC', serif;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
