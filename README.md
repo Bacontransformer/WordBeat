@@ -52,8 +52,10 @@ npm run dev
 ### 前置
 
 - Node.js（与 Web 相同）
-- JDK 17
+- JDK **21**（推荐直接用 Android Studio 自带：`C:\develop\Android\jbr`）
 - [Android Studio](https://developer.android.com/studio)（安装 Android SDK / Platform Tools）
+  - Studio 本体示例：`C:\develop\Android`
+  - SDK 常见路径：`%LOCALAPPDATA%\Android\Sdk`
 
 ### 生成 Android 工程并同步 Web 资源
 
@@ -78,11 +80,19 @@ Debug APK 路径大致为：
 
 ### 命令行打 Debug APK（需已配置 SDK）
 
-```bash
+PowerShell 示例（按本机路径调整）：
+
+```powershell
+$env:JAVA_HOME = "C:\develop\Android\jbr"
+$env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
+# 首次可在 android/local.properties 写：sdk.dir=C:\\Users\\你\\AppData\\Local\\Android\\Sdk
+
 npm run build:android
 cd android
 .\gradlew.bat assembleDebug
 ```
+
+产物：`android/app/build/outputs/apk/debug/app-debug.apk`
 
 ### 说明
 

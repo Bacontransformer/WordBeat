@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     namespace "com.wordbeat.app"
     compileSdk rootProject.ext.compileSdkVersion
+    buildToolsVersion "36.1.0"
     defaultConfig {
         applicationId "com.wordbeat.app"
         minSdkVersion rootProject.ext.minSdkVersion
