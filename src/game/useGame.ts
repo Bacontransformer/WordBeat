@@ -418,26 +418,28 @@ export function useGame(level: LevelDef) {
   }, [])
 
   const placeModule = useCallback(
-    (col: number, row: number) => {
+    (col: number, row: number, kind?: ModuleKind | null) => {
       const s = stateRef.current
       const lvl = level
-      if (!s.selectedModule) return
+      const placeKind = kind ?? s.selectedModule
+      if (!placeKind) return
       if (s.phase === 'lost' || s.phase === 'won') return
       if (!lvl.buildable.some((p) => p.x === col && p.y === row)) return
       if (s.modules.some((m) => m.col === col && m.row === row)) return
 
-      const def = MODULES[s.selectedModule]
+      const def = MODULES[placeKind]
       if (s.gold < def.cost) return
 
       s.gold -= def.cost
       s.modules.push({
         id: uid('mod'),
-        kind: s.selectedModule,
+        kind: placeKind,
         col,
         row,
         cooldownLeft: 0.2,
         fireUntil: 0,
       })
+      s.selectedModule = placeKind
       setTick((n) => n + 1)
     },
     [level.id],

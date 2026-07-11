@@ -2,13 +2,15 @@ import { useMemo } from 'react'
 import { MODULES, MONSTERS } from '../game/defs'
 import { pathToSmoothSvgD } from '../game/pathCurve'
 import { MODULE_SPRITE, MONSTER_SPRITE, PROJECTILE_SPRITE } from '../game/sprites'
-import type { GameSnapshot, LevelDef, Projectile } from '../game/types'
+import type { GameSnapshot, LevelDef, ModuleKind, Projectile } from '../game/types'
 import { cellKey, positionOnPath } from '../game/utils'
 
 type Props = {
   level: LevelDef
   snapshot: GameSnapshot
-  onPlace: (col: number, row: number) => void
+  onPlace: (col: number, row: number, kind?: ModuleKind | null) => void
+  /** While dragging a module from the bar, highlight buildable cells */
+  draggingKind?: ModuleKind | null
 }
 
 function projectilePos(proj: Projectile) {
@@ -19,13 +21,14 @@ function projectileAngle(proj: Projectile) {
   return (Math.atan2(proj.toY - proj.y, proj.toX - proj.x) * 180) / Math.PI
 }
 
-export function BattleMap({ level, snapshot, onPlace }: Props) {
+export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Props) {
   const pathSet = new Set(level.path.map((p) => cellKey(p.x, p.y)))
   const buildSet = new Set(level.buildable.map((p) => cellKey(p.x, p.y)))
   const occupied = new Set(snapshot.modules.map((m) => cellKey(m.col, m.row)))
   const start = level.path[0]
   const end = level.path[level.path.length - 1]
   const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
+  const placingKind = draggingKind ?? snapshot.selectedModule
 
   const cellW = 100 / level.cols
   const cellH = 100 / level.rows
@@ -35,7 +38,10 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
   const endCenter = { x: end.x + 0.5, y: end.y + 0.5 }
 
   return (
-    <div className="battle-map" style={{ aspectRatio: `${level.cols} / ${level.rows}` }}>
+    <div
+      className={`battle-map${draggingKind ? ' battle-map-drop-active' : ''}`}
+      style={{ aspectRatio: `${level.cols} / ${level.rows}` }}
+    >
       <div className="map-atmosphere" aria-hidden>
         <span className="ink-blot blot-a" />
         <span className="ink-blot blot-b" />
@@ -139,7 +145,7 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
             const isEnd = end.x === col && end.y === row
             const isStart = start.x === col && start.y === row
             const canPlace =
-              Boolean(snapshot.selectedModule) &&
+              Boolean(placingKind) &&
               isBuild &&
               !occupied.has(key) &&
               snapshot.phase !== 'won' &&
@@ -149,6 +155,8 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
               <button
                 key={key}
                 type="button"
+                data-cell-col={col}
+                data-cell-row={row}
                 className={[
                   'cell',
                   isPath ? 'cell-path' : '',

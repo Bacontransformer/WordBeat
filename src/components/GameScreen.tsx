@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { fetchLevelDetail } from '../api/levels'
-import type { LevelDef } from '../game/types'
+import type { LevelDef, ModuleKind } from '../game/types'
 import { useGame } from '../game/useGame'
 import { BattleMap } from './BattleMap'
 import { HUD } from './HUD'
@@ -56,16 +56,39 @@ export function GameScreen({ levelId, onBack }: Props) {
 
 function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) {
   const { snapshot, selectModule, placeModule, selectWord, selectMeaning, reset } = useGame(level)
+  const [draggingKind, setDraggingKind] = useState<ModuleKind | null>(null)
+
+  const dropModuleAt = (kind: ModuleKind, clientX: number, clientY: number) => {
+    const el = document.elementFromPoint(clientX, clientY)
+    const cell = el?.closest('[data-cell-col][data-cell-row]') as HTMLElement | null
+    if (!cell) return
+    const col = Number(cell.dataset.cellCol)
+    const row = Number(cell.dataset.cellRow)
+    if (Number.isFinite(col) && Number.isFinite(row)) {
+      placeModule(col, row, kind)
+    }
+  }
 
   return (
     <div className="game-screen game-screen--play">
       <HUD level={level} snapshot={snapshot} onBack={onBack} onReset={reset} />
 
       <div className="game-play-body">
-        <BattleMap level={level} snapshot={snapshot} onPlace={placeModule} />
+        <BattleMap
+          level={level}
+          snapshot={snapshot}
+          onPlace={placeModule}
+          draggingKind={draggingKind}
+        />
 
         <div className="game-play-controls">
-          <ModuleBar level={level} snapshot={snapshot} onSelect={selectModule} />
+          <ModuleBar
+            level={level}
+            snapshot={snapshot}
+            onSelect={selectModule}
+            onDragChange={setDraggingKind}
+            onDropAt={dropModuleAt}
+          />
 
           <MatchPanel
             snapshot={snapshot}

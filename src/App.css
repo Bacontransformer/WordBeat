@@ -705,7 +705,43 @@
   border: 1.5px solid color-mix(in srgb, var(--mod) 55%, rgba(28, 43, 36, 0.2));
   background: var(--panel);
   border-radius: 2px;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
   transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.module-card.dragging {
+  opacity: 0.45;
+}
+
+.module-drag-ghost {
+  position: fixed;
+  z-index: 50;
+  pointer-events: none;
+  transform: translate(-50%, -110%);
+  display: grid;
+  grid-template-columns: 40px auto;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.35rem 0.55rem;
+  border: 1.5px solid color-mix(in srgb, var(--mod) 70%, rgba(28, 43, 36, 0.25));
+  background: #fffaf0;
+  box-shadow: 0 8px 22px rgba(28, 43, 36, 0.2);
+  font-family: 'Fraunces', 'Noto Serif SC', 'Songti SC', 'SimSun', Georgia, serif;
+  font-weight: 650;
+  font-size: 0.85rem;
+  color: var(--mod);
+}
+
+.module-drag-ghost img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.battle-map-drop-active .cell-placeable {
+  background: color-mix(in srgb, var(--ok) 12%, transparent);
 }
 
 .module-card-art {
@@ -1096,20 +1132,20 @@
   }
 
   .game-screen--play .battle-map {
-    flex: 1 1 0;
-    min-height: 0;
-    max-height: none;
-    aspect-ratio: unset !important;
+    flex: 0 0 32dvh;
+    height: 32dvh;
+    max-height: 32dvh;
     width: 100%;
+    aspect-ratio: unset !important;
   }
 
   .game-play-controls {
-    flex: 0 0 auto;
-    gap: 0.3rem;
-    max-height: 48dvh;
+    flex: 1 1 auto;
+    gap: 0.35rem;
+    max-height: none;
+    min-height: 0;
     display: flex;
     flex-direction: column;
-    min-height: 0;
   }
 
   .game-screen--play .module-bar {
