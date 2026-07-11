@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
-    "db:init": "tsx src/scripts/initDb.ts"
+    "db:init": "tsx src/scripts/initDb.ts",
+    "db:fetch": "tsx src/scripts/fetchVocab.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,6 +20,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/node": "^24.13.2",
+    "concurrently": "^10.0.3",
     "tsx": "^4.20.3",
     "typescript": "~6.0.2"
   }

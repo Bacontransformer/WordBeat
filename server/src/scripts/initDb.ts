@@ -3,6 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import dotenv from 'dotenv'
 import mysql from 'mysql2/promise'
+import { fetchVocab } from './fetchVocab.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '../../..')
@@ -64,6 +65,8 @@ async function main() {
   const database = process.env.MYSQL_DATABASE || 'wordbeat'
 
   console.log(`Connecting ${user}@${host}:${port} ...`)
+  await fetchVocab(false)
+
   const conn = await mysql.createConnection({ host, port, user, password, multipleStatements: true })
 
   const schema = fs.readFileSync(path.join(rootDir, 'server/sql/schema.sql'), 'utf8')

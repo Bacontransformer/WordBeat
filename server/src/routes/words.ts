@@ -4,7 +4,7 @@ import { pool } from '../db.js'
 
 export const wordsRouter = Router()
 
-wordsRouter.get('/packs', async (_req, res) => {
+async function listPacks(_req: unknown, res: { json: (body: unknown) => void }) {
   const [rows] = await pool.query<RowDataPacket[]>(
     `SELECT slug, name, source,
             (SELECT COUNT(*) FROM words w WHERE w.pack_id = p.id) AS word_count
@@ -12,9 +12,12 @@ wordsRouter.get('/packs', async (_req, res) => {
      ORDER BY id ASC`,
   )
   res.json(rows)
-})
+}
 
-wordsRouter.get('/packs/:slug', async (req, res) => {
+async function packWords(
+  req: { params: { slug: string }; query: { limit?: string } },
+  res: { status: (code: number) => { json: (body: unknown) => void }; json: (body: unknown) => void },
+) {
   const limit = Math.min(500, Math.max(1, Number(req.query.limit || 80)))
   const [packRows] = await pool.query<RowDataPacket[]>(
     'SELECT id, slug, name FROM word_packs WHERE slug = ? LIMIT 1',
@@ -44,4 +47,12 @@ wordsRouter.get('/packs/:slug', async (req, res) => {
       meaning: w.meaning,
     })),
   })
-})
+}
+
+wordsRouter.get('/', listPacks)
+wordsRouter.get('/:slug/words', packWords)
+
+// Backward-compatible aliases under /api/words/*
+export const wordsLegacyRouter = Router()
+wordsLegacyRouter.get('/packs', listPacks)
+wordsLegacyRouter.get('/packs/:slug', packWords)

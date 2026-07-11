@@ -25,7 +25,13 @@ npm run db:init
 
 ## 本地运行
 
-开两个终端：
+```bash
+npm run db:fetch   # 可选：重新下载开源词库
+npm run db:init    # 建表 + 导入词库 + 关卡种子
+npm run dev:all    # 同时启动 API(:3001) 与 Vite(:5173)
+```
+
+或分开启动：
 
 ```bash
 npm run server
@@ -34,6 +40,7 @@ npm run dev
 
 - 前端：http://localhost:5173/
 - API：http://localhost:3001/api/health
+- 词包：http://localhost:3001/api/word-packs/cet4/words?limit=20
 
 ## 当前内容
 

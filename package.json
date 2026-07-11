@@ -7,7 +7,8 @@
     "dev": "vite",
     "server": "npm --prefix server run dev",
     "db:init": "npm --prefix server run db:init",
-    "dev:all": "npm run server",
+    "db:fetch": "npm --prefix server run db:fetch",
+    "dev:all": "concurrently -k -n api,web -c magenta,cyan \"npm run server\" \"npm run dev\"",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
@@ -21,6 +22,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.3",
     "oxlint": "^1.71.0",
     "typescript": "~6.0.2",
     "vite": "^8.1.1"
