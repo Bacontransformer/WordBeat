@@ -1,24 +1,42 @@
 # WordBeat
 
-英语单词匹配 + 路径塔防的 Web Demo。
+英语单词匹配 + 路径塔防 Web Demo。关卡与词库存 MySQL，前端经 Express API 读取。
 
 ## 玩法
 
 1. 选择关卡
-2. 底部点选「英文词 → 释义」配对赚金币（连击有加成）
-3. 选中攻击模组，点路径旁高亮格子部署
+2. 底部点选「英文词 → 释义」配对赚金币
+3. 选中攻击模组，点路径旁格子部署
 4. 拦住怪物到达终点「课本」
 
-## 本地运行
+## 环境准备
+
+1. 本地 MySQL 8（服务 `MySQL80`）
+2. 复制 `.env.example` 为 `.env`，填写密码
+3. 安装依赖并初始化数据库
 
 ```bash
 npm install
+npm --prefix server install
+npm run db:init
+```
+
+词库来源：[KyleBing/english-vocabulary](https://github.com/KyleBing/english-vocabulary)（初中 / 四级 / 高中 JSON）。
+
+## 本地运行
+
+开两个终端：
+
+```bash
+npm run server
 npm run dev
 ```
 
-## 当前 Demo 内容
+- 前端：http://localhost:5173/
+- API：http://localhost:3001/api/health
 
-- 3 个关卡（日常 / 校园 / 旅行词库）
-- 3 种怪物：错字史莱姆、近义词甲虫、同音异形鬼
-- 3 种模组：闪卡炮、词根喷雾、词典减速
-- 本地静态数据，暂无数据库
+## 当前内容
+
+- 3 个关卡（弯曲路径）
+- 词包：初中基础、大学四级、高中进阶（从开源词库导入）
+- 3 种怪物 / 3 种模组

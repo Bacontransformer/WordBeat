@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+
+# Large raw vocab dumps (re-downloadable)
+server/data/raw/
 
 # Editor directories and files
 .vscode/*

@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { MODULES, MONSTERS } from './defs'
-import { getLevel } from './levels'
 import type {
   FloatingText,
   GamePhase,
@@ -87,8 +86,7 @@ function applyDamage(
   }
 }
 
-export function useGame(levelId: string) {
-  const level = getLevel(levelId)
+export function useGame(level: LevelDef) {
   const [tick, setTick] = useState(0)
 
   const stateRef = useRef<GameState>({
@@ -124,7 +122,7 @@ export function useGame(levelId: string) {
   }, [])
 
   const reset = useCallback(() => {
-    const lvl = getLevel(levelId)
+    const lvl = level
     stateRef.current = {
       phase: 'ready',
       gold: lvl.startGold,
@@ -151,7 +149,7 @@ export function useGame(levelId: string) {
     }
     refreshMatch(lvl)
     setTick((t) => t + 1)
-  }, [levelId, refreshMatch])
+  }, [level, refreshMatch])
 
   useEffect(() => {
     reset()
@@ -165,7 +163,7 @@ export function useGame(levelId: string) {
       const dt = Math.min(0.05, (now - last) / 1000)
       last = now
       const s = stateRef.current
-      const lvl = getLevel(levelId)
+      const lvl = level
 
       if (s.matchFeedback && now > s.feedbackUntil) {
         s.matchFeedback = null
@@ -328,7 +326,7 @@ export function useGame(levelId: string) {
         }
         s.projectiles = nextProjectiles
 
-        // Module attacks → spawn projectiles
+        // Module attacks �?spawn projectiles
         for (const mod of s.modules) {
           mod.cooldownLeft = Math.max(0, mod.cooldownLeft - dt)
           if (mod.cooldownLeft > 0) continue
@@ -407,7 +405,7 @@ export function useGame(levelId: string) {
 
     raf = requestAnimationFrame(loop)
     return () => cancelAnimationFrame(raf)
-  }, [levelId])
+  }, [level.id])
 
   const selectModule = useCallback((kind: ModuleKind | null) => {
     stateRef.current.selectedModule = kind
@@ -417,7 +415,7 @@ export function useGame(levelId: string) {
   const placeModule = useCallback(
     (col: number, row: number) => {
       const s = stateRef.current
-      const lvl = getLevel(levelId)
+      const lvl = level
       if (!s.selectedModule) return
       if (s.phase === 'lost' || s.phase === 'won') return
       if (!lvl.buildable.some((p) => p.x === col && p.y === row)) return
@@ -437,7 +435,7 @@ export function useGame(levelId: string) {
       })
       setTick((n) => n + 1)
     },
-    [levelId],
+    [level.id],
   )
 
   const selectWord = useCallback((wordId: string) => {
@@ -451,7 +449,7 @@ export function useGame(levelId: string) {
   const selectMeaning = useCallback(
     (meaningId: string) => {
       const s = stateRef.current
-      const lvl = getLevel(levelId)
+      const lvl = level
       if (!s.selectedWordId) return
       if (s.matchedIds.has(meaningId)) return
       if (s.matchFeedback === 'bad') return
@@ -489,7 +487,7 @@ export function useGame(levelId: string) {
       }
       setTick((n) => n + 1)
     },
-    [levelId, refreshMatch],
+    [level, refreshMatch],
   )
 
   const s = stateRef.current

@@ -30,6 +30,20 @@
   color: var(--ink-soft);
 }
 
+.level-status {
+  margin: 1rem 0;
+  color: var(--ink-soft);
+}
+
+.level-status.error {
+  color: var(--cinnabar);
+  line-height: 1.6;
+}
+
+.level-status code {
+  font-size: 0.9em;
+}
+
 .level-list {
   display: grid;
   gap: 0.85rem;
