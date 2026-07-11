@@ -134,25 +134,25 @@ async function main() {
       subtitle: '初中词 · 入门弯道，学会放塔',
       cols: 10,
       rows: 6,
-      startGold: 70,
-      lives: 4,
+      startGold: 62,
+      lives: 3,
       pack: 'junior',
       modules: ['cannon', 'slow'],
       path: pathFromSteps({ x: 0, y: 1 }, 'RRDDRRRUURRDRR'.split('') as Array<'R' | 'L' | 'U' | 'D'>),
       waves: [
-        { delay: 1.6, spawns: [{ kind: 'slime', count: 8, interval: 0.9 }] },
+        { delay: 1.4, spawns: [{ kind: 'slime', count: 9, interval: 0.8 }] },
         {
-          delay: 2.5,
+          delay: 2.2,
           spawns: [
-            { kind: 'slime', count: 10, interval: 0.7 },
-            { kind: 'beetle', count: 2, interval: 1.3 },
+            { kind: 'slime', count: 11, interval: 0.62 },
+            { kind: 'beetle', count: 3, interval: 1.2 },
           ],
         },
         {
-          delay: 3.0,
+          delay: 2.7,
           spawns: [
-            { kind: 'slime', count: 8, interval: 0.6 },
-            { kind: 'beetle', count: 3, interval: 1.1 },
+            { kind: 'slime', count: 9, interval: 0.52 },
+            { kind: 'beetle', count: 4, interval: 1.0 },
           ],
         },
       ],
@@ -163,8 +163,8 @@ async function main() {
       subtitle: '初中词 · 回字形小路，练控场',
       cols: 11,
       rows: 7,
-      startGold: 75,
-      lives: 4,
+      startGold: 68,
+      lives: 3,
       pack: 'junior',
       modules: ['cannon', 'slow'],
       path: pathFromSteps(
@@ -172,20 +172,20 @@ async function main() {
         'RRRUURRRDDDDRRRUUUR'.split('') as Array<'R' | 'L' | 'U' | 'D'>,
       ),
       waves: [
-        { delay: 1.4, spawns: [{ kind: 'slime', count: 10, interval: 0.75 }] },
+        { delay: 1.2, spawns: [{ kind: 'slime', count: 11, interval: 0.65 }] },
         {
-          delay: 2.3,
+          delay: 2.0,
           spawns: [
-            { kind: 'slime', count: 8, interval: 0.6 },
-            { kind: 'beetle', count: 4, interval: 1.05 },
+            { kind: 'slime', count: 9, interval: 0.52 },
+            { kind: 'beetle', count: 5, interval: 0.95 },
           ],
         },
         {
-          delay: 2.8,
+          delay: 2.5,
           spawns: [
-            { kind: 'beetle', count: 5, interval: 0.9 },
-            { kind: 'slime', count: 10, interval: 0.55 },
-            { kind: 'ghost', count: 2, interval: 1.2 },
+            { kind: 'beetle', count: 6, interval: 0.8 },
+            { kind: 'slime', count: 12, interval: 0.48 },
+            { kind: 'ghost', count: 2, interval: 1.1 },
           ],
         },
       ],
@@ -196,8 +196,8 @@ async function main() {
       subtitle: '四级词 · 喷雾登场，清杂为主',
       cols: 12,
       rows: 6,
-      startGold: 85,
-      lives: 4,
+      startGold: 78,
+      lives: 3,
       pack: 'cet4',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(
@@ -206,33 +206,33 @@ async function main() {
       ),
       waves: [
         {
-          delay: 1.5,
+          delay: 1.2,
           spawns: [
-            { kind: 'slime', count: 10, interval: 0.7 },
-            { kind: 'ghost', count: 2, interval: 1.3 },
+            { kind: 'slime', count: 11, interval: 0.6 },
+            { kind: 'ghost', count: 2, interval: 1.15 },
           ],
         },
         {
-          delay: 2.4,
-          spawns: [
-            { kind: 'beetle', count: 4, interval: 1.05 },
-            { kind: 'ghost', count: 3, interval: 1.1 },
-            { kind: 'slime', count: 8, interval: 0.6 },
-          ],
-        },
-        {
-          delay: 2.8,
+          delay: 2.1,
           spawns: [
             { kind: 'beetle', count: 5, interval: 0.9 },
             { kind: 'ghost', count: 4, interval: 0.95 },
+            { kind: 'slime', count: 9, interval: 0.5 },
           ],
         },
         {
-          delay: 3.2,
+          delay: 2.5,
           spawns: [
-            { kind: 'slime', count: 12, interval: 0.5 },
-            { kind: 'ghost', count: 5, interval: 0.85 },
-            { kind: 'beetle', count: 4, interval: 1.0 },
+            { kind: 'beetle', count: 6, interval: 0.75 },
+            { kind: 'ghost', count: 5, interval: 0.8 },
+          ],
+        },
+        {
+          delay: 2.9,
+          spawns: [
+            { kind: 'slime', count: 14, interval: 0.42 },
+            { kind: 'ghost', count: 6, interval: 0.7 },
+            { kind: 'beetle', count: 5, interval: 0.85 },
           ],
         },
       ],
@@ -243,7 +243,7 @@ async function main() {
       subtitle: '四级词 · 鬼影穿廊，节奏加快',
       cols: 12,
       rows: 7,
-      startGold: 95,
+      startGold: 85,
       lives: 3,
       pack: 'cet4',
       modules: ['cannon', 'slow', 'spray'],
@@ -253,26 +253,26 @@ async function main() {
       ),
       waves: [
         {
-          delay: 1.2,
+          delay: 1.0,
           spawns: [
-            { kind: 'ghost', count: 5, interval: 0.85 },
-            { kind: 'slime', count: 8, interval: 0.65 },
+            { kind: 'ghost', count: 6, interval: 0.75 },
+            { kind: 'slime', count: 9, interval: 0.55 },
           ],
         },
         {
-          delay: 2.2,
+          delay: 1.9,
           spawns: [
-            { kind: 'beetle', count: 6, interval: 0.85 },
-            { kind: 'ghost', count: 5, interval: 0.75 },
-            { kind: 'slime', count: 8, interval: 0.55 },
+            { kind: 'beetle', count: 7, interval: 0.78 },
+            { kind: 'ghost', count: 6, interval: 0.65 },
+            { kind: 'slime', count: 9, interval: 0.48 },
           ],
         },
         {
-          delay: 2.7,
+          delay: 2.4,
           spawns: [
-            { kind: 'slime', count: 12, interval: 0.45 },
-            { kind: 'ghost', count: 8, interval: 0.65 },
-            { kind: 'beetle', count: 5, interval: 0.85 },
+            { kind: 'slime', count: 14, interval: 0.38 },
+            { kind: 'ghost', count: 10, interval: 0.55 },
+            { kind: 'beetle', count: 6, interval: 0.72 },
           ],
         },
       ],
@@ -283,7 +283,7 @@ async function main() {
       subtitle: '高中词 · 长弯道高压波次',
       cols: 13,
       rows: 7,
-      startGold: 105,
+      startGold: 95,
       lives: 3,
       pack: 'senior',
       modules: ['cannon', 'slow', 'spray'],
@@ -293,26 +293,26 @@ async function main() {
       ),
       waves: [
         {
-          delay: 1.2,
+          delay: 1.0,
           spawns: [
-            { kind: 'slime', count: 12, interval: 0.55 },
-            { kind: 'ghost', count: 4, interval: 1.0 },
+            { kind: 'slime', count: 13, interval: 0.48 },
+            { kind: 'ghost', count: 5, interval: 0.85 },
           ],
         },
         {
-          delay: 2.2,
+          delay: 1.85,
           spawns: [
-            { kind: 'beetle', count: 7, interval: 0.85 },
-            { kind: 'ghost', count: 6, interval: 0.75 },
-            { kind: 'slime', count: 10, interval: 0.5 },
-          ],
-        },
-        {
-          delay: 2.8,
-          spawns: [
-            { kind: 'slime', count: 14, interval: 0.4 },
-            { kind: 'beetle', count: 7, interval: 0.7 },
+            { kind: 'beetle', count: 8, interval: 0.75 },
             { kind: 'ghost', count: 8, interval: 0.65 },
+            { kind: 'slime', count: 11, interval: 0.42 },
+          ],
+        },
+        {
+          delay: 2.4,
+          spawns: [
+            { kind: 'slime', count: 16, interval: 0.35 },
+            { kind: 'beetle', count: 8, interval: 0.62 },
+            { kind: 'ghost', count: 10, interval: 0.55 },
           ],
         },
       ],
@@ -323,8 +323,8 @@ async function main() {
       subtitle: '高中词 · 终局混编，别漏怪',
       cols: 14,
       rows: 7,
-      startGold: 115,
-      lives: 3,
+      startGold: 105,
+      lives: 2,
       pack: 'senior',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(
@@ -333,26 +333,26 @@ async function main() {
       ),
       waves: [
         {
-          delay: 1.0,
+          delay: 0.8,
           spawns: [
-            { kind: 'slime', count: 14, interval: 0.45 },
-            { kind: 'ghost', count: 7, interval: 0.7 },
-          ],
-        },
-        {
-          delay: 2.0,
-          spawns: [
-            { kind: 'beetle', count: 8, interval: 0.7 },
+            { kind: 'slime', count: 16, interval: 0.38 },
             { kind: 'ghost', count: 8, interval: 0.6 },
-            { kind: 'slime', count: 10, interval: 0.4 },
           ],
         },
         {
-          delay: 2.5,
+          delay: 1.7,
           spawns: [
-            { kind: 'beetle', count: 10, interval: 0.6 },
-            { kind: 'ghost', count: 10, interval: 0.5 },
-            { kind: 'slime', count: 14, interval: 0.35 },
+            { kind: 'beetle', count: 10, interval: 0.62 },
+            { kind: 'ghost', count: 10, interval: 0.52 },
+            { kind: 'slime', count: 12, interval: 0.34 },
+          ],
+        },
+        {
+          delay: 2.15,
+          spawns: [
+            { kind: 'beetle', count: 12, interval: 0.54 },
+            { kind: 'ghost', count: 13, interval: 0.44 },
+            { kind: 'slime', count: 17, interval: 0.3 },
           ],
         },
       ],
