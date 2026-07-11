@@ -7,6 +7,7 @@ export const MONSTERS: Record<MonsterKind, MonsterDef> = {
     hp: 64,
     speed: 0.53,
     reward: 3,
+    leakDamage: 12,
     color: '#3d6b4f',
   },
   beetle: {
@@ -15,6 +16,7 @@ export const MONSTERS: Record<MonsterKind, MonsterDef> = {
     hp: 145,
     speed: 0.37,
     reward: 6,
+    leakDamage: 28,
     color: '#8a5a2b',
   },
   ghost: {
@@ -23,6 +25,7 @@ export const MONSTERS: Record<MonsterKind, MonsterDef> = {
     hp: 84,
     speed: 0.68,
     reward: 7,
+    leakDamage: 18,
     color: '#5a6b8a',
   },
 }

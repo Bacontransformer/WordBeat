@@ -25,6 +25,7 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
   const occupied = new Set(snapshot.modules.map((m) => cellKey(m.col, m.row)))
   const start = level.path[0]
   const end = level.path[level.path.length - 1]
+  const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
 
   const cellW = 100 / level.cols
   const cellH = 100 / level.rows
@@ -111,6 +112,15 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
           <rect x="-0.22" y="-0.26" width="0.44" height="0.08" rx="0.02" fill="#c45c3e" />
           <rect x="-0.22" y="-0.08" width="0.34" height="0.05" rx="0.01" fill="#1c2b24" opacity="0.25" />
           <rect x="-0.22" y="0.05" width="0.3" height="0.05" rx="0.01" fill="#1c2b24" opacity="0.18" />
+          <rect x="-0.32" y="0.48" width="0.64" height="0.1" rx="0.03" fill="#1c2b24" opacity="0.35" />
+          <rect
+            x="-0.3"
+            y="0.5"
+            width={0.6 * Math.max(0, baseHpRatio)}
+            height="0.06"
+            rx="0.02"
+            fill={baseHpRatio > 0.35 ? '#2f6b4f' : '#c45c3e'}
+          />
         </g>
       </svg>
 
@@ -156,7 +166,11 @@ export function BattleMap({ level, snapshot, onPlace }: Props) {
                 }
               >
                 {isStart && <span className="cell-label">起点</span>}
-                {isEnd && <span className="cell-label end-label">课本</span>}
+                {isEnd && (
+                  <span className="cell-label end-label">
+                    课本 {snapshot.lives}
+                  </span>
+                )}
                 {canPlace && <span className="place-hint" />}
               </button>
             )

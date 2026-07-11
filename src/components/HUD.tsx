@@ -30,7 +30,9 @@ export function HUD({ level, snapshot, onBack, onReset }: Props) {
       </div>
       <div className="hud-stats">
         <span className="stat gold">{snapshot.gold} 金</span>
-        <span className="stat lives">生命 {snapshot.lives}</span>
+        <span className="stat lives">
+          课本 {snapshot.lives}/{snapshot.maxLives}
+        </span>
         <span className="stat combo">连击 {snapshot.combo}</span>
       </div>
       <button type="button" className="text-btn" onClick={onReset}>

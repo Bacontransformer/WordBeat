@@ -16,6 +16,8 @@ export type MonsterDef = {
   hp: number
   speed: number
   reward: number
+  /** Damage dealt to the textbook when this monster reaches the end */
+  leakDamage: number
   color: string
 }
 
@@ -124,7 +126,10 @@ export type MatchRound = {
 export type GameSnapshot = {
   phase: GamePhase
   gold: number
+  /** Current textbook durability */
   lives: number
+  /** Max textbook durability for this level */
+  maxLives: number
   waveIndex: number
   waveTotal: number
   combo: number

@@ -77,7 +77,7 @@ function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) 
             <h2>{snapshot.phase === 'won' ? '课本保住了' : '课本被啃穿了'}</h2>
             <p>
               {snapshot.phase === 'won'
-                ? `连击峰值相关表现不错。剩余生命 ${snapshot.lives}，金币 ${snapshot.gold}。`
+                ? `连击峰值相关表现不错。课本剩余 ${snapshot.lives}，金币 ${snapshot.gold}。`
                 : '再匹配几组词，多放几门炮试试。'}
             </p>
             <div className="overlay-actions">

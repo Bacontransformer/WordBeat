@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { MODULES, MONSTERS } from './defs'
+import { speakWord } from './speak'
 import type {
   FloatingText,
   GamePhase,
@@ -232,12 +233,13 @@ export function useGame(level: LevelDef) {
 
           const pos = positionOnPath(lvl.path, m.progress)
           if (pos.finished || m.progress >= lvl.path.length - 1) {
-            s.lives -= 1
+            const leak = MONSTERS[m.kind].leakDamage
+            s.lives = Math.max(0, s.lives - leak)
             s.floaters.push({
               id: uid('f'),
               x: pos.x,
               y: pos.y,
-              text: '??!',
+              text: `?? -${leak}`,
               color: '#c45c3e',
               bornAt: now,
             })
@@ -438,13 +440,22 @@ export function useGame(level: LevelDef) {
     [level.id],
   )
 
-  const selectWord = useCallback((wordId: string) => {
-    const s = stateRef.current
-    if (s.matchedIds.has(wordId)) return
-    if (s.matchFeedback === 'bad') return
-    s.selectedWordId = s.selectedWordId === wordId ? null : wordId
-    setTick((n) => n + 1)
-  }, [])
+  const selectWord = useCallback(
+    (wordId: string) => {
+      const s = stateRef.current
+      if (s.matchedIds.has(wordId)) return
+      if (s.matchFeedback === 'bad') return
+
+      const next = s.selectedWordId === wordId ? null : wordId
+      s.selectedWordId = next
+      if (next) {
+        const pair = s.matchRound.words.find((w) => w.id === next)
+        if (pair) speakWord(pair.word)
+      }
+      setTick((n) => n + 1)
+    },
+    [],
+  )
 
   const selectMeaning = useCallback(
     (meaningId: string) => {
@@ -499,6 +510,7 @@ export function useGame(level: LevelDef) {
     phase: s.phase,
     gold: s.gold,
     lives: s.lives,
+    maxLives: level.lives,
     waveIndex: Math.max(0, s.waveIndex),
     waveTotal: level.waves.length,
     combo: s.combo,

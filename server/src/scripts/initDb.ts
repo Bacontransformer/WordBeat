@@ -135,7 +135,7 @@ async function main() {
       cols: 10,
       rows: 6,
       startGold: 62,
-      lives: 3,
+      lives: 100,
       pack: 'junior',
       modules: ['cannon', 'slow'],
       path: pathFromSteps({ x: 0, y: 1 }, 'RRDDRRRUURRDRR'.split('') as Array<'R' | 'L' | 'U' | 'D'>),
@@ -164,7 +164,7 @@ async function main() {
       cols: 11,
       rows: 7,
       startGold: 68,
-      lives: 3,
+      lives: 110,
       pack: 'junior',
       modules: ['cannon', 'slow'],
       path: pathFromSteps(
@@ -197,7 +197,7 @@ async function main() {
       cols: 12,
       rows: 6,
       startGold: 78,
-      lives: 3,
+      lives: 120,
       pack: 'cet4',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(
@@ -244,7 +244,7 @@ async function main() {
       cols: 12,
       rows: 7,
       startGold: 85,
-      lives: 3,
+      lives: 130,
       pack: 'cet4',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(
@@ -284,7 +284,7 @@ async function main() {
       cols: 13,
       rows: 7,
       startGold: 95,
-      lives: 3,
+      lives: 140,
       pack: 'senior',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(
@@ -324,7 +324,7 @@ async function main() {
       cols: 14,
       rows: 7,
       startGold: 105,
-      lives: 2,
+      lives: 150,
       pack: 'senior',
       modules: ['cannon', 'slow', 'spray'],
       path: pathFromSteps(

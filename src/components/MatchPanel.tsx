@@ -13,7 +13,7 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
     <section className={`match-panel feedback-${matchFeedback ?? 'none'}`}>
       <header className="match-header">
         <h2>单词匹配</h2>
-        <p>点选英文，再点对应释义 · 连击 {combo}</p>
+        <p>点选英文听发音，再点对应释义 · 连击 {combo}</p>
       </header>
 
       <div className="match-columns">

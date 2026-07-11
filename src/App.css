@@ -502,6 +502,8 @@
   color: var(--cinnabar);
   font-family: 'Fraunces', 'Noto Serif SC', serif;
   font-weight: 650;
+  white-space: nowrap;
+  font-size: 0.72rem;
 }
 
 .battle-entities {
