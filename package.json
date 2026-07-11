@@ -12,7 +12,10 @@
     "dev:all": "concurrently -k -n api,web -c magenta,cyan \"npm run server\" \"npm run dev\"",
     "build": "tsc -b && vite build",
     "build:android": "npm run data:offline && tsc -b && vite build --mode offline && npx cap sync android",
+    "build:ios": "npm run data:offline && tsc -b && vite build --mode offline && npx cap sync ios",
+    "build:mobile": "npm run data:offline && tsc -b && vite build --mode offline && npx cap sync",
     "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -20,6 +23,7 @@
     "@capacitor-community/text-to-speech": "^6.1.0",
     "@capacitor/android": "^7.4.3",
     "@capacitor/core": "^7.4.3",
+    "@capacitor/ios": "^7.6.7",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },

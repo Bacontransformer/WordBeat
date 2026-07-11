@@ -4,6 +4,7 @@
 
 - **Web 版**：关卡与词库存 MySQL，前端经 Express API 读取（需要本机数据库）。
 - **Android 离线版**：同一套玩法，词库与关卡打进 APK，**不连数据库、可不联网**。
+- **iOS 离线版**：同一套 Capacitor 工程（`ios/`），在 **Mac + Xcode** 上编译安装到 iPhone。
 
 ## 玩法
 
@@ -98,7 +99,46 @@ cd android
 
 - Web 默认仍走 `/api` + MySQL；只有 `--mode offline` / Android 包使用内置 JSON。
 - `android/app/src/main/assets/public` 为构建产物，已 gitignore；克隆后请执行 `npm run build:android`。
-- 发音依赖系统 WebView / TTS；个别机型若无声，可在系统设置里安装英文语音包。
+- 发音依赖系统 TTS（Android 原生插件 / iOS AVSpeech）；个别机型若无声，可在系统设置里安装英文语音包。
+
+## iOS 离线版（iPhone）
+
+玩法、词库与 Android 相同，共用离线 JSON 与 `VITE_DATA_MODE=offline` 构建。
+
+### 重要限制
+
+**在 Windows 上无法直接打出可安装的 iPhone 包。** Apple 要求用 macOS 上的 Xcode 签名编译。本仓库已包含 `ios/` 工程；请在 Mac 上完成最后一步，或使用云端 Mac CI（如 GitHub Actions macOS runner / Codemagic）。
+
+### 前置（Mac）
+
+- macOS + 最新较新的 [Xcode](https://developer.apple.com/xcode/)（含 iOS Simulator）
+- [CocoaPods](https://cocoapods.org/)：`sudo gem install cocoapods`
+- Apple ID（免费账号可装到自己的 iPhone，有 7 天证书限制；上架需付费开发者账号）
+
+### 构建与安装
+
+在 **Mac** 上于项目根目录执行：
+
+```bash
+npm install
+npm run build:ios      # offline 构建 + cap sync ios（会跑 pod install）
+npm run open:ios      # 打开 Xcode 工作区
+```
+
+在 Xcode 中：
+
+1. 选中左侧 **App** target → **Signing & Capabilities**
+2. **Team** 选你的 Apple ID 团队；勾选自动签名
+3. 顶部设备选真实 iPhone（先用数据线信任电脑）或模拟器
+4. 点 Run ▶
+
+真机若提示「未受信任的开发者」：iPhone **设置 → 通用 → VPN 与设备管理** → 信任该开发者。
+
+### 发音
+
+iOS 使用同一套 `@capacitor-community/text-to-speech`（底层 AVSpeech）。若无英文声：
+
+**设置 → 辅助功能 → 朗读内容 → 声音**，下载 English 音色后再试。
 
 ## 当前内容
 
