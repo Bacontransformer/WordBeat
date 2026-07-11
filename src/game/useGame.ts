@@ -106,7 +106,7 @@ export function useGame(level: LevelDef) {
     matchedIds: new Set(),
     matchFeedback: null,
     feedbackUntil: 0,
-    preparingLeft: 3,
+    preparingLeft: 4,
     elapsed: 0,
     waveTimer: 0,
     spawnJobs: [],
@@ -140,7 +140,7 @@ export function useGame(level: LevelDef) {
       matchedIds: new Set(),
       matchFeedback: null,
       feedbackUntil: 0,
-      preparingLeft: 3,
+      preparingLeft: 4,
       elapsed: 0,
       waveTimer: 0,
       spawnJobs: [],
@@ -227,7 +227,7 @@ export function useGame(level: LevelDef) {
         const survivors: Monster[] = []
         for (const m of s.monsters) {
           const slowed = now < m.slowUntil
-          m.speed = slowed ? m.baseSpeed * (MODULES.slow.slowFactor ?? 0.55) : m.baseSpeed
+          m.speed = slowed ? m.baseSpeed * (MODULES.slow.slowFactor ?? 0.48) : m.baseSpeed
           m.progress += m.speed * dt
 
           const pos = positionOnPath(lvl.path, m.progress)
@@ -459,7 +459,7 @@ export function useGame(level: LevelDef) {
         s.matchedIds.add(meaningId)
         s.combo += 1
         const mult = Math.min(2, 1 + (s.combo - 1) * 0.2)
-        const gain = Math.round(8 * mult)
+        const gain = Math.round(10 * mult)
         s.gold += gain
         s.matchFeedback = 'ok'
         s.feedbackUntil = now + 350
