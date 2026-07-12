@@ -137,6 +137,8 @@ export function BattleMap({
         aspectRatio: `${level.cols} / ${level.rows}`,
         background: `linear-gradient(180deg, ${theme.mapFrom} 0%, ${theme.mapTo} 100%)`,
         ['--accent' as string]: theme.accent,
+        ['--map-cols' as string]: String(level.cols),
+        ['--map-rows' as string]: String(level.rows),
       }}
     >
       <div className="map-atmosphere" aria-hidden>
