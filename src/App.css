@@ -992,10 +992,6 @@
   object-fit: contain;
 }
 
-.battle-map-drop-active .cell-placeable {
-  background: color-mix(in srgb, var(--ok) 12%, transparent);
-}
-
 .module-card-art {
   width: 56px;
   height: 56px;
