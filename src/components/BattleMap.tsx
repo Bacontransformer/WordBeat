@@ -1,16 +1,15 @@
-import { useMemo } from 'react'
+import { memo, useMemo } from 'react'
 import { MODULES } from '../game/defs'
 import { CHAPTERS } from '../game/chapters'
 import { pathToSmoothSvgD } from '../game/pathCurve'
-import { moduleSprite, MONSTER_SPRITE, projectileSprite } from '../game/sprites'
-import type { GameSnapshot, LevelDef, ModuleKind, Projectile } from '../game/types'
+import { moduleSprite, monsterSprite, projectileSprite } from '../game/sprites'
+import type { GamePhase, GameSnapshot, LevelDef, ModuleKind, Projectile } from '../game/types'
 import { cellKey, positionOnPath } from '../game/utils'
 
 type Props = {
   level: LevelDef
   snapshot: GameSnapshot
   onPlace: (col: number, row: number, kind?: ModuleKind | null) => void
-  /** While dragging a module from the bar, highlight buildable cells */
   draggingKind?: ModuleKind | null
 }
 
@@ -22,16 +21,91 @@ function projectileAngle(proj: Projectile) {
   return (Math.atan2(proj.toY - proj.y, proj.toX - proj.x) * 180) / Math.PI
 }
 
+type GridProps = {
+  level: LevelDef
+  occupiedKey: string
+  placingKind: ModuleKind | null
+  phase: GamePhase
+  lives: number
+  onPlace: (col: number, row: number, kind?: ModuleKind | null) => void
+}
+
+const BattleGrid = memo(function BattleGrid({
+  level,
+  occupiedKey,
+  placingKind,
+  phase,
+  lives,
+  onPlace,
+}: GridProps) {
+  const pathSet = useMemo(() => new Set(level.path.map((p) => cellKey(p.x, p.y))), [level.path])
+  const buildSet = useMemo(
+    () => new Set(level.buildable.map((p) => cellKey(p.x, p.y))),
+    [level.buildable],
+  )
+  const occupied = useMemo(() => new Set(occupiedKey.split('|').filter(Boolean)), [occupiedKey])
+  const start = level.path[0]
+  const end = level.path[level.path.length - 1]
+
+  return (
+    <div
+      className="battle-grid"
+      style={{
+        gridTemplateColumns: `repeat(${level.cols}, 1fr)`,
+        gridTemplateRows: `repeat(${level.rows}, 1fr)`,
+      }}
+    >
+      {Array.from({ length: level.rows }, (_, row) =>
+        Array.from({ length: level.cols }, (_, col) => {
+          const key = cellKey(col, row)
+          const isPath = pathSet.has(key)
+          const isBuild = buildSet.has(key)
+          const isEnd = end.x === col && end.y === row
+          const isStart = start.x === col && start.y === row
+          const canPlace =
+            Boolean(placingKind) && isBuild && !occupied.has(key) && phase !== 'won' && phase !== 'lost'
+
+          return (
+            <button
+              key={key}
+              type="button"
+              data-cell-col={col}
+              data-cell-row={row}
+              className={[
+                'cell',
+                isPath ? 'cell-path' : '',
+                isBuild ? 'cell-build' : '',
+                isEnd ? 'cell-end' : '',
+                isStart ? 'cell-start' : '',
+                canPlace ? 'cell-placeable' : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+              onClick={() => canPlace && onPlace(col, row)}
+              disabled={!canPlace}
+              aria-label={
+                isEnd ? '终点课本' : isStart ? '起点' : isBuild ? `可建造 ${col},${row}` : `格子 ${col},${row}`
+              }
+            >
+              {isStart && <span className="cell-label">起点</span>}
+              {isEnd && <span className="cell-label end-label">课本 {lives}</span>}
+              {canPlace && <span className="place-hint" />}
+            </button>
+          )
+        }),
+      )}
+    </div>
+  )
+})
+
 export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Props) {
-  const pathSet = new Set(level.path.map((p) => cellKey(p.x, p.y)))
-  const buildSet = new Set(level.buildable.map((p) => cellKey(p.x, p.y)))
-  const occupied = new Set(snapshot.modules.map((m) => cellKey(m.col, m.row)))
   const start = level.path[0]
   const end = level.path[level.path.length - 1]
   const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
   const placingKind = draggingKind ?? snapshot.selectedModule
   const theme = CHAPTERS[level.chapter]
   const gradId = `pathFill-${level.chapter}`
+  const occupiedKey = snapshot.modules.map((m) => cellKey(m.col, m.row)).join('|')
 
   const cellW = 100 / level.cols
   const cellH = 100 / level.rows
@@ -140,61 +214,14 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
         </g>
       </svg>
 
-      <div
-        className="battle-grid"
-        style={{
-          gridTemplateColumns: `repeat(${level.cols}, 1fr)`,
-          gridTemplateRows: `repeat(${level.rows}, 1fr)`,
-        }}
-      >
-        {Array.from({ length: level.rows }, (_, row) =>
-          Array.from({ length: level.cols }, (_, col) => {
-            const key = cellKey(col, row)
-            const isPath = pathSet.has(key)
-            const isBuild = buildSet.has(key)
-            const isEnd = end.x === col && end.y === row
-            const isStart = start.x === col && start.y === row
-            const canPlace =
-              Boolean(placingKind) &&
-              isBuild &&
-              !occupied.has(key) &&
-              snapshot.phase !== 'won' &&
-              snapshot.phase !== 'lost'
-
-            return (
-              <button
-                key={key}
-                type="button"
-                data-cell-col={col}
-                data-cell-row={row}
-                className={[
-                  'cell',
-                  isPath ? 'cell-path' : '',
-                  isBuild ? 'cell-build' : '',
-                  isEnd ? 'cell-end' : '',
-                  isStart ? 'cell-start' : '',
-                  canPlace ? 'cell-placeable' : '',
-                ]
-                  .filter(Boolean)
-                  .join(' ')}
-                onClick={() => canPlace && onPlace(col, row)}
-                disabled={!canPlace}
-                aria-label={
-                  isEnd ? '终点课本' : isStart ? '起点' : isBuild ? `可建造 ${col},${row}` : `格子 ${col},${row}`
-                }
-              >
-                {isStart && <span className="cell-label">起点</span>}
-                {isEnd && (
-                  <span className="cell-label end-label">
-                    课本 {snapshot.lives}
-                  </span>
-                )}
-                {canPlace && <span className="place-hint" />}
-              </button>
-            )
-          }),
-        )}
-      </div>
+      <BattleGrid
+        level={level}
+        occupiedKey={occupiedKey}
+        placingKind={placingKind}
+        phase={snapshot.phase}
+        lives={snapshot.lives}
+        onPlace={onPlace}
+      />
 
       <div className="battle-entities">
         {snapshot.modules.map((mod) => {
@@ -248,7 +275,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
               <div className="hp-bar">
                 <i style={{ width: `${Math.max(0, (m.hp / m.maxHp) * 100)}%` }} />
               </div>
-              <img src={MONSTER_SPRITE[m.kind]} alt={themed.name} draggable={false} />
+              <img src={monsterSprite(level.chapter, m.kind)} alt={themed.name} draggable={false} />
             </div>
           )
         })}

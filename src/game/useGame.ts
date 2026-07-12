@@ -164,6 +164,7 @@ export function useGame(level: LevelDef) {
   useEffect(() => {
     let raf = 0
     let last = performance.now()
+    let lastUi = 0
 
     const loop = (now: number) => {
       const dt = Math.min(0.05, (now - last) / 1000)
@@ -528,7 +529,11 @@ export function useGame(level: LevelDef) {
         }
       }
 
-      setTick((n) => n + 1)
+      // 逻辑 60fps，界面约 30fps，减少 React 重绘卡顿
+      if (now - lastUi >= 33 || s.phase === 'won' || s.phase === 'lost') {
+        lastUi = now
+        setTick((n) => n + 1)
+      }
       raf = requestAnimationFrame(loop)
     }
 

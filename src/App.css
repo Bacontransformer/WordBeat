@@ -201,10 +201,6 @@
   border-bottom: 1.5px solid var(--cinnabar);
 }
 
-.monster-entity.chapter-jungle img { filter: hue-rotate(-8deg) saturate(1.1); }
-.monster-entity.chapter-ocean img { filter: hue-rotate(160deg) saturate(1.05); }
-.monster-entity.chapter-sky img { filter: hue-rotate(220deg) saturate(0.95) brightness(1.05); }
-
 .battle-map.chapter-jungle {
   box-shadow: inset 0 0 0 1px rgba(47, 107, 79, 0.18);
 }

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import type { GameSnapshot } from '../game/types'
 
 type Props = {
@@ -7,8 +7,12 @@ type Props = {
   onSelectMeaning: (id: string) => void
 }
 
+type DragSide = 'word' | 'meaning'
+
 type DragState = {
-  wordId: string
+  side: DragSide
+  id: string
+  label: string
   x: number
   y: number
   startX: number
@@ -20,18 +24,89 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
   const { matchRound, selectedWordId, matchedIds, matchFeedback, combo } = snapshot
   const [drag, setDrag] = useState<DragState | null>(null)
   const dragRef = useRef<DragState | null>(null)
+  const ghostRef = useRef<HTMLDivElement | null>(null)
+  const lineRef = useRef<SVGLineElement | null>(null)
 
+  const suppressClickRef = useRef(false)
   const busy = matchFeedback === 'bad'
 
+  const paintGhost = (x: number, y: number, startX: number, startY: number) => {
+    const ghost = ghostRef.current
+    if (ghost) {
+      ghost.style.left = `${x}px`
+      ghost.style.top = `${y}px`
+    }
+    const line = lineRef.current
+    if (line) {
+      line.setAttribute('x2', String(x))
+      line.setAttribute('y2', String(y))
+      line.setAttribute('x1', String(startX))
+      line.setAttribute('y1', String(startY))
+    }
+  }
+
+  const beginDrag = (
+    e: ReactPointerEvent<HTMLButtonElement>,
+    side: DragSide,
+    id: string,
+    label: string,
+  ) => {
+    if (busy || matchedIds.has(id)) return
+    e.preventDefault()
+    e.currentTarget.setPointerCapture(e.pointerId)
+    if (side === 'word') onSelectWord(id)
+    const next: DragState = {
+      side,
+      id,
+      label,
+      x: e.clientX,
+      y: e.clientY,
+      startX: e.clientX,
+      startY: e.clientY,
+      moved: false,
+    }
+    dragRef.current = next
+    setDrag(next)
+  }
+
+  const moveDrag = (e: ReactPointerEvent, id: string) => {
+    const cur = dragRef.current
+    if (!cur || cur.id !== id) return
+    const dx = e.clientX - cur.startX
+    const dy = e.clientY - cur.startY
+    const moved = cur.moved || dx * dx + dy * dy > 64
+    cur.x = e.clientX
+    cur.y = e.clientY
+    if (moved && !cur.moved) {
+      cur.moved = true
+      setDrag({ ...cur })
+    } else if (cur.moved) {
+      paintGhost(cur.x, cur.y, cur.startX, cur.startY)
+    }
+  }
+
   const finishDrag = (clientX: number, clientY: number, moved: boolean) => {
-    if (moved) {
+    const cur = dragRef.current
+    if (cur && moved) {
       const el = document.elementFromPoint(clientX, clientY)
-      const meaningEl = el?.closest('[data-meaning-id]') as HTMLElement | null
-      const meaningId = meaningEl?.dataset.meaningId
-      if (meaningId && !matchedIds.has(meaningId)) {
-        onSelectMeaning(meaningId)
+      if (cur.side === 'word') {
+        const meaningEl = el?.closest('[data-meaning-id]') as HTMLElement | null
+        const meaningId = meaningEl?.dataset.meaningId
+        if (meaningId && !matchedIds.has(meaningId)) onSelectMeaning(meaningId)
+      } else {
+        const wordEl = el?.closest('[data-word-id]') as HTMLElement | null
+        const wordId = wordEl?.dataset.wordId
+        if (wordId && !matchedIds.has(wordId)) {
+          onSelectWord(wordId)
+          onSelectMeaning(cur.id)
+        }
       }
     }
+    dragRef.current = null
+    setDrag(null)
+  }
+
+  const cancelDrag = () => {
     dragRef.current = null
     setDrag(null)
   }
@@ -40,7 +115,7 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
     <section className={`match-panel feedback-${matchFeedback ?? 'none'}${drag?.moved ? ' dragging' : ''}`}>
       <header className="match-header">
         <h2>单词匹配</h2>
-        <p>点选或滑向释义 · 连击 {combo}</p>
+        <p>左右互拖或点选 · 连击 {combo}</p>
       </header>
 
       <div className="match-columns">
@@ -52,44 +127,17 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
               <button
                 key={w.id}
                 type="button"
-                className={`match-chip word${done ? ' done' : ''}${selected ? ' selected' : ''}${drag?.wordId === w.id && drag.moved ? ' dragging-chip' : ''}`}
+                className={`match-chip word${done ? ' done' : ''}${selected ? ' selected' : ''}${drag?.side === 'word' && drag.id === w.id && drag.moved ? ' dragging-chip' : ''}${drag?.side === 'meaning' && drag.moved ? ' drop-target' : ''}`}
                 disabled={done || busy}
                 data-word-id={w.id}
-                onPointerDown={(e) => {
-                  if (done || busy) return
-                  e.preventDefault()
-                  e.currentTarget.setPointerCapture(e.pointerId)
-                  onSelectWord(w.id)
-                  const next: DragState = {
-                    wordId: w.id,
-                    x: e.clientX,
-                    y: e.clientY,
-                    startX: e.clientX,
-                    startY: e.clientY,
-                    moved: false,
-                  }
-                  dragRef.current = next
-                  setDrag(next)
-                }}
-                onPointerMove={(e) => {
-                  const cur = dragRef.current
-                  if (!cur || cur.wordId !== w.id) return
-                  const dx = e.clientX - cur.startX
-                  const dy = e.clientY - cur.startY
-                  const moved = cur.moved || dx * dx + dy * dy > 64
-                  const next = { ...cur, x: e.clientX, y: e.clientY, moved }
-                  dragRef.current = next
-                  setDrag(next)
-                }}
+                onPointerDown={(e) => beginDrag(e, 'word', w.id, w.word)}
+                onPointerMove={(e) => moveDrag(e, w.id)}
                 onPointerUp={(e) => {
                   const cur = dragRef.current
-                  if (!cur || cur.wordId !== w.id) return
+                  if (!cur || cur.id !== w.id) return
                   finishDrag(e.clientX, e.clientY, cur.moved)
                 }}
-                onPointerCancel={() => {
-                  dragRef.current = null
-                  setDrag(null)
-                }}
+                onPointerCancel={cancelDrag}
               >
                 {w.word}
               </button>
@@ -104,11 +152,29 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
               <button
                 key={m.id}
                 type="button"
-                className={`match-chip meaning${done ? ' done' : ''}${drag?.moved ? ' drop-target' : ''}`}
-                disabled={done || busy || (!selectedWordId && !drag)}
+                className={`match-chip meaning${done ? ' done' : ''}${drag?.side === 'meaning' && drag.id === m.id && drag.moved ? ' dragging-chip' : ''}${drag?.side === 'word' && drag.moved ? ' drop-target' : ''}`}
+                disabled={done || busy}
                 data-meaning-id={m.id}
+                onPointerDown={(e) => beginDrag(e, 'meaning', m.id, m.meaning)}
+                onPointerMove={(e) => moveDrag(e, m.id)}
+                onPointerUp={(e) => {
+                  const cur = dragRef.current
+                  if (!cur || cur.id !== m.id) return
+                  if (!cur.moved && canTap) {
+                    suppressClickRef.current = true
+                    onSelectMeaning(m.id)
+                    cancelDrag()
+                    return
+                  }
+                  finishDrag(e.clientX, e.clientY, cur.moved)
+                }}
+                onPointerCancel={cancelDrag}
                 onClick={() => {
-                  if (canTap) onSelectMeaning(m.id)
+                  if (suppressClickRef.current) {
+                    suppressClickRef.current = false
+                    return
+                  }
+                  if (canTap && !dragRef.current?.moved) onSelectMeaning(m.id)
                 }}
               >
                 {m.meaning}
@@ -122,6 +188,7 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
         <>
           <svg className="match-drag-line" aria-hidden>
             <line
+              ref={lineRef}
               x1={drag.startX}
               y1={drag.startY}
               x2={drag.x}
@@ -132,8 +199,13 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
               strokeDasharray="6 4"
             />
           </svg>
-          <div className="match-drag-ghost" style={{ left: drag.x, top: drag.y }} aria-hidden>
-            {matchRound.words.find((item) => item.id === drag.wordId)?.word}
+          <div
+            ref={ghostRef}
+            className="match-drag-ghost"
+            style={{ left: drag.x, top: drag.y }}
+            aria-hidden
+          >
+            {drag.label}
           </div>
         </>
       )}
