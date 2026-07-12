@@ -117,10 +117,7 @@ export function useGame(level: LevelDef) {
   })
 
   const refreshMatch = useCallback((lvl: LevelDef) => {
-    const compact =
-      typeof window !== 'undefined' &&
-      (window.matchMedia('(max-width: 900px)').matches || window.innerHeight < 780)
-    const round = pickMatchRound(lvl.words, compact ? 3 : 4)
+    const round = pickMatchRound(lvl.words, 4)
     stateRef.current.matchRound = round
     stateRef.current.selectedWordId = null
     stateRef.current.matchedIds = new Set()

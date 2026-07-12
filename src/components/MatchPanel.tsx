@@ -1,4 +1,5 @@
 import { useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
+import { getVoiceAccent, setVoiceAccent, speakWord, type VoiceAccent } from '../game/speak'
 import type { GameSnapshot } from '../game/types'
 
 type Props = {
@@ -23,12 +24,18 @@ type DragState = {
 export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
   const { matchRound, selectedWordId, matchedIds, matchFeedback, combo } = snapshot
   const [drag, setDrag] = useState<DragState | null>(null)
+  const [accent, setAccent] = useState<VoiceAccent>(() => getVoiceAccent())
   const dragRef = useRef<DragState | null>(null)
   const ghostRef = useRef<HTMLDivElement | null>(null)
   const lineRef = useRef<SVGLineElement | null>(null)
 
   const suppressClickRef = useRef(false)
   const busy = matchFeedback === 'bad'
+
+  const changeAccent = (next: VoiceAccent) => {
+    setVoiceAccent(next)
+    setAccent(next)
+  }
 
   const paintGhost = (x: number, y: number, startX: number, startY: number) => {
     const ghost = ghostRef.current
@@ -114,8 +121,32 @@ export function MatchPanel({ snapshot, onSelectWord, onSelectMeaning }: Props) {
   return (
     <section className={`match-panel feedback-${matchFeedback ?? 'none'}${drag?.moved ? ' dragging' : ''}`}>
       <header className="match-header">
-        <h2>单词匹配</h2>
-        <p>左右互拖或点选 · 连击 {combo}</p>
+        <div className="match-header-main">
+          <h2>单词匹配</h2>
+          <p>左右互拖或点选 · 四对 · 连击 {combo}</p>
+        </div>
+        <div className="voice-accent" role="group" aria-label="发音口音">
+          <button
+            type="button"
+            className={`voice-accent-btn${accent === 'en-US' ? ' active' : ''}`}
+            onClick={() => {
+              changeAccent('en-US')
+              void speakWord('hello', 'en-US')
+            }}
+          >
+            美音
+          </button>
+          <button
+            type="button"
+            className={`voice-accent-btn${accent === 'en-GB' ? ' active' : ''}`}
+            onClick={() => {
+              changeAccent('en-GB')
+              void speakWord('hello', 'en-GB')
+            }}
+          >
+            英音
+          </button>
+        </div>
       </header>
 
       <div className="match-columns">

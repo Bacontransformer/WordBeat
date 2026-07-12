@@ -1056,10 +1056,16 @@
 
 .match-header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.match-header-main {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
 }
 
 .match-header h2 {
@@ -1071,6 +1077,38 @@
   margin: 0;
   font-size: 0.85rem;
   color: var(--ink-soft);
+}
+
+.voice-accent {
+  display: inline-flex;
+  gap: 0.25rem;
+  flex: 0 0 auto;
+}
+
+.voice-accent-btn {
+  padding: 0.35rem 0.55rem;
+  min-height: 2rem;
+  border: 1.5px solid rgba(28, 43, 36, 0.2);
+  background: transparent;
+  font-size: 0.78rem;
+}
+
+.voice-accent-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.cell-drop-hover {
+  outline: 2.5px solid color-mix(in srgb, var(--ok, #2f6b4f) 85%, transparent);
+  outline-offset: -2px;
+  background: color-mix(in srgb, var(--ok, #2f6b4f) 22%, transparent) !important;
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+.battle-map-drop-active .cell-placeable {
+  background: color-mix(in srgb, var(--ok, #2f6b4f) 12%, transparent);
 }
 
 .match-columns {

@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react'
+import { memo, useMemo, type RefObject } from 'react'
 import { MODULES } from '../game/defs'
 import { CHAPTERS } from '../game/chapters'
 import { pathToSmoothSvgD } from '../game/pathCurve'
@@ -11,6 +11,8 @@ type Props = {
   snapshot: GameSnapshot
   onPlace: (col: number, row: number, kind?: ModuleKind | null) => void
   draggingKind?: ModuleKind | null
+  hoverCell?: { col: number; row: number } | null
+  mapRef?: RefObject<HTMLDivElement | null>
 }
 
 function projectilePos(proj: Projectile) {
@@ -27,6 +29,8 @@ type GridProps = {
   placingKind: ModuleKind | null
   phase: GamePhase
   lives: number
+  hoverCol: number | null
+  hoverRow: number | null
   onPlace: (col: number, row: number, kind?: ModuleKind | null) => void
 }
 
@@ -36,6 +40,8 @@ const BattleGrid = memo(function BattleGrid({
   placingKind,
   phase,
   lives,
+  hoverCol,
+  hoverRow,
   onPlace,
 }: GridProps) {
   const pathSet = useMemo(() => new Set(level.path.map((p) => cellKey(p.x, p.y))), [level.path])
@@ -64,6 +70,7 @@ const BattleGrid = memo(function BattleGrid({
           const isStart = start.x === col && start.y === row
           const canPlace =
             Boolean(placingKind) && isBuild && !occupied.has(key) && phase !== 'won' && phase !== 'lost'
+          const isHover = hoverCol === col && hoverRow === row && canPlace
 
           return (
             <button
@@ -78,6 +85,7 @@ const BattleGrid = memo(function BattleGrid({
                 isEnd ? 'cell-end' : '',
                 isStart ? 'cell-start' : '',
                 canPlace ? 'cell-placeable' : '',
+                isHover ? 'cell-drop-hover' : '',
               ]
                 .filter(Boolean)
                 .join(' ')}
@@ -98,7 +106,14 @@ const BattleGrid = memo(function BattleGrid({
   )
 })
 
-export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Props) {
+export function BattleMap({
+  level,
+  snapshot,
+  onPlace,
+  draggingKind = null,
+  hoverCell = null,
+  mapRef,
+}: Props) {
   const start = level.path[0]
   const end = level.path[level.path.length - 1]
   const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
@@ -116,6 +131,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
 
   return (
     <div
+      ref={mapRef}
       className={`battle-map chapter-${level.chapter}${draggingKind ? ' battle-map-drop-active' : ''}`}
       style={{
         aspectRatio: `${level.cols} / ${level.rows}`,
@@ -220,6 +236,8 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
         placingKind={placingKind}
         phase={snapshot.phase}
         lives={snapshot.lives}
+        hoverCol={hoverCell?.col ?? null}
+        hoverRow={hoverCell?.row ?? null}
         onPlace={onPlace}
       />
 

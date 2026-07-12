@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { fetchLevelDetail, fetchLevelSummaries } from '../api/levels'
 import { resolveChapter } from '../game/chapters'
+import { resolveModuleDrop } from '../game/dropTarget'
 import type { LevelDef, ModuleKind } from '../game/types'
+import { cellKey } from '../game/utils'
 import { useGame } from '../game/useGame'
 import { getNextLevelId, markLevelCleared } from '../progress/store'
 import { BattleMap } from './BattleMap'
@@ -68,8 +70,10 @@ function LoadedGame({
 }) {
   const { snapshot, selectModule, placeModule, selectWord, selectMeaning, reset } = useGame(level)
   const [draggingKind, setDraggingKind] = useState<ModuleKind | null>(null)
+  const [hoverCell, setHoverCell] = useState<{ col: number; row: number } | null>(null)
   const [nextLevelId, setNextLevelId] = useState<string | null>(null)
   const savedWin = useRef(false)
+  const mapRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     savedWin.current = false
@@ -94,15 +98,20 @@ function LoadedGame({
     })()
   }, [snapshot.phase, level.id])
 
+  const occupied = new Set(snapshot.modules.map((m) => cellKey(m.col, m.row)))
+
+  const resolveDrop = (clientX: number, clientY: number) =>
+    resolveModuleDrop(clientX, clientY, level.buildable, occupied, mapRef.current)
+
   const dropModuleAt = (kind: ModuleKind, clientX: number, clientY: number) => {
-    const el = document.elementFromPoint(clientX, clientY)
-    const cell = el?.closest('[data-cell-col][data-cell-row]') as HTMLElement | null
-    if (!cell) return
-    const col = Number(cell.dataset.cellCol)
-    const row = Number(cell.dataset.cellRow)
-    if (Number.isFinite(col) && Number.isFinite(row)) {
-      placeModule(col, row, kind)
-    }
+    const hit = resolveDrop(clientX, clientY)
+    setHoverCell(null)
+    setDraggingKind(null)
+    if (hit) placeModule(hit.col, hit.row, kind)
+  }
+
+  const previewDropAt = (clientX: number, clientY: number) => {
+    setHoverCell(resolveDrop(clientX, clientY))
   }
 
   return (
@@ -111,10 +120,12 @@ function LoadedGame({
 
       <div className="game-play-body">
         <BattleMap
+          mapRef={mapRef}
           level={level}
           snapshot={snapshot}
           onPlace={placeModule}
           draggingKind={draggingKind}
+          hoverCell={hoverCell}
         />
 
         <div className="game-play-controls">
@@ -122,7 +133,11 @@ function LoadedGame({
             level={level}
             snapshot={snapshot}
             onSelect={selectModule}
-            onDragChange={setDraggingKind}
+            onDragChange={(kind) => {
+              setDraggingKind(kind)
+              if (!kind) setHoverCell(null)
+            }}
+            onDragMove={previewDropAt}
             onDropAt={dropModuleAt}
           />
 

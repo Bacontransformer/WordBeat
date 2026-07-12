@@ -8,6 +8,7 @@ type Props = {
   snapshot: GameSnapshot
   onSelect: (kind: ModuleKind | null) => void
   onDragChange?: (kind: ModuleKind | null) => void
+  onDragMove?: (clientX: number, clientY: number) => void
   onDropAt?: (kind: ModuleKind, clientX: number, clientY: number) => void
 }
 
@@ -20,7 +21,7 @@ type DragState = {
   moved: boolean
 }
 
-export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }: Props) {
+export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDragMove, onDropAt }: Props) {
   const [drag, setDrag] = useState<DragState | null>(null)
   const dragRef = useRef<DragState | null>(null)
   const suppressClickRef = useRef(false)
@@ -72,7 +73,10 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
               const next = { ...cur, x: e.clientX, y: e.clientY, moved }
               dragRef.current = next
               setDrag(next)
-              if (moved) onDragChange?.(kind)
+              if (moved) {
+                onDragChange?.(kind)
+                onDragMove?.(e.clientX, e.clientY)
+              }
             }}
             onPointerUp={(e) => {
               const cur = dragRef.current
