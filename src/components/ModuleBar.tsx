@@ -28,7 +28,10 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDragMove,
   const ended = snapshot.phase === 'won' || snapshot.phase === 'lost'
 
   return (
-    <div className={`module-bar chapter-${level.chapter}${drag?.moved ? ' module-bar-dragging' : ''}`}>
+    <div
+      className={`module-bar chapter-${level.chapter}${drag?.moved ? ' module-bar-dragging' : ''}`}
+      style={{ ['--module-count' as string]: String(Math.max(1, level.unlockedModules.length)) }}
+    >
       {level.unlockedModules.map((kind) => {
         const base = MODULES[kind]
         const selected = snapshot.selectedModule === kind

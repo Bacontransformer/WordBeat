@@ -263,6 +263,9 @@
 .game-screen--play .game-play-body {
   flex: 1 1 auto;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
   gap: 0.4rem;
   display: flex;
   flex-direction: column;
@@ -285,38 +288,45 @@
   gap: 0.4rem;
   max-height: none;
   min-height: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .game-screen--play .module-bar {
-  display: flex;
-  grid-template-columns: none;
-  gap: 0.35rem;
+  display: grid;
+  grid-template-columns: repeat(var(--module-count, 6), minmax(0, 1fr));
+  gap: 0.28rem;
   margin: 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 0.1rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: visible;
+  padding-bottom: 0;
+  box-sizing: border-box;
 }
 
 .game-screen--play .module-card {
-  flex: 0 0 auto;
-  width: 4.6rem;
-  min-width: 4.4rem;
-  max-width: 5.2rem;
+  flex: none;
+  width: auto;
+  min-width: 0;
+  max-width: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   grid-template-columns: none;
-  gap: 0.2rem;
-  padding: 0.3rem 0.25rem;
+  gap: 0.15rem;
+  padding: 0.28rem 0.15rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .game-screen--play .module-card-art {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   flex: 0 0 auto;
 }
 
@@ -324,7 +334,7 @@
   width: 100%;
   min-width: 0;
   display: grid;
-  gap: 0.05rem;
+  gap: 0.02rem;
   justify-items: center;
 }
 
@@ -333,7 +343,7 @@
 }
 
 .game-screen--play .module-card-name {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   line-height: 1.15;
   max-width: 100%;
   white-space: nowrap;
@@ -342,7 +352,7 @@
 }
 
 .game-screen--play .module-card-cost {
-  font-size: 0.62rem;
+  font-size: 0.56rem;
 }
 
 .game-screen--play .match-panel {
@@ -1511,17 +1521,21 @@
     aspect-ratio: var(--map-cols, 12) / var(--map-rows, 7);
   }
 
+  .game-screen--play .module-bar {
+    gap: 0.22rem;
+  }
+
   .game-screen--play .module-card {
-    width: 4.35rem;
-    min-width: 4.2rem;
-    max-width: 4.8rem;
-    padding: 0.25rem 0.2rem;
-    gap: 0.15rem;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    padding: 0.22rem 0.1rem;
+    gap: 0.1rem;
   }
 
   .game-screen--play .module-card-art {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
   }
 
   .game-screen--play .module-card-desc {
@@ -1529,7 +1543,7 @@
   }
 
   .game-screen--play .module-card-name {
-    font-size: 0.64rem;
+    font-size: 0.58rem;
     line-height: 1.1;
     max-width: 100%;
     white-space: nowrap;
@@ -1538,7 +1552,7 @@
   }
 
   .game-screen--play .module-card-cost {
-    font-size: 0.58rem;
+    font-size: 0.52rem;
   }
 
   .game-screen--play .match-panel {
