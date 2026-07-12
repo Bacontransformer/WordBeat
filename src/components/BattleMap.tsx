@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import { MODULES, MONSTERS } from '../game/defs'
+import { MODULES } from '../game/defs'
+import { CHAPTERS } from '../game/chapters'
 import { pathToSmoothSvgD } from '../game/pathCurve'
 import { MODULE_SPRITE, MONSTER_SPRITE, PROJECTILE_SPRITE } from '../game/sprites'
 import type { GameSnapshot, LevelDef, ModuleKind, Projectile } from '../game/types'
@@ -29,6 +30,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
   const end = level.path[level.path.length - 1]
   const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
   const placingKind = draggingKind ?? snapshot.selectedModule
+  const theme = CHAPTERS[level.chapter]
 
   const cellW = 100 / level.cols
   const cellH = 100 / level.rows
@@ -39,8 +41,11 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
 
   return (
     <div
-      className={`battle-map${draggingKind ? ' battle-map-drop-active' : ''}`}
-      style={{ aspectRatio: `${level.cols} / ${level.rows}` }}
+      className={`battle-map chapter-${level.chapter}${draggingKind ? ' battle-map-drop-active' : ''}`}
+      style={{
+        aspectRatio: `${level.cols} / ${level.rows}`,
+        background: `linear-gradient(180deg, ${theme.mapFrom} 0%, ${theme.mapTo} 100%)`,
+      }}
     >
       <div className="map-atmosphere" aria-hidden>
         <span className="ink-blot blot-a" />
@@ -189,6 +194,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
       <div className="battle-entities">
         {snapshot.modules.map((mod) => {
           const def = MODULES[mod.kind]
+          const themed = theme.modules[mod.kind]
           const firing = snapshot.firingModuleIds.has(mod.id)
           return (
             <div
@@ -197,11 +203,11 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
               style={{
                 left: `${(mod.col + 0.5) * cellW}%`,
                 top: `${(mod.row + 0.5) * cellH}%`,
-                ['--mod' as string]: def.color,
+                ['--mod' as string]: themed.color,
               }}
-              title={def.name}
+              title={themed.name}
             >
-              <img src={MODULE_SPRITE[mod.kind]} alt={def.name} draggable={false} />
+              <img src={MODULE_SPRITE[mod.kind]} alt={themed.name} draggable={false} />
               {snapshot.selectedModule === mod.kind && (
                 <span
                   className="range-ring"
@@ -218,24 +224,25 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
 
         {snapshot.monsters.map((m) => {
           const pos = positionOnPath(level.path, m.progress)
-          const def = MONSTERS[m.kind]
+          const themed = theme.monsters[m.kind]
           const slowed = snapshot.now < m.slowUntil
           const deg = ((pos.angle ?? 0) * 180) / Math.PI
           return (
             <div
               key={m.id}
-              className={`entity monster-entity${slowed ? ' slowed' : ''}`}
+              className={`entity monster-entity chapter-${level.chapter}${slowed ? ' slowed' : ''}`}
               style={{
                 left: `${pos.x * cellW}%`,
                 top: `${pos.y * cellH}%`,
                 ['--face' as string]: `${deg}deg`,
+                ['--mob' as string]: themed.color,
               }}
-              title={def.name}
+              title={themed.name}
             >
               <div className="hp-bar">
                 <i style={{ width: `${Math.max(0, (m.hp / m.maxHp) * 100)}%` }} />
               </div>
-              <img src={MONSTER_SPRITE[m.kind]} alt={def.name} draggable={false} />
+              <img src={MONSTER_SPRITE[m.kind]} alt={themed.name} draggable={false} />
             </div>
           )
         })}

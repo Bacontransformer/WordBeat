@@ -26,6 +26,7 @@ CREATE TABLE IF NOT EXISTS levels (
   slug VARCHAR(32) NOT NULL UNIQUE,
   name VARCHAR(128) NOT NULL,
   subtitle VARCHAR(255) NOT NULL,
+  chapter VARCHAR(32) NOT NULL DEFAULT 'jungle',
   map_cols INT UNSIGNED NOT NULL,
   map_rows INT UNSIGNED NOT NULL,
   start_gold INT UNSIGNED NOT NULL,
@@ -45,4 +46,10 @@ CREATE TABLE IF NOT EXISTS level_waves (
   spawns_json JSON NOT NULL,
   UNIQUE KEY uq_level_wave (level_id, wave_index),
   CONSTRAINT fk_waves_level FOREIGN KEY (level_id) REFERENCES levels(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS player_progress (
+  player_id VARCHAR(64) PRIMARY KEY,
+  cleared_json JSON NOT NULL,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;

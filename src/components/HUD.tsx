@@ -1,4 +1,5 @@
 import type { GameSnapshot, LevelDef } from '../game/types'
+import { CHAPTERS } from '../game/chapters'
 
 type Props = {
   level: LevelDef
@@ -17,6 +18,8 @@ export function HUD({ level, snapshot, onBack, onReset }: Props) {
           ? '通关'
           : '失败'
 
+  const chapterName = CHAPTERS[level.chapter].name
+
   return (
     <header className="hud">
       <div className="hud-left">
@@ -25,7 +28,9 @@ export function HUD({ level, snapshot, onBack, onReset }: Props) {
         </button>
         <div className="hud-title">
           <strong>{level.name}</strong>
-          <span>{phaseLabel}</span>
+          <span>
+            {chapterName} · {phaseLabel}
+          </span>
         </div>
       </div>
       <div className="hud-stats">

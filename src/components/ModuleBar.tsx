@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { MODULES } from '../game/defs'
+import { CHAPTERS } from '../game/chapters'
 import { MODULE_SPRITE } from '../game/sprites'
 import type { GameSnapshot, LevelDef, ModuleKind } from '../game/types'
 
@@ -25,19 +26,21 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
   const dragRef = useRef<DragState | null>(null)
   const suppressClickRef = useRef(false)
   const ended = snapshot.phase === 'won' || snapshot.phase === 'lost'
+  const theme = CHAPTERS[level.chapter]
 
   return (
-    <div className={`module-bar${drag?.moved ? ' module-bar-dragging' : ''}`}>
+    <div className={`module-bar chapter-${level.chapter}${drag?.moved ? ' module-bar-dragging' : ''}`}>
       {level.unlockedModules.map((kind) => {
-        const def = MODULES[kind]
+        const base = MODULES[kind]
+        const themed = theme.modules[kind]
         const selected = snapshot.selectedModule === kind
-        const affordable = snapshot.gold >= def.cost
+        const affordable = snapshot.gold >= base.cost
         return (
           <button
             key={kind}
             type="button"
             className={`module-card${selected ? ' selected' : ''}${affordable ? '' : ' locked'}${drag?.kind === kind && drag.moved ? ' dragging' : ''}`}
-            style={{ ['--mod' as string]: def.color }}
+            style={{ ['--mod' as string]: themed.color }}
             disabled={ended || !affordable}
             onClick={() => {
               if (suppressClickRef.current) {
@@ -93,9 +96,9 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
           >
             <img className="module-card-art" src={MODULE_SPRITE[kind]} alt="" draggable={false} />
             <span className="module-card-copy">
-              <span className="module-card-name">{def.name}</span>
-              <span className="module-card-desc">{def.desc}</span>
-              <span className="module-card-cost">{def.cost} 金</span>
+              <span className="module-card-name">{themed.name}</span>
+              <span className="module-card-desc">{themed.desc}</span>
+              <span className="module-card-cost">{base.cost} 金</span>
             </span>
           </button>
         )
@@ -107,12 +110,12 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
           style={{
             left: drag.x,
             top: drag.y,
-            ['--mod' as string]: MODULES[drag.kind].color,
+            ['--mod' as string]: theme.modules[drag.kind].color,
           }}
           aria-hidden
         >
           <img src={MODULE_SPRITE[drag.kind]} alt="" draggable={false} />
-          <span>{MODULES[drag.kind].name}</span>
+          <span>{theme.modules[drag.kind].name}</span>
         </div>
       )}
     </div>

@@ -30,7 +30,7 @@ export const levelsRouter = Router()
 
 levelsRouter.get('/', async (_req, res) => {
   const [rows] = await pool.query<RowDataPacket[]>(
-    `SELECT l.slug AS id, l.name, l.subtitle, l.sort_order,
+    `SELECT l.slug AS id, l.name, l.subtitle, l.chapter, l.sort_order,
             p.slug AS pack_slug, p.name AS pack_name
      FROM levels l
      JOIN word_packs p ON p.id = l.pack_id
@@ -82,6 +82,7 @@ levelsRouter.get('/:id', async (req, res) => {
     id: level.slug,
     name: level.name,
     subtitle: level.subtitle,
+    chapter: level.chapter || 'jungle',
     cols: level.map_cols,
     rows: level.map_rows,
     startGold: level.start_gold,

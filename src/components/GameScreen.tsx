@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { fetchLevelDetail } from '../api/levels'
 import type { LevelDef, ModuleKind } from '../game/types'
 import { useGame } from '../game/useGame'
+import { markLevelCleared } from '../progress/store'
 import { BattleMap } from './BattleMap'
 import { HUD } from './HUD'
 import { MatchPanel } from './MatchPanel'
@@ -57,6 +58,17 @@ export function GameScreen({ levelId, onBack }: Props) {
 function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) {
   const { snapshot, selectModule, placeModule, selectWord, selectMeaning, reset } = useGame(level)
   const [draggingKind, setDraggingKind] = useState<ModuleKind | null>(null)
+  const savedWin = useRef(false)
+
+  useEffect(() => {
+    savedWin.current = false
+  }, [level.id])
+
+  useEffect(() => {
+    if (snapshot.phase !== 'won' || savedWin.current) return
+    savedWin.current = true
+    void markLevelCleared(level.id)
+  }, [snapshot.phase, level.id])
 
   const dropModuleAt = (kind: ModuleKind, clientX: number, clientY: number) => {
     const el = document.elementFromPoint(clientX, clientY)

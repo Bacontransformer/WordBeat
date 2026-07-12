@@ -1,9 +1,12 @@
 import type { LevelDef, ModuleKind, WordPair } from '../game/types'
+import type { ChapterId } from '../game/chapters'
+import { resolveChapter } from '../game/chapters'
 
 export type LevelSummary = {
   id: string
   name: string
   subtitle: string
+  chapter?: string
   pack_slug: string
   pack_name: string
 }
@@ -12,6 +15,7 @@ type ApiLevelDetail = {
   id: string
   name: string
   subtitle: string
+  chapter?: string
   cols: number
   rows: number
   startGold: number
@@ -47,6 +51,7 @@ export async function fetchLevelDetail(id: string): Promise<LevelDef> {
     id: data.id,
     name: data.name,
     subtitle: data.subtitle,
+    chapter: resolveChapter(data.chapter) as ChapterId,
     cols: data.cols,
     rows: data.rows,
     path: data.path,

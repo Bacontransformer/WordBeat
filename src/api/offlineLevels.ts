@@ -1,4 +1,5 @@
 import type { LevelDef, ModuleKind, Wave, WordPair } from '../game/types'
+import { resolveChapter, type ChapterId } from '../game/chapters'
 import { neighborsOfPath } from '../game/mapUtils'
 import levelsData from '../data/offline/levels.json'
 import packsData from '../data/offline/packs.json'
@@ -7,6 +8,7 @@ export type OfflineLevelSummary = {
   id: string
   name: string
   subtitle: string
+  chapter: ChapterId
   pack_slug: string
   pack_name: string
 }
@@ -15,6 +17,7 @@ type OfflineLevel = {
   id: string
   name: string
   subtitle: string
+  chapter?: string
   cols: number
   rows: number
   startGold: number
@@ -59,23 +62,26 @@ function sampleWords(packSlug: string, limit: number): WordPair[] {
 }
 
 export function fetchOfflineLevelSummaries(): OfflineLevelSummary[] {
-  return levels.map((level) => ({
+  return levels.map((level, index) => ({
     id: level.id,
     name: level.name,
     subtitle: level.subtitle,
+    chapter: resolveChapter(level.chapter, index),
     pack_slug: level.pack_slug,
     pack_name: level.pack_name,
   }))
 }
 
 export function fetchOfflineLevelDetail(id: string, wordCount = 80): LevelDef {
-  const level = levels.find((l) => l.id === id)
+  const index = levels.findIndex((l) => l.id === id)
+  const level = levels[index]
   if (!level) throw new Error(`关卡不存在: ${id}`)
 
   return {
     id: level.id,
     name: level.name,
     subtitle: level.subtitle,
+    chapter: resolveChapter(level.chapter, index),
     cols: level.cols,
     rows: level.rows,
     path: level.path,

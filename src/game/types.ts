@@ -44,6 +44,7 @@ export type LevelDef = {
   id: string
   name: string
   subtitle: string
+  chapter: import('./chapters').ChapterId
   cols: number
   rows: number
   path: Point[]

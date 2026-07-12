@@ -73,6 +73,22 @@ async function main() {
   await conn.query(schema)
   await conn.changeUser({ database })
 
+  // Migrate older DBs that predate chapter / progress tables.
+  try {
+    await conn.query(
+      `ALTER TABLE levels ADD COLUMN chapter VARCHAR(32) NOT NULL DEFAULT 'jungle' AFTER subtitle`,
+    )
+  } catch {
+    /* column already exists */
+  }
+  await conn.query(`
+    CREATE TABLE IF NOT EXISTS player_progress (
+      player_id VARCHAR(64) PRIMARY KEY,
+      cleared_json JSON NOT NULL,
+      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB
+  `)
+
   const rawDir = path.join(rootDir, 'server/data/raw')
   const packs = [
     {
@@ -130,8 +146,9 @@ async function main() {
   const levels = [
     {
       slug: '1',
-      name: '错题本边缘',
-      subtitle: '初中词 · 入门弯道，学会放塔',
+      name: '密林词径',
+      subtitle: '丛林章 · 初中词 · 学会放第一座塔',
+      chapter: 'jungle',
       cols: 10,
       rows: 6,
       startGold: 62,
@@ -159,8 +176,9 @@ async function main() {
     },
     {
       slug: '2',
-      name: '铅笔盒迷宫',
-      subtitle: '初中词 · 回字形小路，练控场',
+      name: '藤蔓回廊',
+      subtitle: '丛林章 · 初中词 · 回字形小路练控场',
+      chapter: 'jungle',
       cols: 11,
       rows: 7,
       startGold: 68,
@@ -192,8 +210,9 @@ async function main() {
     },
     {
       slug: '3',
-      name: '教室走廊',
-      subtitle: '四级词 · 喷雾登场，清杂为主',
+      name: '潮汐词港',
+      subtitle: '海洋章 · 四级词 · 喷雾登场清杂',
+      chapter: 'ocean',
       cols: 12,
       rows: 6,
       startGold: 78,
@@ -239,8 +258,9 @@ async function main() {
     },
     {
       slug: '4',
-      name: '听力室回廊',
-      subtitle: '四级词 · 鬼影穿廊，节奏加快',
+      name: '深渊回声',
+      subtitle: '海洋章 · 四级词 · 鬼影穿廊节奏加快',
+      chapter: 'ocean',
       cols: 12,
       rows: 7,
       startGold: 85,
@@ -279,8 +299,9 @@ async function main() {
     },
     {
       slug: '5',
-      name: '登机口骚乱',
-      subtitle: '高中词 · 长弯道高压波次',
+      name: '云端听写',
+      subtitle: '天空章 · 高中词 · 长弯道高压波次',
+      chapter: 'sky',
       cols: 13,
       rows: 7,
       startGold: 95,
@@ -319,8 +340,9 @@ async function main() {
     },
     {
       slug: '6',
-      name: '红笔风暴',
-      subtitle: '高中词 · 终局混编，别漏怪',
+      name: '风暴课本',
+      subtitle: '天空章 · 高中词 · 终局混编别漏怪',
+      chapter: 'sky',
       cols: 14,
       rows: 7,
       startGold: 105,
@@ -362,12 +384,13 @@ async function main() {
   for (const [index, level] of levels.entries()) {
     const [levelResult] = await conn.query<mysql.ResultSetHeader>(
       `INSERT INTO levels
-        (slug, name, subtitle, map_cols, map_rows, start_gold, lives, pack_id, path_json, unlocked_modules_json, sort_order)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, CAST(? AS JSON), CAST(? AS JSON), ?)`,
+        (slug, name, subtitle, chapter, map_cols, map_rows, start_gold, lives, pack_id, path_json, unlocked_modules_json, sort_order)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, CAST(? AS JSON), CAST(? AS JSON), ?)`,
       [
         level.slug,
         level.name,
         level.subtitle,
+        level.chapter,
         level.cols,
         level.rows,
         level.startGold,
