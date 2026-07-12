@@ -7,18 +7,27 @@ type Props = {
   onSelect: (levelId: string) => void
 }
 
-/** Winding path node positions in viewBox 0..1000 x 0..640 */
+/** 15 nodes along a winding ink path (viewBox 1000x420). */
 const NODE_POS: { x: number; y: number }[] = [
-  { x: 90, y: 120 },
-  { x: 260, y: 200 },
-  { x: 420, y: 130 },
-  { x: 580, y: 230 },
-  { x: 740, y: 150 },
-  { x: 900, y: 240 },
+  { x: 70, y: 90 },
+  { x: 160, y: 150 },
+  { x: 250, y: 95 },
+  { x: 330, y: 165 },
+  { x: 410, y: 110 },
+  { x: 490, y: 175 },
+  { x: 560, y: 105 },
+  { x: 640, y: 165 },
+  { x: 710, y: 100 },
+  { x: 780, y: 170 },
+  { x: 850, y: 115 },
+  { x: 910, y: 175 },
+  { x: 860, y: 250 },
+  { x: 760, y: 290 },
+  { x: 640, y: 260 },
 ]
 
 const PATH_D =
-  'M 90 120 C 160 80, 210 220, 260 200 S 360 90, 420 130 S 500 250, 580 230 S 660 100, 740 150 S 820 280, 900 240'
+  'M 70 90 C 110 60, 140 170, 160 150 S 220 70, 250 95 S 300 180, 330 165 S 370 80, 410 110 S 450 190, 490 175 S 530 70, 560 105 S 600 185, 640 165 S 680 70, 710 100 S 750 190, 780 170 S 820 80, 850 115 S 890 185, 910 175 S 930 220, 860 250 S 800 310, 760 290 S 700 240, 640 260'
 
 export function LevelSelect({ onSelect }: Props) {
   const [levels, setLevels] = useState<LevelSummary[]>([])
@@ -50,22 +59,25 @@ export function LevelSelect({ onSelect }: Props) {
     }
   }, [])
 
-  const access = useMemo(
-    () => getLevelAccess(
-      levels.map((l) => l.id),
-      clearedIds,
-    ),
-    [levels, clearedIds],
+  const metas = useMemo(
+    () =>
+      levels.map((l, i) => ({
+        id: l.id,
+        chapter: resolveChapter(l.chapter, i),
+      })),
+    [levels],
   )
+
+  const access = useMemo(() => getLevelAccess(metas, clearedIds), [metas, clearedIds])
 
   return (
     <div className="home home-map-page">
       <header className="home-top">
         <div>
           <p className="brand">WordBeat</p>
-          <p className="home-top-line">丛林 · 海洋 · 天空 — 沿墨迹前进</p>
+          <p className="home-top-line">丛林 · 海洋 · 天空 — 每章 5 关</p>
         </div>
-        <p className="home-top-hint">通关解锁下一关 · 旗子标记当前进度</p>
+        <p className="home-top-hint">通关本章全部关卡可解锁下一章 · 旗子标记当前进度</p>
       </header>
 
       {loading && <p className="level-status">正在加载关卡地图…</p>}
@@ -91,7 +103,7 @@ export function LevelSelect({ onSelect }: Props) {
             </div>
           </div>
 
-          <svg className="world-map-svg" viewBox="0 0 1000 360" role="img">
+          <svg className="world-map-svg world-map-svg-tall" viewBox="0 0 1000 340" role="img">
             <title>弯曲线关卡路线</title>
             <path className="world-path-glow" d={PATH_D} fill="none" />
             <path className="world-path" d={PATH_D} fill="none" />
@@ -109,13 +121,13 @@ export function LevelSelect({ onSelect }: Props) {
                   transform={`translate(${pos.x} ${pos.y})`}
                 >
                   {frontier && (
-                    <g className="map-flag" transform="translate(18 -34)">
-                      <line x1="0" y1="0" x2="0" y2="34" stroke="#1c2b24" strokeWidth="2.5" />
-                      <path d="M0 2 L22 10 L0 18 Z" fill="#c45c3e" />
+                    <g className="map-flag" transform="translate(14 -28)">
+                      <line x1="0" y1="0" x2="0" y2="28" stroke="#1c2b24" strokeWidth="2.2" />
+                      <path d="M0 2 L18 8 L0 14 Z" fill="#c45c3e" />
                     </g>
                   )}
-                  <circle className="map-node-ring" r="22" />
-                  <circle className="map-node-core" r="16" />
+                  <circle className="map-node-ring" r="16" />
+                  <circle className="map-node-core" r="12" />
                   <text className="map-node-num" textAnchor="middle" dominantBaseline="central">
                     {cleared ? '✓' : index + 1}
                   </text>

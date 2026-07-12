@@ -2,12 +2,12 @@
   {
     "id": "1",
     "name": "密林词径",
-    "subtitle": "丛林章 · 初中词 · 学会放第一座塔",
+    "subtitle": "丛林章 · 第 1/5 关",
     "chapter": "jungle",
     "cols": 10,
     "rows": 6,
-    "startGold": 62,
-    "lives": 100,
+    "startGold": 55,
+    "lives": 95,
     "pack": "junior",
     "pack_slug": "junior",
     "pack_name": "初中基础",
@@ -83,38 +83,28 @@
         "spawns": [
           {
             "kind": "slime",
-            "count": 9,
-            "interval": 0.8
+            "count": 10,
+            "interval": 0.79
           }
         ]
       },
       {
-        "delay": 2.2,
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 12,
+            "interval": 0.7110000000000001
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
         "spawns": [
           {
             "kind": "slime",
             "count": 11,
-            "interval": 0.62
-          },
-          {
-            "kind": "beetle",
-            "count": 3,
-            "interval": 1.2
-          }
-        ]
-      },
-      {
-        "delay": 2.7,
-        "spawns": [
-          {
-            "kind": "slime",
-            "count": 9,
-            "interval": 0.52
-          },
-          {
-            "kind": "beetle",
-            "count": 4,
-            "interval": 1
+            "interval": 0.6715
           }
         ]
       }
@@ -123,12 +113,12 @@
   {
     "id": "2",
     "name": "藤蔓回廊",
-    "subtitle": "丛林章 · 初中词 · 回字形小路练控场",
+    "subtitle": "丛林章 · 第 2/5 关",
     "chapter": "jungle",
     "cols": 11,
     "rows": 7,
-    "startGold": 68,
-    "lives": 110,
+    "startGold": 63,
+    "lives": 103,
     "pack": "junior",
     "pack_slug": "junior",
     "pack_name": "初中基础",
@@ -220,47 +210,42 @@
     ],
     "waves": [
       {
-        "delay": 1.2,
+        "delay": 1.4,
         "spawns": [
-          {
-            "kind": "slime",
-            "count": 11,
-            "interval": 0.65
-          }
-        ]
-      },
-      {
-        "delay": 2,
-        "spawns": [
-          {
-            "kind": "slime",
-            "count": 9,
-            "interval": 0.52
-          },
-          {
-            "kind": "beetle",
-            "count": 5,
-            "interval": 0.95
-          }
-        ]
-      },
-      {
-        "delay": 2.5,
-        "spawns": [
-          {
-            "kind": "beetle",
-            "count": 6,
-            "interval": 0.8
-          },
           {
             "kind": "slime",
             "count": 12,
-            "interval": 0.48
+            "interval": 0.73
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 14,
+            "interval": 0.657
           },
           {
-            "kind": "ghost",
+            "kind": "beetle",
             "count": 2,
-            "interval": 1.1
+            "interval": 1.08
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 13,
+            "interval": 0.6204999999999999
+          },
+          {
+            "kind": "beetle",
+            "count": 3,
+            "interval": 0.9299999999999999
           }
         ]
       }
@@ -268,16 +253,16 @@
   },
   {
     "id": "3",
-    "name": "潮汐词港",
-    "subtitle": "海洋章 · 四级词 · 喷雾登场清杂",
-    "chapter": "ocean",
+    "name": "苔痕岔路",
+    "subtitle": "丛林章 · 第 3/5 关",
+    "chapter": "jungle",
     "cols": 12,
     "rows": 6,
-    "startGold": 78,
-    "lives": 120,
-    "pack": "cet4",
-    "pack_slug": "cet4",
-    "pack_name": "大学四级",
+    "startGold": 71,
+    "lives": 111,
+    "pack": "junior",
+    "pack_slug": "junior",
+    "pack_name": "初中基础",
     "unlockedModules": [
       "cannon",
       "slow",
@@ -371,17 +356,12 @@
     ],
     "waves": [
       {
-        "delay": 1.2,
+        "delay": 1.4,
         "spawns": [
           {
             "kind": "slime",
-            "count": 11,
-            "interval": 0.6
-          },
-          {
-            "kind": "ghost",
-            "count": 2,
-            "interval": 1.15
+            "count": 14,
+            "interval": 0.6699999999999999
           }
         ]
       },
@@ -389,34 +369,34 @@
         "delay": 2.1,
         "spawns": [
           {
-            "kind": "beetle",
-            "count": 5,
-            "interval": 0.9
-          },
-          {
-            "kind": "ghost",
-            "count": 4,
-            "interval": 0.95
-          },
-          {
             "kind": "slime",
-            "count": 9,
-            "interval": 0.5
+            "count": 16,
+            "interval": 0.603
+          },
+          {
+            "kind": "beetle",
+            "count": 3,
+            "interval": 1.02
           }
         ]
       },
       {
-        "delay": 2.5,
+        "delay": 2.6,
         "spawns": [
           {
+            "kind": "slime",
+            "count": 15,
+            "interval": 0.5694999999999999
+          },
+          {
             "kind": "beetle",
-            "count": 6,
-            "interval": 0.75
+            "count": 4,
+            "interval": 0.8699999999999999
           },
           {
             "kind": "ghost",
-            "count": 5,
-            "interval": 0.8
+            "count": 2,
+            "interval": 0.82
           }
         ]
       },
@@ -425,18 +405,18 @@
         "spawns": [
           {
             "kind": "slime",
-            "count": 14,
-            "interval": 0.42
-          },
-          {
-            "kind": "ghost",
-            "count": 6,
-            "interval": 0.7
+            "count": 18,
+            "interval": 0.5025
           },
           {
             "kind": "beetle",
             "count": 5,
-            "interval": 0.85
+            "interval": 0.7699999999999999
+          },
+          {
+            "kind": "ghost",
+            "count": 3,
+            "interval": 0.6699999999999999
           }
         ]
       }
@@ -444,16 +424,16 @@
   },
   {
     "id": "4",
-    "name": "深渊回声",
-    "subtitle": "海洋章 · 四级词 · 鬼影穿廊节奏加快",
-    "chapter": "ocean",
+    "name": "古木词坛",
+    "subtitle": "丛林章 · 第 4/5 关",
+    "chapter": "jungle",
     "cols": 12,
     "rows": 7,
-    "startGold": 85,
-    "lives": 130,
-    "pack": "cet4",
-    "pack_slug": "cet4",
-    "pack_name": "大学四级",
+    "startGold": 79,
+    "lives": 119,
+    "pack": "junior",
+    "pack_slug": "junior",
+    "pack_name": "初中基础",
     "unlockedModules": [
       "cannon",
       "slow",
@@ -547,57 +527,67 @@
     ],
     "waves": [
       {
-        "delay": 1,
+        "delay": 1.4,
         "spawns": [
           {
-            "kind": "ghost",
-            "count": 6,
-            "interval": 0.75
-          },
-          {
             "kind": "slime",
-            "count": 9,
-            "interval": 0.55
+            "count": 16,
+            "interval": 0.61
           }
         ]
       },
       {
-        "delay": 1.9,
+        "delay": 2.1,
         "spawns": [
           {
-            "kind": "beetle",
-            "count": 7,
-            "interval": 0.78
-          },
-          {
-            "kind": "ghost",
-            "count": 6,
-            "interval": 0.65
-          },
-          {
             "kind": "slime",
-            "count": 9,
-            "interval": 0.48
+            "count": 18,
+            "interval": 0.549
+          },
+          {
+            "kind": "beetle",
+            "count": 4,
+            "interval": 0.96
           }
         ]
       },
       {
-        "delay": 2.4,
+        "delay": 2.6,
         "spawns": [
           {
             "kind": "slime",
-            "count": 14,
-            "interval": 0.38
+            "count": 17,
+            "interval": 0.5185
+          },
+          {
+            "kind": "beetle",
+            "count": 5,
+            "interval": 0.81
           },
           {
             "kind": "ghost",
-            "count": 10,
-            "interval": 0.55
+            "count": 3,
+            "interval": 0.76
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.4575
           },
           {
             "kind": "beetle",
             "count": 6,
-            "interval": 0.72
+            "interval": 0.71
+          },
+          {
+            "kind": "ghost",
+            "count": 4,
+            "interval": 0.61
           }
         ]
       }
@@ -605,16 +595,16 @@
   },
   {
     "id": "5",
-    "name": "云端听写",
-    "subtitle": "天空章 · 高中词 · 长弯道高压波次",
-    "chapter": "sky",
+    "name": "翠影终章",
+    "subtitle": "丛林章 · 第 5/5 关",
+    "chapter": "jungle",
     "cols": 13,
     "rows": 7,
-    "startGold": 95,
-    "lives": 140,
-    "pack": "senior",
-    "pack_slug": "senior",
-    "pack_name": "高中进阶",
+    "startGold": 87,
+    "lives": 127,
+    "pack": "junior",
+    "pack_slug": "junior",
+    "pack_name": "初中基础",
     "unlockedModules": [
       "cannon",
       "slow",
@@ -720,56 +710,66 @@
     ],
     "waves": [
       {
-        "delay": 1,
+        "delay": 1.4,
         "spawns": [
           {
             "kind": "slime",
-            "count": 13,
-            "interval": 0.48
-          },
-          {
-            "kind": "ghost",
-            "count": 5,
-            "interval": 0.85
+            "count": 18,
+            "interval": 0.55
           }
         ]
       },
       {
-        "delay": 1.85,
+        "delay": 2.1,
         "spawns": [
           {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.49500000000000005
+          },
+          {
             "kind": "beetle",
-            "count": 8,
+            "count": 5,
+            "interval": 0.9
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 19,
+            "interval": 0.4675
+          },
+          {
+            "kind": "beetle",
+            "count": 6,
             "interval": 0.75
           },
           {
             "kind": "ghost",
-            "count": 8,
-            "interval": 0.65
-          },
-          {
-            "kind": "slime",
-            "count": 11,
-            "interval": 0.42
+            "count": 4,
+            "interval": 0.7000000000000001
           }
         ]
       },
       {
-        "delay": 2.4,
+        "delay": 2.9,
         "spawns": [
           {
             "kind": "slime",
-            "count": 16,
-            "interval": 0.35
+            "count": 22,
+            "interval": 0.41250000000000003
           },
           {
             "kind": "beetle",
-            "count": 8,
-            "interval": 0.62
+            "count": 7,
+            "interval": 0.65
           },
           {
             "kind": "ghost",
-            "count": 10,
+            "count": 5,
             "interval": 0.55
           }
         ]
@@ -778,20 +778,19 @@
   },
   {
     "id": "6",
-    "name": "风暴课本",
-    "subtitle": "天空章 · 高中词 · 终局混编别漏怪",
-    "chapter": "sky",
+    "name": "潮汐词港",
+    "subtitle": "海洋章 · 第 1/5 关",
+    "chapter": "ocean",
     "cols": 14,
     "rows": 7,
-    "startGold": 105,
-    "lives": 150,
-    "pack": "senior",
-    "pack_slug": "senior",
-    "pack_name": "高中进阶",
+    "startGold": 67,
+    "lives": 110,
+    "pack": "cet4",
+    "pack_slug": "cet4",
+    "pack_name": "大学四级",
     "unlockedModules": [
       "cannon",
-      "slow",
-      "spray"
+      "slow"
     ],
     "path": [
       {
@@ -917,57 +916,1500 @@
     ],
     "waves": [
       {
-        "delay": 0.8,
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 11,
+            "interval": 0.75
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 13,
+            "interval": 0.675
+          },
+          {
+            "kind": "beetle",
+            "count": 2,
+            "interval": 1.1
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 12,
+            "interval": 0.6375
+          },
+          {
+            "kind": "beetle",
+            "count": 3,
+            "interval": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "深渊回声",
+    "subtitle": "海洋章 · 第 2/5 关",
+    "chapter": "ocean",
+    "cols": 11,
+    "rows": 6,
+    "startGold": 75,
+    "lives": 118,
+    "pack": "cet4",
+    "pack_slug": "cet4",
+    "pack_name": "大学四级",
+    "unlockedModules": [
+      "cannon",
+      "slow"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 1,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": -1
+      },
+      {
+        "x": 4,
+        "y": -1
+      },
+      {
+        "x": 5,
+        "y": -1
+      },
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 7,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 1
+      },
+      {
+        "x": 8,
+        "y": 0
+      },
+      {
+        "x": 9,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 13,
+            "interval": 0.69
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 15,
+            "interval": 0.621
+          },
+          {
+            "kind": "beetle",
+            "count": 3,
+            "interval": 1.04
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 14,
+            "interval": 0.5864999999999999
+          },
+          {
+            "kind": "beetle",
+            "count": 4,
+            "interval": 0.8899999999999999
+          },
+          {
+            "kind": "ghost",
+            "count": 2,
+            "interval": 0.84
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "珊瑚听写",
+    "subtitle": "海洋章 · 第 3/5 关",
+    "chapter": "ocean",
+    "cols": 12,
+    "rows": 7,
+    "startGold": 83,
+    "lives": 126,
+    "pack": "cet4",
+    "pack_slug": "cet4",
+    "pack_name": "大学四级",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 4
+      },
+      {
+        "x": 1,
+        "y": 4
+      },
+      {
+        "x": 2,
+        "y": 4
+      },
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 5,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 5
+      },
+      {
+        "x": 7,
+        "y": 5
+      },
+      {
+        "x": 8,
+        "y": 5
+      },
+      {
+        "x": 9,
+        "y": 5
+      },
+      {
+        "x": 9,
+        "y": 4
+      },
+      {
+        "x": 9,
+        "y": 3
+      },
+      {
+        "x": 10,
+        "y": 3
+      },
+      {
+        "x": 11,
+        "y": 3
+      },
+      {
+        "x": 11,
+        "y": 4
+      },
+      {
+        "x": 11,
+        "y": 5
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 15,
+            "interval": 0.6299999999999999
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 17,
+            "interval": 0.567
+          },
+          {
+            "kind": "beetle",
+            "count": 4,
+            "interval": 0.9799999999999999
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
         "spawns": [
           {
             "kind": "slime",
             "count": 16,
-            "interval": 0.38
+            "interval": 0.5354999999999999
+          },
+          {
+            "kind": "beetle",
+            "count": 5,
+            "interval": 0.8299999999999998
           },
           {
             "kind": "ghost",
-            "count": 8,
-            "interval": 0.6
+            "count": 3,
+            "interval": 0.7799999999999999
           }
         ]
       },
       {
-        "delay": 1.7,
+        "delay": 2.9,
         "spawns": [
-          {
-            "kind": "beetle",
-            "count": 10,
-            "interval": 0.62
-          },
-          {
-            "kind": "ghost",
-            "count": 10,
-            "interval": 0.52
-          },
           {
             "kind": "slime",
-            "count": 12,
-            "interval": 0.34
-          }
-        ]
-      },
-      {
-        "delay": 2.15,
-        "spawns": [
+            "count": 19,
+            "interval": 0.4724999999999999
+          },
           {
             "kind": "beetle",
-            "count": 12,
-            "interval": 0.54
+            "count": 6,
+            "interval": 0.7299999999999999
           },
           {
             "kind": "ghost",
-            "count": 13,
-            "interval": 0.44
-          },
+            "count": 4,
+            "interval": 0.6299999999999999
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "雾岛航标",
+    "subtitle": "海洋章 · 第 4/5 关",
+    "chapter": "ocean",
+    "cols": 13,
+    "rows": 6,
+    "startGold": 91,
+    "lives": 134,
+    "pack": "cet4",
+    "pack_slug": "cet4",
+    "pack_name": "大学四级",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 5,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 0
+      },
+      {
+        "x": 7,
+        "y": 0
+      },
+      {
+        "x": 8,
+        "y": 0
+      },
+      {
+        "x": 9,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 0
+      },
+      {
+        "x": 10,
+        "y": 1
+      },
+      {
+        "x": 10,
+        "y": 2
+      },
+      {
+        "x": 10,
+        "y": 3
+      },
+      {
+        "x": 11,
+        "y": 3
+      },
+      {
+        "x": 12,
+        "y": 3
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
           {
             "kind": "slime",
             "count": 17,
-            "interval": 0.3
+            "interval": 0.57
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 19,
+            "interval": 0.513
+          },
+          {
+            "kind": "beetle",
+            "count": 5,
+            "interval": 0.9199999999999999
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 18,
+            "interval": 0.48449999999999993
+          },
+          {
+            "kind": "beetle",
+            "count": 6,
+            "interval": 0.77
+          },
+          {
+            "kind": "ghost",
+            "count": 4,
+            "interval": 0.72
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 21,
+            "interval": 0.4275
+          },
+          {
+            "kind": "beetle",
+            "count": 7,
+            "interval": 0.6699999999999999
+          },
+          {
+            "kind": "ghost",
+            "count": 5,
+            "interval": 0.57
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "海沟终章",
+    "subtitle": "海洋章 · 第 5/5 关",
+    "chapter": "ocean",
+    "cols": 12,
+    "rows": 7,
+    "startGold": 99,
+    "lives": 142,
+    "pack": "cet4",
+    "pack_slug": "cet4",
+    "pack_name": "大学四级",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 3
+      },
+      {
+        "x": 1,
+        "y": 3
+      },
+      {
+        "x": 2,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 2
+      },
+      {
+        "x": 5,
+        "y": 3
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 5,
+        "y": 5
+      },
+      {
+        "x": 6,
+        "y": 5
+      },
+      {
+        "x": 7,
+        "y": 5
+      },
+      {
+        "x": 8,
+        "y": 5
+      },
+      {
+        "x": 8,
+        "y": 4
+      },
+      {
+        "x": 8,
+        "y": 3
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 9,
+        "y": 2
+      },
+      {
+        "x": 10,
+        "y": 2
+      },
+      {
+        "x": 11,
+        "y": 2
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 19,
+            "interval": 0.51
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 21,
+            "interval": 0.459
+          },
+          {
+            "kind": "beetle",
+            "count": 6,
+            "interval": 0.86
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.4335
+          },
+          {
+            "kind": "beetle",
+            "count": 7,
+            "interval": 0.71
+          },
+          {
+            "kind": "ghost",
+            "count": 5,
+            "interval": 0.66
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 23,
+            "interval": 0.3825
+          },
+          {
+            "kind": "beetle",
+            "count": 8,
+            "interval": 0.61
+          },
+          {
+            "kind": "ghost",
+            "count": 6,
+            "interval": 0.51
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "云端听写",
+    "subtitle": "天空章 · 第 1/5 关",
+    "chapter": "sky",
+    "cols": 10,
+    "rows": 6,
+    "startGold": 79,
+    "lives": 125,
+    "pack": "senior",
+    "pack_slug": "senior",
+    "pack_name": "高中进阶",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      },
+      {
+        "x": 2,
+        "y": 1
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 5,
+        "y": 3
+      },
+      {
+        "x": 5,
+        "y": 2
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 7,
+        "y": 1
+      },
+      {
+        "x": 7,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 9,
+        "y": 2
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 12,
+            "interval": 0.7100000000000001
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 14,
+            "interval": 0.6390000000000001
+          },
+          {
+            "kind": "beetle",
+            "count": 3,
+            "interval": 1.06
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 13,
+            "interval": 0.6035
+          },
+          {
+            "kind": "beetle",
+            "count": 4,
+            "interval": 0.9100000000000001
+          },
+          {
+            "kind": "ghost",
+            "count": 2,
+            "interval": 0.8600000000000001
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "风暴课本",
+    "subtitle": "天空章 · 第 2/5 关",
+    "chapter": "sky",
+    "cols": 11,
+    "rows": 7,
+    "startGold": 87,
+    "lives": 133,
+    "pack": "senior",
+    "pack_slug": "senior",
+    "pack_name": "高中进阶",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 3
+      },
+      {
+        "x": 1,
+        "y": 3
+      },
+      {
+        "x": 2,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 5
+      },
+      {
+        "x": 7,
+        "y": 5
+      },
+      {
+        "x": 8,
+        "y": 5
+      },
+      {
+        "x": 9,
+        "y": 5
+      },
+      {
+        "x": 9,
+        "y": 4
+      },
+      {
+        "x": 9,
+        "y": 3
+      },
+      {
+        "x": 9,
+        "y": 2
+      },
+      {
+        "x": 10,
+        "y": 2
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 14,
+            "interval": 0.65
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 16,
+            "interval": 0.5850000000000001
+          },
+          {
+            "kind": "beetle",
+            "count": 4,
+            "interval": 1
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 15,
+            "interval": 0.5525
+          },
+          {
+            "kind": "beetle",
+            "count": 5,
+            "interval": 0.8500000000000001
+          },
+          {
+            "kind": "ghost",
+            "count": 3,
+            "interval": 0.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "雷羽航线",
+    "subtitle": "天空章 · 第 3/5 关",
+    "chapter": "sky",
+    "cols": 12,
+    "rows": 6,
+    "startGold": 95,
+    "lives": 141,
+    "pack": "senior",
+    "pack_slug": "senior",
+    "pack_name": "高中进阶",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 3
+      },
+      {
+        "x": 2,
+        "y": 4
+      },
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 4,
+        "y": 4
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 7,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 3
+      },
+      {
+        "x": 9,
+        "y": 3
+      },
+      {
+        "x": 10,
+        "y": 3
+      },
+      {
+        "x": 11,
+        "y": 3
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 16,
+            "interval": 0.59
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 18,
+            "interval": 0.531
+          },
+          {
+            "kind": "beetle",
+            "count": 5,
+            "interval": 0.94
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 17,
+            "interval": 0.5015
+          },
+          {
+            "kind": "beetle",
+            "count": 6,
+            "interval": 0.79
+          },
+          {
+            "kind": "ghost",
+            "count": 4,
+            "interval": 0.74
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.4425
+          },
+          {
+            "kind": "beetle",
+            "count": 7,
+            "interval": 0.69
+          },
+          {
+            "kind": "ghost",
+            "count": 5,
+            "interval": 0.59
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "星屑回廊",
+    "subtitle": "天空章 · 第 4/5 关",
+    "chapter": "sky",
+    "cols": 12,
+    "rows": 7,
+    "startGold": 103,
+    "lives": 149,
+    "pack": "senior",
+    "pack_slug": "senior",
+    "pack_name": "高中进阶",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 1
+      },
+      {
+        "x": 2,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 4,
+        "y": 4
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 7,
+        "y": 1
+      },
+      {
+        "x": 8,
+        "y": 1
+      },
+      {
+        "x": 9,
+        "y": 1
+      },
+      {
+        "x": 9,
+        "y": 2
+      },
+      {
+        "x": 9,
+        "y": 3
+      },
+      {
+        "x": 9,
+        "y": 4
+      },
+      {
+        "x": 10,
+        "y": 4
+      },
+      {
+        "x": 11,
+        "y": 4
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 18,
+            "interval": 0.53
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.47700000000000004
+          },
+          {
+            "kind": "beetle",
+            "count": 6,
+            "interval": 0.88
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 19,
+            "interval": 0.4505
+          },
+          {
+            "kind": "beetle",
+            "count": 7,
+            "interval": 0.73
+          },
+          {
+            "kind": "ghost",
+            "count": 5,
+            "interval": 0.68
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 22,
+            "interval": 0.3975
+          },
+          {
+            "kind": "beetle",
+            "count": 8,
+            "interval": 0.63
+          },
+          {
+            "kind": "ghost",
+            "count": 6,
+            "interval": 0.53
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "天穹终章",
+    "subtitle": "天空章 · 第 5/5 关",
+    "chapter": "sky",
+    "cols": 13,
+    "rows": 7,
+    "startGold": 111,
+    "lives": 157,
+    "pack": "senior",
+    "pack_slug": "senior",
+    "pack_name": "高中进阶",
+    "unlockedModules": [
+      "cannon",
+      "slow",
+      "spray"
+    ],
+    "path": [
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 1,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 1
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 4,
+        "y": 4
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 6,
+        "y": 3
+      },
+      {
+        "x": 6,
+        "y": 2
+      },
+      {
+        "x": 7,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 2
+      },
+      {
+        "x": 8,
+        "y": 3
+      },
+      {
+        "x": 9,
+        "y": 3
+      },
+      {
+        "x": 10,
+        "y": 3
+      },
+      {
+        "x": 10,
+        "y": 2
+      },
+      {
+        "x": 10,
+        "y": 1
+      },
+      {
+        "x": 11,
+        "y": 1
+      },
+      {
+        "x": 12,
+        "y": 1
+      }
+    ],
+    "waves": [
+      {
+        "delay": 1.4,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 20,
+            "interval": 0.47000000000000003
+          }
+        ]
+      },
+      {
+        "delay": 2.1,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 22,
+            "interval": 0.42300000000000004
+          },
+          {
+            "kind": "beetle",
+            "count": 7,
+            "interval": 0.8200000000000001
+          }
+        ]
+      },
+      {
+        "delay": 2.6,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 21,
+            "interval": 0.3995
+          },
+          {
+            "kind": "beetle",
+            "count": 8,
+            "interval": 0.67
+          },
+          {
+            "kind": "ghost",
+            "count": 6,
+            "interval": 0.62
+          }
+        ]
+      },
+      {
+        "delay": 2.9,
+        "spawns": [
+          {
+            "kind": "slime",
+            "count": 24,
+            "interval": 0.35250000000000004
+          },
+          {
+            "kind": "beetle",
+            "count": 9,
+            "interval": 0.5700000000000001
+          },
+          {
+            "kind": "ghost",
+            "count": 7,
+            "interval": 0.47000000000000003
           }
         ]
       }

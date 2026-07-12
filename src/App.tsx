@@ -10,7 +10,13 @@ function App() {
     return <LevelSelect onSelect={setLevelId} />
   }
 
-  return <GameScreen levelId={levelId} onBack={() => setLevelId(null)} />
+  return (
+    <GameScreen
+      levelId={levelId}
+      onBack={() => setLevelId(null)}
+      onGoLevel={setLevelId}
+    />
+  )
 }
 
 export default App

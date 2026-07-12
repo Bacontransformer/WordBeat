@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { fetchLevelDetail } from '../api/levels'
+import { fetchLevelDetail, fetchLevelSummaries } from '../api/levels'
+import { resolveChapter } from '../game/chapters'
 import type { LevelDef, ModuleKind } from '../game/types'
 import { useGame } from '../game/useGame'
-import { markLevelCleared } from '../progress/store'
+import { getNextLevelId, markLevelCleared } from '../progress/store'
 import { BattleMap } from './BattleMap'
 import { HUD } from './HUD'
 import { MatchPanel } from './MatchPanel'
@@ -11,9 +12,10 @@ import { ModuleBar } from './ModuleBar'
 type Props = {
   levelId: string
   onBack: () => void
+  onGoLevel: (levelId: string) => void
 }
 
-export function GameScreen({ levelId, onBack }: Props) {
+export function GameScreen({ levelId, onBack, onGoLevel }: Props) {
   const [level, setLevel] = useState<LevelDef | null>(null)
   const [error, setError] = useState<string | null>(null)
 
@@ -52,22 +54,44 @@ export function GameScreen({ levelId, onBack }: Props) {
     )
   }
 
-  return <LoadedGame level={level} onBack={onBack} />
+  return <LoadedGame key={level.id} level={level} onBack={onBack} onGoLevel={onGoLevel} />
 }
 
-function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) {
+function LoadedGame({
+  level,
+  onBack,
+  onGoLevel,
+}: {
+  level: LevelDef
+  onBack: () => void
+  onGoLevel: (levelId: string) => void
+}) {
   const { snapshot, selectModule, placeModule, selectWord, selectMeaning, reset } = useGame(level)
   const [draggingKind, setDraggingKind] = useState<ModuleKind | null>(null)
+  const [nextLevelId, setNextLevelId] = useState<string | null>(null)
   const savedWin = useRef(false)
 
   useEffect(() => {
     savedWin.current = false
+    setNextLevelId(null)
   }, [level.id])
 
   useEffect(() => {
     if (snapshot.phase !== 'won' || savedWin.current) return
     savedWin.current = true
-    void markLevelCleared(level.id)
+    void (async () => {
+      const progress = await markLevelCleared(level.id)
+      try {
+        const summaries = await fetchLevelSummaries()
+        const metas = summaries.map((s, i) => ({
+          id: s.id,
+          chapter: resolveChapter(s.chapter, i),
+        }))
+        setNextLevelId(getNextLevelId(metas, level.id, progress.clearedIds))
+      } catch {
+        setNextLevelId(null)
+      }
+    })()
   }, [snapshot.phase, level.id])
 
   const dropModuleAt = (kind: ModuleKind, clientX: number, clientY: number) => {
@@ -120,7 +144,16 @@ function LoadedGame({ level, onBack }: { level: LevelDef; onBack: () => void }) 
                 : '再匹配几组词，多放几门炮试试。'}
             </p>
             <div className="overlay-actions">
-              <button type="button" className="primary-btn" onClick={reset}>
+              {snapshot.phase === 'won' && nextLevelId && (
+                <button type="button" className="primary-btn" onClick={() => onGoLevel(nextLevelId)}>
+                  下一关
+                </button>
+              )}
+              <button
+                type="button"
+                className={snapshot.phase === 'won' && nextLevelId ? 'ghost-btn' : 'primary-btn'}
+                onClick={reset}
+              >
                 再来一局
               </button>
               <button type="button" className="ghost-btn" onClick={onBack}>

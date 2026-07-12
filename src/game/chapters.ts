@@ -82,8 +82,8 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
 }
 
 export function chapterForSortIndex(index: number): ChapterId {
-  if (index < 2) return 'jungle'
-  if (index < 4) return 'ocean'
+  if (index < 5) return 'jungle'
+  if (index < 10) return 'ocean'
   return 'sky'
 }
 
