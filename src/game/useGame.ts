@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { CHAPTERS } from './chapters'
 import { MODULES, MONSTERS } from './defs'
 import { speakWord } from './speak'
 import type {
@@ -352,6 +353,8 @@ export function useGame(level: LevelDef) {
           mod.fireUntil = now + 180
           mod.cooldownLeft = def.cooldown
 
+          const fxColor = CHAPTERS[lvl.chapter].modules[mod.kind].color
+
           if (mod.kind === 'slow') {
             s.projectiles.push({
               id: uid('p'),
@@ -366,7 +369,7 @@ export function useGame(level: LevelDef) {
               speed: 0,
               damage: 0,
               targetId: null,
-              color: def.color,
+              color: fxColor,
               radius: 0.12,
               maxRadius: def.range,
               pulseApplied: false,
@@ -390,7 +393,7 @@ export function useGame(level: LevelDef) {
             damage: def.damage,
             aoe: def.aoe,
             targetId: primary.m.id,
-            color: def.color,
+            color: fxColor,
           })
         }
 

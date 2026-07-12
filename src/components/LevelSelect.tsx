@@ -7,27 +7,49 @@ type Props = {
   onSelect: (levelId: string) => void
 }
 
-/** 15 nodes along a winding ink path (viewBox 1000x420). */
+/**
+ * 三章等分（约 333px 宽），每章 5 关蛇形前进，全部落在色带内，不绕回、不压列表。
+ * viewBox: 1000 × 200
+ */
 const NODE_POS: { x: number; y: number }[] = [
-  { x: 70, y: 90 },
-  { x: 160, y: 150 },
-  { x: 250, y: 95 },
-  { x: 330, y: 165 },
-  { x: 410, y: 110 },
-  { x: 490, y: 175 },
-  { x: 560, y: 105 },
-  { x: 640, y: 165 },
-  { x: 710, y: 100 },
-  { x: 780, y: 170 },
-  { x: 850, y: 115 },
-  { x: 910, y: 175 },
-  { x: 860, y: 250 },
-  { x: 760, y: 290 },
-  { x: 640, y: 260 },
+  // 丛林 1–5
+  { x: 70, y: 58 },
+  { x: 130, y: 132 },
+  { x: 195, y: 58 },
+  { x: 255, y: 132 },
+  { x: 310, y: 72 },
+  // 海洋 6–10
+  { x: 375, y: 128 },
+  { x: 435, y: 58 },
+  { x: 500, y: 132 },
+  { x: 565, y: 58 },
+  { x: 630, y: 120 },
+  // 天空 11–15
+  { x: 695, y: 58 },
+  { x: 755, y: 132 },
+  { x: 820, y: 58 },
+  { x: 885, y: 132 },
+  { x: 950, y: 70 },
 ]
 
-const PATH_D =
-  'M 70 90 C 110 60, 140 170, 160 150 S 220 70, 250 95 S 300 180, 330 165 S 370 80, 410 110 S 450 190, 490 175 S 530 70, 560 105 S 600 185, 640 165 S 680 70, 710 100 S 750 190, 780 170 S 820 80, 850 115 S 890 185, 910 175 S 930 220, 860 250 S 800 310, 760 290 S 700 240, 640 260'
+/** 平滑连接上述节点的弯曲线 */
+const PATH_D = [
+  'M 70 58',
+  'C 95 40, 110 150, 130 132',
+  'S 170 40, 195 58',
+  'S 230 150, 255 132',
+  'S 290 50, 310 72',
+  'S 340 150, 375 128',
+  'S 405 40, 435 58',
+  'S 470 150, 500 132',
+  'S 535 40, 565 58',
+  'S 600 145, 630 120',
+  'S 660 40, 695 58',
+  'S 725 150, 755 132',
+  'S 790 40, 820 58',
+  'S 855 150, 885 132',
+  'S 920 50, 950 70',
+].join(' ')
 
 export function LevelSelect({ onSelect }: Props) {
   const [levels, setLevels] = useState<LevelSummary[]>([])
@@ -94,16 +116,19 @@ export function LevelSelect({ onSelect }: Props) {
           <div className="world-map-bands" aria-hidden>
             <div className="band band-jungle">
               <span>{CHAPTERS.jungle.name}</span>
+              <small>1–5</small>
             </div>
             <div className="band band-ocean">
               <span>{CHAPTERS.ocean.name}</span>
+              <small>6–10</small>
             </div>
             <div className="band band-sky">
               <span>{CHAPTERS.sky.name}</span>
+              <small>11–15</small>
             </div>
           </div>
 
-          <svg className="world-map-svg world-map-svg-tall" viewBox="0 0 1000 340" role="img">
+          <svg className="world-map-svg" viewBox="0 0 1000 200" role="img">
             <title>弯曲线关卡路线</title>
             <path className="world-path-glow" d={PATH_D} fill="none" />
             <path className="world-path" d={PATH_D} fill="none" />
@@ -119,6 +144,17 @@ export function LevelSelect({ onSelect }: Props) {
                   key={level.id}
                   className={`map-node chapter-${chapter}${unlocked ? ' open' : ' locked'}${cleared ? ' cleared' : ''}${frontier ? ' frontier' : ''}`}
                   transform={`translate(${pos.x} ${pos.y})`}
+                  role={unlocked ? 'button' : undefined}
+                  tabIndex={unlocked ? 0 : undefined}
+                  style={{ cursor: unlocked ? 'pointer' : 'default' }}
+                  onClick={() => unlocked && onSelect(level.id)}
+                  onKeyDown={(e) => {
+                    if (!unlocked) return
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      onSelect(level.id)
+                    }
+                  }}
                 >
                   {frontier && (
                     <g className="map-flag" transform="translate(14 -28)">
@@ -126,6 +162,7 @@ export function LevelSelect({ onSelect }: Props) {
                       <path d="M0 2 L18 8 L0 14 Z" fill="#c45c3e" />
                     </g>
                   )}
+                  <circle className="map-node-hit" r="22" fill="transparent" />
                   <circle className="map-node-ring" r="16" />
                   <circle className="map-node-core" r="12" />
                   <text className="map-node-num" textAnchor="middle" dominantBaseline="central">

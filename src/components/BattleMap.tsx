@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { MODULES } from '../game/defs'
 import { CHAPTERS } from '../game/chapters'
 import { pathToSmoothSvgD } from '../game/pathCurve'
-import { MODULE_SPRITE, MONSTER_SPRITE, PROJECTILE_SPRITE } from '../game/sprites'
+import { moduleSprite, MONSTER_SPRITE, projectileSprite } from '../game/sprites'
 import type { GameSnapshot, LevelDef, ModuleKind, Projectile } from '../game/types'
 import { cellKey, positionOnPath } from '../game/utils'
 
@@ -31,6 +31,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
   const baseHpRatio = snapshot.maxLives > 0 ? snapshot.lives / snapshot.maxLives : 0
   const placingKind = draggingKind ?? snapshot.selectedModule
   const theme = CHAPTERS[level.chapter]
+  const gradId = `pathFill-${level.chapter}`
 
   const cellW = 100 / level.cols
   const cellH = 100 / level.rows
@@ -45,6 +46,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
       style={{
         aspectRatio: `${level.cols} / ${level.rows}`,
         background: `linear-gradient(180deg, ${theme.mapFrom} 0%, ${theme.mapTo} 100%)`,
+        ['--accent' as string]: theme.accent,
       }}
     >
       <div className="map-atmosphere" aria-hidden>
@@ -61,37 +63,34 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
         aria-hidden
       >
         <defs>
-          <linearGradient id="pathFill" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#e8b4a4" />
-            <stop offset="45%" stopColor="#d98972" />
-            <stop offset="100%" stopColor="#c45c3e" />
+          <linearGradient id={gradId} x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor={theme.mapFrom} />
+            <stop offset="45%" stopColor={theme.accent} stopOpacity="0.55" />
+            <stop offset="100%" stopColor={theme.accent} />
           </linearGradient>
           <filter id="pathSoft" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur in="SourceGraphic" stdDeviation="0.04" />
           </filter>
         </defs>
 
-        {/* soft ground wash under path */}
         <path
           d={pathD}
           fill="none"
-          stroke="rgba(196, 92, 62, 0.14)"
+          stroke={`${theme.accent}24`}
           strokeWidth="1.35"
           strokeLinecap="round"
           strokeLinejoin="round"
           filter="url(#pathSoft)"
         />
-        {/* main ribbon */}
         <path
           d={pathD}
           className="path-ribbon"
           fill="none"
-          stroke="url(#pathFill)"
+          stroke={`url(#${gradId})`}
           strokeWidth="0.72"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        {/* paper edge highlight */}
         <path
           d={pathD}
           fill="none"
@@ -100,7 +99,6 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        {/* dashed ink guide */}
         <path
           d={pathD}
           fill="none"
@@ -110,17 +108,24 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
           strokeDasharray="0.18 0.16"
         />
 
-        {/* start gate */}
         <g className="path-marker start-marker" transform={`translate(${startCenter.x} ${startCenter.y})`}>
           <circle r="0.42" fill="#1c2b24" opacity="0.12" />
-          <circle r="0.28" fill="#2f6b4f" />
+          <circle r="0.28" fill={theme.accent} />
           <circle r="0.12" fill="#f7f1e4" />
         </g>
 
-        {/* end textbook */}
         <g className="path-marker end-marker" transform={`translate(${endCenter.x} ${endCenter.y})`}>
-          <rect x="-0.34" y="-0.4" width="0.68" height="0.8" rx="0.06" fill="#f7f1e4" stroke="#c45c3e" strokeWidth="0.07" />
-          <rect x="-0.22" y="-0.26" width="0.44" height="0.08" rx="0.02" fill="#c45c3e" />
+          <rect
+            x="-0.34"
+            y="-0.4"
+            width="0.68"
+            height="0.8"
+            rx="0.06"
+            fill="#f7f1e4"
+            stroke={theme.accent}
+            strokeWidth="0.07"
+          />
+          <rect x="-0.22" y="-0.26" width="0.44" height="0.08" rx="0.02" fill={theme.accent} />
           <rect x="-0.22" y="-0.08" width="0.34" height="0.05" rx="0.01" fill="#1c2b24" opacity="0.25" />
           <rect x="-0.22" y="0.05" width="0.3" height="0.05" rx="0.01" fill="#1c2b24" opacity="0.18" />
           <rect x="-0.32" y="0.48" width="0.64" height="0.1" rx="0.03" fill="#1c2b24" opacity="0.35" />
@@ -130,7 +135,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
             width={0.6 * Math.max(0, baseHpRatio)}
             height="0.06"
             rx="0.02"
-            fill={baseHpRatio > 0.35 ? '#2f6b4f' : '#c45c3e'}
+            fill={baseHpRatio > 0.35 ? theme.accent : '#c45c3e'}
           />
         </g>
       </svg>
@@ -199,7 +204,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
           return (
             <div
               key={mod.id}
-              className={`entity module-entity${firing ? ' firing' : ''}`}
+              className={`entity module-entity kind-${mod.kind} chapter-${level.chapter}${firing ? ' firing' : ''}`}
               style={{
                 left: `${(mod.col + 0.5) * cellW}%`,
                 top: `${(mod.row + 0.5) * cellH}%`,
@@ -207,7 +212,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
               }}
               title={themed.name}
             >
-              <img src={MODULE_SPRITE[mod.kind]} alt={themed.name} draggable={false} />
+              <img src={moduleSprite(level.chapter, mod.kind)} alt={themed.name} draggable={false} />
               {snapshot.selectedModule === mod.kind && (
                 <span
                   className="range-ring"
@@ -217,7 +222,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                   }}
                 />
               )}
-              {firing && <span className="muzzle-flash" />}
+              {firing && <span className={`muzzle-flash muzzle-${mod.kind}`} />}
             </div>
           )
         })}
@@ -236,6 +241,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                 top: `${pos.y * cellH}%`,
                 ['--face' as string]: `${deg}deg`,
                 ['--mob' as string]: themed.color,
+                ['--slow' as string]: theme.modules.slow.color,
               }}
               title={themed.name}
             >
@@ -254,27 +260,29 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
             return (
               <div
                 key={proj.id}
-                className="entity pulse-ring"
+                className={`entity pulse-ring chapter-${level.chapter}`}
                 style={{
                   left: `${pos.x * cellW}%`,
                   top: `${pos.y * cellH}%`,
                   width: `${r * cellW}%`,
                   height: `${r * cellH * (level.cols / level.rows)}%`,
                   borderColor: proj.color,
+                  ['--proj' as string]: proj.color,
                 }}
               />
             )
           }
 
-          const sprite = proj.kind === 'mist' ? PROJECTILE_SPRITE.mist : PROJECTILE_SPRITE.card
+          const sprite = projectileSprite(level.chapter, proj.kind === 'mist' ? 'mist' : 'card')
           return (
             <div
               key={proj.id}
-              className={`entity projectile projectile-${proj.kind}`}
+              className={`entity projectile projectile-${proj.kind} kind-${proj.moduleKind} chapter-${level.chapter}`}
               style={{
                 left: `${pos.x * cellW}%`,
                 top: `${pos.y * cellH}%`,
                 transform: `translate(-50%, -50%) rotate(${projectileAngle(proj)}deg)`,
+                ['--proj' as string]: proj.color,
               }}
             >
               <img src={sprite} alt="" draggable={false} />
@@ -285,13 +293,18 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
         {snapshot.impacts.map((fx) => (
           <div
             key={fx.id}
-            className={`entity impact impact-${fx.kind}`}
+            className={`entity impact impact-${fx.kind} chapter-${level.chapter}`}
             style={{
               left: `${fx.x * cellW}%`,
               top: `${fx.y * cellH}%`,
               ['--fx' as string]: fx.color,
             }}
-          />
+          >
+            <i className="impact-spark s1" />
+            <i className="impact-spark s2" />
+            <i className="impact-spark s3" />
+            <i className="impact-spark s4" />
+          </div>
         ))}
 
         {snapshot.floaters.map((f) => (

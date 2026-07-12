@@ -37,8 +37,8 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
     },
     modules: {
       cannon: { name: '藤鞭闪卡', desc: '单体抽打，清怪稳妥', color: '#c45c3e' },
-      spray: { name: '花粉喷雾', desc: '小范围溅射伤害', color: '#2f6f4a' },
-      slow: { name: '树汁减速', desc: '减速路过的怪物', color: '#5a6b3f' },
+      spray: { name: '花粉喷雾', desc: '小范围溅射伤害', color: '#3d8a4a' },
+      slow: { name: '树汁减速', desc: '减速路过的怪物', color: '#6b8a2f' },
     },
   },
   ocean: {
@@ -55,9 +55,9 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
       ghost: { name: '同音海妖', color: '#5a6b9a' },
     },
     modules: {
-      cannon: { name: '浪花闪卡', desc: '单体射击，稳定清怪', color: '#c45c3e' },
-      spray: { name: '盐雾喷溅', desc: '小范围溅射伤害', color: '#2f6f8a' },
-      slow: { name: '洋流减速', desc: '减速路过的怪物', color: '#4f5f8a' },
+      cannon: { name: '浪花闪卡', desc: '单体射击，稳定清怪', color: '#2a7a9e' },
+      spray: { name: '盐雾喷溅', desc: '小范围溅射伤害', color: '#3d9aaa' },
+      slow: { name: '洋流减速', desc: '减速路过的怪物', color: '#3f5f9a' },
     },
   },
   sky: {
@@ -74,9 +74,9 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
       ghost: { name: '疾风异形', color: '#5a5a8a' },
     },
     modules: {
-      cannon: { name: '雷光闪卡', desc: '单体射击，稳定清怪', color: '#c45c3e' },
-      spray: { name: '星屑喷雾', desc: '小范围溅射伤害', color: '#4f6f8a' },
-      slow: { name: '气流减速', desc: '减速路过的怪物', color: '#6b4f8a' },
+      cannon: { name: '雷光闪卡', desc: '单体射击，稳定清怪', color: '#7a4fc4' },
+      spray: { name: '星屑喷雾', desc: '小范围溅射伤害', color: '#5a7ab8' },
+      slow: { name: '气流减速', desc: '减速路过的怪物', color: '#8a5fb0' },
     },
   },
 }

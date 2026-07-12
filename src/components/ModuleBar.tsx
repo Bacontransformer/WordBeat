@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { MODULES } from '../game/defs'
 import { CHAPTERS } from '../game/chapters'
-import { MODULE_SPRITE } from '../game/sprites'
+import { moduleSprite } from '../game/sprites'
 import type { GameSnapshot, LevelDef, ModuleKind } from '../game/types'
 
 type Props = {
@@ -39,7 +39,7 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
           <button
             key={kind}
             type="button"
-            className={`module-card${selected ? ' selected' : ''}${affordable ? '' : ' locked'}${drag?.kind === kind && drag.moved ? ' dragging' : ''}`}
+            className={`module-card kind-${kind}${selected ? ' selected' : ''}${affordable ? '' : ' locked'}${drag?.kind === kind && drag.moved ? ' dragging' : ''}`}
             style={{ ['--mod' as string]: themed.color }}
             disabled={ended || !affordable}
             onClick={() => {
@@ -94,7 +94,7 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
               onDragChange?.(null)
             }}
           >
-            <img className="module-card-art" src={MODULE_SPRITE[kind]} alt="" draggable={false} />
+            <img className="module-card-art" src={moduleSprite(level.chapter, kind)} alt="" draggable={false} />
             <span className="module-card-copy">
               <span className="module-card-name">{themed.name}</span>
               <span className="module-card-desc">{themed.desc}</span>
@@ -114,7 +114,7 @@ export function ModuleBar({ level, snapshot, onSelect, onDragChange, onDropAt }:
           }}
           aria-hidden
         >
-          <img src={MODULE_SPRITE[drag.kind]} alt="" draggable={false} />
+          <img src={moduleSprite(level.chapter, drag.kind)} alt="" draggable={false} />
           <span>{theme.modules[drag.kind].name}</span>
         </div>
       )}
