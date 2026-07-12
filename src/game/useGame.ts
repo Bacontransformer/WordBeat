@@ -17,6 +17,7 @@ import type {
 import {
   createMonster,
   distance,
+  distToSegment,
   pickMatchRound,
   positionOnPath,
   uid,
@@ -232,7 +233,7 @@ export function useGame(level: LevelDef) {
         const survivors: Monster[] = []
         for (const m of s.monsters) {
           const slowed = now < m.slowUntil
-          m.speed = slowed ? m.baseSpeed * (MODULES.slow.slowFactor ?? 0.52) : m.baseSpeed
+          m.speed = slowed ? m.baseSpeed * (MODULES.snare.slowFactor ?? 0.5) : m.baseSpeed
           m.progress += m.speed * dt
 
           const pos = positionOnPath(lvl.path, m.progress)
@@ -259,15 +260,21 @@ export function useGame(level: LevelDef) {
         // Update projectiles
         const nextProjectiles: Projectile[] = []
         for (const proj of s.projectiles) {
-          if (proj.kind === 'pulse') {
+          if (proj.kind === 'pulse' || proj.kind === 'blast') {
             const maxR = proj.maxRadius ?? 1.2
-            proj.radius = (proj.radius ?? 0) + dt * 3.4
-            if (!proj.pulseApplied && (proj.radius ?? 0) >= maxR * 0.45) {
+            proj.radius = (proj.radius ?? 0) + dt * (proj.kind === 'blast' ? 4.2 : 3.4)
+            if (!proj.pulseApplied && (proj.radius ?? 0) >= maxR * 0.42) {
               proj.pulseApplied = true
-              for (const m of s.monsters) {
+              const slowMs = (MODULES.snare.slowDuration ?? 1.25) * 1000
+              for (const m of [...s.monsters]) {
                 const p = positionOnPath(lvl.path, m.progress)
                 if (distance(proj.fromX, proj.fromY, p.x, p.y) <= maxR) {
-                  m.slowUntil = now + 1400
+                  if (proj.kind === 'pulse') {
+                    m.slowUntil = now + slowMs
+                  }
+                  if (proj.kind === 'blast' || proj.blastDamage) {
+                    applyDamage(s, m.id, proj.damage, p.x, p.y, proj.color, now)
+                  }
                 }
               }
             }
@@ -278,7 +285,23 @@ export function useGame(level: LevelDef) {
                 id: uid('fx'),
                 x: proj.fromX,
                 y: proj.fromY,
-                kind: 'pulse',
+                kind: proj.kind,
+                color: proj.color,
+                bornAt: now,
+              })
+            }
+            continue
+          }
+
+          if (proj.kind === 'beam' || proj.kind === 'arc') {
+            proj.life = (proj.life ?? 0.2) - dt
+            if ((proj.life ?? 0) > 0) nextProjectiles.push(proj)
+            else {
+              s.impacts.push({
+                id: uid('fx'),
+                x: proj.toX,
+                y: proj.toY,
+                kind: proj.kind,
                 color: proj.color,
                 bornAt: now,
               })
@@ -332,7 +355,7 @@ export function useGame(level: LevelDef) {
         }
         s.projectiles = nextProjectiles
 
-        // Module attacks ??spawn projectiles
+        // Module attacks — spawn projectiles / instant effects
         for (const mod of s.modules) {
           mod.cooldownLeft = Math.max(0, mod.cooldownLeft - dt)
           if (mod.cooldownLeft > 0) continue
@@ -350,16 +373,15 @@ export function useGame(level: LevelDef) {
 
           if (inRange.length === 0) continue
 
-          mod.fireUntil = now + 180
+          mod.fireUntil = now + 220
           mod.cooldownLeft = def.cooldown
-
           const fxColor = CHAPTERS[lvl.chapter].modules[mod.kind].color
 
-          if (mod.kind === 'slow') {
+          if (mod.kind === 'snare') {
             s.projectiles.push({
               id: uid('p'),
               kind: 'pulse',
-              moduleKind: 'slow',
+              moduleKind: 'snare',
               x: mx,
               y: my,
               fromX: mx,
@@ -370,15 +392,114 @@ export function useGame(level: LevelDef) {
               damage: 0,
               targetId: null,
               color: fxColor,
-              radius: 0.12,
+              radius: 0.1,
               maxRadius: def.range,
               pulseApplied: false,
             })
             continue
           }
 
+          if (mod.kind === 'stamp') {
+            s.projectiles.push({
+              id: uid('p'),
+              kind: 'blast',
+              moduleKind: 'stamp',
+              x: mx,
+              y: my,
+              fromX: mx,
+              fromY: my,
+              toX: mx,
+              toY: my,
+              speed: 0,
+              damage: def.damage,
+              targetId: null,
+              color: fxColor,
+              radius: 0.08,
+              maxRadius: def.range,
+              pulseApplied: false,
+              blastDamage: true,
+            })
+            continue
+          }
+
           const primary = inRange[0]
-          const projKind = mod.kind === 'spray' ? 'mist' : 'card'
+
+          if (mod.kind === 'beam') {
+            const reach = def.range
+            const dx = primary.p.x - mx
+            const dy = primary.p.y - my
+            const len = Math.hypot(dx, dy) || 1
+            const ex = mx + (dx / len) * reach
+            const ey = my + (dy / len) * reach
+            const halfW = def.beamWidth ?? 0.28
+            for (const { m, p } of inRange) {
+              if (distToSegment(p.x, p.y, mx, my, ex, ey) <= halfW) {
+                applyDamage(s, m.id, def.damage, p.x, p.y, fxColor, now)
+              }
+            }
+            s.projectiles.push({
+              id: uid('p'),
+              kind: 'beam',
+              moduleKind: 'beam',
+              x: mx,
+              y: my,
+              fromX: mx,
+              fromY: my,
+              toX: ex,
+              toY: ey,
+              speed: 0,
+              damage: 0,
+              targetId: null,
+              color: fxColor,
+              life: 0.22,
+            })
+            continue
+          }
+
+          if (mod.kind === 'chain') {
+            const jumps = def.chainJumps ?? 3
+            const jumpR = def.chainRange ?? 1.55
+            const hit = new Set<string>()
+            let cur = primary
+            let fromX = mx
+            let fromY = my
+            let dmg = def.damage
+            for (let i = 0; i <= jumps; i += 1) {
+              if (!cur || hit.has(cur.m.id)) break
+              hit.add(cur.m.id)
+              applyDamage(s, cur.m.id, Math.max(4, Math.round(dmg)), cur.p.x, cur.p.y, fxColor, now)
+              s.projectiles.push({
+                id: uid('p'),
+                kind: 'arc',
+                moduleKind: 'chain',
+                x: fromX,
+                y: fromY,
+                fromX,
+                fromY,
+                toX: cur.p.x,
+                toY: cur.p.y,
+                speed: 0,
+                damage: 0,
+                targetId: null,
+                color: fxColor,
+                life: 0.16 + i * 0.03,
+              })
+              fromX = cur.p.x
+              fromY = cur.p.y
+              dmg *= 0.72
+              const next = s.monsters
+                .map((m) => {
+                  const p = positionOnPath(lvl.path, m.progress)
+                  return { m, p, d: distance(fromX, fromY, p.x, p.y) }
+                })
+                .filter((x) => !hit.has(x.m.id) && x.d <= jumpR)
+                .sort((a, b) => a.d - b.d)[0]
+              cur = next
+            }
+            continue
+          }
+
+          const projKind = mod.kind === 'spore' ? 'cloud' : 'dart'
           s.projectiles.push({
             id: uid('p'),
             kind: projKind,
@@ -389,7 +510,7 @@ export function useGame(level: LevelDef) {
             fromY: my,
             toX: primary.p.x,
             toY: primary.p.y,
-            speed: mod.kind === 'spray' ? 2.4 : 2.8,
+            speed: mod.kind === 'spore' ? 2.35 : 3.15,
             damage: def.damage,
             aoe: def.aoe,
             targetId: primary.m.id,

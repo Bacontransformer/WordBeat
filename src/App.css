@@ -714,25 +714,58 @@
   pointer-events: none;
 }
 
-.projectile-mist {
+.projectile-cloud {
   width: clamp(34px, 6.5vw, 48px);
   height: clamp(34px, 6.5vw, 48px);
 }
 
-.projectile-mist img {
+.projectile-cloud img {
   animation: mist-wobble 0.45s ease-in-out infinite;
 }
 
-.projectile-mist::before {
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--proj, #2f6f6a) 70%, transparent));
+.projectile-cloud::before {
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--proj, #3d8a4a) 70%, transparent));
   height: 12px;
   width: 30px;
 }
 
-.projectile.kind-cannon::before {
+.projectile-dart::before {
   width: 28px;
   height: 3px;
   box-shadow: 0 0 6px color-mix(in srgb, var(--proj) 55%, transparent);
+}
+
+.bolt-line {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--proj, #e0a820) 85%, #fff) 18%,
+    var(--proj, #e0a820) 50%,
+    color-mix(in srgb, var(--proj, #e0a820) 85%, #fff) 82%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 10px color-mix(in srgb, var(--proj, #e0a820) 70%, transparent),
+    0 0 2px #fffaf0;
+  z-index: 5;
+  pointer-events: none;
+  animation: bolt-fade 0.22s ease-out both;
+}
+
+.bolt-arc {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #9fd4ff 20%,
+    var(--proj, #5a8fd4) 50%,
+    #9fd4ff 80%,
+    transparent
+  );
+  clip-path: polygon(0 40%, 12% 0, 28% 100%, 45% 10%, 62% 90%, 78% 5%, 100% 50%, 100% 60%, 78% 25%, 62% 100%, 45% 30%, 28% 80%, 12% 20%, 0 60%);
+  animation: bolt-flicker 0.18s steps(2) infinite;
 }
 
 .pulse-ring {
@@ -749,6 +782,16 @@
   opacity: 0.9;
 }
 
+.pulse-blast {
+  border-width: 3px;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--proj, #c43e5c) 40%, transparent) 0%,
+    transparent 70%
+  );
+  box-shadow: 0 0 16px color-mix(in srgb, var(--proj, #c43e5c) 45%, transparent);
+}
+
 .impact {
   width: 18px;
   height: 18px;
@@ -758,7 +801,7 @@
   animation: impact-burst 0.42s ease-out forwards;
 }
 
-.impact-mist {
+.impact-cloud {
   width: 38px;
   height: 38px;
 }
@@ -767,6 +810,18 @@
   width: 30px;
   height: 30px;
   background: radial-gradient(circle, color-mix(in srgb, var(--fx, #6b4f8a) 55%, transparent) 0%, transparent 70%);
+}
+
+.impact-blast {
+  width: 42px;
+  height: 42px;
+  background: radial-gradient(circle, #fffaf0 0%, var(--fx, #c43e5c) 40%, transparent 72%);
+}
+
+.impact-beam,
+.impact-arc {
+  width: 22px;
+  height: 22px;
 }
 
 .impact-spark {
@@ -786,13 +841,13 @@
 .impact-spark.s3 { --sx: 9px; --sy: 11px; }
 .impact-spark.s4 { --sx: -10px; --sy: 9px; }
 
-.muzzle-flash.muzzle-spray {
+.muzzle-flash.muzzle-spore {
   width: 22px;
   height: 22px;
   background: radial-gradient(circle, #fffaf0 0%, var(--mod) 40%, transparent 72%);
 }
 
-.muzzle-flash.muzzle-slow {
+.muzzle-flash.muzzle-snare {
   width: 26px;
   height: 26px;
   border: 2px solid var(--mod);
@@ -801,28 +856,68 @@
   animation: muzzle-ring 0.28s ease-out forwards;
 }
 
-.module-card.kind-cannon {
+.muzzle-flash.muzzle-beam {
+  width: 10px;
+  height: 28px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #fffaf0, var(--mod));
+}
+
+.muzzle-flash.muzzle-chain {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #e8f4ff 0%, var(--mod) 55%, transparent 75%);
+}
+
+.muzzle-flash.muzzle-stamp {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--mod) 55%, transparent);
+  animation: muzzle-ring 0.3s ease-out forwards;
+}
+
+.module-card.kind-quill {
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--mod) 12%, transparent), transparent 50%),
+    linear-gradient(160deg, color-mix(in srgb, var(--mod) 16%, transparent), transparent 55%),
     var(--panel);
 }
 
-.module-card.kind-spray {
+.module-card.kind-spore {
   background:
-    radial-gradient(circle at 18% 30%, color-mix(in srgb, var(--mod) 22%, transparent), transparent 42%),
+    radial-gradient(circle at 18% 30%, color-mix(in srgb, var(--mod) 24%, transparent), transparent 42%),
     var(--panel);
 }
 
-.module-card.kind-slow {
+.module-card.kind-snare {
   background:
     repeating-linear-gradient(
       -18deg,
       transparent,
       transparent 6px,
-      color-mix(in srgb, var(--mod) 8%, transparent) 6px,
-      color-mix(in srgb, var(--mod) 8%, transparent) 7px
+      color-mix(in srgb, var(--mod) 10%, transparent) 6px,
+      color-mix(in srgb, var(--mod) 10%, transparent) 7px
     ),
     var(--panel);
+}
+
+.module-card.kind-beam {
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--mod) 20%, transparent), transparent 40%, color-mix(in srgb, var(--mod) 12%, transparent)),
+    var(--panel);
+}
+
+.module-card.kind-chain {
+  background:
+    radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--mod) 28%, transparent), transparent 35%),
+    var(--panel);
+}
+
+.module-card.kind-stamp {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--mod) 18%, transparent), transparent 45%),
+    var(--panel);
+  border-radius: 8px 2px;
 }
 
 .module-bar.chapter-jungle .module-card {
@@ -1201,6 +1296,26 @@
   to {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.9);
+  }
+}
+
+@keyframes bolt-fade {
+  from {
+    opacity: 1;
+    filter: brightness(1.4);
+  }
+  to {
+    opacity: 0.15;
+    filter: brightness(1);
+  }
+}
+
+@keyframes bolt-flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.55;
   }
 }
 

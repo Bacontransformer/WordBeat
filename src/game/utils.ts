@@ -15,6 +15,25 @@ export function distance(ax: number, ay: number, bx: number, by: number): number
   return Math.hypot(dx, dy)
 }
 
+/** Distance from point P to segment AB */
+export function distToSegment(
+  px: number,
+  py: number,
+  ax: number,
+  ay: number,
+  bx: number,
+  by: number,
+): number {
+  const abx = bx - ax
+  const aby = by - ay
+  const apx = px - ax
+  const apy = py - ay
+  const ab2 = abx * abx + aby * aby
+  if (ab2 < 1e-8) return Math.hypot(apx, apy)
+  const t = Math.max(0, Math.min(1, (apx * abx + apy * aby) / ab2))
+  return Math.hypot(px - (ax + t * abx), py - (ay + t * aby))
+}
+
 export function cellKey(col: number, row: number): string {
   return `${col},${row}`
 }

@@ -2,7 +2,8 @@ export type Point = { x: number; y: number }
 
 export type MonsterKind = 'slime' | 'beetle' | 'ghost'
 
-export type ModuleKind = 'cannon' | 'spray' | 'slow'
+/** 六种形态/机制完全不同的攻击模组（不再是「单词书」） */
+export type ModuleKind = 'quill' | 'spore' | 'snare' | 'beam' | 'chain' | 'stamp'
 
 export type WordPair = {
   id: string
@@ -32,6 +33,12 @@ export type ModuleDef = {
   aoe?: number
   slowFactor?: number
   slowDuration?: number
+  /** beam: half-width of the laser corridor */
+  beamWidth?: number
+  /** chain: max extra jumps after first hit */
+  chainJumps?: number
+  /** chain: search radius for next target */
+  chainRange?: number
   color: string
 }
 
@@ -86,7 +93,7 @@ export type FloatingText = {
   bornAt: number
 }
 
-export type ProjectileKind = 'card' | 'mist' | 'pulse'
+export type ProjectileKind = 'dart' | 'cloud' | 'pulse' | 'beam' | 'arc' | 'blast'
 
 export type Projectile = {
   id: string
@@ -106,6 +113,10 @@ export type Projectile = {
   radius?: number
   maxRadius?: number
   pulseApplied?: boolean
+  /** beam/arc visual lifetime seconds */
+  life?: number
+  /** blast deals damage when expanding */
+  blastDamage?: boolean
 }
 
 export type ImpactFx = {

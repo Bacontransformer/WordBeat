@@ -10,7 +10,7 @@ export type CatalogLevel = {
   startGold: number
   lives: number
   pack: 'junior' | 'cet4' | 'senior'
-  modules: Array<'cannon' | 'slow' | 'spray'>
+  modules: Array<'quill' | 'spore' | 'snare' | 'beam' | 'chain' | 'stamp'>
   path: { x: number; y: number }[]
   waves: {
     delay: number
@@ -58,22 +58,22 @@ const CHAPTERS: ChapterSpec[] = [
     chapter: 'jungle',
     pack: 'junior',
     names: ['密林词径', '藤蔓回廊', '苔痕岔路', '古木词坛', '翠影终章'],
-    modulesEarly: ['cannon', 'slow'],
-    modulesLate: ['cannon', 'slow', 'spray'],
+    modulesEarly: ['quill', 'snare'],
+    modulesLate: ['quill', 'snare', 'spore'],
   },
   {
     chapter: 'ocean',
     pack: 'cet4',
     names: ['潮汐词港', '深渊回声', '珊瑚听写', '雾岛航标', '海沟终章'],
-    modulesEarly: ['cannon', 'slow'],
-    modulesLate: ['cannon', 'slow', 'spray'],
+    modulesEarly: ['quill', 'snare', 'spore', 'beam'],
+    modulesLate: ['quill', 'snare', 'spore', 'beam', 'chain'],
   },
   {
     chapter: 'sky',
     pack: 'senior',
     names: ['云端听写', '风暴课本', '雷羽航线', '星屑回廊', '天穹终章'],
-    modulesEarly: ['cannon', 'slow', 'spray'],
-    modulesLate: ['cannon', 'slow', 'spray'],
+    modulesEarly: ['quill', 'snare', 'spore', 'beam', 'chain'],
+    modulesLate: ['quill', 'snare', 'spore', 'beam', 'chain', 'stamp'],
   },
 ]
 
@@ -142,7 +142,16 @@ export function buildLevelCatalog(): CatalogLevel[] {
         startGold: 55 + ci * 12 + li * 8,
         lives: 95 + ci * 15 + li * 8,
         pack: spec.pack,
-        modules: li < 2 ? spec.modulesEarly : spec.modulesLate,
+        modules:
+          li === 0
+            ? ['quill', 'snare']
+            : li === 1
+              ? ['quill', 'snare', 'spore']
+              : li === 2
+                ? ['quill', 'snare', 'spore', 'beam']
+                : li === 3
+                  ? ['quill', 'snare', 'spore', 'beam', 'chain']
+                  : ['quill', 'snare', 'spore', 'beam', 'chain', 'stamp'],
         path: pathFromSteps(pathSpec.start, pathSpec.steps.split('') as Step[]),
         waves: wavesFor(tier, ci),
       })

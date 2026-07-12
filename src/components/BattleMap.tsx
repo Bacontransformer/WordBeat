@@ -241,7 +241,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                 top: `${pos.y * cellH}%`,
                 ['--face' as string]: `${deg}deg`,
                 ['--mob' as string]: themed.color,
-                ['--slow' as string]: theme.modules.slow.color,
+                ['--slow' as string]: theme.modules.snare.color,
               }}
               title={themed.name}
             >
@@ -255,12 +255,13 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
 
         {snapshot.projectiles.map((proj) => {
           const pos = projectilePos(proj)
-          if (proj.kind === 'pulse') {
+
+          if (proj.kind === 'pulse' || proj.kind === 'blast') {
             const r = (proj.radius ?? 0.2) * 2
             return (
               <div
                 key={proj.id}
-                className={`entity pulse-ring chapter-${level.chapter}`}
+                className={`entity pulse-ring pulse-${proj.kind} chapter-${level.chapter}`}
                 style={{
                   left: `${pos.x * cellW}%`,
                   top: `${pos.y * cellH}%`,
@@ -273,7 +274,29 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
             )
           }
 
-          const sprite = projectileSprite(level.chapter, proj.kind === 'mist' ? 'mist' : 'card')
+          if (proj.kind === 'beam' || proj.kind === 'arc') {
+            const dx = proj.toX - proj.fromX
+            const dy = proj.toY - proj.fromY
+            const len = Math.hypot(dx, dy)
+            const angle = (Math.atan2(dy, dx) * 180) / Math.PI
+            const midX = (proj.fromX + proj.toX) / 2
+            const midY = (proj.fromY + proj.toY) / 2
+            return (
+              <div
+                key={proj.id}
+                className={`entity bolt-line bolt-${proj.kind} chapter-${level.chapter}`}
+                style={{
+                  left: `${midX * cellW}%`,
+                  top: `${midY * cellH}%`,
+                  width: `${Math.max(len, 0.15) * cellW}%`,
+                  transform: `translate(-50%, -50%) rotate(${angle}deg)`,
+                  ['--proj' as string]: proj.color,
+                }}
+              />
+            )
+          }
+
+          const sprite = projectileSprite(proj.kind)
           return (
             <div
               key={proj.id}
@@ -285,7 +308,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                 ['--proj' as string]: proj.color,
               }}
             >
-              <img src={sprite} alt="" draggable={false} />
+              {sprite ? <img src={sprite} alt="" draggable={false} /> : <span className="proj-fallback" />}
             </div>
           )
         })}

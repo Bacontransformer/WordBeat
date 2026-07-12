@@ -12,8 +12,8 @@
     "pack_slug": "junior",
     "pack_name": "初中基础",
     "unlockedModules": [
-      "cannon",
-      "slow"
+      "quill",
+      "snare"
     ],
     "path": [
       {
@@ -123,8 +123,9 @@
     "pack_slug": "junior",
     "pack_name": "初中基础",
     "unlockedModules": [
-      "cannon",
-      "slow"
+      "quill",
+      "snare",
+      "spore"
     ],
     "path": [
       {
@@ -264,9 +265,10 @@
     "pack_slug": "junior",
     "pack_name": "初中基础",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam"
     ],
     "path": [
       {
@@ -435,9 +437,11 @@
     "pack_slug": "junior",
     "pack_name": "初中基础",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain"
     ],
     "path": [
       {
@@ -606,9 +610,12 @@
     "pack_slug": "junior",
     "pack_name": "初中基础",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain",
+      "stamp"
     ],
     "path": [
       {
@@ -789,8 +796,8 @@
     "pack_slug": "cet4",
     "pack_name": "大学四级",
     "unlockedModules": [
-      "cannon",
-      "slow"
+      "quill",
+      "snare"
     ],
     "path": [
       {
@@ -970,8 +977,9 @@
     "pack_slug": "cet4",
     "pack_name": "大学四级",
     "unlockedModules": [
-      "cannon",
-      "slow"
+      "quill",
+      "snare",
+      "spore"
     ],
     "path": [
       {
@@ -1112,9 +1120,10 @@
     "pack_slug": "cet4",
     "pack_name": "大学四级",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam"
     ],
     "path": [
       {
@@ -1283,9 +1292,11 @@
     "pack_slug": "cet4",
     "pack_name": "大学四级",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain"
     ],
     "path": [
       {
@@ -1458,9 +1469,12 @@
     "pack_slug": "cet4",
     "pack_name": "大学四级",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain",
+      "stamp"
     ],
     "path": [
       {
@@ -1629,9 +1643,8 @@
     "pack_slug": "senior",
     "pack_name": "高中进阶",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare"
     ],
     "path": [
       {
@@ -1756,9 +1769,9 @@
     "pack_slug": "senior",
     "pack_name": "高中进阶",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore"
     ],
     "path": [
       {
@@ -1903,9 +1916,10 @@
     "pack_slug": "senior",
     "pack_name": "高中进阶",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam"
     ],
     "path": [
       {
@@ -2074,9 +2088,11 @@
     "pack_slug": "senior",
     "pack_name": "高中进阶",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain"
     ],
     "path": [
       {
@@ -2245,9 +2261,12 @@
     "pack_slug": "senior",
     "pack_name": "高中进阶",
     "unlockedModules": [
-      "cannon",
-      "slow",
-      "spray"
+      "quill",
+      "snare",
+      "spore",
+      "beam",
+      "chain",
+      "stamp"
     ],
     "path": [
       {

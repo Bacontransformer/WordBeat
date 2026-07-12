@@ -1,10 +1,11 @@
 export type ChapterId = 'jungle' | 'ocean' | 'sky'
 
+export type ModuleFlavor = { name: string; desc: string; color: string }
+
 export type ChapterTheme = {
   id: ChapterId
   name: string
   tagline: string
-  /** CSS accent for map / UI */
   accent: string
   accentSoft: string
   mapFrom: string
@@ -15,9 +16,12 @@ export type ChapterTheme = {
     ghost: { name: string; color: string }
   }
   modules: {
-    cannon: { name: string; desc: string; color: string }
-    spray: { name: string; desc: string; color: string }
-    slow: { name: string; desc: string; color: string }
+    quill: ModuleFlavor
+    spore: ModuleFlavor
+    snare: ModuleFlavor
+    beam: ModuleFlavor
+    chain: ModuleFlavor
+    stamp: ModuleFlavor
   }
 }
 
@@ -36,9 +40,12 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
       ghost: { name: '雾影异形', color: '#4f6b5a' },
     },
     modules: {
-      cannon: { name: '藤鞭闪卡', desc: '单体抽打，清怪稳妥', color: '#c45c3e' },
-      spray: { name: '花粉喷雾', desc: '小范围溅射伤害', color: '#3d8a4a' },
-      slow: { name: '树汁减速', desc: '减速路过的怪物', color: '#6b8a2f' },
+      quill: { name: '翠羽墨针', desc: '羽笔发射墨针，单体高速', color: '#c45c3e' },
+      spore: { name: '雨林孢囊', desc: '蘑菇弹溅射孢子云', color: '#3d8a4a' },
+      snare: { name: '缠藤网', desc: '藤蔓脉冲减速路过怪', color: '#6b8a2f' },
+      beam: { name: '萤光标线', desc: '直线穿透光束', color: '#d4a017' },
+      chain: { name: '虫鸣链', desc: '电弧在怪之间跳跃', color: '#4a9a6a' },
+      stamp: { name: '苔印爆', desc: '印章砸地范围爆发', color: '#a63d3d' },
     },
   },
   ocean: {
@@ -55,9 +62,12 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
       ghost: { name: '同音海妖', color: '#5a6b9a' },
     },
     modules: {
-      cannon: { name: '浪花闪卡', desc: '单体射击，稳定清怪', color: '#2a7a9e' },
-      spray: { name: '盐雾喷溅', desc: '小范围溅射伤害', color: '#3d9aaa' },
-      slow: { name: '洋流减速', desc: '减速路过的怪物', color: '#3f5f9a' },
+      quill: { name: '浪尖羽笔', desc: '羽笔发射墨针，单体高速', color: '#2a7a9e' },
+      spore: { name: '泡沫孢囊', desc: '水母孢溅射伤害', color: '#3d9aaa' },
+      snare: { name: '渔网困', desc: '洋流网减速路过怪', color: '#3f5f9a' },
+      beam: { name: '灯塔扫射', desc: '直线穿透光束', color: '#e8c040' },
+      chain: { name: '雷霆链', desc: '电弧在怪之间跳跃', color: '#4a8fd4' },
+      stamp: { name: '锚印轰', desc: '印章砸地范围爆发', color: '#c43e6a' },
     },
   },
   sky: {
@@ -74,9 +84,12 @@ export const CHAPTERS: Record<ChapterId, ChapterTheme> = {
       ghost: { name: '疾风异形', color: '#5a5a8a' },
     },
     modules: {
-      cannon: { name: '雷光闪卡', desc: '单体射击，稳定清怪', color: '#7a4fc4' },
-      spray: { name: '星屑喷雾', desc: '小范围溅射伤害', color: '#5a7ab8' },
-      slow: { name: '气流减速', desc: '减速路过的怪物', color: '#8a5fb0' },
+      quill: { name: '星羽笔', desc: '羽笔发射墨针，单体高速', color: '#7a4fc4' },
+      spore: { name: '星尘孢', desc: '星屑云溅射伤害', color: '#5a7ab8' },
+      snare: { name: '气流茧', desc: '气流茧减速路过怪', color: '#8a5fb0' },
+      beam: { name: '虹光标', desc: '直线穿透光束', color: '#f0c020' },
+      chain: { name: '雷羽链', desc: '电弧在怪之间跳跃', color: '#6a9ae8' },
+      stamp: { name: '天印碎', desc: '印章砸地范围爆发', color: '#d44a7a' },
     },
   },
 }

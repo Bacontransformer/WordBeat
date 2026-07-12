@@ -1,5 +1,5 @@
 import type { ChapterId } from './chapters'
-import type { ModuleKind, MonsterKind } from './types'
+import type { ModuleKind, MonsterKind, ProjectileKind } from './types'
 
 export const MONSTER_SPRITE: Record<MonsterKind, string> = {
   slime: '/sprites/monster-slime.svg',
@@ -7,47 +7,26 @@ export const MONSTER_SPRITE: Record<MonsterKind, string> = {
   ghost: '/sprites/monster-ghost.svg',
 }
 
-/** 章节专属模组外观（形状不同，不只是换名） */
-export const MODULE_SPRITE: Record<ChapterId, Record<ModuleKind, string>> = {
-  jungle: {
-    cannon: '/sprites/module-cannon-jungle.svg',
-    spray: '/sprites/module-spray-jungle.svg',
-    slow: '/sprites/module-slow-jungle.svg',
-  },
-  ocean: {
-    cannon: '/sprites/module-cannon-ocean.svg',
-    spray: '/sprites/module-spray-ocean.svg',
-    slow: '/sprites/module-slow-ocean.svg',
-  },
-  sky: {
-    cannon: '/sprites/module-cannon-sky.svg',
-    spray: '/sprites/module-spray-sky.svg',
-    slow: '/sprites/module-slow-sky.svg',
-  },
+/** 每种模组独立造型（非书本换皮） */
+export const MODULE_SPRITE: Record<ModuleKind, string> = {
+  quill: '/sprites/module-quill.svg',
+  spore: '/sprites/module-spore.svg',
+  snare: '/sprites/module-snare.svg',
+  beam: '/sprites/module-beam.svg',
+  chain: '/sprites/module-chain.svg',
+  stamp: '/sprites/module-stamp.svg',
 }
 
-export const PROJECTILE_SPRITE: Record<
-  ChapterId,
-  { card: string; mist: string }
-> = {
-  jungle: {
-    card: '/sprites/proj-card-jungle.svg',
-    mist: '/sprites/proj-mist-jungle.svg',
-  },
-  ocean: {
-    card: '/sprites/proj-card-ocean.svg',
-    mist: '/sprites/proj-mist-ocean.svg',
-  },
-  sky: {
-    card: '/sprites/proj-card-sky.svg',
-    mist: '/sprites/proj-mist-sky.svg',
-  },
+export const PROJECTILE_SPRITE: Partial<Record<ProjectileKind, string>> = {
+  dart: '/sprites/proj-dart.svg',
+  cloud: '/sprites/proj-cloud.svg',
+  arc: '/sprites/proj-arc.svg',
 }
 
-export function moduleSprite(chapter: ChapterId, kind: ModuleKind): string {
-  return MODULE_SPRITE[chapter][kind]
+export function moduleSprite(_chapter: ChapterId, kind: ModuleKind): string {
+  return MODULE_SPRITE[kind]
 }
 
-export function projectileSprite(chapter: ChapterId, kind: 'card' | 'mist'): string {
-  return PROJECTILE_SPRITE[chapter][kind]
+export function projectileSprite(kind: ProjectileKind): string | null {
+  return PROJECTILE_SPRITE[kind] ?? null
 }
