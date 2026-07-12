@@ -10,7 +10,7 @@ export type CatalogLevel = {
   startGold: number
   lives: number
   pack: 'junior' | 'cet4' | 'senior'
-  modules: Array<'quill' | 'spore' | 'snare' | 'beam' | 'chain' | 'stamp'>
+  modules: string[]
   path: { x: number; y: number }[]
   waves: {
     delay: number
@@ -49,8 +49,8 @@ type ChapterSpec = {
   chapter: CatalogLevel['chapter']
   pack: CatalogLevel['pack']
   names: string[]
-  modulesEarly: CatalogLevel['modules']
-  modulesLate: CatalogLevel['modules']
+  /** 解锁顺序：单体、减速、溅射、光束、链式、爆发 */
+  moduleProgress: string[]
 }
 
 const CHAPTERS: ChapterSpec[] = [
@@ -58,22 +58,19 @@ const CHAPTERS: ChapterSpec[] = [
     chapter: 'jungle',
     pack: 'junior',
     names: ['密林词径', '藤蔓回廊', '苔痕岔路', '古木词坛', '翠影终章'],
-    modulesEarly: ['quill', 'snare'],
-    modulesLate: ['quill', 'snare', 'spore'],
+    moduleProgress: ['thorn', 'vine', 'mushroom', 'firefly', 'hornet', 'boulder'],
   },
   {
     chapter: 'ocean',
     pack: 'cet4',
     names: ['潮汐词港', '深渊回声', '珊瑚听写', '雾岛航标', '海沟终章'],
-    modulesEarly: ['quill', 'snare', 'spore', 'beam'],
-    modulesLate: ['quill', 'snare', 'spore', 'beam', 'chain'],
+    moduleProgress: ['harpoon', 'net', 'bubble', 'lighthouse', 'eel', 'trident'],
   },
   {
     chapter: 'sky',
     pack: 'senior',
     names: ['云端听写', '风暴课本', '雷羽航线', '星屑回廊', '天穹终章'],
-    modulesEarly: ['quill', 'snare', 'spore', 'beam', 'chain'],
-    modulesLate: ['quill', 'snare', 'spore', 'beam', 'chain', 'stamp'],
+    moduleProgress: ['gale', 'cloudwrap', 'starfall', 'sunbeam', 'thunder', 'meteor'],
   },
 ]
 
@@ -142,16 +139,7 @@ export function buildLevelCatalog(): CatalogLevel[] {
         startGold: 55 + ci * 12 + li * 8,
         lives: 95 + ci * 15 + li * 8,
         pack: spec.pack,
-        modules:
-          li === 0
-            ? ['quill', 'snare']
-            : li === 1
-              ? ['quill', 'snare', 'spore']
-              : li === 2
-                ? ['quill', 'snare', 'spore', 'beam']
-                : li === 3
-                  ? ['quill', 'snare', 'spore', 'beam', 'chain']
-                  : ['quill', 'snare', 'spore', 'beam', 'chain', 'stamp'],
+        modules: spec.moduleProgress.slice(0, Math.min(spec.moduleProgress.length, Math.max(2, li + 2))),
         path: pathFromSteps(pathSpec.start, pathSpec.steps.split('') as Step[]),
         waves: wavesFor(tier, ci),
       })

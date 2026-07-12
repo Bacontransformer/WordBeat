@@ -837,13 +837,13 @@
 .impact-spark.s3 { --sx: 9px; --sy: 11px; }
 .impact-spark.s4 { --sx: -10px; --sy: 9px; }
 
-.muzzle-flash.muzzle-spore {
+.muzzle-flash.muzzle-splash {
   width: 22px;
   height: 22px;
   background: radial-gradient(circle, #fffaf0 0%, var(--mod) 40%, transparent 72%);
 }
 
-.muzzle-flash.muzzle-snare {
+.muzzle-flash.muzzle-slow {
   width: 26px;
   height: 26px;
   border: 2px solid var(--mod);
@@ -865,7 +865,7 @@
   background: radial-gradient(circle, #e8f4ff 0%, var(--mod) 55%, transparent 75%);
 }
 
-.muzzle-flash.muzzle-stamp {
+.muzzle-flash.muzzle-blast {
   width: 30px;
   height: 30px;
   border-radius: 4px;
@@ -873,19 +873,19 @@
   animation: muzzle-ring 0.3s ease-out forwards;
 }
 
-.module-card.kind-quill {
+.module-card.attack-single {
   background:
     linear-gradient(160deg, color-mix(in srgb, var(--mod) 16%, transparent), transparent 55%),
     var(--panel);
 }
 
-.module-card.kind-spore {
+.module-card.attack-splash {
   background:
     radial-gradient(circle at 18% 30%, color-mix(in srgb, var(--mod) 24%, transparent), transparent 42%),
     var(--panel);
 }
 
-.module-card.kind-snare {
+.module-card.attack-slow {
   background:
     repeating-linear-gradient(
       -18deg,
@@ -897,19 +897,19 @@
     var(--panel);
 }
 
-.module-card.kind-beam {
+.module-card.attack-beam {
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--mod) 20%, transparent), transparent 40%, color-mix(in srgb, var(--mod) 12%, transparent)),
     var(--panel);
 }
 
-.module-card.kind-chain {
+.module-card.attack-chain {
   background:
     radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--mod) 28%, transparent), transparent 35%),
     var(--panel);
 }
 
-.module-card.kind-stamp {
+.module-card.attack-blast {
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--mod) 18%, transparent), transparent 45%),
     var(--panel);

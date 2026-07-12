@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { CHAPTERS } from './chapters'
 import { MODULES, MONSTERS } from './defs'
 import { speakWord } from './speak'
 import type {
@@ -234,7 +233,7 @@ export function useGame(level: LevelDef) {
         const survivors: Monster[] = []
         for (const m of s.monsters) {
           const slowed = now < m.slowUntil
-          m.speed = slowed ? m.baseSpeed * (MODULES.snare.slowFactor ?? 0.5) : m.baseSpeed
+          m.speed = slowed ? m.baseSpeed * (m.slowFactor || 0.5) : m.baseSpeed
           m.progress += m.speed * dt
 
           const pos = positionOnPath(lvl.path, m.progress)
@@ -266,12 +265,13 @@ export function useGame(level: LevelDef) {
             proj.radius = (proj.radius ?? 0) + dt * (proj.kind === 'blast' ? 4.2 : 3.4)
             if (!proj.pulseApplied && (proj.radius ?? 0) >= maxR * 0.42) {
               proj.pulseApplied = true
-              const slowMs = (MODULES.snare.slowDuration ?? 1.25) * 1000
+              const slowMs = proj.slowDurationMs ?? 1250
               for (const m of [...s.monsters]) {
                 const p = positionOnPath(lvl.path, m.progress)
                 if (distance(proj.fromX, proj.fromY, p.x, p.y) <= maxR) {
                   if (proj.kind === 'pulse') {
                     m.slowUntil = now + slowMs
+                    m.slowFactor = proj.slowFactor ?? 0.5
                   }
                   if (proj.kind === 'blast' || proj.blastDamage) {
                     applyDamage(s, m.id, proj.damage, p.x, p.y, proj.color, now)
@@ -356,7 +356,7 @@ export function useGame(level: LevelDef) {
         }
         s.projectiles = nextProjectiles
 
-        // Module attacks — spawn projectiles / instant effects
+        // Module attacks — 按 attack 机制分发，外观由章节专属 kind 决定
         for (const mod of s.modules) {
           mod.cooldownLeft = Math.max(0, mod.cooldownLeft - dt)
           if (mod.cooldownLeft > 0) continue
@@ -376,13 +376,13 @@ export function useGame(level: LevelDef) {
 
           mod.fireUntil = now + 220
           mod.cooldownLeft = def.cooldown
-          const fxColor = CHAPTERS[lvl.chapter].modules[mod.kind].color
+          const fxColor = def.color
 
-          if (mod.kind === 'snare') {
+          if (def.attack === 'slow') {
             s.projectiles.push({
               id: uid('p'),
               kind: 'pulse',
-              moduleKind: 'snare',
+              moduleKind: mod.kind,
               x: mx,
               y: my,
               fromX: mx,
@@ -396,15 +396,17 @@ export function useGame(level: LevelDef) {
               radius: 0.1,
               maxRadius: def.range,
               pulseApplied: false,
+              slowFactor: def.slowFactor ?? 0.5,
+              slowDurationMs: (def.slowDuration ?? 1.25) * 1000,
             })
             continue
           }
 
-          if (mod.kind === 'stamp') {
+          if (def.attack === 'blast') {
             s.projectiles.push({
               id: uid('p'),
               kind: 'blast',
-              moduleKind: 'stamp',
+              moduleKind: mod.kind,
               x: mx,
               y: my,
               fromX: mx,
@@ -425,7 +427,7 @@ export function useGame(level: LevelDef) {
 
           const primary = inRange[0]
 
-          if (mod.kind === 'beam') {
+          if (def.attack === 'beam') {
             const reach = def.range
             const dx = primary.p.x - mx
             const dy = primary.p.y - my
@@ -441,7 +443,7 @@ export function useGame(level: LevelDef) {
             s.projectiles.push({
               id: uid('p'),
               kind: 'beam',
-              moduleKind: 'beam',
+              moduleKind: mod.kind,
               x: mx,
               y: my,
               fromX: mx,
@@ -457,7 +459,7 @@ export function useGame(level: LevelDef) {
             continue
           }
 
-          if (mod.kind === 'chain') {
+          if (def.attack === 'chain') {
             const jumps = def.chainJumps ?? 3
             const jumpR = def.chainRange ?? 1.55
             const hit = new Set<string>()
@@ -472,7 +474,7 @@ export function useGame(level: LevelDef) {
               s.projectiles.push({
                 id: uid('p'),
                 kind: 'arc',
-                moduleKind: 'chain',
+                moduleKind: mod.kind,
                 x: fromX,
                 y: fromY,
                 fromX,
@@ -500,10 +502,10 @@ export function useGame(level: LevelDef) {
             continue
           }
 
-          const projKind = mod.kind === 'spore' ? 'cloud' : 'dart'
+          const isSplash = def.attack === 'splash'
           s.projectiles.push({
             id: uid('p'),
-            kind: projKind,
+            kind: isSplash ? 'cloud' : 'dart',
             moduleKind: mod.kind,
             x: mx,
             y: my,
@@ -511,7 +513,7 @@ export function useGame(level: LevelDef) {
             fromY: my,
             toX: primary.p.x,
             toY: primary.p.y,
-            speed: mod.kind === 'spore' ? 2.35 : 3.15,
+            speed: isSplash ? 2.35 : 3.15,
             damage: def.damage,
             aoe: def.aoe,
             targetId: primary.m.id,

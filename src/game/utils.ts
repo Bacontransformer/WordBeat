@@ -78,6 +78,7 @@ export function createMonster(
     baseSpeed: defs.speed,
     progress: 0,
     slowUntil: 0,
+    slowFactor: 0.5,
     reward: defs.reward,
   }
 }

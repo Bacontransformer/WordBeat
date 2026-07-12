@@ -130,7 +130,7 @@ export const LEVELS: LevelDef[] = [
     buildable: neighborsOfPath(level1Path, 10, 6),
     startGold: 80,
     lives: 100,
-    unlockedModules: ['quill', 'snare'],
+    unlockedModules: ['thorn', 'vine'],
     words: daily,
     waves: [
       {
@@ -161,7 +161,7 @@ export const LEVELS: LevelDef[] = [
     buildable: neighborsOfPath(level2Path, 12, 6),
     startGold: 100,
     lives: 120,
-    unlockedModules: ['quill', 'snare', 'spore', 'beam'],
+    unlockedModules: ['harpoon', 'net', 'bubble', 'lighthouse'],
     words: school,
     waves: [
       {
@@ -203,7 +203,7 @@ export const LEVELS: LevelDef[] = [
     buildable: neighborsOfPath(level3Path, 13, 7),
     startGold: 120,
     lives: 140,
-    unlockedModules: ['quill', 'snare', 'spore', 'beam', 'chain', 'stamp'],
+    unlockedModules: ['gale', 'cloudwrap', 'starfall', 'sunbeam', 'thunder', 'meteor'],
     words: travel,
     waves: [
       {

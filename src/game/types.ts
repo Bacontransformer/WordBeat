@@ -2,8 +2,35 @@ export type Point = { x: number; y: number }
 
 export type MonsterKind = 'slime' | 'beetle' | 'ghost'
 
-/** 六种形态/机制完全不同的攻击模组（不再是「单词书」） */
-export type ModuleKind = 'quill' | 'spore' | 'snare' | 'beam' | 'chain' | 'stamp'
+/**
+ * 攻击方式（机制），与章节外观解耦。
+ * 每章各有 6 种同机制、不同造型的模组。
+ */
+export type ModuleAttack = 'single' | 'splash' | 'slow' | 'beam' | 'chain' | 'blast'
+
+/** 章节专属模组 ID（不再是全局共用的「笔」） */
+export type ModuleKind =
+  // 丛林
+  | 'thorn'
+  | 'mushroom'
+  | 'vine'
+  | 'firefly'
+  | 'hornet'
+  | 'boulder'
+  // 海洋
+  | 'harpoon'
+  | 'bubble'
+  | 'net'
+  | 'lighthouse'
+  | 'eel'
+  | 'trident'
+  // 天空
+  | 'gale'
+  | 'starfall'
+  | 'cloudwrap'
+  | 'sunbeam'
+  | 'thunder'
+  | 'meteor'
 
 export type WordPair = {
   id: string
@@ -17,13 +44,13 @@ export type MonsterDef = {
   hp: number
   speed: number
   reward: number
-  /** Damage dealt to the textbook when this monster reaches the end */
   leakDamage: number
   color: string
 }
 
 export type ModuleDef = {
   kind: ModuleKind
+  attack: ModuleAttack
   name: string
   desc: string
   cost: number
@@ -33,11 +60,8 @@ export type ModuleDef = {
   aoe?: number
   slowFactor?: number
   slowDuration?: number
-  /** beam: half-width of the laser corridor */
   beamWidth?: number
-  /** chain: max extra jumps after first hit */
   chainJumps?: number
-  /** chain: search radius for next target */
   chainRange?: number
   color: string
 }
@@ -72,6 +96,8 @@ export type Monster = {
   baseSpeed: number
   progress: number
   slowUntil: number
+  /** 当前减速倍率（来自施加减速的模组） */
+  slowFactor: number
   reward: number
 }
 
@@ -113,10 +139,10 @@ export type Projectile = {
   radius?: number
   maxRadius?: number
   pulseApplied?: boolean
-  /** beam/arc visual lifetime seconds */
   life?: number
-  /** blast deals damage when expanding */
   blastDamage?: boolean
+  slowFactor?: number
+  slowDurationMs?: number
 }
 
 export type ImpactFx = {
@@ -138,9 +164,7 @@ export type MatchRound = {
 export type GameSnapshot = {
   phase: GamePhase
   gold: number
-  /** Current textbook durability */
   lives: number
-  /** Max textbook durability for this level */
   maxLives: number
   waveIndex: number
   waveTotal: number

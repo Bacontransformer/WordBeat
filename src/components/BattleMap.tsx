@@ -226,20 +226,19 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
       <div className="battle-entities">
         {snapshot.modules.map((mod) => {
           const def = MODULES[mod.kind]
-          const themed = theme.modules[mod.kind]
           const firing = snapshot.firingModuleIds.has(mod.id)
           return (
             <div
               key={mod.id}
-              className={`entity module-entity kind-${mod.kind} chapter-${level.chapter}${firing ? ' firing' : ''}`}
+              className={`entity module-entity kind-${mod.kind} attack-${def.attack} chapter-${level.chapter}${firing ? ' firing' : ''}`}
               style={{
                 left: `${(mod.col + 0.5) * cellW}%`,
                 top: `${(mod.row + 0.5) * cellH}%`,
-                ['--mod' as string]: themed.color,
+                ['--mod' as string]: def.color,
               }}
-              title={themed.name}
+              title={def.name}
             >
-              <img src={moduleSprite(level.chapter, mod.kind)} alt={themed.name} draggable={false} />
+              <img src={moduleSprite(level.chapter, mod.kind)} alt={def.name} draggable={false} />
               {snapshot.selectedModule === mod.kind && (
                 <span
                   className="range-ring"
@@ -249,7 +248,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                   }}
                 />
               )}
-              {firing && <span className={`muzzle-flash muzzle-${mod.kind}`} />}
+              {firing && <span className={`muzzle-flash muzzle-${def.attack}`} />}
             </div>
           )
         })}
@@ -268,7 +267,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
                 top: `${pos.y * cellH}%`,
                 ['--face' as string]: `${deg}deg`,
                 ['--mob' as string]: themed.color,
-                ['--slow' as string]: theme.modules.snare.color,
+                ['--slow' as string]: '#6b8a2f',
               }}
               title={themed.name}
             >
@@ -323,7 +322,7 @@ export function BattleMap({ level, snapshot, onPlace, draggingKind = null }: Pro
             )
           }
 
-          const sprite = projectileSprite(proj.kind)
+          const sprite = projectileSprite(proj.kind, level.chapter)
           return (
             <div
               key={proj.id}
